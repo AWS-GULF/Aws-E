@@ -1,0 +1,102 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply dark:bg-gray-900 dark:text-white;
+  }
+}
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+ background-color: #FFFFFF;
+  }
+  
+  
+.container {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+  .image{
+    animation:  float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+0%{
+  transform: translateY(0);
+}
+50%{
+  transform: translateY(-15px);
+}
+100%{
+  transform: translateY(0);
+}
+
+
+
+  }
+
+
+.bg-button{
+  background-color: #5BA89C;
+}
+.bg-text-button{
+  color: #5BA89C;
+}
+.bg-color{
+  color: #19738C;
+}
+.bg-color-button{
+background-color: #19738C;
+}
+.bg-colorr{
+  color: #333;
+}
+
+.bg-color-p{
+color: #666;
+}
+
+.iconsize i{
+
+
+color: #5BA89C;
+
+
+}
+/* أضف هذا لعدم وجود overflow غير مرغوب فيه */
+.dropdown-menu {
+  overflow: hidden;
+}
+
+
+
+.section {
+ 
+  align-items: center;
+  justify-content: center;
+  transition: background 0.8s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

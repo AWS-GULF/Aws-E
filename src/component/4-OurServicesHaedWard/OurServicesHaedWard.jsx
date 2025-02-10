@@ -1,0 +1,164 @@
+import React from "react";
+import Services from "../../assets/images/Services.svg";
+import { Link } from "react-router-dom";
+import "./OutSerices.css"
+export default function OurServicesHaedWard() {
+  return (
+    <>
+      <div className="px-4    sm:px-12 mt-24">
+        <div className="text-center lg:mr-32 sm:text-left">
+          <h1 className=" text-3xl text-[#003540] sm:text-[36px] font-mons font-bold mb-4 dark:text-[#B3E5F1] ">
+            Our Services
+          </h1>
+          <p className="text-xl sm:text-[20px] tracking-wide text-color-fool dark:text-white ">
+            We Have the Pleasure of Introducing Ourselves as an Independent
+            Solutions Provider of the World's Leading <br /> Brands Related to
+            The IT Industry and Software Development.
+          </p>
+          {/* ////////////////////////////////////// */}
+
+          <div className="flex flex-wrap justify-center items-center gap-6 mt-8 w-full lg:w-[110%]">
+            <div className="border p-3 rounded-xl min-w-[300px] flex-1 bg-tooHover ">
+              <img
+                src={Services}
+                alt="Services"
+                className="w-full h-auto object-cover"
+              />
+              <div>
+                <h2 className="text-[#003540] pt-4 text-base font-[600] tracking-[1.6px] font-mons dark:text-[#B3E5F1] ">
+                  Quality Assurance
+                </h2>
+                <p className="font-mons text-[12px] font-[500] text-[#666] mt-2 leading-6 dark:text-white">
+                  We believe in fostering a strong, collaborative partnership
+                  with our clients. Ensuring the quality, functionality, and
+                  reliability of the products we deliver is a responsibility we
+                  take seriously. Beyond meeting expectations, we proactively
+                  identify and resolve potential risks and challenges, striving
+                  to exceed contractual commitments with excellence.
+                </p>
+                <div className="card-actions justify-start mt-11 bg-text">
+                  <Link to="QualityAssurance1"><button className="underline dark:text-[#B3E5F1]">See More</button></Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="border p-3 rounded-xl min-w-[300px] bg-tooHover flex-1">
+              <img
+                src={Services}
+                alt="Services"
+                className="w-full h-auto object-cover"
+              />
+              <div>
+                <h2 className="text-[#003540] pt-4 text-base font-[600] tracking-[1.6px] font-mons dark:text-[#B3E5F1] ">
+                  Mobile Development
+                </h2>
+                <p className="font-mons text-[12px] font-[500] text-[#666] mt-4 leading-6 dark:text-white">
+                  We create innovative, one-of-a-kind iOS and Android
+                  applications with exceptional designs and seamless user
+                  experiences. Our mobile solutions are designed to elevate your
+                  business, showcase your offerings, and captivate your
+                  audience, ensuring lasting engagement and satisfaction.
+                </p>
+                <div className="card-actions justify-start mt-11">
+                <Link to="MobileDevelopment"><button className="underline bg-text dark:text-[#B3E5F1]">See More</button> </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="border p-3 rounded-xl min-w-[300px] bg-tooHover flex-1">
+              <img
+                src={Services}
+                alt="Services"
+                className="w-full h-auto object-cover"
+              />
+              <div>
+                <h2 className="text-[#003540] pt-4 text-base font-[600] tracking-[1.6px] font-mons dark:text-[#B3E5F1] ">
+                  Web Development
+                </h2>
+                <p className="font-mons text-[12px] font-[500] text-[#666] mt-2 leading-6 dark:text-white">
+                  We specialize in developing custom web applications tailored
+                  to your unique needs, focusing on delivering exceptional UI/UX
+                  experiences. Leave concerns like performance optimization,
+                  accessibility, functionality, usability, and security to us,
+                  so you can focus on streamlining and enhancing your workflow
+                </p>
+                <div className="card-actions justify-start mt-11 bg-text">
+                 <Link to="wepDevlopment"> <button className="underline dark:text-[#B3E5F1] ">See More</button></Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-wrap justify-center items-center gap-6 mt-8 w-full lg:w-[110%]">
+            <div className="border p-3 rounded-xl min-w-[300px] bg-tooHover flex-1">
+              <img
+                src={Services}
+                alt="Services"
+                className="w-full h-auto object-cover"
+              />
+              <div>
+                <h2 className="text-[#003540] pt-4 text-base font-[600] tracking-[1.6px] font-mons dark:text-[#B3E5F1] ">
+                  IT & Hardware
+                </h2>
+                <p className="font-mons text-[12px] font-[500] text-[#666] mt-2 leading-6  dark:text-white">
+                  Sindion Technology is a professional IT solutions and services
+                  provider.We will help you to achieve your IT strategy by
+                  providing you system integration, testing, application
+                  development and management services and solutions.
+                </p>
+                <div className="card-actions justify-start mt-11 bg-text">
+                 <Link to="iTHardware"> <button className="underline dark:text-[#B3E5F1] ">See More</button></Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="border p-3 rounded-xl min-w-[300px] bg-tooHover flex-1">
+              <img
+                src={Services}
+                alt="Services"
+                className="w-full h-auto object-cover"
+              />
+              <div>
+                <h2 className="text-[#003540] pt-4 text-base font-[600] tracking-[1.6px] font-mons dark:text-[#B3E5F1] ">
+                Staff Augmentation
+                </h2>
+                <p className="font-mons text-[12px] font-[500] text-[#666] mt-2 leading-6 dark:text-white">
+                  Staff augmentation is a versatile solution that enables
+                  organizations to boost agility and quickly adapt to evolving
+                  business demands. This approach is widely utilized across
+                  industries to fulfill critical roles in Engineering, Product
+                  Development, and Operations.
+                </p>
+                <div className="card-actions justify-start mt-11 bg-text">
+                 <Link to="StaffAugmentation" > <button className="underline dark:text-[#B3E5F1] ">See More</button> </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="border p-3 rounded-xl min-w-[300px] bg-tooHover flex-1">
+              <img
+                src={Services}
+                alt="Services"
+                className="w-full h-auto object-cover"
+              />
+              <div>
+                <h2 className="text-[#003540] pt-4 text-base font-[600] tracking-[1.6px] font-mons dark:text-[#B3E5F1] ">
+                UI/UX Design
+                </h2>
+                <p className="font-mons text-[12px] font-[500] text-[#666] mt-2 leading-6 dark:text-white">
+                  Every interaction within our products is a result of
+                  meticulous planning and design. From the coding of elements
+                  and functions to the visual aesthetics, we excel at delivering
+                  captivating user experiences. Whether for mobile or web, your
+                  end users will find the experience both seamless and engaging.
+                </p>
+                <div className="card-actions justify-start mt-11 bg-text">
+                 <Link to="uiUxDesign"><button className="underline dark:text-[#B3E5F1] ">See More</button></Link> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}

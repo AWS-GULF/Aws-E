@@ -1,0 +1,15 @@
+
+.backGroundTextt{
+    color: #003540;
+}
+
+
+.backGroundButtonn{
+background-color: #003540;
+color: white;
+
+}
+.backGroundButtonn:hover{
+background-color: #295F70;
+transition: all 0.5s;
+}

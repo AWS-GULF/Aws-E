@@ -1,0 +1,100 @@
+import React, { useEffect } from 'react'
+import QualityAssurance from "../../assets/images/sr-gray.svg";
+import QualityAssurance2 from "../../assets/images/accurate.svg";
+import QualityAssurance3 from "../../assets/images/qc.svg";
+import QualityAssurance4 from "../../assets/images/frame1991.svg";
+import QualityAssurance5 from "../../assets/images/hwlk.svg";
+import QualityAssurance6 from "../../assets/images/qq.svg";
+import QualityAssurance7 from "../../assets/images/Component11.svg";
+import QualityAssurance8 from "../../assets/images/Portfolio1.svg";
+import kotlin from "../../assets/images/tailwind_css_logo.svg";
+import node from "../../assets/images/node.svg";
+import oracle from "../../assets/images/oracle.svg";
+import radius from "../../assets/images/radius.svg";
+import python from "../../assets/images/python.svg";
+import "./WepDevlpment.css"
+
+export default function WepDevlopment() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <div className="px-6 sm:px-12 lg:px-24 ">
+      <div className="mt-16 mb-14 flex justify-center items-center text-[#295F70] dark:text-[#B3E5F1]">
+        <img src={QualityAssurance} alt="QualityAssurance" className="w-8 h-8 img-cloro" />
+        <p className="ps-2 font-mons text-hover font-bold text-lg tracking-wide">Services</p>
+      </div>
+      
+      <div className="text-center mb-20">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-[4.8px] leading-tight text-[#003540] dark:text-[#B3E5F1]">
+          Innovative web development solutions to empower your business, enhance your online presence, and drive success.
+        </h2>
+      </div>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-center items-center mb-20">
+        {[kotlin, oracle, python, radius, node].map((img, index) => (
+          <img key={index} src={img} alt="tech" className="w-10 sm:w-20 lg:w-20 rounded-full mx-auto" />
+        ))}
+      </div>
+
+      <div className="text-center mb-10">
+        <h1 className="mb-5 text-[#003540] dark:text-[#B3E5F1] font-mons text-2xl sm:text-3xl tracking-wide font-semibold">
+          Web Development
+        </h1>
+        <p className="text-aboutCont text-lg text-[#666] dark:text-white text-left leading-relaxed">
+          We specialize in developing custom web applications tailored to your unique needs, focusing on delivering exceptional UI/UX experiences. Leave concerns like performance optimization, accessibility, functionality, usability, and security to us, so you can focus on streamlining and enhancing your workflow.
+        </p>
+      </div>
+      
+      {[ 
+        { title: "1- Consultation and Discovery Phase:", desc: "Transforming your idea or product into reality can be challenging. We simplify this process by leveraging industry standards for web architecture and development. Our expert team will guide you in identifying the most effective strategies to achieve your goals seamlessly.", img: QualityAssurance2, reverse: false },
+        { title: "Brand Identity & Custom Branding", desc: "Design a fully customized, multi-functional dashboard that reflects your brand identity. Our solutions are crafted to enhance user engagement and ensure effortless navigation for your organization’s leaders and administrators.", img: QualityAssurance3, reverse: true },
+        { title: "Identity Management and SSO", desc: "Empower your users with secure and intuitive access to your platform. Whether you provide full control over their interactions or enable self-service dashboards, features like social logins and single sign-on (SSO) can enhance their experience and simplify onboarding.", img: QualityAssurance4, reverse: false },
+        { title: "Search Engine Optimization (SEO)", desc: "Ensure your platform is built with optimization best practices to drive organic growth and expand your audience reach exponentially.", img: QualityAssurance8, reverse: true }
+      ].map((section, index) => (
+        <div
+          key={index}
+          className={`flex flex-col sm:flex-row items-center gap-8 px-6 sm:px-12 lg:px-24 mb-16 ${section.reverse ? "sm:flex-row-reverse" : ""}`}
+        >
+          <div className="sm:w-1/2 lg:w-2/3 text-center sm:text-left">
+            <h4 className="text-xl font-semibold mb-4 text-[#003540] dark:text-[#B3E5F1]">{section.title}</h4>
+            <p className="text-lg leading-relaxed text-[#333] dark:text-white">{section.desc}</p>
+          </div>
+
+          <div className="sm:w-1/2 lg:w-1/3">
+            <img
+              src={section.img}
+              alt={section.title}
+              className="w-full rounded-l-full max-w-xs mx-auto"
+            />
+          </div>
+        </div>
+      ))}
+      
+      <div className="text-center mb-10 mt-40">
+        <h1 className="text-primary font-mons text-2xl mb-7 sm:text-3xl tracking-wide font-semibold text-[#003540] dark:text-[#B3E5F1]">
+          Case Studies
+        </h1>
+        <p className="text-lg leading-relaxed text-[#666] dark:text-white">
+          We stick to tried and true digital marketing strategies that we know will have the highest impact on your bottom line. Forget the fluff and empty promises of other companies, we offer services that are more likely to be profitable and sustainable. Check out our suite of digital marketing services designed to help accelerate your funnel.
+        </p>
+      </div>
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+        {[QualityAssurance5, QualityAssurance6, QualityAssurance7].map((img, index) => (
+          <div key={index} className="bg-base-100 border border-stroke p-4 rounded-lg shadow-md">
+            <figure>
+              <img className="w-full h-60 object-cover" src={img} alt="case study" />
+            </figure>
+            <div className="p-4">
+              <h2 className="text-sm text-primary font-semibold mb-2 text-[#003540] dark:text-[#B3E5F1]">Clients</h2>
+              <p className="text-sm text-[#666] dark:text-white leading-relaxed">Nafaa is the first complete and integrated system of expropriation in the Arabian Gulf region.</p>
+              <div className="mt-4 text-primary text-sm font-semibold underline cursor-pointer">See More</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
