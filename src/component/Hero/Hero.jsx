@@ -1,6 +1,11 @@
 import GHeager from "../../assets/images/Component 126.svg";
-
+import { useNavigate } from "react-router-dom";
 export default function Hero() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/");
+  };
   return (
     <div>
 <section className="relative px-4 md:px-8 lg:px-16">
@@ -24,7 +29,8 @@ export default function Hero() {
         <button className="bg-[#5BA89C] rounded-3xl py-6 px-8 text-white font-bold hover:bg-[#6cbdb1] transition-all">
           Contact Us Now
         </button>
-        <button className="bg-white text-[#5BA89C] border border-[#5BA89C] rounded-3xl py-6 px-8 font-bold hover:bg-gray-100 transition">
+        <button      onClick={handleClick} className="bg-white text-[#5BA89C] border border-[#5BA89C] rounded-3xl py-6 px-8 font-bold hover:bg-gray-100 transition">
+   
           Software Solutions
         </button>
       </div>
