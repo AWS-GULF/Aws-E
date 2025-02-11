@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import QualityAssurance from "../../assets/images/sr-gray.svg";
-import QualityAssurance2 from "../../assets/images/accurate.svg";
-import QualityAssurance3 from "../../assets/images/qc.svg";
+import QualityAssurance2 from "../../assets/images/computer.svg";
+import QualityAssurance3 from "../../assets/images/Illustration.svg";
 import QualityAssurance4 from "../../assets/images/frame1991.svg";
 import QualityAssurance5 from "../../assets/images/hwlk.svg";
 import QualityAssurance6 from "../../assets/images/qq.svg";
@@ -11,8 +11,9 @@ import kotlin from "../../assets/images/tailwind_css_logo.svg";
 import node from "../../assets/images/node.svg";
 import oracle from "../../assets/images/oracle.svg";
 import radius from "../../assets/images/radius.svg";
-import python from "../../assets/images/python.svg";
+import python from "../../assets/images/pythonn.svg";
 import "./WepDevlpment.css"
+import { Link } from 'react-router-dom';
 
 export default function WepDevlopment() {
   useEffect(() => {
@@ -21,7 +22,7 @@ export default function WepDevlopment() {
 
   return (
     <div className="px-6 sm:px-12 lg:px-24 ">
-      <div className="mt-16 mb-14 flex justify-center items-center text-[#295F70] dark:text-[#B3E5F1]">
+      <div className="mt-16 mb-14 flex justify-center items-center text-[#295F70] dark:text-[#B3E5F1] text-xl ">
         <img src={QualityAssurance} alt="QualityAssurance" className="w-8 h-8 img-cloro" />
         <p className="ps-2 font-mons text-hover font-bold text-lg tracking-wide">Services</p>
       </div>
@@ -66,7 +67,7 @@ export default function WepDevlopment() {
             <img
               src={section.img}
               alt={section.title}
-              className="w-full rounded-l-full max-w-xs mx-auto"
+              className="w-full rounded-xl max-w-xs mx-auto "
             />
           </div>
         </div>
@@ -81,20 +82,71 @@ export default function WepDevlopment() {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
-        {[QualityAssurance5, QualityAssurance6, QualityAssurance7].map((img, index) => (
-          <div key={index} className="bg-base-100 border border-stroke p-4 rounded-lg shadow-md">
+      <div className="cards mb-[100px] flex flex-wrap justify-center gap-4">
+          {/* Card 1 */}
+          <div className="card bg-base-100 w-full sm:w-96 border-1 rounded-lg border border-stroke p-4">
             <figure>
-              <img className="w-full h-60 object-cover" src={img} alt="case study" />
+              <img className="w-full h-[382px]" src={QualityAssurance5} alt="QualityAssurance5" />
             </figure>
-            <div className="p-4">
-              <h2 className="text-sm text-primary font-semibold mb-2 text-[#003540] dark:text-[#B3E5F1]">Clients</h2>
-              <p className="text-sm text-[#666] dark:text-white leading-relaxed">Nafaa is the first complete and integrated system of expropriation in the Arabian Gulf region.</p>
-              <div className="mt-4 text-primary text-sm font-semibold underline cursor-pointer">See More</div>
+            <div>
+              <h2 className="text-[14px] text-[#003540] font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+                Clients
+              </h2>
+              <div className="flex justify-center items-center">
+                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                  Nafaa is the first complete and integrated system of
+                  expropriation in the Arabian Gulf region.
+                </p>
+                <div className="flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap">
+                  <p>See More</p>
+                </div>
+              </div>
             </div>
           </div>
-        ))}
-      </div>
+
+          {/* Card 2 */}
+          <div className="card bg-base-100 rounded-lg w-full sm:w-96 border-1 border border-stroke p-4">
+            <figure>
+              <img className="w-full h-[382px]" src={QualityAssurance6} alt="QualityAssurance6" />
+            </figure>
+            <div>
+              <h2 className="text-[14px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+                Clients
+              </h2>
+              <div className="flex justify-center items-center">
+                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                  Nafaa is the first complete and integrated system of
+                  expropriation in the Arabian Gulf region.
+                </p>
+                <div className="flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap">
+                  <p>See More</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="card rounded-lg bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4">
+            <figure>
+              <img className="w-full h-[382px]" src={QualityAssurance7} alt="QualityAssurance7" />
+            </figure>
+            <div>
+              <h2 className="text-[14px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+                Clients
+              </h2>
+              <div className="flex justify-center items-center">
+                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                  Nafaa is the first complete and integrated system of
+                  expropriation in the Arabian Gulf region.
+                </p>
+                <div className="flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap">
+                 <Link to="/SSSproject"> <p>See More</p></Link>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   );
 }

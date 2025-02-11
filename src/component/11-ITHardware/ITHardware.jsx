@@ -11,7 +11,7 @@ export default function ITHardware() {
     }, []);
 
     return (
-        <div className="sm:ms-12 sm:me-12 ">
+        <div className="sm:ms-12 sm:me-12 text-xl  ">
             <div className="mt-16 mb-14 flex justify-center items-center">
                 <img src={QualityAssurance} alt="" />
                 <p className="ps-2 font-mons text-hover text-[#003540] dark:text-[#B3E5F1] font-bold text-[16px] tracking-[1.6px]">

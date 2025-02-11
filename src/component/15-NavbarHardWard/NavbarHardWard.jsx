@@ -33,11 +33,11 @@ export default function NavbarComponent() {
   };
 
   return (
-    <Navbar fluid={true} rounded={true} className="bg-white  py-5  dark:bg-[#242424] border-gray-200 shadow-sm m-0 p-0">
-      <div className="flex flex-wrap items-center justify-between px-[28px] mx-auto w-full">
+    <Navbar fluid={true} rounded={true} className="bg-white    my-3 py-5  dark:bg-[#242424] border-gray-200 shadow-sm m-0 p-0">
+      <div className="flex flex-wrap items-center justify-between text-xl  px-[28px] mx-auto w-full">
         {/* Logo on the left */}
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={logo} className="w-full sm:w-1/2 md:w-11/12 lg:w-full" alt="Logo" />
+          <img src={logo} className="w-full  py-3 sm:w-1/2 md:w-11/12 lg:w-full" alt="Logo" />
         </a>
 
         {/* Right Side: Icons, Dark Mode, Contact Button, Language and Toggle */}

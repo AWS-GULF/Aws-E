@@ -59,7 +59,7 @@ let createBrowser = createBrowserRouter([
       { path: "workFliter", element: <WorkFliter/> },
       { path: "about", element: <Aboutt/> },
       { path: "careers", element: <Careers/> },
-      { path: "sSSproject", element: <SSSproject/> },
+      { path: "/SSSproject", element: <SSSproject/> },
      
       { path: "/careers/:id", element: <JopDetetails/> },
 

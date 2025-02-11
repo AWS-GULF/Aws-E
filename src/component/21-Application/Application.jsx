@@ -13,7 +13,7 @@ export default function JobApplicationForm() {
   
   return (
     <div>
-            <div className="max-w-2xl mx-auto p-6  shadow-lg rounded-lg ">
+            <div className="max-w-2xl mx-auto p-6  shadow-lg rounded-lg text-xl  ">
       <div className="p-4 border rounded-lg mb-6 bg-gray-50 dark:bg-[#242424]  sm:flex flex-row items-center justify-center  ">
       <div className="flex-col  w-[80%] ">
       <h2 className="font-semibold flex items-center dark:text-[#B3E5F1]  ">

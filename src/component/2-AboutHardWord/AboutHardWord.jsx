@@ -8,43 +8,44 @@ import peplink from "../../assets/images/peplink 1.svg"
 import dell from "../../assets/images/dell 1.svg"
 
 export default function AboutHardWord() {
-    const settings = {
-        dots: false,
-        infinite: true,
-        slidesToShow: 3, // العرض الافتراضي على الشاشات الكبيرة
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        centerMode: true,
-        arrows: false,
-        responsive: [
-          {
-            breakpoint: 1024, // للشاشات من 1024 بيكسل أو أقل
-            settings: {
-              slidesToShow: 2, // عرض 2 slides على الشاشات المتوسطة
-            },
-          },
-          {
-            breakpoint: 600, // للشاشات من 600 بيكسل أو أقل
-            settings: {
-              slidesToShow: 1, // عرض 1 slide على الشاشات الصغيرة
-            },
-          },
-        ],
-      };
-    
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0, 
+    speed: 3000, 
+    cssEase: "linear", 
+    centerMode: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+  
   return (
  <>
  <div>
-  <hr  className='mt-4'/>
+  <hr  className='my-5 lg:mt-0'/>
   <div className="flex flex-col lg:flex-row justify-between text-center colorText   shadow-lg ">
     {/* العنوان العلوي */}
     <div className="not-italic font-bold leading-normal   tracking-[5.76px] lg:w-6/12 colorText md:w-1/2 text-4xl text-[#333]  dark:text-white">
       Our Leading Brands <br /> Partnerships
     </div>
 
-    {/* السلايدر */}
-    <div className=" max-w-5xl lg:w-6/12 md:w-1/2">
+    <div className=" max-w-5xl lg:w-6/12 md:w-1/2 py-2">
       <Slider {...settings} className="flex justify-center items-center">
         <div className="">
           <img src={microsoft} alt="Slider1" className=" h-20 w-40 object-contain  md:my-6" />

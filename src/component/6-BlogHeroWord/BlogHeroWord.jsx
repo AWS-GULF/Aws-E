@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import blog from "../../assets/images/blog.svg";
 import blog1 from "../../assets/images/blog2.svg";
 import blog3 from "../../assets/images/blog3.svg";
 import "./Blogg.css"
 import Modell from "../16-Modell/Modell";
 export default function BlogHeroWord() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  
   return (
-    <div className="px-8 w-[85%]  m-auto py-16">
+    <div className="px-8 w-[85%] mt-9 m-auto py-16">
       <div className="flex flex-wrap md:flex-nowrap gap-10 ">
         <div className="w-full md:w-1/2">
           <div className="mb-10">

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import QualityAssurance from "../../assets/images/sr-gray.svg";
-import QualityAssurance3 from "../../assets/images/qc.svg";
+import QualityAssurance3 from "../../assets/images/computer.svg";
 
 export default function StaffAugmentation() {
     useEffect(() => {
@@ -10,7 +10,7 @@ export default function StaffAugmentation() {
     return (
         <div className="">
             <div className="sm:ms-12 sm:me-12">
-                <div className="mt-16 mb-14 flex justify-center items-center">
+                <div className="mt-16 mb-14 flex justify-center items-center text-xl ">
                     <img src={QualityAssurance} alt="QualityAssurance2" />
                     <p className="ps-2 font-mons text-[#003540] dark:text-[#B3E5F1] text-hover font-bold text-[16px] tracking-[1.6px]">
                         Services
@@ -35,7 +35,7 @@ export default function StaffAugmentation() {
                     </p>
                 </div>
 
-                {/* تعديل تنسيق العناصر في الشاشات الصغيرة باستخدام Flexbox */}
+               
                 <div className="flex flex-col sm:flex-row justify-center items-center px-[121px] mb-16 gap-16">
                     <div className="w-full sm:w-3/4 pt-14 flex-col justify-center items-center ps-1 mt-[-30px]">
                         <h4 className="font-mons text-[20px] font-[600] tracking-[2px] mb-4 dark:text-[#B3E5F1]">
@@ -52,7 +52,7 @@ export default function StaffAugmentation() {
                     </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row justify-center items-center px-[121px] mb-16 gap-16">
+                <div className="flex flex-col-reverse  sm:flex-row justify-center items-center px-[121px] mb-16 gap-16">
                     <div className="w-full sm:w-1/4">
                         <img src={QualityAssurance3} className="w-full rounded-l-full" alt="" />
                     </div>
@@ -82,11 +82,11 @@ export default function StaffAugmentation() {
                     </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row justify-center items-center px-[121px] mb-16 gap-16">
+                <div className="flex  flex-col-reverse sm:flex-row justify-center items-center px-[121px] mb-16 gap-16">
                     <div className="w-full sm:w-1/4">
                         <img src={QualityAssurance3} className="w-full rounded-l-full" alt="" />
                     </div>
-                    <div className="w-full sm:w-3/4 pt-14 flex-col justify-center items-center ps-1 mt-[-30px]">
+                    <div className="w-full  sm:w-3/4 pt-14 flex-col-reverse justify-center items-center ps-1 mt-[-30px]">
                         <h4 className="font-mons text-[20px] font-[600] tracking-[2px] mb-4 dark:text-[#B3E5F1]">
                             Hire
                         </h4>
@@ -113,7 +113,7 @@ export default function StaffAugmentation() {
                     </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row justify-center items-center px-[121px] mb-16 gap-16">
+                <div className="flex flex-col-reverse sm:flex-row justify-center items-center px-[121px] mb-16 gap-16">
                     <div className="w-full sm:w-1/4">
                         <img src={QualityAssurance3} className="w-full rounded-l-full" alt="" />
                     </div>

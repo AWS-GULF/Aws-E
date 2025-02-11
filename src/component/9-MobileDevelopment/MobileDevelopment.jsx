@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import QualityAssurance from "../../assets/images/sr-gray.svg";
-import QualityAssurance2 from "../../assets/images/accurate.svg";
-import QualityAssurance3 from "../../assets/images/qc.svg";
-import QualityAssurance4 from "../../assets/images/Quality Assurance3.svg";
+import QualityAssurance from "../../assets/images/OFFf.svg";
+import QualityAssurance2 from "../../assets/images/computer.svg";
+import QualityAssurance3 from "../../assets/images/Illustration.svg";
+import QualityAssurance4 from "../../assets/images/House.svg";
 import QualityAssurance5 from "../../assets/images/hwlk.svg";
 import QualityAssurance6 from "../../assets/images/qq.svg";
 import QualityAssurance7 from "../../assets/images/Component11.svg";
@@ -10,7 +10,8 @@ import kotlin from "../../assets/images/kotlin.svg";
 import node from "../../assets/images/node.svg";
 import oracle from "../../assets/images/oracle.svg";
 import radius from "../../assets/images/radius.svg";
-import python from "../../assets/images/python.svg";
+import python from "../../assets/images/pythonn.svg";
+import { Link } from 'react-router-dom';
 
 export default function MobileDevelopment() {
   useEffect(() => {
@@ -19,7 +20,7 @@ export default function MobileDevelopment() {
 
   return (
     <div className="px-6 sm:px-12 lg:px-24">
-      <div className="mt-16 mb-14 flex justify-center items-center">
+      <div className="mt-16 mb-14 flex justify-center items-center text-xl ">
         <img src={QualityAssurance} alt="" className="w-8 h-8" />
         <p className="ps-2 font-mons font-bold text-lg tracking-wide text-[#295F70] dark:text-[#B3E5F1]">Services</p>
       </div>
@@ -70,22 +71,71 @@ export default function MobileDevelopment() {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
-        {[QualityAssurance5, QualityAssurance6, QualityAssurance7].map((img, index) => (
-          <div key={index} className="bg-base-100 border border-stroke p-4 rounded-lg shadow-md">
+      <div className="cards mb-[100px] flex flex-wrap justify-center gap-4">
+          {/* Card 1 */}
+          <div className="card bg-base-100 w-full sm:w-96 border-1 rounded-lg border border-stroke p-4">
             <figure>
-              <img className="w-full h-60 object-cover" src={img} alt="case study" />
+              <img className="w-full h-[382px]" src={QualityAssurance5} alt="QualityAssurance5" />
             </figure>
-            <div className="p-4">
-              <h2 className="text-sm text-[#003540] dark:text-[#B3E5F1] font-semibold mb-2">Clients</h2>
-              <p className="text-sm text-[#666] dark:text-white leading-relaxed">Nafaa is the first complete and integrated system of expropriation in the Arabian Gulf region.</p>
-              <div className="mt-4 text-sm font-semibold underline cursor-pointer">
-                <span className="text-[#003540] dark:text-[#B3E5F1]">See More</span>
+            <div>
+              <h2 className="text-[14px] text-[#003540] font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+                Clients
+              </h2>
+              <div className="flex justify-center items-center">
+                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                  Nafaa is the first complete and integrated system of
+                  expropriation in the Arabian Gulf region.
+                </p>
+                <div className="flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap">
+                  <p>See More</p>
+                </div>
               </div>
             </div>
           </div>
-        ))}
-      </div>
+
+          {/* Card 2 */}
+          <div className="card bg-base-100 rounded-lg w-full sm:w-96 border-1 border border-stroke p-4">
+            <figure>
+              <img className="w-full h-[382px]" src={QualityAssurance6} alt="QualityAssurance6" />
+            </figure>
+            <div>
+              <h2 className="text-[14px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+                Clients
+              </h2>
+              <div className="flex justify-center items-center">
+                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                  Nafaa is the first complete and integrated system of
+                  expropriation in the Arabian Gulf region.
+                </p>
+                <div className="flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap">
+                  <p>See More</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="card rounded-lg bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4">
+            <figure>
+              <img className="w-full h-[382px]" src={QualityAssurance7} alt="QualityAssurance7" />
+            </figure>
+            <div>
+              <h2 className="text-[14px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+                Clients
+              </h2>
+              <div className="flex justify-center items-center">
+                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                  Nafaa is the first complete and integrated system of
+                  expropriation in the Arabian Gulf region.
+                </p>
+                <div className="flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap">
+                 <Link to="/SSSproject"> <p>See More</p></Link>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   );
 }

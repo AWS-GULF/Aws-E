@@ -7,7 +7,7 @@ import QualityAssurance6 from "../../assets/images/s6.svg";
 export default function SSSproject() {
   return (
     <div>
-      <div className=" flex justify-center my-16 text-justify gap-2">
+      <div className=" flex justify-center text-xl my-16 text-justify gap-2">
         <img src={QualityAssurance1} alt="QualityAssurance1" />
         <h1 className="dark:text-[#B3E5F1] ">Case Study</h1>
       </div>

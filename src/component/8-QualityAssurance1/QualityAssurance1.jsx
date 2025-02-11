@@ -1,17 +1,26 @@
-import QualityAssurance from "../../assets/images/sr-gray.svg";
-import QualityAssurance2 from "../../assets/images/accurate.svg";
-import QualityAssurance3 from "../../assets/images/qc.svg";
-import QualityAssurance4 from "../../assets/images/Quality Assurance3.svg";
+import QualityAssurance from "../../assets/images/OFFf.svg";
+import QualityAssurance2 from "../../assets/images/computer.svg";
+import QualityAssurance3 from "../../assets/images/Illustration.svg";
+import QualityAssurance4 from "../../assets/images/House.svg";
 import QualityAssurance5 from "../../assets/images/hwlk.svg";
 import QualityAssurance6 from "../../assets/images/qq.svg";
 import QualityAssurance7 from "../../assets/images/Component11.svg";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import SSSproject from "../SSSProject/SSSproject";
 
 export default function QualityAssurance1() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div>
       <div className="px-4 sm:px-12">
-        <div className="mt-16 mb-14 flex justify-center items-center text-[#295F70]">
-          <span><img src={QualityAssurance} alt="QualityAssurance" className=' ' /></span>
+        <div className="mt-16 mb-14 flex justify-center items-center text-xl  text-[#295F70]">
+          <span><img src={QualityAssurance} alt="QualityAssurance" className=' text-[#295F70] ' /></span>
           <p className="text-[#295F70] ps-2 font-mons text-hover font-bold text-[16px] tracking-[1.6px] dark:text-[#B3E5F1]">
             Services
           </p>
@@ -24,7 +33,7 @@ export default function QualityAssurance1() {
         </div>
 
         <div className="px-4 sm:px-[121px] flex-col justify-center text-[#003540] items-center dark:text-white">
-          <h1 className="text-center text-2xl sm:text-3xl text-[#000] mb-[20px] text-primary font-mons text-[32px] tracking-[3.2px] font-[500] dark:text-[#B3E5F1]">
+          <h1 className="text-center text-2xl sm:text-3xl text-[#000]  mb-[20px] text-primary font-mons text-[32px] tracking-[3.2px] font-[500] dark:text-[#B3E5F1]">
             Quality Assurance
           </h1>
           <p className="text-aboutCont text-xl text-left font-mons font-normal leading-[30px] tracking-[1.6px] mb-[60px] dark:text-white">
@@ -55,23 +64,20 @@ export default function QualityAssurance1() {
         </div>
 
         {/* Quality Control */}
-        <div className="flex flex-col sm:flex-row justify-center items-center px-4 sm:px-[121px] mb-16 gap-8">
-          <div className="sm:w-1/4">
-            <img src={QualityAssurance3} className="w-full" alt="" />
-          </div>
-          <div className="sm:w-3/4 pt-14 flex-col justify-center items-center ps-1">
-            <h4 className="font-mons text-[20px] font-[600] tracking-[2px] mb-4 dark:text-[#B3E5F1]">
-              Quality Control
-            </h4>
-            <p className="font-mons text-lg text-[#000] text-[16px] font-normal text-[400] tracking-[1.6px] leading-[30px] dark:text-white">
-              While a completely bug-free environment is unattainable, we have
-              developed highly effective testing and diagnostic strategies. These
-              cover both functional and non-functional aspects of your product,
-              ensuring a smooth development process and minimizing friction for
-              end users.
-            </p>
-          </div>
-        </div>
+        <div className="flex flex-col-reverse sm:flex-row justify-center items-center px-4 sm:px-[121px] mb-16 gap-8">
+  <div className="sm:w-2/4">
+    <img src={QualityAssurance3} className="w-full h-[230px]" alt="Quality Assurance" />
+  </div>
+  <div className="sm:w-3/4 pt-14 flex flex-col justify-center items-center ps-1">
+    <h4 className="font-mons text-[20px] font-[600] tracking-[2px] mb-4 dark:text-[#B3E5F1]">
+      Quality Control
+    </h4>
+    <p className="font-mons text-lg text-[#000] text-[16px] font-normal tracking-[1.6px] leading-[30px] dark:text-white">
+      While a completely bug-free environment is unattainable, we have developed highly effective testing and diagnostic strategies. These cover both functional and non-functional aspects of your product, ensuring a smooth development process and minimizing friction for end users.
+    </p>
+  </div>
+</div>
+
 
         {/* Account Management */}
         <div className="flex flex-col sm:flex-row justify-center items-center px-4 sm:px-[121px] mb-16 gap-8">
@@ -106,7 +112,7 @@ export default function QualityAssurance1() {
           </p>
         </div>
 
-        <div className="cards mb-[100px] flex flex-wrap justify-center gap-4">
+        <div className="cards mb-[100px] flex flex-wrap rounded-lg justify-center gap-4">
           {/* Card 1 */}
           <div className="card bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4">
             <figure>
@@ -164,7 +170,8 @@ export default function QualityAssurance1() {
                   expropriation in the Arabian Gulf region.
                 </p>
                 <div className="flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap">
-                  <p>See More</p>
+                 <Link to="/SSSproject"> <p>See More</p></Link>
+                 
                 </div>
               </div>
             </div>

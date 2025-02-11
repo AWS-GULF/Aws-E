@@ -48,7 +48,12 @@ export default function ClientsAcross() {
   }, []);
 
   return (
+    <>
+   
+ <h1 className="text-left mt-9 mb-24 ml-10 font-[Montserrat] text-[20px] font-semibold leading-[30px] tracking-[2px] underline decoration-solid"
+ > Explore Our Services </h1>
     <div className="flex flex-wrap ms-6 me-6  rounded-2xl px-6 bg-card  bg-[#EAF5F6] py-20 mt-28  ">
+      
       <div className="w-full lg:w-1/2">
         <h2 className="font-mons font-[600] text-5xl  text-aboutCont tracking-[4.8px] leading-[60px] ">
           Clients Across The Globe
@@ -64,7 +69,7 @@ export default function ClientsAcross() {
                   transition={{ duration: 0.4, ease: "easeInOut" }}
                 >
                   <p className="text-[#333] text-[16px] font-normal tracking-[1.6px] font-mons ">
-                    Recognizing the ever-evolving technological landscape and
+                  <i class="fa-solid fa-quote-left  pr-3 text-2xl"></i>Recognizing the ever-evolving technological landscape and
                     rapidly changing market needs, the
                   </p>
                 </motion.div>
@@ -80,7 +85,7 @@ export default function ClientsAcross() {
                   transition={{ duration: 0.4, ease: "easeInOut" }}
                 >
                   <p className="text-[#333] text-[16px] font-normal tracking-[1.6px] font-mons ">
-                    AWS is a forward-thinking IT system integrator and services
+                  <i class="fa-solid fa-quote-left  pr-3 text-2xl"></i> AWS is a forward-thinking IT system integrator and services
                     provider, established in 2024 with a focus on delivering
                     cutting-edge IT hardware solutions.
                   </p>
@@ -97,6 +102,7 @@ export default function ClientsAcross() {
               <h4 className="mt-6">Hossam Nasser</h4>
               <p className="mt-2">CEO at HWLK</p>
             </motion.div>
+          
           </motion.div>
         </div>
         <p className="pt-[40px] ps-1">
@@ -123,5 +129,6 @@ export default function ClientsAcross() {
         </Swiper>
       </div>
     </div>
+    </>
   );
 }

@@ -38,7 +38,7 @@ const jobs = [
   
   return (
     <div>
-      <div className=" flex justify-center m-auto my-14 gap-1">
+      <div className=" flex justify-center m-auto my-14 gap-1 text-xl ">
         <img src={QualityAssurance1} alt="QualityAssurance1" />
         <h1 className="  text-[#003540] font-bold dark:text-[#B3E5F1] ">Join US </h1>
       </div>
@@ -105,9 +105,9 @@ const jobs = [
           <li className="w-[40%] sm:w-[30%] flex-col ">
             <img src={QualityAssurance3} className="w-8 h-8 mb-6 dark:text-[#B3E5F1]" alt="QualityAssurance3 " />
             <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]">
-              Growth and Career <br /> Path
+              Growth and Career Path
             </h5>
-            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff]">
+            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly">
               AWS carefully selects the Top 2% of tech talents <br /> and offers them
               whatever is needed for them to <br /> grow.
             </p>
@@ -117,7 +117,7 @@ const jobs = [
             <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px]  dark:text-[#B3E5F1]">
               Compensation
             </h5>
-            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff]">
+            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly">
               AWS carefully selects the Top 2% of tech talents <br /> and offers them
               whatever is needed for them to <br /> grow.
             </p>
@@ -127,7 +127,7 @@ const jobs = [
             <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]">
               Gaining experience
             </h5>
-            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff]">
+            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly">
               Dealing with teammates of different expertise <br /> will help you gain
               more experience. Also you will <br /> be learning and introduced to the
               latest <br />technologies.
@@ -135,33 +135,33 @@ const jobs = [
           </li>
           <li className="w-[40%] sm:w-[30%] flex-col ">
             <img src={QualityAssurance6} className="w-8 h-8 mb-6" alt="QualityAssurance6" />
-            <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]">
+            <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1] justify-evenly">
               Culture and Work <br /> Environment
             </h5>
-            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff]">
+            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly">
               Looking for positive workplace culture? That’s <br /> AMS team where you
               can find all the support. <br /> We do go through hard times and
               workloads, <br /> but when we decide to take a break and have <br /> fun Nothing
               Can Stop Us!
             </p>
           </li>
-          <li className="w-[40%] sm:w-[30%] flex-col ">
+          <li className="w-[40%] sm:w-[30%] flex-col  ">
             <img src={QualityAssurance7} className="w-8 h-8 mb-6" alt=" QualityAssurance7" />
-            <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]">
+            <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1] justify-evenly">
               Learning budget
             </h5>
-            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff]">
+            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly">
               AMS invests a lot in its team’s training and <br /> continuous learning
               process, so each and <br /> everyone in the team gets well prepared to
               any <br /> challenges they face in any project.
             </p>
           </li>
-          <li className="w-[40%] sm:w-[30%] flex-col ">
+          <li className="w-[40%] sm:w-[30%] flex-col rounded-lg ">
             <img src={QualityAssurance8} className="w-8 h-8 mb-6" alt="QualityAssurance8" />
-            <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]">
+            <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]  justify-evenly">
               Diverse projects
             </h5>
-            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff]">
+            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly">
               At AMS, you will gain a lot of experience thanks <br /> to the variety of
               projects in different fields and <br /> sectors you will be working on.
             </p>

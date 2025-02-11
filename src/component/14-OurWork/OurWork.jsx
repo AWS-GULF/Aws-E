@@ -55,7 +55,7 @@ export default function OurWork() {
   return (
     <div>
  <div className="sm:ms-12 sm:me-12">
-      <div className="  mt-4 sm:mt-16 mb-8 sm:mb-14 flex justify-center dark:text-[#B3E5F1] items-center text-[#003540]">
+      <div className="  mt-4 sm:mt-16 mb-8 sm:mb-14 flex justify-center dark:text-[#B3E5F1] items-center text-[#003540] text-xl ">
         <img src={QualityAssurance} alt="QualityAssurance" className='dark:text-[#B3E5F1]' />
         <p className="ps-2 font-mons text-hover  font-bold sm:text-[16px] tracking-[1.6px]">
           Our Clients

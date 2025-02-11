@@ -15,7 +15,6 @@ export default function OurServicesHaedWard() {
             Solutions Provider of the World's Leading <br /> Brands Related to
             The IT Industry and Software Development.
           </p>
-          {/* ////////////////////////////////////// */}
 
           <div className="flex flex-wrap justify-center items-center gap-6 mt-8 w-full lg:w-[110%]">
             <div className="border p-3 rounded-xl min-w-[300px] flex-1 bg-tooHover ">
@@ -28,7 +27,7 @@ export default function OurServicesHaedWard() {
                 <h2 className="text-[#003540] pt-4 text-base font-[600] tracking-[1.6px] font-mons dark:text-[#B3E5F1] ">
                   Quality Assurance
                 </h2>
-                <p className="font-mons text-[12px] font-[500] text-[#666] mt-2 leading-6 dark:text-white">
+                <p className="font-mons text-[15px] font-[500] text-[#666] mt-2 leading-6 dark:text-white">
                   We believe in fostering a strong, collaborative partnership
                   with our clients. Ensuring the quality, functionality, and
                   reliability of the products we deliver is a responsibility we
@@ -52,7 +51,7 @@ export default function OurServicesHaedWard() {
                 <h2 className="text-[#003540] pt-4 text-base font-[600] tracking-[1.6px] font-mons dark:text-[#B3E5F1] ">
                   Mobile Development
                 </h2>
-                <p className="font-mons text-[12px] font-[500] text-[#666] mt-4 leading-6 dark:text-white">
+                <p className="font-mons text-[15px] font-[500] text-[#666] mt-4 leading-6 dark:text-white">
                   We create innovative, one-of-a-kind iOS and Android
                   applications with exceptional designs and seamless user
                   experiences. Our mobile solutions are designed to elevate your
@@ -75,7 +74,7 @@ export default function OurServicesHaedWard() {
                 <h2 className="text-[#003540] pt-4 text-base font-[600] tracking-[1.6px] font-mons dark:text-[#B3E5F1] ">
                   Web Development
                 </h2>
-                <p className="font-mons text-[12px] font-[500] text-[#666] mt-2 leading-6 dark:text-white">
+                <p className="font-mons text-[15px] font-[500] text-[#666] mt-2 leading-6 dark:text-white">
                   We specialize in developing custom web applications tailored
                   to your unique needs, focusing on delivering exceptional UI/UX
                   experiences. Leave concerns like performance optimization,
@@ -99,7 +98,7 @@ export default function OurServicesHaedWard() {
                 <h2 className="text-[#003540] pt-4 text-base font-[600] tracking-[1.6px] font-mons dark:text-[#B3E5F1] ">
                   IT & Hardware
                 </h2>
-                <p className="font-mons text-[12px] font-[500] text-[#666] mt-2 leading-6  dark:text-white">
+                <p className="font-mons text-[15px] lg:py-3 font-[500] text-[#666] mt-2 leading-6  dark:text-white">
                   Sindion Technology is a professional IT solutions and services
                   provider.We will help you to achieve your IT strategy by
                   providing you system integration, testing, application
@@ -121,7 +120,7 @@ export default function OurServicesHaedWard() {
                 <h2 className="text-[#003540] pt-4 text-base font-[600] tracking-[1.6px] font-mons dark:text-[#B3E5F1] ">
                 Staff Augmentation
                 </h2>
-                <p className="font-mons text-[12px] font-[500] text-[#666] mt-2 leading-6 dark:text-white">
+                <p className="font-mons text-[15px] font-[500] text-[#666] mt-2 leading-6 dark:text-white">
                   Staff augmentation is a versatile solution that enables
                   organizations to boost agility and quickly adapt to evolving
                   business demands. This approach is widely utilized across
@@ -144,7 +143,7 @@ export default function OurServicesHaedWard() {
                 <h2 className="text-[#003540] pt-4 text-base font-[600] tracking-[1.6px] font-mons dark:text-[#B3E5F1] ">
                 UI/UX Design
                 </h2>
-                <p className="font-mons text-[12px] font-[500] text-[#666] mt-2 leading-6 dark:text-white">
+                <p className="font-mons text-[15px] font-[500] text-[#666] mt-2 leading-6 dark:text-white">
                   Every interaction within our products is a result of
                   meticulous planning and design. From the coding of elements
                   and functions to the visual aesthetics, we excel at delivering
@@ -152,7 +151,7 @@ export default function OurServicesHaedWard() {
                   end users will find the experience both seamless and engaging.
                 </p>
                 <div className="card-actions justify-start mt-11 bg-text">
-                 <Link to="uiUxDesign"><button className="underline dark:text-[#B3E5F1] ">See More</button></Link> 
+                 <Link to="uiUxDesign"><button className="underline  dark:text-[#B3E5F1] ">See More</button></Link> 
                 </div>
               </div>
             </div>
