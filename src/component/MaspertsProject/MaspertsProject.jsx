@@ -18,7 +18,7 @@ export default function MaspertsProject() {
 
 
 {/*  */}
-<div className="flex flex-col sm:flex-row gap-4 mt-14">
+<div className="flex flex-col  justify-center sm:flex-row gap-4 mt-14">
   <div>
     <img src={part2} alt="part2" className="w-full" />
   </div>
@@ -42,7 +42,7 @@ export default function MaspertsProject() {
 </section>
 
 
-<div className="flex  flex-col lg:flex-row gap-4 lg:mt-14 items-center">
+<div className="flex justify-center  flex-col lg:flex-row gap-4 lg:mt-14 items-center">
   
   <div className="mt-20 lg:mt-0  ">
     <img src={part8} alt="part8" className="w-full" />

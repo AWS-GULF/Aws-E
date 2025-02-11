@@ -8,67 +8,73 @@ export default function Mainn() {
   const navigate = useNavigate();
   return (
     <>
-      <section className="lg:my-8 md:mt-8 relative">
-        <h2 className="bg-color text-center text-5xl  font-bold p-[60px] dark:text-white">
-          OUR WORK
+   <section className="w-[95%] mx-auto my-8">
+  <h2 className="bg-color text-center text-4xl sm:text-5xl font-bold p-[40px] sm:p-[60px] dark:text-white">
+    OUR WORK
+  </h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+
+    <div className="w-full">
+      <img src={OutWork2} alt="Masperts" className="mt-4 w-full cursor-pointer" onClick={() => navigate("maspertsProject")} />
+      <div className="mt-2 ml-4 sm:ml-6">
+        <h2 className="font-montserrat text-xl sm:text-2xl font-semibold dark:text-white">
+          Masperts
         </h2>
+        <p className="bg-color-p font-montserrat text-sm font-medium dark:text-white">
+          #Marketing
+        </p>
+      </div>
+    </div>
 
-        <div className="lg:flex lg:space-x-4 justify-between items-center">
-          <div className="lg:w-1/2 md:w-6/12 w-full mb-4 lg:mb-0">
-            <img src={OutWork2} alt="" className="mt-4 w-full" onClick={() => navigate("/maspertsProject")} />
-            <div className="mt-2 ml-6">
-              <h2 className="font-montserrat text-2xl font-semibold dark:text-white">
-                Masperts
-              </h2>
-              <p className="bg-color-p font-montserrat text-sm font-medium dark:text-white">
-                #Marketing
-              </p>
-            </div>
-          </div>
-          
-          <div className="lg:w-1/2 md:w-6/12 w-full">
-            <img src={OutWork1} alt="frame8" className="w-full mt-4" />
-            <div className="mt-2 ml-6">
-              <h2 className="font-montserrat text-2xl font-semibold dark:text-white">
-                Uber For Business
-              </h2>
-              <p className="bg-color-p font-montserrat text-sm font-medium dark:text-white">
-                #Marketing
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div className="lg:flex lg:space-x-4 justify-between items-center">
-          <div className="lg:w-1/2 md:w-6/12 w-full mb-4 lg:mb-0">
-            <img src={OutWork3} alt="frame7" className="mt-16 w-full" />
-            <div className="mt-2 ml-6">
-              <h2 className="font-montserrat text-2xl font-semibold dark:text-white">
-                Nike Campaign
-              </h2>
-              <p className="bg-color-p font-montserrat text-sm font-medium dark:text-white">
-                #Marketing
-              </p>
-            </div>
-            <a href="  " className="bg-text-button mt-[32px]">
-              Explore More of Our Work
-              <i className=" bg-text-button  fa-solid fa-arrow-right mx-2"></i>
-            </a>
-          </div>
+    <div className="w-full">
+      <img src={OutWork1} alt="Uber For Business" className="w-full " />
+      <div className="mt-2 ml-4 sm:ml-6">
+        <h2 className="font-montserrat text-xl sm:text-2xl font-semibold dark:text-white">
+          Uber For Business
+        </h2>
+        <p className="bg-color-p font-montserrat text-sm font-medium dark:text-white">
+          #Marketing
+        </p>
+      </div>
+    </div>
+  </div>
 
-          <div className="lg:w-1/2 md:w-6/12 w-full">
-            <img src={OutWork1} alt="frame8" className="w-full mt-16" />
-            <div className="mt-2 ml-6">
-              <h2 className="font-montserrat text-2xl font-semibold dark:text-white">
-                Uber For Business
-              </h2>
-              <p className="bg-color-p font-montserrat text-sm font-medium dark:text-white">
-                #Marketing
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center ">
+
+    <div className="w-full">
+      <img src={OutWork3} alt="Nike Campaign" className=" sm:mt-16 w-full" />
+      <div className="mt-2 ml-4 sm:ml-6">
+        <h2 className="font-montserrat text-xl sm:text-2xl font-semibold dark:text-white">
+          Nike Campaign
+        </h2>
+        <p className="bg-color-p font-montserrat text-sm font-medium dark:text-white">
+          #Marketing
+        </p>
+      </div>
+      <a href="#" className="bg-text-button inline-block mt-6 sm:mt-[32px] px-4 py-2 rounded-lg text-white font-semibold">
+        Explore More of Our Work
+        <i className="fa-solid fa-arrow-right mx-2"></i>
+      </a>
+    </div>
+
+ 
+    <div className="w-full">
+      <img src={OutWork1} alt="Uber For Business" className="w-full" />
+      <div className=" ml-4 sm:ml-6">
+        <h2 className="font-montserrat text-xl sm:text-2xl font-semibold dark:text-white">
+          Uber For Business
+        </h2>
+        <p className="bg-color-p font-montserrat text-sm font-medium dark:text-white">
+          #Marketing
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
     </>
   );
 }

@@ -12,9 +12,9 @@ function Layout() {
     <div>
 
 <Navbar/>
-<div className=" container ">
+
 <Outlet/>
-</div>
+
 <Footer/>
     </div>
   )

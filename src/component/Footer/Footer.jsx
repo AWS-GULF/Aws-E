@@ -1,12 +1,6 @@
 import React from "react";
 import footer from "../../assets/images/Footer.svg";
-import Symboll from "../../assets/images/Symbol8.svg";
-import instg from "../../assets/images/Symbol2.svg";
-import Linkedin from "../../assets/images/Symbol3.svg";
-import facebook from "../../assets/images/Symbol7.svg";
-import youtube from "../../assets/images/Symbol4.svg";
-import twitter from "../../assets/images/Symbol5.svg";
-import xx from "../../assets/images/Symbol6.svg";
+
 export default function Footer() {
   return (
     <div>
@@ -52,16 +46,14 @@ export default function Footer() {
             <a href="">
               <span className="bg-color-p dark:text-white">www.awasgulft.com</span>
             </a>
-            <div className="flex  gap-0 mt-3 md:gap-6">
-               <img src={Symboll} className=" w-6 h-4  bg-text-button transition  dark:text-white "></img>
-                                    <img src={instg} className="  w-6 h-4  md:text-base bg-text-button  dark:text-white "></img >
-                                    <img src={Linkedin} className=" w-6 h-4   md:text-base bg-text-button dark:text-white "></img>
-                                    <img src={facebook} className="  w-6 h-4  md:text-base bg-text-button dark:text-white "></img>
-                                   
-                                    <img src={youtube} className="  w-6 h-4   md:text-base bg-text-button dark:text-white "></img >
-                                    <img src={twitter} className=" w-6 h-4   md:text-base bg-text-button dark:text-white"></img >
-                                    <img src={xx} className=" w-6 h-4   md:text-base bg-text-button dark:text-white "></img >
-           
+            <div className="flex   mt-3   gap-3">
+            <i className="fas fa-globe w-6 h-6 cursor-pointer text-[#5BA89C]"></i>
+      <i className="fab fa-instagram w-6 h-6 cursor-pointer  text-[#5BA89C]"></i>
+      <i className="fab fa-linkedin w-6 h-6 cursor-pointer  text-[#5BA89C]"></i>
+      <i className="fab fa-facebook w-6 h-6 cursor-pointer  text-[#5BA89C]"></i>
+      <i className="fab fa-youtube w-6 h-6 cursor-pointer  text-[#5BA89C]"></i>
+      <i className="fab fa-twitter w-6 h-6 cursor-pointer  text-[#5BA89C]"></i>
+      <i className="fab fa-x-twitter w-6 h-6 cursor-pointer  text-[#5BA89C]"></i>
             </div>
           </div>
         </div>

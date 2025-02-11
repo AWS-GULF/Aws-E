@@ -7,6 +7,7 @@ import youtube from "../../assets/images/Symbol.svg";
 import Facebook from "../../assets/images/face.svg";
 import twitter from "../../assets/images/coda.svg";
 import xx from "../../assets/images/x_logo.png";
+import { Link } from 'react-router-dom';
 export default function FooterHardWard() {
   return (
 
@@ -34,12 +35,12 @@ export default function FooterHardWard() {
                 Services
               </h6>
               <ul className="text-[8px] lg:text-[16px] dark:text-white ">
-                <li className="lg:mb-2">Mobile Development</li>
-                <li className="lg:mb-2">Mobile Development</li>
-                <li className="lg:mb-2">User-Centric Design</li>
-                <li className="lg:mb-2">Data and Analytics</li>
-                <li className="lg:mb-2">IT Services and IT Consultant</li>
-                <li className="lg:mb-2">Software Consulting</li>
+            <Link to="/mobileDevelopment"> <li className="lg:mb-2">Mobile Development</li></Link> 
+            <Link to="/wepDevlopment"> <li className="lg:mb-2">Web  Development</li></Link>  
+            <Link to="/uiUxDesign"><li className="lg:mb-2">User-Centric Design</li></Link>  
+            <Link to="/qualityAssurance1"> <li className="lg:mb-2">Data and Analytics</li></Link>  
+            <Link to="/iTHardware"><li className="lg:mb-2">IT Services and IT Consultant</li></Link>  
+            <Link to="/StaffAugmentation"> <li className="lg:mb-2">Software Consulting</li></Link>  
               </ul>
             </nav>
             <nav className="  flex-col justify-start items-start ps-5  lg:ps-16 ">

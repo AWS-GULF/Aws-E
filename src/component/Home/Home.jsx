@@ -54,6 +54,7 @@ export default function Home() {
       {/* <section ref={(el) => (sectionsRef.current[5] = el)} data-section="choose" className="section"> */}
       <Choose />
       {/* </section> */}
+   
     </div>
   );
 }

@@ -70,7 +70,7 @@ color: #5BA89C;
 
 
 }
-/* أضف هذا لعدم وجود overflow غير مرغوب فيه */
+
 .dropdown-menu {
   overflow: hidden;
 }
