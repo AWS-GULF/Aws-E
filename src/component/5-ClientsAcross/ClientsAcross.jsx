@@ -63,50 +63,62 @@ export default function ClientsAcross() {
             <AnimatePresence>
               {!isOpen && (
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -20 }}
+                  // initial={{ opacity: 0, y: 20 }}
+                  // animate={{ opacity: 1, y: 0 }}
+                  // exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.4, ease: "easeInOut" }}
                 >
-                  <p className="text-[#333] text-[16px] font-normal tracking-[1.6px] font-mons ">
+                  <p className="text-[#333] text-[16px] font-normal tracking-[1.6px] font-mons font-montserrat ">
                   <i class="fa-solid fa-quote-left  pr-3 text-2xl"></i>Recognizing the ever-evolving technological landscape and
                     rapidly changing market needs, the
                   </p>
+
+
+                  <motion.div
+                
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+              >
+              <h4 className="mt-6 font-montserrat">Eslam Abosalem</h4>
+            <p className="mt-2 font-montserrat">CEA at HWLK</p>
+          
+              </motion.div>
                 </motion.div>
+                
               )}
+            
             </AnimatePresence>
 
             <AnimatePresence>
               {isOpen && (
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -20 }}
+                
                   transition={{ duration: 0.4, ease: "easeInOut" }}
                 >
-                  <p className="text-[#333] text-[16px] font-normal tracking-[1.6px] font-mons ">
+                  <p className="text-[#333] text-[16px] font-normal tracking-[1.6px] font-mons  font-montserrat">
                   <i class="fa-solid fa-quote-left  pr-3 text-2xl"></i> AWS is a forward-thinking IT system integrator and services
                     provider, established in 2024 with a focus on delivering
                     cutting-edge IT hardware solutions.
                   </p>
                 </motion.div>
               )}
+           
+              {isOpen && (
+                <motion.div
+                
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                >
+                <h4 className="mt-6 font-montserrat">Hossam Nasser</h4>
+              <p className="mt-2 font-montserrat">CEO at HWLK</p>
+            
+                </motion.div>
+              )}
             </AnimatePresence>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
-            >
-              <h4 className="mt-6">Hossam Nasser</h4>
-              <p className="mt-2">CEO at HWLK</p>
-            </motion.div>
-          
+         
           </motion.div>
         </div>
         <p className="pt-[40px] ps-1">
-          <button className="bg-text font-bold underline mt-28">WRITE YOUR TESTIMONIAL</button>
+          <button className="bg-text font-bold underline mt-28 font-montserrat">WRITE YOUR TESTIMONIAL</button>
         </p>
       </div>
 

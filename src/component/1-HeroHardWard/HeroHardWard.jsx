@@ -25,7 +25,7 @@ export default function HeroHardWard() {
         <h1 className="bg-text font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-widest font-mons mb-6 dark:text-white">
           Your Lighthouse <br className="hidden md:block" /> To Future
         </h1>
-        <p className="colorP bg-p font-mons text-base sm:text-lg md:text-xl text-secondary tracking-[1.7px] font-light leading-relaxed dark:text-white">
+        <p className="colorP bg-p font-mons text-base font-montserrat sm:text-lg md:text-xl text-secondary tracking-[1.7px] font-light leading-relaxed dark:text-white">
           Marketing consultancy, UX UI web design,{" "}
           <br className="hidden md:block" /> mobile apps & software coding,
           sponsored ads, <br className="hidden md:block" /> content creation,

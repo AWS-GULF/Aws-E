@@ -15,54 +15,54 @@ export default function BlogHeroWord() {
         <div className="w-full md:w-1/2">
           <div className="mb-10">
             <img src={blog} className="w-full" alt="AI in Social Media" />
-            <p className="text-sm text-secondary mt-4 dark:text-white">23 July 2024</p>
-            <p className="text-gray-700 text-lg mt-2 dark:text-white">
+            <p className="text-sm text-secondary mt-4 dark:text-white font-montserrat">23 July 2024</p>
+            <p className="text-gray-700 text-lg mt-2 dark:text-white font-montserrat">
               Discover how AI is revolutionizing social media marketing. This
               blog explores the benefits of AI-powered tools, from enhanced
               audience targeting and personalized user experiences to predictive
               analytics and automation. Learn how businesses are leveraging AI
               to optimize their social media strategies.
             </p>
-            <p className="mt-4 bg-text  underline font-bold  px-4 py-2 rounded dark:text-[#B3E5F1]">
+            <p className="mt-4 bg-text  underline font-bold  px-4 py-2 rounded dark:text-[#B3E5F1] font-montserrat">
               Read Article
             </p>
           </div>
 
           <div>
             <img src={blog3} className="w-full" alt="Video Production" />
-            <p className="text-sm text-secondary mt-4 dark:text-white">22 August 2023</p>
-            <p className="text-gray-700 text-lg mt-2 dark:text-white">
+            <p className="text-sm text-secondary mt-4 dark:text-white font-montserrat">22 August 2023</p>
+            <p className="text-gray-700 text-lg mt-2 dark:text-white font-montserrat">
               Discover how AI is revolutionizing social media marketing. This
               blog explores the benefits of AI-powered tools, from enhanced
               audience targeting and personalized user experiences to predictive
               analytics and automation. Learn how businesses are leveraging AI
               to optimize their social media strategies.
             </p>
-            <p className="mt-4 bg-text  underline font-bold  px-4 py-2 rounded dark:text-[#B3E5F1]">
+            <p className="mt-4 bg-text  underline font-bold  px-4 py-2 rounded dark:text-[#B3E5F1] font-montserrat">
               Read Article
             </p>
           </div>
         </div>
 
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold tracking-wider mb-6 bg-text mt-36 dark:text-white">
+          <h2 className="text-3xl font-bold tracking-wider mb-6 bg-text mt-36 dark:text-white font-montserrat">
             BLOG, UPDATES AND NEWS
           </h2>
-          <p className="mb-32 mt-4 bg-text  underline font-bold  px-4 py-2  rounded dark:text-[#B3E5F1]">
+          <p className="mb-32 mt-4 bg-text  underline font-bold  px-4 py-2  rounded dark:text-[#B3E5F1] font-montserrat">
               Read Article
             </p>
 
           <div>
             <img src={blog1} className="w-full" alt="Marketing" />
-            <p className="text-sm text-secondary mt-4 dark:text-white">22 August 2023</p>
-            <p className="text-gray-700 text-lg mt-2 dark:text-white">
+            <p className="text-sm text-secondary mt-4 dark:text-white font-montserrat">22 August 2023</p>
+            <p className="text-gray-700 text-lg mt-2 dark:text-white font-montserrat">
               Discover how AI is revolutionizing social media marketing. This
               blog explores the benefits of AI-powered tools, from enhanced
               audience targeting and personalized user experiences to predictive
               analytics and automation. Learn how businesses are leveraging AI
               to optimize their social media strategies.
             </p>
-            <p className="mt-4 bg-text  underline font-bold  px-4 py-2 rounded dark:text-[#B3E5F1]">
+            <p className="mt-4 bg-text  underline font-bold  px-4 py-2 rounded dark:text-[#B3E5F1] font-montserrat">
               Read Article
             </p>
           </div>
@@ -71,7 +71,7 @@ export default function BlogHeroWord() {
 
       {/* القسم الأخير */}
       <div className="mt-16 flex flex-wrap md:flex-nowrap items-center justify-around">
-        <p className="text-3xl font-bold tracking-wide text-[#333] dark:text-white">
+        <p className="text-3xl font-bold tracking-wide text-[#333] dark:text-white font-montserrat">
           Ready to take your business to the <br /> next level? Let’s create something <br />
           extraordinary together!
         </p>

@@ -39,7 +39,7 @@ export default function MainHardWard() {
           <h2 className="text-2xl font-bold text-[#003540] dark:text-[#B3E5F1] tracking-wide">
             About AWS GULF
           </h2>
-          <p className="text-[#333]  dark:text-white mt-8 text-lg font-normal leading-8 sm:text-base tracking-wide  text-justify whitespace-pre-line">
+          <p className="text-[#333] font-montserrat  dark:text-white mt-8 text-lg font-normal leading-8 sm:text-base tracking-wide  text-justify whitespace-pre-line">
   AWS is a forward-thinking IT system integrator and services provider, 
   established in 2024 with a focus on delivering cutting-edge IT hardware solutions. 
   Recognizing the ever-evolving technological landscape and rapidly changing market needs, 
@@ -60,7 +60,7 @@ export default function MainHardWard() {
             {/* قسم Creativity */}
             <div className="w-full md:w-1/2 ">
               <button className="  text-[20px] font-normal  leading-[24px] Style px-[80px] py-[24px] ">Creativity</button>
-              <ul className="text-secondary text-[14px] mt-4 space-y-2 text-color-fool  dark:text-white">
+              <ul className="text-secondary font-montserrat text-[14px] mt-4 space-y-2 text-color-fool  dark:text-white">
                 <li>Trendsetting Designs</li>
                 <li>Creative Content Creation</li>
                 <li>Interactive User Experience</li>
@@ -74,7 +74,7 @@ export default function MainHardWard() {
             {/* قسم Technology */}
             <div className="w-full md:w-1/2">
               <button className="  font-normal text-[20px]  leading-[24px] Style px-[80px] py-[24px]  dark:text-white  ">Technology</button>
-              <ul className="text-secondary text-[14px] mt-4 space-y-2 text-color-fool  dark:text-white">
+              <ul className="text-secondary text-[14px] mt-4  font-montserrat space-y-2 text-color-fool  dark:text-white">
                 <li>UX UI Design</li>
                 <li>Native & Flutter Mobile Apps Coding</li>
                 <li>Ecommerce Solutions</li>

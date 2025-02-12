@@ -11,7 +11,7 @@ export default function AboutHardWord() {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0, 
@@ -23,13 +23,15 @@ export default function AboutHardWord() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
+          centerMode: true,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 5,
+          centerMode: true,
         },
       },
     ],
@@ -37,33 +39,33 @@ export default function AboutHardWord() {
   
   return (
  <>
- <div>
+ <div className="overflow-hidden">
   <hr  className='my-5 lg:mt-0'/>
-  <div className="flex flex-col lg:flex-row justify-between text-center colorText   shadow-lg ">
+  <div className="flex flex-col md:m-auto md:justify-center lg:flex-row justify-center text-center colorText shadow-lg ">
     {/* العنوان العلوي */}
-    <div className="not-italic font-bold leading-normal   tracking-[5.76px] lg:w-6/12 colorText md:w-1/2 text-4xl text-[#333]  dark:text-white">
+    <div className="not-italic font-bold leading-normal tracking-[5.76px] lg:w-6/12 colorText md:w-1/2 text-4xl text-[#333] dark:text-white mx-auto">
       Our Leading Brands <br /> Partnerships
     </div>
 
-    <div className=" max-w-5xl lg:w-6/12 md:w-1/2 py-2">
-      <Slider {...settings} className="flex justify-center items-center">
-        <div className="">
-          <img src={microsoft} alt="Slider1" className=" h-20 w-40 object-contain  md:my-6" />
+    <div className="max-w-5xl lg:w-6/12 md:w-1/2 py-2 mx-auto">
+      <Slider {...settings} className="flex justify-center items-center w-full">
+        <div className="flex justify-center">
+          <img src={microsoft} alt="Slider1" className="h-20 w-40 object-contain md:my-6" />
         </div>
-        <div className="">
-          <img src={lenovo} alt="Slider2" className=" h-20 w-40 object-contain md:my-6" />
+        <div className="flex justify-center">
+          <img src={lenovo} alt="Slider2" className="h-20 w-40 object-contain md:my-6" />
         </div>
-        <div className="">
-          <img src={kaspersky} alt="Slider3" className=" h-20 w-40 object-contain md:my-6" />
+        <div className="flex justify-center">
+          <img src={kaspersky} alt="Slider3" className="h-20 w-40 object-contain md:my-6" />
         </div>
-        <div className="">
-          <img src={cisco} alt="Slider4" className=" h-20 w-40 object-contain md:my-6" />
+        <div className="flex justify-center">
+          <img src={cisco} alt="Slider4" className="h-20 w-40 object-contain md:my-6" />
         </div>
-        <div className="">
-          <img src={peplink} alt="Slider5" className=" h-20 w-40 object-contain md:my-6" />
+        <div className="flex justify-center">
+          <img src={peplink} alt="Slider5" className="h-20 w-40 object-contain md:my-6" />
         </div>
-        <div className="">
-          <img src={dell} alt="Slider6" className=" h-20 w-40 object-contain md:my-6" />
+        <div className="flex justify-center">
+          <img src={dell} alt="Slider6" className="h-20 w-40 object-contain md:my-6" />
         </div>
       </Slider>
     </div>

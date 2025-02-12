@@ -25,12 +25,12 @@ export default function About() {
 
   return (
     <section className="lg:mt-[100px] md:mt-6 relative px-6 md:px-12 lg:px-20">
-    {/* العنوان الرئيسي */}
+    
     <h2 className="font-montserrat text-[#19738C] font-bold text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] leading-[40px] md:leading-[50px] lg:leading-[60px] text-center max-w-6xl mx-auto dark:text-white">
       Expressive and enduring digital experiences.
     </h2>
 
-    {/* الفقرة التوضيحية */}
+   
     <p className=" font-montserrat  text-[#333]  md:text-xl leading-[28px] md:leading-[32px] lg:leading-[36px] py-6 dark:text-white x-auto">
       We help our clients accelerate progress, shape outcomes, and envision the future. 
       Through collaboration with companies across industries, we build scalable brand 
@@ -38,9 +38,9 @@ export default function About() {
       unlock potential. Learn more about what we can do for you.
     </p>
 
-    {/* القسم الرئيسي */}
+   
     <div className="flex flex-col lg:flex-row items-center gap-10 mt-10 max-w-6xl mx-auto">
-      {/* النصوص */}
+   
       <div className="w-full lg:w-1/2 text-center lg:text-left">
         <h2 className="font-montserrat font-semibold text-[24px] md:text-[28px] lg:text-[32px] leading-[32px] md:leading-[36px] dark:text-white">
           Branding & Design
@@ -57,7 +57,6 @@ export default function About() {
         </button>
       </div>
 
-      {/* السلايدر */}
       <div className="w-full lg:w-1/2 flex justify-center">
         <div className="w-[90%] md:w-[80%] lg:w-[100%] max-w-lg">
           <Slider {...settings}>
