@@ -32,9 +32,17 @@ export default function WorkFilter() {
 
   return (
     <div className="container sm:mx-auto sm:p-6">
-      <div className="flex-col justify-center items-end space-x-2 text-center sm:flex sm:flex-row sm:justify-center sm:space-x-4 mb-6 sm:px-[200px] sm:flex-wrap">
+      <div className="flex-col justify-center dark:text-black items-end space-x-2 text-center sm:flex sm:flex-row sm:justify-center sm:space-x-4 mb-6 sm:px-[200px] sm:flex-wrap">
         {categories.map((category) => (
-          <button key={category} onClick={() => setSelectedCategory(category)} className={`px-2 py-3 sm:px-4 sm:py-2 mb-4 rounded-lg font-bold transition-all ${selectedCategory === category ? "bg-primary text-white" : "border-primary bg-white text-black border rounded-[10px] hover:bg-primary hover:text-white"}`}>
+          <button 
+            key={category} 
+            onClick={() => setSelectedCategory(category)} 
+            className={`px-2 py-3 sm:px-4 sm:py-2 mb-4 rounded-lg font-bold transition-all 
+              ${selectedCategory === category 
+                ? "bg-primary text-black"  // هنا خليت النص أسود بدل أبيض
+                : "border-primary bg-white text-black border rounded-[10px] hover:bg-primary hover:text-white"
+              }`}
+          >
             {category}
           </button>
         ))}
@@ -51,9 +59,9 @@ export default function WorkFilter() {
             <div className="flex-col items-start justify-start">
               <h2 className="text-[12px] sm:text-[14px] text-primary font-mons dark:text-[#B3E5F1] font-[600] sm:tracking-[1.6px] mb-2">{card.title}</h2>
               <div className="sm:flex sm:flex-row sm:justify-center sm:items-center dark:text-white">
-                <p className="font-mons text-[10px] sm:text-[15px] font-[500] dark:text-[#666]">{card.description}</p>
+                <p className="font-mons text-[10px] sm:text-[15px] font-[500] dark:text-[#fff]">{card.description}</p>
                 {card.route && (
-                  <div className="flex justify-end items-end mt-12 text-[#003540] ps-6 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap">
+                  <div className="flex justify-end items-end mt-12 text-[#003540] ps-6 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap dark:text-[#B3E5F1]">
                     <Link to={card.route}><p>See More</p></Link>
                   </div>
                 )}

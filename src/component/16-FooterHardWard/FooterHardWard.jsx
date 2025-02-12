@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../../assets/images/logoSoft.svg";
+import logo from "../../assets/images/Logo22.svg";
 import Symboll from "../../assets/images/Symboll.svg";
 import instg from "../../assets/images/instg.svg";
 import Linkedin from "../../assets/images/linke.svg";
@@ -55,29 +55,30 @@ export default function FooterHardWard() {
                 <li className="lg:mb-4 mb-2 ">+966 569851545</li>
                 <li className="lg:mb-4 mb-2">wessam@awsgulf.com</li>
                 <li className="lg:mb-4 mb-2">www.awasgulft.com</li>
-                <ul className="mt-3   items-center hidden lg:flex dark:text-white ">
-                  <li>
-                    <img src={Symboll} className="w-6 h-4 " alt="behance" />
-                  </li>
-                  <li>
-                    <img src={instg} className="w-6 h-4" alt="instagram" />
-                  </li>
-                  <li>
-                    <img src={Linkedin} className="w-6 h-4" alt="linked in" />
-                  </li>
-                  <li>
-                    <img src={youtube} className="w-6 h-4" alt="youtube" />
-                  </li>
-                  <li>
-                    <img src={Facebook} className="w-6 h-4" alt="facebook" />
-                  </li>
-                  <li>
-                    <img src={twitter} className="w-6 h-4" alt="snap chat" />
-                  </li>
-                  <li>
-                    <img src={xx} className="w-6 h-4" alt="x" />
-                  </li>
-                </ul>
+                <ul className="mt-3 items-center hidden lg:flex gap-4 text-2xl dark:text-white">
+  <li>
+    <i className="fa-brands fa-behance text-[#003540] dark:text-[#fff]"></i>
+  </li>
+  <li>
+    <i className="fa-brands fa-instagram text-[#003540]  dark:text-[#fff]"></i>
+  </li>
+  <li>
+    <i className="fa-brands fa-linkedin text-[#003540] dark:text-[#fff]"></i>
+  </li>
+  <li>
+    <i className="fa-brands fa-youtube text-[#003540] dark:text-[#fff]"></i>
+  </li>
+  <li>
+    <i className="fa-brands fa-facebook text-[#003540] dark:text-[#fff]"></i>
+  </li>
+  <li>
+    <i className="fa-brands fa-twitter text-[#003540] dark:text-[#fff]"></i>
+  </li>
+  <li>
+    <i className="fa-brands fa-x-twitter text-[#003540] dark:text-[#fff]"></i>
+  </li>
+</ul>
+
               </ul>
             </nav>
           </div>

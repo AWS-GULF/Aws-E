@@ -22,11 +22,11 @@ export default function MobileDevelopment() {
     <div className="px-6 sm:px-12 lg:px-24">
       <div className="mt-16 mb-14 flex justify-center items-center text-xl ">
         <img src={QualityAssurance} alt="" className="w-8 h-8" />
-        <p className="ps-2 font-mons font-bold text-lg tracking-wide text-[#295F70] dark:text-[#B3E5F1]">Services</p>
+        <p className="ps-2 font-montserrat font-bold text-lg tracking-wide text-[#295F70] dark:text-[#B3E5F1]">Services</p>
       </div>
       
       <div className="text-center mb-20">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-[4.8px] leading-tight text-[#003540] dark:text-[#B3E5F1]">
+        <h2 className="text-3xl sm:text-4xl font-montserrat lg:text-5xl font-bold tracking-[4.8px] leading-tight text-[#003540] dark:text-[#B3E5F1]">
           Innovative mobile solutions to grow your business on the go.
         </h2>
       </div>
@@ -38,10 +38,10 @@ export default function MobileDevelopment() {
       </div>
 
       <div className="text-center mb-10">
-        <h1 className="mb-5 text-[#003540] dark:text-[#B3E5F1] font-mons text-2xl sm:text-3xl tracking-wide font-semibold">
+        <h1 className="mb-5 text-[#003540] dark:text-[#B3E5F1] font-montserrat text-2xl sm:text-3xl tracking-wide font-semibold">
           Mobile Development
         </h1>
-        <p className="text-aboutCont text-lg text-[#666] dark:text-white text-left leading-relaxed">
+        <p className="text-aboutCont text-lg text-[#666] font-montserrat dark:text-white text-left leading-relaxed">
           We create innovative, one-of-a-kind iOS and Android applications with exceptional designs and seamless user experiences. Our mobile solutions are designed to elevate your business, showcase your offerings, and captivate your audience, ensuring lasting engagement and satisfaction.
         </p>
       </div>
@@ -63,10 +63,10 @@ export default function MobileDevelopment() {
       ))}
       
       <div className="text-center mb-10 mt-40">
-        <h1 className="font-mons text-2xl mb-7 sm:text-3xl tracking-wide font-semibold text-[#003540] dark:text-[#B3E5F1]">
+        <h1 className="font-montserrat text-2xl mb-7 sm:text-3xl tracking-wide font-semibold text-[#003540] dark:text-[#B3E5F1]">
           Case Studies
         </h1>
-        <p className="text-lg leading-relaxed text-[#666] dark:text-white">
+        <p className="text-lg leading-relaxed text-[#666] dark:text-white font-montserrat">
           We stick to tried and true digital marketing strategies that we know will have the highest impact on your bottom line. Forget the fluff and empty promises of other companies, we offer services that are more likely to be profitable and sustainable. Check out our suite of digital marketing services designed to help accelerate your funnel.
         </p>
       </div>
@@ -78,11 +78,11 @@ export default function MobileDevelopment() {
               <img className="w-full h-[382px]" src={QualityAssurance5} alt="QualityAssurance5" />
             </figure>
             <div>
-              <h2 className="text-[14px] text-[#003540] font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+              <h2 className="text-[17px] text-[#003540] font-montserrat font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
                 Clients
               </h2>
               <div className="flex justify-center items-center">
-                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                <p className="font-montserrat text-[16px] text-[#666] dark:text-white ">
                   Nafaa is the first complete and integrated system of
                   expropriation in the Arabian Gulf region.
                 </p>
@@ -99,11 +99,11 @@ export default function MobileDevelopment() {
               <img className="w-full h-[382px]" src={QualityAssurance6} alt="QualityAssurance6" />
             </figure>
             <div>
-              <h2 className="text-[14px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+              <h2 className="text-[17px] text-primary font-montserrat font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
                 Clients
               </h2>
               <div className="flex justify-center items-center">
-                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                <p className="font-montserrat text-[16px] text-[#666] dark:text-white">
                   Nafaa is the first complete and integrated system of
                   expropriation in the Arabian Gulf region.
                 </p>
@@ -120,11 +120,11 @@ export default function MobileDevelopment() {
               <img className="w-full h-[382px]" src={QualityAssurance7} alt="QualityAssurance7" />
             </figure>
             <div>
-              <h2 className="text-[14px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+              <h2 className="text-[17px] text-primary font-montserrat font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
                 Clients
               </h2>
               <div className="flex justify-center items-center">
-                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                <p className="font-montserrat text-[16px] text-[#666] dark:text-white">
                   Nafaa is the first complete and integrated system of
                   expropriation in the Arabian Gulf region.
                 </p>

@@ -11,7 +11,7 @@ export default function AboutHardWord() {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0, 

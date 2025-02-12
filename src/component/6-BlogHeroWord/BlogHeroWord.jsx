@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import blog from "../../assets/images/blog.svg";
 import blog1 from "../../assets/images/blog2.svg";
@@ -75,7 +76,7 @@ export default function BlogHeroWord() {
           Ready to take your business to the <br /> next level? Let’s create something <br />
           extraordinary together!
         </p>
-        <button className="   py-1 px-6  backGroundButtonn md:m-auto text-white font-bold my-12 rounded-2xl   transition">
+        <button className="  backGroundButton  sm:px-6  dark:text-[#333]  dark:bg-[#B3E5F1]  py-1 px-6  backGroundButtonn md:m-auto text-white font-bold my-12 rounded-2xl   transition">
           <Modell/>
           </button>
       </div>

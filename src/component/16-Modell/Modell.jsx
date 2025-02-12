@@ -33,7 +33,7 @@ export default function Modell() {
 
   return (
     <>
-      <div onClick={openModal} className="cursor-pointer px-8 py-6 backGroundButton text-white rounded">
+      <div onClick={openModal} className="cursor-pointer px-8 py-6  text-white dark:text-[#333]  rounded">
         Contact Us Now
       </div>
 
@@ -68,7 +68,7 @@ export default function Modell() {
                   </button>
                   <div className="flex sm:justify-start justify-center sm:items-center">
                     <img src={QualityAssurance} alt="Quality Assurance" />
-                    <p className="ps-2 font-mons text-hover font-bold text-[16px] tracking-[1.6px] text-[#003540]">
+                    <p className="ps-2 font-mons text-hover font-bold text-[16px] tracking-[1.6px] ">
                       Contact Us Now
                     </p>
                   </div>
@@ -131,8 +131,8 @@ export default function Modell() {
                         </div>
                       </div>
 
-                      <div className="mt-4 flex justify-center">
-                        <button type="submit" className="px-8 py-6 backGroundButton text-white rounded">
+                      <div className="mt-4 flex justify-center ">
+                        <button type="submit" className="  text-white  ">
                         Contact Us Now
                         </button>
                       </div>

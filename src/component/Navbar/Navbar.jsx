@@ -542,7 +542,7 @@ export default function CustomNavbar() {
                 </div>
               </li>
             </ul>
-            <i className="fa-solid fa-globe mt-4 md:ml-4 text-base lg:ml-1 pb-3 lg:py-5 text-[#666] dark:text-white">
+            <i className="fa-solid fa-globe mt-4 md:ml-4 text-base lg:ml-1 pb-3 lg:py-5 text-[#666]  dark:text-white">
               {" "}
               العربية
             </i>
@@ -564,7 +564,7 @@ export default function CustomNavbar() {
             />
 
             {/* Contact Us Button */}
-            <Button className="backGroundButton bg-[#5BA89C]  my-8 rounded-full text-base py-6 px-4 mt-1 mx-auto text-amber-50 sm:py-2 sm:px-4 md:py-3 md:px-5 lg:py-4 lg:px-6  lg:my-3 lg:mx-5">
+            <Button className="   dark:bg-[#B3E5F1] my-8 rounded-full text-base py-6 px-4 mt-1 mx-auto text-amber-50 sm:py-2 sm:px-4 md:py-3 md:px-5 lg:py-4 lg:px-6  lg:my-3 lg:mx-5">
               Contact Us
             </Button>
           </FlowbiteNavbar.Collapse>

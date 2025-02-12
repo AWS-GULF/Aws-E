@@ -34,6 +34,7 @@ import Careers from './component/19-Careers/Careers';
 
 import JopDetetails from './component/JopDetetails/JopDetetails';
 import SSSproject from './component/SSSProject/SSSproject';
+import ModellButtonNavbar from './component/ModellButtonNavbar/ModellButtonNavbar';
 
 
 let createBrowser = createBrowserRouter([
@@ -62,6 +63,7 @@ let createBrowser = createBrowserRouter([
       { path: "/SSSproject", element: <SSSproject/> },
      
       { path: "/careers/:id", element: <JopDetetails/> },
+      { path: "ModellButtonNavbar", element: <ModellButtonNavbar/> },
 
       {
         path: "layout",

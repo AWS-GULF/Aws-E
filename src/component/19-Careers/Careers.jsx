@@ -1,5 +1,5 @@
 import React from "react";
-import QualityAssurance1 from "../../assets/images/sr-gray.svg";
+import QualityAssurance1 from "../../assets/images/OFFf.svg";
 import QualityAssurance2 from "../../assets/images/Frame 336.svg";
 
 import QualityAssurance3 from "../../assets/images/11.svg";
@@ -44,10 +44,10 @@ const jobs = [
       </div>
 
       <div className="flex justify-center items-center text-center">
-        <p className="text-5xl text-center font-bold tracking-[4.8px] leading-[75px] font-mons  text-[#003540] dark:text-[white]">
+        <p className="text-5xl text-center font-bold tracking-[4.8px]  mb-2 leading-[75px] font-mons  text-[#003540] dark:text-[white]">
           {" "}
           Join the team where <br />
-          innovation meets <br /> excellence.
+          innovation meets excellence.
         </p>
       </div>
 

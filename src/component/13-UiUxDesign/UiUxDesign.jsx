@@ -1,4 +1,4 @@
-import QualityAssurance from "../../assets/images/sr-gray.svg";
+import QualityAssurance from "../../assets/images/OFFf.svg";
 import QualityAssurance2 from "../../assets/images/Omputer.svg";
 import QualityAssurance3 from "../../assets/images/Omputer.svg";
 import QualityAssurance4 from "../../assets/images/Quality Assurance3.svg";
@@ -20,7 +20,7 @@ export default function uiUxDesign() {
           <span>
             <img src={QualityAssurance} alt="QualityAssurance" className=" " />
           </span>
-          <p className="text-[#295F70] ps-2 font-mons text-hover font-bold text-[16px] tracking-[1.6px] dark:text-[#B3E5F1]">
+          <p className="text-[#295F70] text-lg ps-2 font-mons text-hover font-bold text-[16px] tracking-[1.6px] dark:text-[#B3E5F1]">
             Services
           </p>
         </div>
@@ -103,19 +103,7 @@ export default function uiUxDesign() {
           </p>
         </div>
 
-        <div className="px-4 sm:px-[121px] flex-col justify-center items-center mb-10">
-          <h1 className="text-center mb-[20px] text-primary text-[#295F70] text-2xl sm:text-3xl font-mons text-[32px] tracking-[3.2px] font-[500] dark:text-[#B3E5F1]">
-            Case Studies
-          </h1>
-          <p className="text-aboutCont text-center font-mons font-normal text-xl text-[#666] leading-[30px] tracking-[1.6px] mb-[60px] dark:text-white">
-            We believe in fostering a strong, collaborative partnership with our
-            clients. Ensuring the quality, functionality, and reliability of the
-            products we deliver is a responsibility we take seriously. Beyond
-            meeting expectations, we proactively identify and resolve potential
-            risks and challenges, striving to exceed contractual commitments with
-            excellence.
-          </p>
-        </div>
+       
 
         <div className="cards mb-[100px] flex flex-wrap rounded-lg justify-center gap-4">
           {/* Card 1 */}
@@ -124,11 +112,11 @@ export default function uiUxDesign() {
               <img className="w-full h-[382px]" src={QualityAssurance5} alt="QualityAssurance5" />
             </figure>
             <div>
-              <h2 className="text-[14px] text-[#003540] font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+              <h2 className="text-[17px] text-[#003540] font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
                 Clients
               </h2>
               <div className="flex justify-center items-center">
-                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                <p className="font-mons text-[16px]s text-[#666] dark:text-white">
                   Nafaa is the first complete and integrated system of
                   expropriation in the Arabian Gulf region.
                 </p>
@@ -145,11 +133,11 @@ export default function uiUxDesign() {
               <img className="w-full h-[382px]" src={QualityAssurance6} alt="QualityAssurance6" />
             </figure>
             <div>
-              <h2 className="text-[14px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+              <h2 className="text-[17px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
                 Clients
               </h2>
               <div className="flex justify-center items-center">
-                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                <p className="font-mons text-[16px] text-[#666] dark:text-white">
                   Nafaa is the first complete and integrated system of
                   expropriation in the Arabian Gulf region.
                 </p>
@@ -166,11 +154,11 @@ export default function uiUxDesign() {
               <img className="w-full h-[382px] rounded-xl" src={QualityAssurance7} alt="QualityAssurance7" />
             </figure>
             <div>
-              <h2 className="text-[14px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+              <h2 className="text-[17px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
                 Clients
               </h2>
               <div className="flex justify-center items-center">
-                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                <p className="font-mons text-[16px] text-[#666] dark:text-white">
                   Nafaa is the first complete and integrated system of
                   expropriation in the Arabian Gulf region.
                 </p>

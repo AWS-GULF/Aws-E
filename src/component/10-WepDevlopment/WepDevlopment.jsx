@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import QualityAssurance from "../../assets/images/sr-gray.svg";
+import QualityAssurance from "../../assets/images/OFFf.svg";
 import QualityAssurance2 from "../../assets/images/computer.svg";
 import QualityAssurance3 from "../../assets/images/Illustration.svg";
 import QualityAssurance4 from "../../assets/images/frame1991.svg";
@@ -28,7 +28,7 @@ export default function WepDevlopment() {
       </div>
       
       <div className="text-center mb-20">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-[4.8px] leading-tight text-[#003540] dark:text-[#B3E5F1]">
+        <h2 className="text-3xl sm:text-4xl font-montserrat lg:text-5xl font-bold tracking-[4.8px] leading-tight text-[#003540] dark:text-[#B3E5F1]">
           Innovative web development solutions to empower your business, enhance your online presence, and drive success.
         </h2>
       </div>
@@ -43,7 +43,7 @@ export default function WepDevlopment() {
         <h1 className="mb-5 text-[#003540] dark:text-[#B3E5F1] font-mons text-2xl sm:text-3xl tracking-wide font-semibold">
           Web Development
         </h1>
-        <p className="text-aboutCont text-lg text-[#666] dark:text-white text-left leading-relaxed">
+        <p className="text-aboutCont text-lg text-[#666] dark:text-white text-left leading-relaxed font-montserrat">
           We specialize in developing custom web applications tailored to your unique needs, focusing on delivering exceptional UI/UX experiences. Leave concerns like performance optimization, accessibility, functionality, usability, and security to us, so you can focus on streamlining and enhancing your workflow.
         </p>
       </div>
@@ -77,7 +77,7 @@ export default function WepDevlopment() {
         <h1 className="text-primary font-mons text-2xl mb-7 sm:text-3xl tracking-wide font-semibold text-[#003540] dark:text-[#B3E5F1]">
           Case Studies
         </h1>
-        <p className="text-lg leading-relaxed text-[#666] dark:text-white">
+        <p className="text-lg leading-relaxed text-[#666] dark:text-white font-montserrat">
           We stick to tried and true digital marketing strategies that we know will have the highest impact on your bottom line. Forget the fluff and empty promises of other companies, we offer services that are more likely to be profitable and sustainable. Check out our suite of digital marketing services designed to help accelerate your funnel.
         </p>
       </div>
@@ -89,11 +89,11 @@ export default function WepDevlopment() {
               <img className="w-full h-[382px]" src={QualityAssurance5} alt="QualityAssurance5" />
             </figure>
             <div>
-              <h2 className="text-[14px] text-[#003540] font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+              <h2 className="text-[17px] text-base text-[#003540] font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
                 Clients
               </h2>
               <div className="flex justify-center items-center">
-                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                <p className="font-mons  text-[16px] text-[#666] dark:text-white font-montserrat">
                   Nafaa is the first complete and integrated system of
                   expropriation in the Arabian Gulf region.
                 </p>
@@ -105,16 +105,16 @@ export default function WepDevlopment() {
           </div>
 
           {/* Card 2 */}
-          <div className="card bg-base-100 rounded-lg w-full sm:w-96 border-1 border border-stroke p-4">
+          <div className="card bg-base-100  rounded-lg w-full sm:w-96 border-1 border border-stroke p-4">
             <figure>
               <img className="w-full h-[382px]" src={QualityAssurance6} alt="QualityAssurance6" />
             </figure>
             <div>
-              <h2 className="text-[14px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+              <h2 className="text-[17px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
                 Clients
               </h2>
               <div className="flex justify-center items-center">
-                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                <p className="font-mons text-[16px]  text-[#666] dark:text-white font-montserrat">
                   Nafaa is the first complete and integrated system of
                   expropriation in the Arabian Gulf region.
                 </p>
@@ -131,11 +131,11 @@ export default function WepDevlopment() {
               <img className="w-full h-[382px]" src={QualityAssurance7} alt="QualityAssurance7" />
             </figure>
             <div>
-              <h2 className="text-[14px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
+              <h2 className="text-[17px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
                 Clients
               </h2>
               <div className="flex justify-center items-center">
-                <p className="font-mons text-[12px] font-[500] text-[#666] dark:text-white">
+                <p className="font-mons text-[16px]   text-[#666] dark:text-white font-montserrat">
                   Nafaa is the first complete and integrated system of
                   expropriation in the Arabian Gulf region.
                 </p>

@@ -9,14 +9,14 @@ export default function Choose() {
   </h1>
 
   <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start lg:justify-between gap-10 max-w-screen-xl mx-auto">
-    {/* الجزء الأيسر */}
+ 
     <div className="text-center lg:ml-80 w-full lg:w-auto">
       <h2 className="font-montserrat font-semibold text-2xl leading-[36px] text-gray-800 dark:text-white">
         Our values are part of <br /> everything we create at <br /> Instrument.
       </h2>
     </div>
 
-    {/* الجزء الأيمن */}
+  
     <div className="w-full lg:w-6/12 space-y-6 text-center lg:text-left">
       <div>
         <h2 className="font-montserrat font-medium text-lg text-gray-900 dark:text-white">

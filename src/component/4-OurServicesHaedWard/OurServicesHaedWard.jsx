@@ -1,6 +1,7 @@
 import React from "react";
 import Services from "../../assets/images/Services.svg";
 import { Link } from "react-router-dom";
+
 import "./OutSerices.css";
 
 export default function OurServicesHaedWard() {
@@ -8,7 +9,7 @@ export default function OurServicesHaedWard() {
     <>
       <div className="px-4 sm:px-12 mt-24">
         <div className="text-center lg:mr-32 sm:text-left">
-          <h1 className="text-3xl text-[#003540] sm:text-[36px] font-mons font-bold mb-4 dark:text-[#B3E5F1] font-montserrat">
+          <h1 className="text-3xl text-[#003540] sm:text-[36px] font-bold mb-4 dark:text-[#B3E5F1] font-montserrat">
             Our Services
           </h1>
           <p className="text-xl sm:text-[20px] tracking-wide text-color-fool dark:text-white font-montserrat">
