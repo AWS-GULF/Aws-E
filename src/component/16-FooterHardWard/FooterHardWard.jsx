@@ -1,5 +1,6 @@
 import React from 'react'
-import logo from "../../assets/images/Logo22.svg";
+import logo from "../../assets/images/55.jpg";
+import logo1 from "../../assets/images/Frame 224.svg";
 import Symboll from "../../assets/images/Symboll.svg";
 import instg from "../../assets/images/instg.svg";
 import Linkedin from "../../assets/images/linke.svg";
@@ -20,17 +21,17 @@ export default function FooterHardWard() {
                 <img src={logo} className="mx-auto w-[50%]  lg:w-full   " />
                 <p className="lg:text-6 mx-auto  text-lg font-Arial text-primary font-semibold w-[50%]  lg:w-full dark:text-[#B3E5F1]  ">
                   {" "}
-                  Gulf
+              
                 </p>
               </div>
 
-              <p className=" dark:text-white text-primary font-bold lg:text-2xl md:3xl lg:ms-[-30px] md:ms-[-40px] lg:tracking-widest text-center lg:ps-12  font-mons lg:mt-4 hidden lg:block">
+              <p className=" dark:text-white text-[#003540]  font-montserrat font-bold lg:text-4xl md:3xl lg:ms-[-30px] md:ms-[-40px] lg:tracking-widest text-center lg:ps-12  font-mons lg:mt-4 hidden lg:block">
                 Your Lighthouse To <br /> The Future
               </p>
             </aside>
           </div>
-          <div className="w-[90%] lg:w-[60%] lg:flex justify-evenly flex items-start ms-10 lg:items-start ">
-            <nav className=" lg:pe-0">
+          <div className="w-[90%] lg:w-[60%] lg:mr-16 lg:flex justify-evenly flex items-start ms-10 lg:items-start ">
+            <nav className=" lg:pe-0 mr-9">
               <h6 className=" font-mons text-[16px] lg:text-[24px] font-[500] text-primary mb-2 dark:text-[#B3E5F1]  ">
                 Services
               </h6>
