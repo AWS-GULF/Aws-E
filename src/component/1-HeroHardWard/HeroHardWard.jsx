@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Logo from "../../assets/images/OFffF.svg";
-import Logo1 from "../../assets/images/Frame 2311.svg";
+import Logo from "../../assets/images/Logo44.svg";
+import Logo1 from "../../assets/images/Logo444.svg";
 import "../1-HeroHardWard/Hero.css";
 import { useNavigate } from "react-router-dom";
 import Modell from "../16-Modell/Modell";
@@ -51,13 +51,13 @@ export default function HeroHardWard() {
 
           <button
             onClick={handleClick}
-            className="px-9 py-7 rounded-2xl bg-text font-bold backgroundbutton2 dark:text-white"
+            className="px-9 py-7 rounded-2xl bg-text font-bold backgroundbutton2 dark:text-white dark:hover:text-black"
           >
             Marketing Services
           </button>
         </div>
 
-        <ul className="mt-6 sm:mt-8 flex justify-center md:justify-start items-center gap-3 sm:gap-7 bg-text mb-12 md:mb-[72px] text-lg sm:text-2xl">
+        <ul className="mt-6 sm:mt-8 flex justify-center md:justify-start items-center gap-3  sm:gap-7 bg-text mb-12 md:mb-[72px] text-lg sm:text-2xl">
           <i className="fa-brands fa-behance bg-icon transition icon-button dark:text-white"></i>
           <i className="fa-brands fa-instagram bg-icon transition icon-button  dark:text-white"></i>
           <i className="fa-brands fa-linkedin bg-icon transition icon-button  dark:text-white"></i>
