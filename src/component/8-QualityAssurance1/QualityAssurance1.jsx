@@ -18,6 +18,7 @@ export default function QualityAssurance1() {
 
   return (
     <div>
+
       <div className="px-4 sm:px-12">
         <div className="mt-16 mb-14 flex justify-center items-center text-xl  text-[#295F70]">
           <span><img src={QualityAssurance} alt="QualityAssurance" className=' text-[#295F70] ' /></span>

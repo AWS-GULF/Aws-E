@@ -37,7 +37,7 @@ export default function FooterHardWard() {
           <div className="w-full lg:w-[40%] ">
             <aside className="w-full flex lg:flex-col  justify-center items-center">
               <div className=" flex-col text-center items-center lg:justify-start  lg:items-start  w-[50%] mt-4   lg:w-36 lg:mt-[-5px]  lg:m-auto ">
-                <img src={currentLogo} className="mx-auto w-[50%]  lg:w-full   " />
+                <img src={currentLogo} className="mx-auto w-[50%] sm:w-[150px]  lg:w-full   " />
                 <p className="lg:text-6 mx-auto  text-lg font-Arial text-primary font-semibold w-[50%]  lg:w-full dark:text-[#B3E5F1]  ">
                   {" "}
               
@@ -54,20 +54,20 @@ export default function FooterHardWard() {
               <h6 className=" font-mons text-[16px] lg:text-[24px] font-[500] text-primary mb-2 dark:text-[#B3E5F1]  ">
                 Services
               </h6>
-              <ul className="text-[14px] lg:text-[16px] dark:text-white ">
-            <Link to="/mobileDevelopment"> <li className="lg:mb-2">Mobile Development</li></Link> 
-            <Link to="/wepDevlopment"> <li className="lg:mb-2">Web  Development</li></Link>  
-            <Link to="/uiUxDesign"><li className="lg:mb-2">User-Centric Design</li></Link>  
-            <Link to="/qualityAssurance1"> <li className="lg:mb-2">Data and Analytics</li></Link>  
-            <Link to="/iTHardware"><li className="lg:mb-2">IT Services and IT Consultant</li></Link>  
-            <Link to="/StaffAugmentation"> <li className="lg:mb-2">Software Consulting</li></Link>  
+              <ul className="text-[12px] lg:text-[16px] dark:text-white ">
+            <Link to="/mobileDevelopment"> <li className="lg:mb-2 ">Mobile Development</li></Link> 
+            <Link to="/wepDevlopment"> <li className="lg:mb-2 mt-2">Web  Development</li></Link>  
+            <Link to="/uiUxDesign"><li className="lg:mb-2 mt-2">User-Centric Design</li></Link>  
+            <Link to="/qualityAssurance1"> <li className="lg:mb-2 mt-2">Data and Analytics</li></Link>  
+            <Link to="/iTHardware"><li className="lg:mb-2 mt-2">IT Services and IT Consultant</li></Link>  
+            <Link to="/StaffAugmentation"> <li className="lg:mb-2 mt-2">Software Consulting</li></Link>  
               </ul>
             </nav>
             <nav className="  flex-col justify-start items-start ps-5  lg:ps-16 ">
               <h6 className="font-mons text-[16px] lg:text-[24px] font-[500] text-primary mb-2 dark:text-[#B3E5F1] ">
                 Contact Us
               </h6>
-              <ul className="text-[14px] lg:text-[16px] dark:text-white">
+              <ul className="text-[12px] md:text-[12px] lg:text-[16px] dark:text-white">
                 <li className="mb-4">
                   {" "}
                   Seville District 6346, Riyadh, Saudi Arabia
@@ -104,7 +104,7 @@ export default function FooterHardWard() {
           </div>
         </footer>
       </div>
-      <p className="ms-[96px] me-[96px] text-center mt-10 mb-3 text-[10px] dark:text-white">
+      <p className="ms-[96px] me-[96px] text-center mt-10 mb-3 text-[15px] dark:text-white">
         {" "}
         &copy; 2024 AWS Gulf . All rights reserved.
       </p>

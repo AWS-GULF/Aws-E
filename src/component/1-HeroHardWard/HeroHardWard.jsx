@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Logo from "../../assets/images/Logo44.svg";
-import Logo1 from "../../assets/images/Logo444.svg";
+import Logo from "../../assets/images/2222.svg";
+import Logo1 from "../../assets/images/22222.svg";
 import "../1-HeroHardWard/Hero.css";
 import { useNavigate } from "react-router-dom";
 import Modell from "../16-Modell/Modell";
@@ -45,29 +45,30 @@ export default function HeroHardWard() {
         </div>
 
         <div className="flex gap-3 sm:gap-5 justify-center md:justify-start items-center">
-          <button className=" backGroundButton py-1 px-4 sm:px-6 font-bold rounded-2xl transition  dark:text-[#333]   dark:bg-[#B3E5F1]">
+          <button className=" backGroundButton py-1 px-1 sm:px-6 font-bold rounded-2xl transition  dark:text-[#333]   dark:bg-[#B3E5F1]">
             <Modell />
           </button>
 
           <button
             onClick={handleClick}
-            className="px-9 py-7 rounded-2xl bg-text font-bold backgroundbutton2 dark:text-white dark:hover:text-black"
+            className="px-6 py-6  sm:py-7 sm:px-9 rounded-2xl bg-text font-bold backgroundbutton2 dark:text-white dark:hover:text-black"
           >
             Marketing Services
           </button>
         </div>
 
-        <ul className="mt-6 sm:mt-8 flex justify-center md:justify-start items-center gap-3  sm:gap-7 bg-text mb-12 md:mb-[72px] text-lg sm:text-2xl">
-          <i className="fa-brands fa-behance bg-icon transition icon-button dark:text-white"></i>
-          <i className="fa-brands fa-instagram bg-icon transition icon-button  dark:text-white"></i>
-          <i className="fa-brands fa-linkedin bg-icon transition icon-button  dark:text-white"></i>
-          <i className="fa-brands fa-youtube bg-icon transition icon-button  dark:text-white"></i>
-          <i className="fa-brands fa-snapchat bg-icon transition icon-button  dark:text-white"></i>
-          <i className="fa-brands fa-x-twitter bg-icon transition icon-button  dark:text-white"></i>
-        </ul>
+        <ul className="mt-6 sm:mt-8 flex justify-center md:justify-start items-center gap-7 sm:gap-9 bg-text mb-12 md:mb-[72px]">
+  <i className="fa-brands fa-behance bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i>
+  <i className="fa-brands fa-instagram bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i>
+  <i className="fa-brands fa-linkedin bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i>
+  <i className="fa-brands fa-youtube bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i>
+  <i className="fa-brands fa-snapchat bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i>
+  <i className="fa-brands fa-x-twitter bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i>
+</ul>
+
       </div>
 
-      <div className="w-full  md:w-[50%]  mb-5 lg:mb-28  flex justify-center md:mb-52 md:ml-24  lg:mr-20 lg:mt-10">
+      <div className="  md:w-[50%]   mb-3 lg:mb-32  flex justify-center md:mb-52 md:ml-24  lg:mr-20 lg:mt-10">
         <img
           src={currentLogo}
           alt="Marketing Strategy Illustration"

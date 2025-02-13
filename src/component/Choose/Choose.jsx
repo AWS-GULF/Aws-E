@@ -3,6 +3,7 @@ import React from "react";
 export default function Choose() {
   return (
     <div>
+
 <section className="my-12 relative px-6 lg:px-0">
   <h1 className="font-montserrat dark:text-white font-semibold text-4xl text-center text-primary py-6">
     Why Choose Us
