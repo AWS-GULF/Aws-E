@@ -24,7 +24,7 @@ export default function About() {
   };
 
   return (
-    <section className="lg:mt-[100px] md:mt-6 relative px-6 md:px-12 lg:px-20">
+    <section className="lg:mt-[100px] md:m-7  relative px-6  md:px-12 lg:px-20">
     
     <h2 className="font-montserrat text-[#19738C] font-bold text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] leading-[40px] md:leading-[50px] lg:leading-[60px] text-center max-w-6xl mx-auto dark:text-white">
       Expressive and enduring digital experiences.
@@ -57,7 +57,7 @@ export default function About() {
         </button>
       </div>
 
-      <div className="w-full lg:w-1/2 flex justify-center">
+      <div className="w-full lg:w-1/2 ">
         <div className="w-[90%] md:w-[80%] lg:w-[100%] max-w-lg">
           <Slider {...settings}>
             <img src={Frame1} alt="Frame1" className="w-full h-auto rounded-xl shadow-md" />

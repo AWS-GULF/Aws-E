@@ -51,7 +51,7 @@ export default function HeroHardWard() {
 
           <button
             onClick={handleClick}
-            className="px-8 py-6 rounded-2xl bg-text font-bold backgroundbutton2 dark:text-white"
+            className="px-9 py-7 rounded-2xl bg-text font-bold backgroundbutton2 dark:text-white"
           >
             Marketing Services
           </button>
@@ -67,7 +67,7 @@ export default function HeroHardWard() {
         </ul>
       </div>
 
-      <div className="w-full  md:w-[50%]  mb-5 lg:mb-28  flex justify-center lg:mr-20 lg:mt-10">
+      <div className="w-full  md:w-[50%]  mb-5 lg:mb-28  flex justify-center md:mb-52 md:ml-24  lg:mr-20 lg:mt-10">
         <img
           src={currentLogo}
           alt="Marketing Strategy Illustration"

@@ -38,19 +38,19 @@ export default function Aboutt() {
       <div className="sm:ms-12 sm:me-12">
         <div className="mt-4 sm:mt-16 mb-8 sm:mb-14 flex justify-center items-center text-xl ">
           <img src={QualityAssurance1} alt="QualityAssurance" />
-          <p className="ps-2 font-mons text-hover font-bold text-[16px] tracking-[1.6px]  text-base text-[#003540] dark:text-[#B3E5F1]">
+          <p className="ps-2 font-montserrat  text-hover font-bold text-[16px] tracking-[1.6px]  text-base text-[#003540] dark:text-[#B3E5F1]">
             About US
           </p>
         </div>
 
         <div className="flex justify-center items-center text-center">
-          <h2 className="sm:text-5xl text-[20px] font-mons font-bold mb-[80px] text-center sm:tracking-[4.8px] sm:leading-[75px] text-[#003540] dark:text-[#B3E5F1]">
+          <h2 className="sm:text-5xl text-[20px] font-montserrat  font-bold mb-[80px] text-center sm:tracking-[4.8px] sm:leading-[75px] text-[#003540] dark:text-[#B3E5F1]">
             AMS GULF Illuminating Your Path to the Future
           </h2>
         </div>
 
         <div className="mb-12">
-          <h2 className="text-[#003540] dark:text-[#003540] font-mons text-[16px] sm:text-[28px] font-bold tracking-[.64px] pb-8  dark:text-[#B3E5F1]">
+          <h2 className="text-[#003540]  font-montserrat  text-[16px] sm:text-[28px] font-bold tracking-[.64px] pb-8  dark:text-[#B3E5F1]">
             WHO WE ARE?
           </h2>
           <p className=" dark:text-white  text-aboutCont  text-[14px] text-justify sm:text-[16px] mb-8 sm:mb-0 tracking-[1.4px]  leading-[35px]">
@@ -60,26 +60,26 @@ export default function Aboutt() {
 
         <div className="flex flex-wrap justify-between sm:flex-nowrap sm:gap-4 mb-[100px]">
           <div className="flex-col ps-5 justify-evenly items-end sm:justify-center sm:items-center w-[45%] sm:w-1/3 mb-4">
-            <h3 className="sm:px-[80px] text-center  bg-[#295F70] dark:text-white  py-6 bg-primary rounded-[10px] text-[#fff] font-mons text-[16px] sm:text-[20px]  ">
+            <h3 className="sm:px-[80px] text-center  bg-[#295F70] dark:text-white  py-6 bg-primary rounded-[10px] text-[#fff] font-montserrat  text-[16px] sm:text-[20px]  ">
               OUR VISION
             </h3>
-            <p className="  mt-[30px] text-aboutCont dark:text-white  font-mons text-[14px]  text-balance sm:text-[16px] tracking-[1.12px]  leading-[16px] sm:leading-[35px]">
+            <p className="  mt-[30px] text-aboutCont dark:text-white  font-montserrat  text-[14px]  text-balance sm:text-[16px] tracking-[1.12px]  leading-[16px] sm:leading-[35px]">
               We work closely with our clients from marketing consultancy and strategy development to design, video production, and technology implementation. Whether creating digital projects, social media content, or custom websites and apps, our goal is to exceed expectations. Our integrated approach aligns each project with client objectives, leveraging our expertise in SEO, UX/UI, and innovative technologies, ensuring our team addresses specific needs for successful outcomes.
             </p>
           </div>
           <div className="flex-col ps-5 justify-evenly items-end sm:justify-center sm:items-center w-[45%] sm:w-1/3 mb-4">
-            <h3 className="sm:px-[80px] text-center  bg-[#295F70] dark:text-white  py-6 bg-primary rounded-[10px] text-[#fff] font-mons text-[16px] sm:text-[20px]  ">
+            <h3 className="sm:px-[80px] text-center  bg-[#295F70] dark:text-white  py-6 bg-primary rounded-[10px] text-[#fff] font-montserrat  text-[16px] sm:text-[20px]  ">
               OUR MESSAGE
             </h3>
-            <p className=" mt-[30px] text-aboutCont dark:text-white  font-mons text-[14px]  text-balance sm:text-[16px] tracking-[1.12px]  leading-[16px] sm:leading-[35px]">
+            <p className=" mt-[30px] text-aboutCont dark:text-white  font-montserrat  text-[14px]  text-balance sm:text-[16px] tracking-[1.12px]  leading-[16px] sm:leading-[35px]">
               We provide tailored solutions that align perfectly with your business needs. We are dedicated to sharing our expertise with our clients, and we take pride in collaborating across various industries to develop strategies that deliver impactful results. Our focus is on equipping our clients with the right resources to complement their technology, ensuring their success and growth.
             </p>
           </div>
           <div className="flex-col ps-5 justify-evenly items-end sm:justify-center sm:items-center w-[40%] sm:w-1/3 mt-4 sm:mt-0">
-            <p className="sm:px-[80px] text-center  bg-[#295F70] dark:text-white  py-6 bg-primary rounded-[10px] text-[#fff] font-mons text-[16px] sm:text-[20px]  ">
+            <p className="sm:px-[80px] text-center  bg-[#295F70] dark:text-white  py-6 bg-primary rounded-[10px] text-[#fff] font-montserrat  text-[16px] sm:text-[20px]  ">
               OUR MISSION
             </p>
-            <p className=" mt-[30px] text-aboutCont  dark:text-white  font-mons text-[14px]  text-balance sm:text-[16px] tracking-[1.12px]  leading-[16px] sm:leading-[35px]">
+            <p className=" mt-[30px] text-aboutCont  dark:text-white  font-montserrat  text-[14px]  text-balance sm:text-[16px] tracking-[1.12px]  leading-[16px] sm:leading-[35px]">
               With a strong foundation in understanding how businesses grow online through various platforms such as websites, social media, mobile applications, and more, we offer a marketing methodology that brings an interactive communication experience across different channels. By staying at the forefront of technological advancements, especially in AI, we ensure a cutting-edge approach that maximizes return on investment for our business clients.
             </p>
           </div>
@@ -110,7 +110,7 @@ export default function Aboutt() {
                     alt="QualityAssurance"
                   />
                   <p
-                    className={`font-bold text-[10px] sm:text-[20px] font-mons sm:ps-4 ${
+                    className={`font-bold text-[10px] sm:text-[20px] font-montserrat  sm:ps-4 ${
                       hoveredIndex === index ? "text-primary" : "text-secondary"
                     }`}
                   >
@@ -136,7 +136,7 @@ export default function Aboutt() {
           </div>
         </div>
 
-        <p className="font-mons text-[28px] font-bold tracking-[.64px] dark:text-[#B3E5F1]  mb-8">
+        <p className="font-montserrat  text-[28px] font-bold tracking-[.64px] dark:text-[#B3E5F1]  mb-8">
           Meet the Visionaries Behind AMS GULF
         </p>
 
@@ -146,7 +146,7 @@ export default function Aboutt() {
               <img src={pers1} alt="person" className="rounded-[10px] w-full h-full object-cover" />
             </figure>
             <div className="text-center mt-4">
-              <h2 className="dark:text-white  font-mons  font-[600] tracking-[1.6]">Mostafa Karam</h2>
+              <h2 className="dark:text-white  font-montserrat   font-[600] tracking-[1.6]">Mostafa Karam</h2>
               <p className='dark:text-white '>CMO</p>
             </div>
           </div>
@@ -156,7 +156,7 @@ export default function Aboutt() {
               <img src={pers2} alt="person" className="rounded-[10px] w-full h-full object-cover" />
             </figure>
             <div className="text-center mt-4">
-              <h2 className="tdark:text-white dark:text-white  font-mons font-[600] tracking-[1.6]">Mahmoud Mohamed</h2>
+              <h2 className="tdark:text-white dark:text-white  font-montserrat  font-[600] tracking-[1.6]">Mahmoud Mohamed</h2>
               <p className='dark:text-white '>CTO</p>
             </div>
           </div>
@@ -166,14 +166,14 @@ export default function Aboutt() {
               <img src={pers3} alt="person" className="rounded-[10px] w-full h-full object-cover" />
             </figure>
             <div className="text-center mt-4">
-              <h2 className="tdark:text-white dark:text-white  font-mons font-[600] tracking-[1.6]">Ahmed Mohamed</h2>
+              <h2 className="tdark:text-white dark:text-white  font-montserrat  font-[600] tracking-[1.6]">Ahmed Mohamed</h2>
               <p className='dark:text-white '>CEO</p>
             </div>
           </div>
         </div>
 
         <div className="flex justify-center items-center">
-          <h3 className="font-mons dark:text-[#B3E5F1]  text-[16px] sm:text-[32px] font-bold tracking-[5.12px]">
+          <h3 className="font-montserrat  dark:text-[#B3E5F1]  text-[16px] sm:text-[32px] font-bold tracking-[5.12px]">
             Our Leading Brands Partnerships
           </h3>
         </div>

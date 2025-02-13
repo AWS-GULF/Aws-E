@@ -1,6 +1,7 @@
-import React from 'react'
-import logo from "../../assets/images/55.jpg";
-import logo1 from "../../assets/images/Frame 224.svg";
+import React, { useEffect, useState } from "react";
+import logo from "../../assets/images/LogoWhite.svg";
+import logo1 from "../../assets/images/LogoDark.svg";
+
 import Symboll from "../../assets/images/Symboll.svg";
 import instg from "../../assets/images/instg.svg";
 import Linkedin from "../../assets/images/linke.svg";
@@ -10,6 +11,24 @@ import twitter from "../../assets/images/coda.svg";
 import xx from "../../assets/images/x_logo.png";
 import { Link } from 'react-router-dom';
 export default function FooterHardWard() {
+    const [currentLogo, setCurrentLogo] = useState(logo);
+  
+    useEffect(() => {
+      const checkDarkMode = () => {
+        const isDark = document.documentElement.classList.contains("dark");
+        setCurrentLogo(isDark ? logo1 : logo);
+      };
+  
+      
+      checkDarkMode();
+  
+      
+      const observer = new MutationObserver(checkDarkMode);
+      observer.observe(document.documentElement, { attributes: true });
+  
+      return () => observer.disconnect();
+    }, []);
+  
   return (
 
     <div>
@@ -18,7 +37,7 @@ export default function FooterHardWard() {
           <div className="w-full lg:w-[40%] ">
             <aside className="w-full flex lg:flex-col  justify-center items-center">
               <div className=" flex-col text-center items-center lg:justify-start  lg:items-start  w-[50%] mt-4   lg:w-36 lg:mt-[-5px]  lg:m-auto ">
-                <img src={logo} className="mx-auto w-[50%]  lg:w-full   " />
+                <img src={currentLogo} className="mx-auto w-[50%]  lg:w-full   " />
                 <p className="lg:text-6 mx-auto  text-lg font-Arial text-primary font-semibold w-[50%]  lg:w-full dark:text-[#B3E5F1]  ">
                   {" "}
               
@@ -35,7 +54,7 @@ export default function FooterHardWard() {
               <h6 className=" font-mons text-[16px] lg:text-[24px] font-[500] text-primary mb-2 dark:text-[#B3E5F1]  ">
                 Services
               </h6>
-              <ul className="text-[8px] lg:text-[16px] dark:text-white ">
+              <ul className="text-[14px] lg:text-[16px] dark:text-white ">
             <Link to="/mobileDevelopment"> <li className="lg:mb-2">Mobile Development</li></Link> 
             <Link to="/wepDevlopment"> <li className="lg:mb-2">Web  Development</li></Link>  
             <Link to="/uiUxDesign"><li className="lg:mb-2">User-Centric Design</li></Link>  
@@ -48,7 +67,7 @@ export default function FooterHardWard() {
               <h6 className="font-mons text-[16px] lg:text-[24px] font-[500] text-primary mb-2 dark:text-[#B3E5F1] ">
                 Contact Us
               </h6>
-              <ul className="text-[8px] lg:text-[16px] dark:text-white">
+              <ul className="text-[14px] lg:text-[16px] dark:text-white">
                 <li className="mb-4">
                   {" "}
                   Seville District 6346, Riyadh, Saudi Arabia

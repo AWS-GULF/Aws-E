@@ -9,7 +9,7 @@ import kotlin from "../../assets/images/tailwind_css_logo.svg";
 import node from "../../assets/images/node.svg";
 import oracle from "../../assets/images/oracle.svg";
 import radius from "../../assets/images/radius.svg";
-import python from "../../assets/images/pythonn.svg";
+import python from "../../assets/images/python5.svg";
 import { Link } from 'react-router-dom';
 
 export default function uiUxDesign() {
@@ -33,7 +33,7 @@ export default function uiUxDesign() {
 
 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-center items-center mb-20">
         {[kotlin, oracle, python, radius, node].map((img, index) => (
-          <img key={index} src={img} alt="tech" className="w-10 sm:w-20 lg:w-20 rounded-full mx-auto" />
+          <img key={index} src={img} alt="tech" className="w-10 sm:w-20 lg:w-20  mx-auto" />
         ))}
       </div>
 
