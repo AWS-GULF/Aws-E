@@ -1,7 +1,15 @@
 import React from "react";
 import QualityAssurance1 from "../../assets/images/OFFf.svg";
 import QualityAssurance2 from "../../assets/images/Frame 336.svg";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBriefcase,
+  faDollarSign,
+  faLightbulb,
+  faUsers,
+  faBook,
+  faLayerGroup,
+} from "@fortawesome/free-solid-svg-icons";
 import QualityAssurance3 from "../../assets/images/11.svg";
 import QualityAssurance4 from "../../assets/images/y2.svg";
 import QualityAssurance5 from "../../assets/images/y3.svg";
@@ -36,6 +44,7 @@ const jobs = [
   
   ];
   
+  
   return (
     <div>
       <div className=" flex justify-center m-auto my-14 gap-1 text-xl ">
@@ -64,7 +73,67 @@ const jobs = [
     <img src={QualityAssurance2} alt="QualityAssurance2 w-full   " />
 </div>
       
+<ul className="flex flex-wrap sm:gap-4 justify-center gap-3">
+      <li className="w-[40%] sm:w-[30%] flex-col text-center">
+        <FontAwesomeIcon icon={faBriefcase} className="w-8 h-8 mb-6 dark:text-[#B3E5F1]" />
+        <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]">
+          Growth and Career Path
+        </h5>
+        <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff]">
+          AWS carefully selects the Top 2% of tech talents and offers them whatever is needed for them to grow.
+        </p>
+      </li>
 
+      <li className="w-[40%] sm:w-[30%] flex-col text-center">
+        <FontAwesomeIcon icon={faDollarSign} className="w-8 h-8 mb-6 dark:text-[#B3E5F1]" />
+        <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]">
+          Compensation
+        </h5>
+        <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff]">
+          AWS carefully selects the Top 2% of tech talents and offers them whatever is needed for them to grow.
+        </p>
+      </li>
+
+      <li className="w-[40%] sm:w-[30%] flex-col text-center">
+        <FontAwesomeIcon icon={faLightbulb} className="w-8 h-8 mb-6 dark:text-[#B3E5F1]" />
+        <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]">
+          Gaining experience
+        </h5>
+        <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff]">
+          Dealing with teammates of different expertise will help you gain more experience. Also, you will be learning and introduced to the latest technologies.
+        </p>
+      </li>
+
+      <li className="w-[40%] sm:w-[30%] flex-col text-center">
+        <FontAwesomeIcon icon={faUsers} className="w-8 h-8 mb-6 dark:text-[#B3E5F1]" />
+        <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]">
+          Culture and Work Environment
+        </h5>
+        <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff]">
+          Looking for positive workplace culture? That’s AMS team where you can find all the support. We do go through hard times and workloads, but when we decide to take a break and have fun, nothing can stop us!
+        </p>
+      </li>
+
+      <li className="w-[40%] sm:w-[30%] flex-col text-center">
+        <FontAwesomeIcon icon={faBook} className="w-8 h-8 mb-6 dark:text-[#B3E5F1]" />
+        <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]">
+          Learning budget
+        </h5>
+        <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff]">
+          AMS invests a lot in its team’s training and continuous learning process, so each and everyone in the team gets well prepared to any challenges they face in any project.
+        </p>
+      </li>
+
+      <li className="w-[40%] sm:w-[30%] flex-col text-center">
+        <FontAwesomeIcon icon={faLayerGroup} className="w-8 h-8 mb-6 dark:text-[#B3E5F1]" />
+        <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]">
+          Diverse projects
+        </h5>
+        <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff]">
+          At AMS, you will gain a lot of experience thanks to the variety of projects in different fields and sectors you will be working on.
+        </p>
+      </li>
+    </ul>
       
 {/*  */}
 

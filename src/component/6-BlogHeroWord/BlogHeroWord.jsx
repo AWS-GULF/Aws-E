@@ -24,7 +24,7 @@ export default function BlogHeroWord() {
               analytics and automation. Learn how businesses are leveraging AI
               to optimize their social media strategies.
             </p>
-            <p className="mt-4 bg-text  underline font-bold  px-4 py-2 rounded dark:text-[#B3E5F1] font-montserrat">
+            <p className="mt-4 bg-text  underline font-bold  w py-2 rounded dark:text-[#B3E5F1] font-montserrat">
               Read Article
             </p>
           </div>
@@ -39,7 +39,7 @@ export default function BlogHeroWord() {
               analytics and automation. Learn how businesses are leveraging AI
               to optimize their social media strategies.
             </p>
-            <p className="mt-4 bg-text  underline font-bold  px-4 py-2 rounded dark:text-[#B3E5F1] font-montserrat">
+            <p className="mt-4 bg-text  underline font-bold  w py-2 rounded dark:text-[#B3E5F1] font-montserrat">
               Read Article
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function BlogHeroWord() {
           <h2 className="text-3xl font-bold tracking-wider mb-6 bg-text mt-36 dark:text-white font-montserrat">
             BLOG, UPDATES AND NEWS
           </h2>
-          <p className="mb-32 mt-4 bg-text  underline font-bold  px-4 py-2  rounded dark:text-[#B3E5F1] font-montserrat">
+          <p className="mb-32 mt-4 bg-text  underline font-bold  w py-2  rounded dark:text-[#B3E5F1] font-montserrat">
               Read Article
             </p>
 
@@ -63,7 +63,7 @@ export default function BlogHeroWord() {
               analytics and automation. Learn how businesses are leveraging AI
               to optimize their social media strategies.
             </p>
-            <p className="mt-4 bg-text  underline font-bold  px-4 py-2 rounded dark:text-[#B3E5F1] font-montserrat">
+            <p className="mt-4 bg-text  underline font-bold  w py-2 rounded dark:text-[#B3E5F1] font-montserrat">
               Read Article
             </p>
           </div>

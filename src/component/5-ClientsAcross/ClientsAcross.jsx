@@ -50,7 +50,7 @@ export default function ClientsAcross() {
 
   return (
     <>
-      <h1 className="text-left mt-9 dark:text-[#B3E5F1] mb-24 ml-10 font-[Montserrat] text-[20px] font-semibold leading-[30px] tracking-[2px] underline decoration-solid">
+      <h1 className="text-left mt-9 dark:text-[#B3E5F1] mb-24 ml-10 font-montserrat text-[20px] font-semibold leading-[30px] tracking-[2px] underline decoration-solid">
         Explore Our Services
       </h1>
       <div className="flex flex-wrap ms-6 me-6 rounded-2xl px-6 bg-card bg-[#EAF5F6] py-20 mt-28">
@@ -80,7 +80,7 @@ export default function ClientsAcross() {
             </motion.div>
           </div>
           <p className="pt-[40px] ps-1">
-            <button className="bg-text font-bold underline mt-28 font-montserrat">
+            <button className="bg-text font-bold underline lg:mt-28 md:my-20 font-montserrat">
               WRITE YOUR TESTIMONIAL
             </button>
           </p>
