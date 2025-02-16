@@ -73,7 +73,7 @@ export default function QualityAssurance1() {
     <h4 className="font-montserrat text-lg text-[20px] font-[600] tracking-[2px] mb-4 dark:text-[#B3E5F1]">
       Quality Control
     </h4>
-    <p className="font-montserrat text-lg text-lg text-[#000] text-[16px] font-normal tracking-[1.6px] leading-[30px] dark:text-white">
+    <p className="font-montserrat text-lg  text-[#000] text-[16px] font-normal tracking-[1.6px] leading-[30px] dark:text-white">
       While a completely bug-free environment is unattainable, we have developed highly effective testing and diagnostic strategies. These cover both functional and non-functional aspects of your product, ensuring a smooth development process and minimizing friction for end users.
     </p>
   </div>
@@ -100,17 +100,12 @@ export default function QualityAssurance1() {
 
         {/* Case Studies Section */}
         <div className="px-4 sm:px-[121px] flex-col justify-center items-center mb-10">
-          <h1 className="text-center mb-[20px] text-primary text-[#295F70] text-2xl sm:text-3xl font-montserrat text-lg text-[32px] tracking-[3.2px] font-[500] dark:text-[#B3E5F1]">
+          <h1 className="text-center mb-[20px] text-primary text-[#295F70] text-2xl sm:text-3xl font-montserrat  text-[32px] tracking-[3.2px] font-[500] dark:text-[#B3E5F1]">
             Case Studies
           </h1>
-          <p className="text-aboutCont text-center font-montserrat text-lg font-normal text-xl text-[#666] leading-[30px] tracking-[1.6px] mb-[60px] dark:text-white">
-            We believe in fostering a strong, collaborative partnership with our
-            clients. Ensuring the quality, functionality, and reliability of the
-            products we deliver is a responsibility we take seriously. Beyond
-            meeting expectations, we proactively identify and resolve potential
-            risks and challenges, striving to exceed contractual commitments with
-            excellence.
-          </p>
+          <p className="text-lg leading-relaxed text-[#666] dark:text-white font-montserrat">
+          We stick to tried and true digital marketing strategies that we know will have the highest impact on your bottom line. Forget the fluff and empty promises of other companies, we offer services that are more likely to be profitable and sustainable. Check out our suite of digital marketing services designed to help accelerate your funnel.
+        </p>
         </div>
 
         <div className="cards mb-[100px]   flex flex-wrap rounded-lg justify-center gap-4">
