@@ -51,7 +51,7 @@ export default function JobApplicationForm() {
         )}
       </div>
 
-      <h3 className="font-bold text-lg mb-3 text-[#B3E5F1]">Personal information</h3>
+      <h3 className="font-bold text-lg mb-3 text-[#666] dark:text-[#B3E5F1]">Personal information</h3>
 
       <form className="space-y-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-[#666] ">

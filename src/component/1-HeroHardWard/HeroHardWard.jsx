@@ -32,7 +32,7 @@ export default function HeroHardWard() {
   return (
     <div className="container mx-auto px-4 sm:px-12 flex flex-col md:flex-row md:justify-between md:items-center">
       <div className="md:w-1/2 w-full text-center md:text-left">
-        <div className="mb-10 md:mb-16">
+        <div className=" md:mb-16">
           <h1 className="bg-text font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-widest font-mons mb-6 dark:text-white">
             Your Lighthouse <br className="hidden md:block" /> To Future
           </h1>
@@ -44,7 +44,7 @@ export default function HeroHardWard() {
           </p>
         </div>
 
-        <div className="flex gap-3 sm:gap-5 justify-center md:justify-start items-center">
+        <div className="flex gap-3 sm:gap-5 justify-center md:justify-start  items-center">
           <button className=" backGroundButton py-1 px-1 sm:px-6 font-bold rounded-2xl transition  dark:text-[#333]   dark:bg-[#B3E5F1]">
             <Modell />
           </button>

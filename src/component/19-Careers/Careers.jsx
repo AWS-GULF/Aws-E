@@ -44,7 +44,7 @@ const jobs = [
   
   ];
   
-  
+
   return (
     <div>
       <div className=" flex justify-center m-auto my-14 gap-1 text-xl ">

@@ -191,7 +191,7 @@ export default function JopDetetails() {
         <div className="flex justify-center space-x-4 my-4 bg-white w-fit m-auto">
   <button
     onClick={() => setActiveTab("overview")}
-    className={`px-4 py-2 ${
+    className={`px-6 py-5 rounded-xl ${
       activeTab === "overview"
         ? "bg-white text-[#003540]  rounded-xl relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[70%] after:border-b-4 after:border-[#003540]"  // لون النص عند التفعيل
         : "bg-white text-aboutCont "
@@ -201,7 +201,7 @@ export default function JopDetetails() {
   </button>
   <button
     onClick={() => setActiveTab("application")}
-    className={`px-4 py-2 ${
+    className={`px-3 py-5 rounded-xl ${
       activeTab === "application"
         ? "bg-white text-[#003540]   rounded-xl relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[70%] after:border-b-4  after:border-[#003540] "  // لون النص عند التفعيل
         : "bg-white text-aboutCont "

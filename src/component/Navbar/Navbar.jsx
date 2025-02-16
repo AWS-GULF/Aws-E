@@ -73,7 +73,7 @@ export default function CustomNavbar() {
                   <i className="fa-solid fa-chevron-down absolute md:block left-[85px] top-1/2 transform -translate-y-1/2 transition-transform group-hover:rotate-180 text-[#666]"></i>
                 </a>
                 {/* Dropdown Menu */}
-                <div className="absolute opacity-0 sm:w-[70vw] lg:w-[50vw] mr-10 group-hover:opacity-100 left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-10 rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8">
+                <div className="absolute z-10 opacity-0 sm:w-[70vw] lg:w-[50vw] mr-10 group-hover:opacity-100 left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-[100] rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8">
                   <div className="flex w-full p-9 gap-6 flex-wrap lg:flex-nowrap">
                     <ul className="space-y-4">
                       <li>
@@ -173,7 +173,7 @@ export default function CustomNavbar() {
                     {/* ////////////////////////////////////////////////////////// */}
                     {/* صف 1 */}
                     <div className=" flex flex-col gap-5">
-                      <div className="flex justify-start gap-3 w-1/3">
+                      <div className="flex justify-start gap-3 w-1/3 ">
                         <img src={icon} alt="iconNav" className="w-6 h-6" />
                         <li>
                           <a
@@ -354,7 +354,7 @@ export default function CustomNavbar() {
               <li className="relative group">
                 <a
                   href="#"
-                  className="block mt-2 lg:py-6 py-3 lg:px-5 text-[#666] dark:text-white relative"
+                  className="block mt-2 lg:py-6 py-3 lg:px-5  text-[#666] dark:text-white relative"
                 >
                   Portfolio
                   <i className="fa-solid fa-chevron-down absolute md:block left-[85px] top-1/2 transform -translate-y-1/2 transition-transform group-hover:rotate-180 text-[#666]"></i>
@@ -424,13 +424,13 @@ export default function CustomNavbar() {
               <li className="relative group">
                 <a
                   href="#"
-                  className="block mt-2 lg:py-6 py-3 lg:px-5 text-[#666] dark:text-white relative"
+                  className="block mt-2 lg:py-6 py-3 lg:px-5  text-[#666] dark:text-white relative"
                 >
                   Resources
                   <i className="fa-solid fa-chevron-down absolute md:block left-[85px] lg:top-9 top-7 lg:ml-2 transform -translate-y-1/2 transition-transform group-hover:rotate-180 text-[#666]"></i>
                 </a>
                 {/* Dropdown Menu */}
-                <div className="absolute opacity-0 mr-10 group-hover:opacity-100 pr-5 left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-10 rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8">
+                <div className="absolute opacity-0  mr-10 group-hover:opacity-100 pr-5 left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-10 rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8">
                   <ul className="space-y-4 p-4">
                     <li>
                       <Link
@@ -564,7 +564,7 @@ export default function CustomNavbar() {
             />
 
             {/* Contact Us Button */}
-            <Button className="   dark:bg-[#B3E5F1] bg-[#5BA89C] my-8 rounded-3xl text-base py-6 px-4 mt-1 mx-auto sm:py-2 sm:px-4 md:py-3 md:px-5 lg:py-4 lg:px-6  lg:my-3 lg:mx-5">
+            <Button className="   dark:bg-[#B3E5F1] bg-[#5BA89C] my-8 rounded-3xl text-base py-4 px-6 mt-1 mx-auto sm:py-2 sm:px-4 md:py-3 md:px-5 lg:py-4 lg:px-6  lg:my-3 lg:mx-5">
               Contact Us
             </Button>
           </FlowbiteNavbar.Collapse>

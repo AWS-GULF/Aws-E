@@ -14,8 +14,8 @@ export default function Hero() {
     <div className="w-full md:w-[50%] mt-16 lg:ml-6 flex flex-col items-center md:items-start">
       <h1 className="text-3xl md:text-5xl lg:text-[48px] font-bold text-[#19738C] dark:text-white">
         <span className="block py-[6px]">Drive Results with</span>
-        <span className="block py-[6px]">Data-Driven</span>
-        <span className="block py-[6px]">Marketing</span>
+        <span className="block py-[6px]">Data-Driven Marketing</span>
+       
       </h1>
 
       <p className="md:text-lg lg:text-[20px] text-xl font-light leading-6 md:leading-[30px] text-gray-700 dark:text-white max-w-lg mt-6">
@@ -25,8 +25,8 @@ export default function Hero() {
       </p>
 
     
-      <div className="flex flex-nowrap gap-5 mt-8">
-        <button className="bg-[#5BA89C] rounded-3xl py-6 px-8 text-white font-bold hover:bg-[#6cbdb1] transition-all">
+      <div className="flex flex-nowrap gap-5 mt-12">
+        <button className="bg-[#5BA89C] rounded-3xl py-6 px-10 text-white font-bold hover:bg-[#6cbdb1] transition-all">
           Contact Us Now
         </button>
         <button      onClick={handleClick} className="bg-white text-[#5BA89C] border border-[#5BA89C] rounded-3xl py-6 px-8 font-bold hover:bg-gray-100 transition">
@@ -36,14 +36,18 @@ export default function Hero() {
       </div>
 
 
-      <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-6 text-[#5BA89C]">
-        <a href="#" className="text-2xl transition"><i className="fab fa-behance"></i></a>
-        <a href="#" className="text-2xl transition"><i className="fab fa-instagram"></i></a>
-        <a href="#" className="text-2xl transition"><i className="fab fa-linkedin"></i></a>
-        <a href="#" className="text-2xl transition"><i className="fab fa-facebook"></i></a>
-        <a href="#" className="text-2xl transition"><i className="fab fa-youtube"></i></a>
-        <a href="#" className="text-2xl transition"><i className="fab fa-twitter"></i></a>
-        <a href="#" className="text-2xl transition"><i className="fab fa-x-twitter"></i></a>
+      <div className="flex flex-wrap justify-center md:justify-start gap-9 mt-9 text-[#5BA89C]">
+       
+        <a href="#" className="text-3xl transition"><i className="fab fa-facebook"></i></a>
+     
+        <a href="#" className="text-3xl transition"><i className="fab fa-instagram"></i></a>
+       
+        <a href="#" className="text-3xl transition"><i className="fab fa-linkedin"></i></a>
+        <a href="#" className="text-3xl transition"><i className="fab fa-tiktok"></i></a>
+        <a href="#" className="text-3xl transition"><i className="fab fa-x-twitter"></i></a>
+        {/* <a href="#" className="text-2xl transition"><i className="fab fa-twitter"></i></a>
+       
+        <a href="#" className="text-2xl transition"><i className="fab fa-behance"></i></a> */}
       </div>
     </div>
 

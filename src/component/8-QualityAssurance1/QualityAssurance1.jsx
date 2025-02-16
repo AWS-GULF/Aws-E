@@ -108,9 +108,9 @@ export default function QualityAssurance1() {
         </p>
         </div>
 
-        <div className="cards mb-[100px]   flex flex-wrap rounded-lg justify-center gap-4">
+        <div className="cards mb-[100px]   flex flex-wrap justify-center gap-4 rounded-xl">
           {/* Card 1 */}
-          <div className="card bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4">
+          <div className="card bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4 rounded-xl">
             <figure>
               <img className="w-full h-[382px]" src={QualityAssurance5} alt="QualityAssurance5" />
             </figure>
@@ -131,7 +131,7 @@ export default function QualityAssurance1() {
           </div>
 
           {/* Card 2 */}
-          <div className="card bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4">
+          <div className="card bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4 rounded-xl">
             <figure>
               <img className="w-full h-[382px]" src={QualityAssurance6} alt="QualityAssurance6" />
             </figure>
@@ -152,7 +152,7 @@ export default function QualityAssurance1() {
           </div>
 
           {/* Card 3 */}
-          <div className="card bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4">
+          <div className="card bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4 rounded-xl">
             <figure>
               <img className="w-full h-[382px]" src={QualityAssurance7} alt="QualityAssurance7" />
             </figure>
