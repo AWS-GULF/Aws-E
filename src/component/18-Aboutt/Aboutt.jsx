@@ -63,7 +63,7 @@ export default function Aboutt() {
       OUR VISION
     </h3>
     <p className="mt-[20px] text-aboutCont dark:text-white font-montserrat text-[12px] sm:text-[16px] tracking-[1px] leading-[14px] sm:leading-[30px] line-clamp-5 overflow-hidden text-ellipsis">
-      We work closely with our clients from marketing consultancy and strategy development to design, video production, and technology implementation. Whether creating digital projects, social media content, or custom websites and apps, our goal is to exceed expectations. Our integrated approach aligns each project with client objectives, leveraging our expertise in SEO, UX/UI, and innovative technologies, ensuring our team addresses specific needs for successful outcomes.
+    We work closely with our clients from marketing consultancy and strategy development to design, video production, and technology implementation. Whether creating digital projects, social media content, or custom websites and apps, our goal is to exceed expectations. Our integrated approach aligns each project with client objectives, leveraging our expertise in SEO, UX/UI, and innovative technologies, ensuring our team addresses specific needs for successful outcomes.
     </p>
   </div>
   <div className="flex-col ps-5 justify-evenly items-end sm:justify-center sm:items-center w-[45%] sm:w-1/3 mb-4">
@@ -90,12 +90,12 @@ export default function Aboutt() {
             <p className="text-aboutCont  text-[18px] font-montserrat dark:text-white  sm:text-[32px] sm:tracking-[6.4px] font-bold leading-[24px] sm:leading-[60px] pb-[30px]">
               A suite of services designed to help businesses thrive in the digital future with AS GULF.
             </p>
-            <div className="inline-block">
+            <div className=" inline-block  backGroundButton  sm:px-6 font-bold rounded-2xl transition  dark:text-[#333]   dark:bg-[#B3E5F1]">
               <Modell />
             </div>
      
           </div>
-
+       
           <div className="sm:w-1/2 w-[55%]  items-start">
             <ul className="flex-col items-start justify-start dark:text-white  space-y-2 sm:space-y-4">
               {listItems.map((item, index) => (

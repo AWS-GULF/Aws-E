@@ -170,19 +170,19 @@ export default function JopDetetails() {
     <div>
     <div className=" flex-col justify-center items-center  ">
       <div className=" bg-[#EAF5F6] pt-6 dark:bg-[#2E2E2E]">
-        <div className="flex-col text-center justify-center items-center ps-10 w-20 m-auto ">
+        <div className="flex-col text-center justify-center items-center ps-10 w-24 m-auto ">
           <Link to={"/"}>
-            <img src={logo} className="w-full" alt="Logo" />
-            <p className="text-[10px] font-Arial text-primary font-semibold">
+            <img src={logo} className="w-full " alt="Logo" />
+            <p className="text-[20px] text-[#666]  font-montserrat   font-semibold">
               Gulf
             </p>
           </Link>
         </div>
         <div className="text-center py-4">
-          <p className="font-mons text-primary text-[#003540]  dark:text-[#B3E5F1] font-bold tracking-[1.7px] text-[24px]">
+          <p className="font-montserrat text-primary text-[#003540]  dark:text-[#B3E5F1] font-bold tracking-[1.7px] text-[24px]">
             Multimedia Marketing Project Manager
           </p>
-          <p className="gobLocation text-secondary font-mons text-[16px] tracking-[.5px] font-[500] ">
+          <p className="gobLocation text-secondary font-montserrat text-[16px] tracking-[.5px] font-[500] ">
             <span className="text-aboutCont font-bold dark:text-[#fff]">Remote</span> <span className='text-[#666] dark:text-[#fff] '>- Digital
             Marketing - Full time</span> 
           </p>
@@ -193,7 +193,7 @@ export default function JopDetetails() {
     onClick={() => setActiveTab("overview")}
     className={`px-4 py-2 ${
       activeTab === "overview"
-        ? "bg-white border-custom text-[#003540]  border-b-4  border-[#003540]   rounded-sm"  // لون النص عند التفعيل
+        ? "bg-white text-[#003540]  rounded-xl relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[70%] after:border-b-4 after:border-[#003540]"  // لون النص عند التفعيل
         : "bg-white text-aboutCont "
     }`}
   >
@@ -203,7 +203,7 @@ export default function JopDetetails() {
     onClick={() => setActiveTab("application")}
     className={`px-4 py-2 ${
       activeTab === "application"
-        ? "bg-white border-custom text-[#003540]  border-b-4  border-[#003540]  rounded-sm "  // لون النص عند التفعيل
+        ? "bg-white text-[#003540]   rounded-xl relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[70%] after:border-b-4  after:border-[#003540] "  // لون النص عند التفعيل
         : "bg-white text-aboutCont "
     }`}
   >
@@ -216,21 +216,21 @@ export default function JopDetetails() {
       <div className="p-4  flex justify-center items-center">
         {activeTab === "overview" && (
           <div className="flex-col sm:justify-center sm:items-center sm:w-3/4 w-full dark:text-[#fff]  ">
-            <h3 className="text-lg font-bold tracking-[1.2px] pb-6  dark:text-[#B3E5F1] ">
+            <h3 className="text-2xl font-bold tracking-[1.2px] pb-6  dark:text-[#B3E5F1] ">
               {" "}
               Description
             </h3>
-            <p className="sm:text-lg font-[500] sm:tracking-[2px] sm:leading-9 text-aboutCont dark:text-[#fff]    font-mons">
+            <p className="sm:text-lg font-[500] sm:tracking-[2px] sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat">
               {description}
             </p>
 
-            <h3 className="text-2xl font-[600] leading-9 tracking-[2px] dark:text-[#fff]    py-6">
+            <h3 className="text-2xl  font-bold leading-9 tracking-[2px] dark:text-[#fff]    py-6">
               Key Responsibilities
             </h3>
             <ul className="list-disc pl-5 dark:text-[#B3E5F1] ">
               {responsibilities.map((responsibility, index) => (
                 <li
-                  className="font-mons text-[#333] text-[20px] dark:text-[#fff]   "
+                  className="sm:text-lg font-[500] sm:tracking-[2px] sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat   "
                   key={index}
                 >
                   {responsibility}
@@ -238,18 +238,18 @@ export default function JopDetetails() {
               ))}
             </ul>
 
-            <h3 className="text-lg font-bold mt-4 pb-6 dark:text-[#B3E5F1]  ">Requirements</h3>
+            <h3 className="text-2xl font-bold mt-4 pb-6 dark:text-[#B3E5F1]  ">Requirements</h3>
             <ul className="list-disc pl-5  dark:text-[#B3E5F1] ">
               {requirements.map((requirement, index) => (
-                <li className="py-2 text-[#333] dark:text-[#fff]  " key={index}>{requirement}</li>
+                <li className="sm:text-lg font-[500] sm:tracking-[2px] sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat " key={index}>{requirement}</li>
               ))}
 
               {/* //////////////////////////////// */}
             </ul>
-            <h3 className="text-lg font-bold mt-4 pb-6   dark:text-[#B3E5F1]  ">Benefits</h3>
+            <h3 className="text-2xl font-bold mt-4 pb-6   dark:text-[#B3E5F1]  ">Benefits</h3>
             <ul className="list-disc pl-5  ">
               {Benefits.map((benefit, index) => (
-                <li className="py-3 text-[#333] dark:text-[#fff]  " key={index}>
+                <li className="sm:text-lg font-[500] sm:tracking-[2px] sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat " key={index}>
                   {benefit}
                 </li>
               ))}

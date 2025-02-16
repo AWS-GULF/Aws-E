@@ -66,7 +66,7 @@ let createBrowser = createBrowserRouter([
       { path: "ModellButtonNavbar", element: <ModellButtonNavbar/> },
 
       {
-        path: "layout",
+        path: "markting",
         element: <Layout />,
         children: [
           { index: true, element: <Home /> },

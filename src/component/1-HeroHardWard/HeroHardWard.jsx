@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Logo from "../../assets/images/2222.svg";
 import Logo1 from "../../assets/images/22222.svg";
 import "../1-HeroHardWard/Hero.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Modell from "../16-Modell/Modell";
 
 export default function HeroHardWard() {
@@ -26,7 +26,7 @@ export default function HeroHardWard() {
   }, []);
 
   const handleClick = () => {
-    navigate("/layout");
+    navigate("/markting");
   };
 
   return (
@@ -58,12 +58,12 @@ export default function HeroHardWard() {
         </div>
 
         <ul className="mt-6 sm:mt-8 flex justify-center md:justify-start items-center gap-7 sm:gap-9 bg-text mb-12 md:mb-[72px]">
-  <i className="fa-brands fa-behance bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i>
-  <i className="fa-brands fa-instagram bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i>
-  <i className="fa-brands fa-linkedin bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i>
-  <i className="fa-brands fa-youtube bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i>
-  <i className="fa-brands fa-snapchat bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i>
-  <i className="fa-brands fa-x-twitter bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i>
+  <Link to="https://www.facebook.com/profile.php?id=61569400731269 "><i  className="fa-brands fa-facebook bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i></Link>
+  <Link to="https://www.instagram.com/awsgulf/ "> <i className="fa-brands fa-instagram bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i></Link>
+  <Link to="https://www.linkedin.com/company/aws-gulf/?viewAsMember=true"> <i className="fa-brands fa-linkedin bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i></Link>
+  <Link to="https://www.tiktok.com/@awsgulf?lang=en "> <i className="fa-brands fa-tiktok bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i></Link>
+  {/* <Link to=""> <i className="fa-brands fa-snapchat bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i></Link> */}
+  <Link to="https://x.com/AwsGulf">  <i className="fa-brands fa-x-twitter bg-icon transition icon-button dark:text-white text-3xl sm:text-3xl"></i></Link>
 </ul>
 
       </div>

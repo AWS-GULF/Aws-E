@@ -8,11 +8,11 @@ export default function LayoutHardWord() {
 
   return (
     <div>
-        {!location.pathname.startsWith("/layout") && <NavbarHardWard />}
+        {!location.pathname.startsWith("/markting") && <NavbarHardWard />}
       <Outlet />
       {/* عرض FooterHardWard فقط إذا لم يكن داخل موقع Layout الثاني */}
     
-      {!location.pathname.startsWith("/layout") && <FooterHardWard />}
+      {!location.pathname.startsWith("/markting") && <FooterHardWard />}
     </div>
   );
 }

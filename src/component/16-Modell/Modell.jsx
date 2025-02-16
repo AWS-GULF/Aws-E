@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { X } from "lucide-react";
-import QualityAssurance from "../../assets/images/sr-gray.svg";
+import QualityAssurance from "../../assets/images/OFFf.svg";
 
 export default function Modell() {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,7 +68,7 @@ export default function Modell() {
                   </button>
                   <div className="flex sm:justify-start justify-center sm:items-center">
                     <img src={QualityAssurance} alt="Quality Assurance" />
-                    <p className="ps-2 font-mons text-hover font-bold text-[16px] tracking-[1.6px] ">
+                    <p className="ps-2 font-mons text-hover text-[#666] font-bold text-[16px] tracking-[1.6px] ">
                       Contact Us Now
                     </p>
                   </div>

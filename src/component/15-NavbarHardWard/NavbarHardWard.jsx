@@ -6,6 +6,9 @@ import { Navbar, Button ,Dropdown } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import logo from "../../assets/images/logooo.svg";
 import logo1 from "../../assets/images/Awslogo2.svg";
+import Careers from "../19-Careers/Careers";
+import About from "../18-Aboutt/Aboutt";
+import OurWork from "../14-OurWork/OurWork";
 export default function NavbarHardWard() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -36,16 +39,15 @@ export default function NavbarHardWard() {
   return (
     <Navbar fluid rounded className="bg-white  dark:bg-[#242424] px-4 py-3">
       {/* الجزء الأيسر: الشعار */}
-      <Navbar.Brand >
-      <a href="/" className="flex   items-center space-x-3 rtl:space-x-reverse">
-          <img
-            src={darkMode ? logo1 : logo} // Change logo based on dark mode
-            className="w-full py-3 sm:w-1/2 ml-6 md:w-11/12 lg:w-full"
-            alt="Logo"
-          />
-        </a>
-        
-      </Navbar.Brand>
+      <Navbar.Brand href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+  
+    <img
+      src={darkMode ? logo1 : logo}
+      className="w-full py-3 sm:w-1/2 ml-6 md:w-11/12 lg:w-full"
+      alt="Logo"
+    />
+</Navbar.Brand>
+
 
    
       <div className="md:hidden">
@@ -56,32 +58,32 @@ export default function NavbarHardWard() {
       <Navbar.Collapse>
     
 <li className="relative group ">
-  <a href="#" className=" text-[#666] dark:text-white relative md:mr-3 lg:mr-16">
+  <Link href="#" className=" text-[#666] dark:text-white relative md:mr-3 lg:mr-16">
     Services
     <i className="fa-solid fa-chevron-down absolute md:block md:ml-16 ml-3 lg:mt-0 md:mt-0 md:top-3  mt-3   transform -translate-y-1/2 transition-transform group-hover:rotate-180 text-[#666]"></i>
-  </a>
+  </Link>
   {/* Dropdown Menu */}
   <div className="absolute opacity-0 mr-10 group-hover:opacity-100 left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-10 rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8">
     <ul className="space-y-4 p-4">
       <li>
-        <a href="wepDevlopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
+        <Link to="wepDevlopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
           Web Development
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="mobileDevelopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
+        <Link to="mobileDevelopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
           Mobile Development
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="qualityAssurance1" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
+        <Link to="qualityAssurance1" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
           Quality Assurance
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="uiUxDesign" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
+        <Link to="uiUxDesign" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
           UI/UX Design
-        </a>
+        </Link>
       </li>
       <li>
         <a href="StaffAugmentation" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
@@ -98,30 +100,30 @@ export default function NavbarHardWard() {
 </li>
 
         {/* ///////////////////////////////////////////////////////////////////////// */}
-        <Navbar.Link href="#" className="dark:text-white">
-        <Link to="ourWork" className=" text-[#666] dark:text-white  md:mr-3 lg:mr-16">
-                 Work
-         </Link>
-             
-        </Navbar.Link>
+        <Navbar.Link 
+  href="OurWork" 
+  className="group text-[#666] dark:text-white md:mr-3 lg:mr-16 cursor-pointer"
+>    
+    Work
+ 
+</Navbar.Link>
 {/* ..................................................................................... */}
-        <Navbar.Link href="#" className="dark:text-white md:mr-3 lg:mr-16">
-        <Link to="about" className="   text-[#666] dark:text-white">
+        <Navbar.Link href="About" className="dark:text-white md:mr-3 lg:mr-16  text-[#666] cursor-pointer">
+       
                  About
-         </Link>
+         
         </Navbar.Link>
         {/* ////////////////////////////////////////////////////////////////////////// */}
 
-        <Navbar.Link href="#" className="dark:text-white md:mr-3 lg:mr-16">
-               <Link to="careers" className="block text-[#666] dark:text-white">
-                 Careers
-               </Link>
-        </Navbar.Link>
+        <Navbar.Link href="careers" className="dark:text-white md:mr-3 lg:mr-16 block text-[#666] cursor-pointer">
+              Careers
+         </Navbar.Link>
+
         {/* /////////////////////////////////////////////////////////////////////// */}
-        <Navbar.Link href="#" className="dark:text-white md:mr-3 lg:mr-16">
-        <a href="#" className="  text-[#666] dark:text-white">
+        <Navbar.Link href="" className="dark:text-white md:mr-3 lg:mr-16  text-[#666] cursor-pointer ">
+        
                  Blog
-         </a>
+     
         </Navbar.Link>
         {/* ////////////////////////////////// */}
    

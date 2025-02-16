@@ -11,7 +11,7 @@ export default function BlogHeroWord() {
     }, []);
   
   return (
-    <div className="px-8 w-[85%] mt-9 m-auto py-16">
+    <div className=" lg:px-8 w-[85%] mt-9 m-auto py-4 lg:py-16">
       <div className="flex flex-wrap md:flex-nowrap gap-10 ">
         <div className="w-full md:w-1/2">
           <div className="mb-10">
@@ -24,13 +24,13 @@ export default function BlogHeroWord() {
               analytics and automation. Learn how businesses are leveraging AI
               to optimize their social media strategies.
             </p>
-            <p className="mt-4 bg-text  underline font-bold  w py-2 rounded dark:text-[#B3E5F1] font-montserrat">
+            <p className="mt-4 bg-text  underline font-bold  pt-2 rounded dark:text-[#B3E5F1] font-montserrat">
               Read Article
             </p>
           </div>
 
           <div>
-            <img src={blog3} className="w-full" alt="Video Production" />
+            <img src={blog3} className="w-full " alt="Video Production" />
             <p className="text-sm text-secondary mt-4 dark:text-white font-montserrat">22 August 2023</p>
             <p className="text-gray-700 text-lg mt-2 dark:text-white font-montserrat">
               Discover how AI is revolutionizing social media marketing. This
@@ -46,15 +46,15 @@ export default function BlogHeroWord() {
         </div>
 
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold tracking-wider mb-6 bg-text mt-36 dark:text-white font-montserrat">
+          <h2 className="text-3xl font-bold tracking-wider mb-6 bg-text lg:mt-36 dark:text-white font-montserrat">
             BLOG, UPDATES AND NEWS
           </h2>
-          <p className="mb-32 mt-4 bg-text  underline font-bold  w py-2  rounded dark:text-[#B3E5F1] font-montserrat">
+          <p className="lg:mb-32 mt-4 bg-text  underline font-bold  w py-2  rounded dark:text-[#B3E5F1] font-montserrat">
               Read Article
             </p>
 
-          <div>
-            <img src={blog1} className="w-full" alt="Marketing" />
+          <div >
+            <img src={blog1} className="w-full  " alt="Marketing " />
             <p className="text-sm text-secondary mt-4 dark:text-white font-montserrat">22 August 2023</p>
             <p className="text-gray-700 text-lg mt-2 dark:text-white font-montserrat">
               Discover how AI is revolutionizing social media marketing. This

@@ -31,16 +31,16 @@ export default function WorkFilter() {
   const filteredCards = selectedCategory === "All" ? cardsData : cardsData.filter((card) => card.category === selectedCategory);
 
   return (
-    <div className="container sm:mx-auto sm:p-6 group:">
-      <div className="flex-col justify-center group-hover:text-black dark:text-black  items-end space-x-2 text-center sm:flex sm:flex-row sm:justify-center sm:space-x-4 mb-6 sm:px-[200px] sm:flex-wrap">
+    <div className="container  sm:mx-auto sm:p-6">
+      <div className="flex-col justify-center  items-end space-x-2 text-center sm:flex sm:flex-row sm:justify-center sm:space-x-4 mb-6 sm:px-[200px] sm:flex-wrap">
         {categories.map((category) => (
           <button 
             key={category} 
             onClick={() => setSelectedCategory(category)} 
-            className={`px-2 py-3 sm:px-4 sm:py-2 mb-4 rounded-lg font-bold transition-all  group-hover:text-black
+            className={`px-2 py-3 sm:px-4 sm:py-2 mb-4 rounded-lg font-bold transition-all border  
               ${selectedCategory === category 
-                ? "bg-primary text-black"  // هنا خليت النص أسود بدل أبيض
-                : "border-primary bg-white text-black border rounded-[10px] hover:bg-primary hover:text-black " 
+                ? "border-primary text-[#003540]  dark:text-white" 
+                : "border-primary bg-white text-black rounded-[10px] hover:bg-primary hover:text-black" 
               }`}
           >
             {category}
@@ -50,18 +50,18 @@ export default function WorkFilter() {
 
       <div className="cards mb-[100px] flex flex-wrap gap-2 sm:gap-4 justify-center">
         {filteredCards.map((card) => (
-          <div key={card.id} className="card py-2 w-[45%] sm:w-[30%] bg-base-900 sm:h-[500px] border border-stroke p-4">
+          <div key={card.id} className="card py-2 w-[45%] sm:w-[30%] bg-base-900 rounded-3xl sm:h-[500px] border p-4">
             <figure>
               <Link to={card.route || "#"}>
                 <img className="sm:w-[405px] sm:h-[382px] w-full h-[200px] dark:text-[#B3E5F1] cursor-pointer" src={card.src} alt={card.title} />
               </Link>
             </figure>
-            <div className="flex-col items-start justify-start">
+            <div className="flex-col items-start justify-start rounded-3xl">
               <h2 className="text-[12px] sm:text-[16px] text-primary font-mons dark:text-[#B3E5F1] font-[600] sm:tracking-[1.6px] mb-2">{card.title}</h2>
               <div className="sm:flex sm:flex-row sm:justify-center sm:items-center dark:text-white">
                 <p className="font-mons text-[14px] sm:text-[15px] font-[500] dark:text-[#fff]">{card.description}</p>
                 {card.route && (
-                  <div className="flex justify-end items-end  text-[#003540] ps-6 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap dark:text-[#B3E5F1]">
+                  <div className="flex justify-end items-end text-[#003540] ps-6 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap dark:text-[#B3E5F1]">
                     <Link to={card.route}><p>See More</p></Link>
                   </div>
                 )}

@@ -49,7 +49,7 @@ export default function CustomNavbar() {
           >
             <img
               src={logo}
-              className="w-full sm:w-1/2 md:w-11/12 lg:w-full"
+              className="w-full  sm:w-1/2 md:w-11/12 lg:w-full"
               alt="Logo"
             />
           </Link>
@@ -564,7 +564,7 @@ export default function CustomNavbar() {
             />
 
             {/* Contact Us Button */}
-            <Button className="   dark:bg-[#B3E5F1] my-8 rounded-full text-base py-6 px-4 mt-1 mx-auto text-amber-50 sm:py-2 sm:px-4 md:py-3 md:px-5 lg:py-4 lg:px-6  lg:my-3 lg:mx-5">
+            <Button className="   dark:bg-[#B3E5F1] bg-[#5BA89C] my-8 rounded-3xl text-base py-6 px-4 mt-1 mx-auto sm:py-2 sm:px-4 md:py-3 md:px-5 lg:py-4 lg:px-6  lg:my-3 lg:mx-5">
               Contact Us
             </Button>
           </FlowbiteNavbar.Collapse>

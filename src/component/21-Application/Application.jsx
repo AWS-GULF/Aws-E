@@ -43,7 +43,7 @@ export default function JobApplicationForm() {
     
    <button  onClick={() => fileInputRef.current.click()} className="mt-3 whitespace-nowrap dark:bg-[#B3E5F1] dark:text-[black]  bg-[#003540] text-[white] me-14  px-8 py-6 rounded-lg"
             >
-             <span className='text-sm    whitespace-nowrap '> Import resume from <i class="fa-solid fa-chevron-down"></i></span> 
+             <span className='text-sm    whitespace-nowrap '> Import resume from </span> 
             </button>
     </div>
         {resume && (

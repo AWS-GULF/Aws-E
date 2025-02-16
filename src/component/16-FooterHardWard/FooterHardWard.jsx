@@ -1,14 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../assets/images/LogoWhite.svg";
 import logo1 from "../../assets/images/LogoDark.svg";
-
-import Symboll from "../../assets/images/Symboll.svg";
-import instg from "../../assets/images/instg.svg";
-import Linkedin from "../../assets/images/linke.svg";
-import youtube from "../../assets/images/Symbol.svg";
-import Facebook from "../../assets/images/face.svg";
-import twitter from "../../assets/images/coda.svg";
-import xx from "../../assets/images/x_logo.png";
 import { Link } from 'react-router-dom';
 export default function FooterHardWard() {
     const [currentLogo, setCurrentLogo] = useState(logo);
@@ -70,32 +62,32 @@ export default function FooterHardWard() {
               <ul className="text-[12px] md:text-[12px] lg:text-[16px] dark:text-white">
                 <li className="mb-4">
                   {" "}
-                  Seville District 6346, Riyadh, Saudi Arabia
+                  Seville District 6346, Riyadh, <br /> Saudi Arabia
                 </li>
                 <li className="lg:mb-4 mb-2 ">+966 569851545</li>
                 <li className="lg:mb-4 mb-2">wessam@awsgulf.com</li>
                 <li className="lg:mb-4 mb-2">www.awasgulft.com</li>
                 <ul className="mt-3 items-center hidden lg:flex gap-4 text-2xl dark:text-white">
   <li>
-    <i className="fa-brands fa-behance text-[#003540] dark:text-[#fff]"></i>
+   <Link to="https://www.facebook.com/profile.php?id=61569400731269"> <i className="fa-brands fa-facebook text-[#003540] dark:text-[#fff]"></i></Link>
   </li>
   <li>
-    <i className="fa-brands fa-instagram text-[#003540]  dark:text-[#fff]"></i>
+  <Link to="https://www.instagram.com/awsgulf/">  <i className="fa-brands fa-instagram text-[#003540]  dark:text-[#fff]"></i></Link>
   </li>
   <li>
-    <i className="fa-brands fa-linkedin text-[#003540] dark:text-[#fff]"></i>
+  <Link to="https://www.linkedin.com/company/aws-gulf/?viewAsMember=true">  <i className="fa-brands fa-tiktok  text-[#003540] dark:text-[#fff]"></i></Link>
   </li>
   <li>
-    <i className="fa-brands fa-youtube text-[#003540] dark:text-[#fff]"></i>
+  <Link to="https://www.tiktok.com/@awsgulf?lang=en"> <i className="fa-brands fa-youtube text-[#003540] dark:text-[#fff]"></i></Link>
+  </li>
+  {/* <li>
+  <Link to=""> <i className="fa-brands fa-facebook text-[#003540] dark:text-[#fff]"></i></Link>
   </li>
   <li>
-    <i className="fa-brands fa-facebook text-[#003540] dark:text-[#fff]"></i>
-  </li>
+  <Link to=""> <i className="fa-brands fa-twitter text-[#003540] dark:text-[#fff]"></i></Link>
+  </li> */}
   <li>
-    <i className="fa-brands fa-twitter text-[#003540] dark:text-[#fff]"></i>
-  </li>
-  <li>
-    <i className="fa-brands fa-x-twitter text-[#003540] dark:text-[#fff]"></i>
+  <Link to="https://x.com/AwsGulf"> <i className="fa-brands fa-x-twitter text-[#003540] dark:text-[#fff]"></i></Link>
   </li>
 </ul>
 

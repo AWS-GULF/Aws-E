@@ -58,7 +58,7 @@ export default function About() {
       </div>
 
       <div className="w-full lg:w-1/2 ">
-        <div className="w-[90%] md:w-[80%] lg:w-[100%] max-w-lg">
+        <div className="w-[90%] md:w-[80%] lg:w-[100%] max-w-lg m-auto md:m-auto" >
           <Slider {...settings}>
             <img src={Frame1} alt="Frame1" className="w-full h-auto rounded-xl shadow-md" />
             <img src={Frame2} alt="Frame2" className="w-full h-auto rounded-xl shadow-md" />
