@@ -28,16 +28,16 @@ export default function QualityAssurance1() {
         </div>
 
         <div className="flex justify-center items-center">
-          <h2 className="text-3xl sm:text-5xl font-montserrat text-lg font-bold mb-[80px] text-center text-[#003540] tracking-[4.8px] leading-[75px] dark:text-[#B3E5F1]">
+          <h2 className="text-3xl sm:text-5xl font-montserrat font-bold mb-[80px] text-center text-[#003540] tracking-[4.8px] leading-[75px] dark:text-[#B3E5F1]">
             We ensure flawless performance and reliability for your software
           </h2>
         </div>
 
         <div className="px-4 sm:px-[121px] flex-col justify-center text-[#003540] items-center dark:text-white">
-          <h1 className="text-center text-2xl sm:text-3xl text-[#000]  mb-[20px] text-primary font-montserrat text-lg text-[32px] tracking-[3.2px] font-[500] dark:text-[#B3E5F1]">
+          <h1 className="text-center text-2xl sm:text-3xl text-[#000]  mb-[20px] text-primary font-montserrat  text-[32px] tracking-[3.2px] font-[500] dark:text-[#B3E5F1]">
             Quality Assurance
           </h1>
-          <p className="text-aboutCont text-xl text-left font-montserrat text-lg font-normal leading-[30px] tracking-[1.6px] mb-[60px] dark:text-white">
+          <p className="text-aboutCont text-xl text-left font-montserrat  font-normal leading-[30px] tracking-[1.6px] mb-[60px] dark:text-white">
             We believe in fostering a strong, collaborative partnership with our
             clients. Ensuring the quality, functionality, and reliability of the
             products we deliver is a responsibility we take seriously. Beyond
@@ -50,7 +50,7 @@ export default function QualityAssurance1() {
         {/* Accurate Deliveries */}
         <div className="flex flex-col sm:flex-row justify-center items-center px-4 sm:px-[121px] mb-16 gap-8">
           <div className="sm:w-3/4 pt-14 flex-col justify-center items-center ps-1">
-            <h4 className="font-montserrat text-lg text-[20px] font-[600] text-lg text-[#000] tracking-[2px] mb-4 dark:text-[#B3E5F1]">
+            <h4 className="font-montserrat text-lg text-[20px] font-[600]  text-[#000] tracking-[2px] mb-4 dark:text-[#B3E5F1]">
               Accurate Deliveries
             </h4>
             <p className="font-montserrat text-lg text-[16px] font-normal text-[400] tracking-[1.6px] leading-[30px] dark:text-white">

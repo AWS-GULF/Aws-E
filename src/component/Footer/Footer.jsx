@@ -5,19 +5,20 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div>
-    <div className="lg:flex lg:justify-evenly lg:items-start lg:pt-16   Footer border-t ">
+    <div className="lg:flex lg:justify-evenly  lg:items-start lg:pt-16   Footer border-t ">
         <footer className="footer flex-col justify-center items-center w-[100%] flex text-base-content  lg:flex-row lg:justify-between lg:items-start  lg:ps-12 lg:pe-12  ">
           <div className="w-full lg:w-[40%] ">
-            <aside className="w-full flex lg:flex-col  justify-center items-center">
-            <div className="flex-col text-center items-center lg:justify-start lg:items-start w-[50%] mt-4 lg:w-36 lg:mt-[-5px] lg:m-auto">
+            <aside className=" flex lg:flex-col  justify-center items-center">
+            <div className="flex flex-col items-center text-center lg:items-start lg:text-left w-[60%] mt-4 lg:w-36 m-auto lg:ml-[90px] lg:mt-[-5px]">
   <img 
     src={footer} 
-    className="mx-auto w-[50%] sm:w-[150px] lg:w-[200px] xl:w-[250px] 2xl:w-[300px] max-w-none"
+    className="mx-auto w-[50%] sm:w-[150px] lg:w-[200px] xl:w-[250px] 2xl:w-[400px] max-w-none"
   />
   <p className="lg:text-6 mx-auto text-lg font-Arial text-primary font-semibold w-[50%] lg:w-full dark:text-[#B3E5F1]">
     {" "}
   </p>
 </div>
+
 
              
             </aside>
@@ -49,7 +50,7 @@ export default function Footer() {
                 <li className="lg:mb-4 mb-2 ">+966 569851545</li>
                 <li className="lg:mb-4 mb-2">wessam@awsgulf.com</li>
                 <li className="lg:mb-4 mb-2">www.awasgulft.com</li>
-                <ul className="mt-3 items-center flex justify-center gap-2 lg:flex lg:gap-4   text-lg lg:text-2xl dark:text-white">
+                <ul className="mt-3 items-center flex justify-center  lg:flex lg:gap-4   text-base lg:text-2xl dark:text-white">
   <li>
    <Link to="">   <i className="fas fa-globe w-6 h-6 cursor-pointer text-[#19738C]"></i></Link>
   </li>

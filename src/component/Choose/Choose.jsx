@@ -4,7 +4,7 @@ export default function Choose() {
   return (
     <div>
 
-<section className="my-12 relative px-6 lg:px-0">
+<section className="my-12 relative px-6 lg:px-0 ">
   <h1 className="font-montserrat dark:text-white font-semibold text-4xl text-center text-primary py-6">
     Why Choose Us
   </h1>
@@ -63,7 +63,7 @@ export default function Choose() {
 
 
 
-      <section className="relative w-[90%] md:w-[80%] m-auto">
+      <section className="relative w-[90%] md:w-[80%] m-auto md:mb-24  mb-6">
         <div className="flex flex-col lg:flex-row justify-between items-center px-4 sm:px-8">
           <div className="md:w-6/12 lg:w-1/2 bg-colorr font-montserrat text-[32px] font-bold leading-[50px] text-center lg:text-left dark:text-white">
             Ready to elevate your brand?
@@ -71,7 +71,7 @@ export default function Choose() {
             Let’s build something amazing <br />
             together!
           </div>
-          <button className="bg-button rounded-3xl py-6 px-8 mt-4 lg:mt-0 mx-auto font-bold text-amber-50 dark:bg-white dark:text-[#5BA89C]">
+          <button className="bg-button rounded-3xl py-6  px-8 mt-4 lg:mt-0 mx-auto font-bold text-amber-50 dark:bg-white dark:text-[#5BA89C]">
             Contact Us Now
           </button>
         </div>
