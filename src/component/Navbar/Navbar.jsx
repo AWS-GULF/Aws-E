@@ -70,10 +70,10 @@ export default function CustomNavbar() {
                   className="block mt-2 lg:py-6 py-3 lg:px-5 text-[#666] dark:text-white relative  hover:text-[#5BA89C] whitespace-nowrap"
                 >
                   Services
-                  <i className="fa-solid fa-chevron-down absolute md:block left-[85px] top-1/2 transform -translate-y-1/2 transition-transform group-hover:rotate-180 text-[#666]"></i>
+                  <i className="fa-solid fa-chevron-down absolute md:block left-[85px] top-1/2 transform -translate-y-1/2 transition-transform  group-hover:rotate-180 text-[#666]"></i>
                 </a>
                 {/* Dropdown Menu */}
-                <div className="absolute z-10 opacity-0 sm:w-[70vw] lg:w-[50vw] mr-10 group-hover:opacity-100 left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-[100] rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8">
+                <div className="absolute z-10  hidden sm:w-[70vw] lg:w-[50vw] mr-10  left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100  rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8">
                   <div className="flex w-full p-9 gap-6 flex-wrap lg:flex-nowrap">
                     <ul className="space-y-4">
                       <li>
@@ -168,7 +168,7 @@ export default function CustomNavbar() {
                 </a>
                 <i className="fa-solid md:ml-1   lg:ml-2 fa-chevron-down absolute md:block left-[85px] lg:top-11 top-7 transform -translate-y-1/2 transition-transform group-hover:rotate-180 text-[#666]"></i>
                 {/* Dropdown Menu */}
-                <div className="absolute opacity-0 group-hover:opacity-100 ml-10 sm:w-[70vw] lg:w-[50vw] left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-10 rounded-lg shadow-md mt-24 group-hover:bg-button">
+                <div className="absolute  hidden ml-10 sm:w-[70vw] lg:w-[50vw] left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-10 rounded-lg shadow-md mt-24 group-hover:bg-button">
                   <ul className="flex flex-wrap justify-start py-10 px-5 gap-20 w-full">
                     {/* ////////////////////////////////////////////////////////// */}
                     {/* صف 1 */}
@@ -360,7 +360,7 @@ export default function CustomNavbar() {
                   <i className="fa-solid fa-chevron-down absolute md:block left-[85px] top-1/2 transform -translate-y-1/2 transition-transform group-hover:rotate-180 text-[#666]"></i>
                 </a>
                 {/* Dropdown Menu */}
-                <div className="absolute opacity-0 mr-10 pr-6 group-hover:opacity-100 left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-10 rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8">
+                <div className="absolute  hidden mr-10 pr-6 group-hideen:opacity-100 left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-10 rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8">
                   <ul className="space-y-4 p-4">
                     <li>
                       <Link
@@ -422,64 +422,66 @@ export default function CustomNavbar() {
 
               {/* Resources Dropdown */}
               <li className="relative group">
-                <a
-                  href="#"
-                  className="block mt-2 lg:py-6 py-3 lg:px-5  text-[#666] dark:text-white relative"
-                >
-                  Resources
-                  <i className="fa-solid fa-chevron-down absolute md:block left-[85px] lg:top-9 top-7 lg:ml-2 transform -translate-y-1/2 transition-transform group-hover:rotate-180 text-[#666]"></i>
-                </a>
-                {/* Dropdown Menu */}
-                <div className="absolute opacity-0  mr-10 group-hover:opacity-100 pr-5 left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-10 rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8">
-                  <ul className="space-y-4 p-4">
-                    <li>
-                      <Link
-                        to="project1"
-                        className="text-[#666] hover:text-[#5BA89C] flex gap-2 whitespace-nowrap"
-                      >
-                        <img src={icon} alt="iconNav" />
-                        Blog
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="project2"
-                        className="text-[#666] hover:text-[#5BA89C] flex gap-2 whitespace-nowrap"
-                      >
-                        <img src={icon} alt="iconNav" />
-                        Case Studies
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="project3"
-                        className="text-[#666] hover:text-[#5BA89C] flex gap-2 whitespace-nowrap"
-                      >
-                        <img src={icon} alt="iconNav" />
-                        FAQs
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="project3"
-                        className="text-[#666] hover:text-[#5BA89C] flex gap-2 whitespace-nowrap"
-                      >
-                        <img src={icon} alt="iconNav" />
-                        Website Grader
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="project3"
-                        className="text-[#666] hover:text-[#5BA89C] flex gap-2 whitespace-nowrap"
-                      >
-                        <img src={icon} alt="iconNav" />
-                        SEO Audit
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </li>
+  <a
+    href="#"
+    className="block mt-2 lg:py-6 py-3 lg:px-5 text-[#666] dark:text-white relative"
+  >
+    Resources
+    <i className="fa-solid fa-chevron-down absolute md:block left-[85px] lg:top-9 top-7 lg:ml-2 transform -translate-y-1/2 transition-transform group-hover:rotate-180 text-[#666]"></i>
+  </a>
+  
+  {/* Dropdown Menu */}
+  <div className="absolute opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto left-0 transition-opacity duration-300 ease-in-out bg-white border border-gray-100 z-10 rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8 w-56">
+    <ul className="space-y-4 p-4">
+      <li>
+        <Link
+          to="project1"
+          className="text-[#666] hover:text-[#5BA89C] flex gap-2 whitespace-nowrap"
+        >
+          <img src={icon} alt="iconNav" />
+          Blog
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="project2"
+          className="text-[#666] hover:text-[#5BA89C] flex gap-2 whitespace-nowrap"
+        >
+          <img src={icon} alt="iconNav" />
+          Case Studies
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="project3"
+          className="text-[#666] hover:text-[#5BA89C] flex gap-2 whitespace-nowrap"
+        >
+          <img src={icon} alt="iconNav" />
+          FAQs
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="project3"
+          className="text-[#666] hover:text-[#5BA89C] flex gap-2 whitespace-nowrap"
+        >
+          <img src={icon} alt="iconNav" />
+          Website Grader
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="project3"
+          className="text-[#666] hover:text-[#5BA89C] flex gap-2 whitespace-nowrap"
+        >
+          <img src={icon} alt="iconNav" />
+          SEO Audit
+        </Link>
+      </li>
+    </ul>
+  </div>
+</li>
+
 
               {/* About Dropdown */}
               <li className="relative group">

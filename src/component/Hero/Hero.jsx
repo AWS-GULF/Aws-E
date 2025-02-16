@@ -38,13 +38,13 @@ export default function Hero() {
 
       <div className="flex flex-wrap justify-center md:justify-start gap-9 mt-9 text-[#5BA89C]">
        
-        <a href="#" className="text-3xl transition"><i className="fab fa-facebook"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61573374172184 " className="text-3xl transition"><i className="fab fa-facebook"></i></a>
      
-        <a href="#" className="text-3xl transition"><i className="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/awsgulf.mkt/ " className="text-3xl transition"><i className="fab fa-instagram"></i></a>
        
-        <a href="#" className="text-3xl transition"><i className="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/company/aws-gulf-marketing/ " className="text-3xl transition"><i className="fab fa-linkedin"></i></a>
         <a href="#" className="text-3xl transition"><i className="fab fa-tiktok"></i></a>
-        <a href="#" className="text-3xl transition"><i className="fab fa-x-twitter"></i></a>
+        <a href="https://x.com/AwsGulf_Mkt " className="text-3xl transition"><i className="fab fa-x-twitter"></i></a>
         {/* <a href="#" className="text-2xl transition"><i className="fab fa-twitter"></i></a>
        
         <a href="#" className="text-2xl transition"><i className="fab fa-behance"></i></a> */}

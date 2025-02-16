@@ -51,26 +51,23 @@ export default function Footer() {
                 <li className="lg:mb-4 mb-2">wessam@awsgulf.com</li>
                 <li className="lg:mb-4 mb-2">www.awasgulft.com</li>
                 <ul className="mt-3 items-center flex justify-center  lg:flex lg:gap-4   text-base lg:text-2xl dark:text-white">
+
   <li>
-   <Link to="">   <i className="fas fa-globe w-6 h-6 cursor-pointer text-[#19738C]"></i></Link>
+  <Link to="https://www.facebook.com/profile.php?id=61573374172184"> <i className="fab fa-facebook w-6 h-6 cursor-pointer  text-[#19738C]"></i></Link>
   </li>
   <li>
-  <Link to=""> <i className="fab fa-instagram w-6 h-6 cursor-pointer  text-[#19738C]"></i></Link>
+  <Link to="https://www.instagram.com/awsgulf.mkt/ "> <i className="fab fa-instagram w-6 h-6 cursor-pointer  text-[#19738C]"></i></Link>
   </li>
   <li>
-  <Link to=""> <i className="fab fa-linkedin w-6 h-6 cursor-pointer  text-[#19738C]"></i></Link>
+  <Link to="https://www.linkedin.com/company/aws-gulf-marketing/ "> <i className="fab fa-linkedin w-6 h-6 cursor-pointer  text-[#19738C]"></i></Link>
+  </li>
+  
+ 
+    <li>
+   <Link to="">   <i className="fab fa-tiktok w-6 h-6 cursor-pointer text-[#19738C]"></i></Link>
   </li>
   <li>
-  <Link to=""> <i className="fab fa-facebook w-6 h-6 cursor-pointer  text-[#19738C]"></i></Link>
-  </li>
-  <li>
-  <Link to=""> <i className="fab fa-youtube w-6 h-6 cursor-pointer  text-[#19738C]"></i></Link>
-  </li>
-  <li>
-  <Link to=""> <i className="fab fa-twitter w-6 h-6 cursor-pointer  text-[#19738C]"></i></Link>
-  </li>
-  <li>
-  <Link to=""> <i className="fab fa-x-twitter w-6 h-6 cursor-pointer  text-[#19738C]"></i></Link>
+  <Link to="https://x.com/AwsGulf_Mkt"> <i className="fab fa-x-twitter w-6 h-6 cursor-pointer  text-[#19738C]"></i></Link>
   </li>
 </ul>
 
