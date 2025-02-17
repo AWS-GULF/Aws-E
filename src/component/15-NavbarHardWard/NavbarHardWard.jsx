@@ -66,24 +66,24 @@ export default function NavbarHardWard() {
   <div className="absolute opacity-0 mr-10 group-hover:opacity-100 left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-10 rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8">
     <ul className="space-y-4 p-4">
       <li>
-        <Link to="wepDevlopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
+        <a to="wepDevlopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
           Web Development
-        </Link>
+        </a>
       </li>
       <li>
-        <Link to="mobileDevelopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
+        <a to="mobileDevelopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
           Mobile Development
-        </Link>
+        </a>
       </li>
       <li>
-        <Link to="qualityAssurance1" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
+        <a to="qualityAssurance1" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
           Quality Assurance
-        </Link>
+        </a>
       </li>
       <li>
-        <Link to="uiUxDesign" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
+        <a to="uiUxDesign" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
           UI/UX Design
-        </Link>
+        </a>
       </li>
       <li>
         <a href="StaffAugmentation" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
