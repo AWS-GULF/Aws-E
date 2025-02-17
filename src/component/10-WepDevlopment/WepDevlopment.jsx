@@ -16,10 +16,9 @@ import "./WepDevlpment.css"
 import { Link } from 'react-router-dom';
 
 export default function WepDevlopment() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="px-6 sm:px-12 lg:px-24 ">
       <div className="mt-16 mb-14 flex justify-center items-center text-[#295F70] dark:text-[#B3E5F1] text-xl ">

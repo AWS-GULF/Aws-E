@@ -8,15 +8,14 @@ export default function Mainn() {
   const navigate = useNavigate();
   return (
     <>
-   <section className="w-[95%] mx-auto my-8">
+  <section className="w-[95%] mx-auto my-8">
   <h2 className="bg-color text-center text-4xl sm:text-5xl font-bold p-[40px] sm:p-[60px] dark:text-white">
     OUR WORK
   </h2>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center"> {/* تم تقليل المسافة هنا */}
     <div className="w-full">
-      <img src={OutWork2} alt="Masperts" className="mt-4 w-full cursor-pointer" onClick={() => navigate("maspertsProject")} />
+      <img src={OutWork2} alt="Masperts" className="w-full cursor-pointer" onClick={() => navigate("maspertsProject")} />
       <div className="mt-2 ml-4 sm:ml-6">
         <h2 className="font-montserrat text-xl sm:text-2xl font-semibold dark:text-white">
           Masperts
@@ -27,9 +26,8 @@ export default function Mainn() {
       </div>
     </div>
 
-
     <div className="w-full">
-      <img src={OutWork1} alt="Uber For Business" className="w-full " />
+      <img src={OutWork1} alt="Uber For Business" className="w-full" />
       <div className="mt-2 ml-4 sm:ml-6">
         <h2 className="font-montserrat text-xl sm:text-2xl font-semibold dark:text-white">
           Uber For Business
@@ -41,10 +39,9 @@ export default function Mainn() {
     </div>
   </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center ">
-
-    <div className="w-full">
-      <img src={OutWork3} alt="Nike Campaign" className=" sm:mt-16 w-full" />
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center"> {/* تم تقليل المسافة هنا أيضًا */}
+    <div className="w-full m">
+      <img src={OutWork3} alt="Nike Campaign" className="w-full mt-2 " />
       <div className="mt-2 ml-4 sm:ml-6">
         <h2 className="font-montserrat text-xl sm:text-2xl font-semibold dark:text-white">
           Nike Campaign
@@ -53,17 +50,13 @@ export default function Mainn() {
           #Marketing
         </p>
       </div>
-      <a href="#" className="bg-text-button inline-block mt-6 sm:mt-[32px] px-4 py-2 rounded-lg text-white font-semibold">
-        Explore More of Our Work
-        <i className="fa-solid fa-arrow-right mx-2"></i>
-      </a>
+     
     </div>
 
- 
-    <div className="w-full">
-      <img src={OutWork1} alt="Uber For Business" className="w-full" />
-      <div className=" ml-4 sm:ml-6">
-        <h2 className="font-montserrat text-xl sm:text-2xl font-semibold dark:text-white">
+    <div className="w-full mb-18">
+      <img src={OutWork1} alt="Uber For Business" className="w-[800px]" />
+      <div className="ml-4 sm:ml-6">
+        <h2 className="font-montserrat text-xl mt-2 sm:text-2xl font-semibold dark:text-white">
           Uber For Business
         </h2>
         <p className="bg-color-p font-montserrat text-sm font-medium dark:text-white">
@@ -71,9 +64,13 @@ export default function Mainn() {
         </p>
       </div>
     </div>
-    
   </div>
+  <a href="#" className="bg-text-button inline-block mt-4 sm:mt-[24px] px-4 py-2 rounded-lg text-white font-semibold">
+        Explore More of Our Work
+        <i className="fa-solid fa-arrow-right mx-2"></i>
+      </a>
 </section>
+
 
     </>
   );

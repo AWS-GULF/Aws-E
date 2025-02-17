@@ -13,7 +13,7 @@ export default function Choose() {
  
     <div className="text-center lg:ml-80 w-full lg:w-auto">
       <h2 className="font-montserrat font-semibold text-2xl leading-[36px] text-gray-800 dark:text-white">
-        Our values are part of <br /> everything we create at <br /> Instrument.
+        Our values are part of <br /> everything we create at Instrument.
       </h2>
     </div>
 
@@ -48,7 +48,7 @@ export default function Choose() {
           This growth <br /> fuels the impact we can make for employees, our community, and clients.
         </p>
       </div>
-
+      
       <div>
         <h2 className="font-montserrat font-medium text-lg text-gray-900 dark:text-white">
           Truth in Action

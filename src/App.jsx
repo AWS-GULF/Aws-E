@@ -17,7 +17,6 @@ import SeeourBlog from "./component/SeeourBlog/SeeourBlog";
 import Choose from "./component/Choose/Choose";
 import Slider from "./component/Slider/Slider";
 import MaspertsProject from "./component/MaspertsProject/MaspertsProject";
-import Footer from "./component/Footer/Footer";
 import NotFound from "./component/NotFound/NotFound";
 import HomeHardWard from "./component/HomeHardWard/HomeHardWard";
 import WepDevlopment from "./component/10-WepDevlopment/WepDevlopment";
@@ -31,19 +30,50 @@ import OurWork from './component/14-OurWork/OurWork';
 import WorkFliter from './component/17-WorkFliter/WorkFliter';
 import Aboutt from './component/18-Aboutt/Aboutt';
 import Careers from './component/19-Careers/Careers';
-
 import JopDetetails from './component/JopDetetails/JopDetetails';
 import SSSproject from './component/SSSProject/SSSproject';
 import ModellButtonNavbar from './component/ModellButtonNavbar/ModellButtonNavbar';
+// import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 
-let createBrowser = createBrowserRouter([
+function App() {
+  
+  const userAgent = navigator.vendor;
+  console.log(userAgent);
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language
+
+
+
+
+
+ 
+  const [isRTL, setIsRTL] = useState(i18n.language === "ar");
+
+ 
+  const toggleLanguage = () => {
+    if (i18n.language === "en") {
+      i18n.changeLanguage("ar"); 
+      document.dir = "rtl"; 
+      setIsRTL(true);
+    } else {
+      i18n.changeLanguage("en"); 
+      document.dir = "ltr"; 
+      setIsRTL(false);
+    }
+  };
+
+
+ 
+const router = createBrowserRouter([
   {
     path: "",
-    element: <LayoutHardWord />,
+    element: <LayoutHardWord toggleLanguage={toggleLanguage} />,
     children: [
       { index: true, element: <HomeHardWard /> },
-      { path: "aboutHardWord", element: <AboutHardWord /> },
+      { path: "aboutHardWord", element: <AboutHardWord i18n={i18n}  t={t}  /> },
       { path: "mainHardWard", element: <MainHardWard /> },
       { path: "ourServicesHaedWard", element: <OurServicesHaedWard /> },
       { path: "clientsAcross", element: <ClientsAcross /> },
@@ -61,24 +91,20 @@ let createBrowser = createBrowserRouter([
       { path: "about", element: <Aboutt/> },
       { path: "careers", element: <Careers/> },
       { path: "/SSSproject", element: <SSSproject/> },
-     
       { path: "/careers/:id", element: <JopDetetails/> },
       { path: "ModellButtonNavbar", element: <ModellButtonNavbar/> },
-
       {
         path: "markting",
-        element: <Layout />,
+        element: <Layout toggleLanguage={toggleLanguage}/>,
         children: [
           { index: true, element: <Home /> },
           { path: "hero", element: <Hero /> },
           { path: "about", element: <About /> },
           { path: "Mainn", element: <Mainn /> },
-        
           { path: "seeourBlog", element: <SeeourBlog /> },
           { path: "choose", element: <Choose /> },
           { path: "slider", element: <Slider /> },
           { path: "MaspertsProject", element: <MaspertsProject /> },
-         
           { path: "*", element: <NotFound /> },
         ],
       },
@@ -86,8 +112,26 @@ let createBrowser = createBrowserRouter([
   },
 ]);
 
-function App() {
-  return <RouterProvider router={createBrowser} />;
+
+
+
+  // useEffect(() => {
+  //   const favicon = document.getElementById("favicon");
+  //   if (!favicon) return;
+
+  //   const updateFavicon = () => {
+  //     favicon.href = window.location.pathname.includes("marketing")
+  //       ? "/src/assets/images/fave.svg"
+  //       : "/src/assets/images/favee.svg";
+  //   };
+
+  //   updateFavicon();
+  //   window.addEventListener("popstate", updateFavicon);
+
+  //   return () => window.removeEventListener("popstate", updateFavicon);
+  // }, []);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;

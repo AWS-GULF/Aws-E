@@ -4,8 +4,10 @@ import Logo1 from "../../assets/images/22222.svg";
 import "../1-HeroHardWard/Hero.css";
 import { Link, useNavigate } from "react-router-dom";
 import Modell from "../16-Modell/Modell";
+import { useTranslation } from "react-i18next";
 
-export default function HeroHardWard() {
+export default function HeroHardWard( ) {
+  const {t} =useTranslation()
   const navigate = useNavigate();
   const [currentLogo, setCurrentLogo] = useState(Logo);
 
@@ -54,6 +56,8 @@ export default function HeroHardWard() {
             className="px-6 py-6  sm:py-7 sm:px-9 rounded-2xl bg-text font-bold backgroundbutton2 dark:text-white dark:hover:text-black"
           >
             Marketing Services
+              
+            {/* {t("toggleLanguage")} */}
           </button>
         </div>
 

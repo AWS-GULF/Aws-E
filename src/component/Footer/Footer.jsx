@@ -45,16 +45,16 @@ export default function Footer() {
               <ul className="text-[12px] md:text-[12px] lg:text-[16px] dark:text-white">
                 <li className="mb-4">
                   {" "}
-                  Seville District 6346, Riyadh, <br /> Saudi Arabia
+                  Seville District 6346, Riyadh, Saudi Arabia
                 </li>
                 <li className="lg:mb-4 mb-2 ">+966 569851545</li>
                 <li className="lg:mb-4 mb-2">wessam@awsgulf.com</li>
-                <li className="lg:mb-4 mb-2">www.awasgulft.com</li>
-                <ul className="mt-3 items-center flex justify-center  lg:flex lg:gap-4   text-base lg:text-2xl dark:text-white">
-
-  <li>
+                <li className="lg:mb-4 mb-2">www.awsgulf.com</li>
+                <ul className="mt-3 items-center flex justify-start  lg:flex lg:gap-6  text-base lg:text-2xl dark:text-white">
+                <li>
   <Link to="https://www.facebook.com/profile.php?id=61573374172184"> <i className="fab fa-facebook w-6 h-6 cursor-pointer  text-[#19738C]"></i></Link>
   </li>
+ 
   <li>
   <Link to="https://www.instagram.com/awsgulf.mkt/ "> <i className="fab fa-instagram w-6 h-6 cursor-pointer  text-[#19738C]"></i></Link>
   </li>
