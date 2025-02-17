@@ -85,7 +85,7 @@ export default function ModellButtonNavbar() {
                               name="fullName"
                               value={formData.fullName}
                               onChange={handleChange}
-                              className="w-full py-6 text-[#757575] px-[40px] rounded-[10px]"
+                              className="w-full py-6 text-[#757575] px-[40px] rounded-[10px] mb-4"
                               placeholder="Full Name"
                               required
                             />
@@ -105,7 +105,7 @@ export default function ModellButtonNavbar() {
                               name="mobile"
                               value={formData.mobile}
                               onChange={handleChange}
-                              className="w-full text-[#757575] py-6 px-[40px] rounded-[10px]"
+                              className="w-full text-[#757575] py-6 px-[40px] rounded-[10px] mb-4"
                               placeholder="Mobile Number"
                               required
                             />

@@ -79,13 +79,13 @@ export default function Modell() {
                   <div className="mt-6">
                     <form className="w-full" onSubmit={handleSubmit}>
                       <div className="flex-col px-6">
-                        <div className="sm:flex sm:flex-row flex-col w-full justify-evenly items-center gap-[30px]">
+                        <div className="sm:flex sm:flex-row flex-col w-full justify-evenly  items-center gap-[30px]">
                           <input
                             type="text"
                             name="fullName"
                             value={formData.fullName}
                             onChange={handleChange}
-                            className="w-full py-6 text-[#757575] px-[40px] rounded-[10px]"
+                            className="w-full py-6 text-[#757575] px-[40px] mb-4 rounded-[10px]"
                             placeholder="Full Name"
                             required
                           />
@@ -105,7 +105,7 @@ export default function Modell() {
                             name="mobile"
                             value={formData.mobile}
                             onChange={handleChange}
-                            className="w-full text-[#757575] py-6 px-[40px] rounded-[10px]"
+                            className="w-full text-[#757575] py-6 px-[40px] rounded-[10px] mb-4"
                             placeholder="Mobile Number"
                             required
                           />

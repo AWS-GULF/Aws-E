@@ -37,7 +37,7 @@ export default function NavbarHardWard() {
     }
   };
   return (
-    <Navbar fluid rounded className="bg-white  dark:bg-[#242424] px-4 py-3">
+    <Navbar fluid rounded className="bg-white  dark:bg-[#242424] px-4 py-3 bg-rd-500 shadow-md">
       {/* الجزء الأيسر: الشعار */}
       <Navbar.Brand href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
   
@@ -66,22 +66,22 @@ export default function NavbarHardWard() {
   <div className="absolute opacity-0 mr-10 group-hover:opacity-100 left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-10 rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8">
     <ul className="space-y-4 p-4">
       <li>
-        <a to="wepDevlopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
+        <a href="wepDevlopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
           Web Development
         </a>
       </li>
       <li>
-        <a to="mobileDevelopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
+        <a href="mobileDevelopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
           Mobile Development
         </a>
       </li>
       <li>
-        <a to="qualityAssurance1" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
+        <a href="qualityAssurance1" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
           Quality Assurance
         </a>
       </li>
       <li>
-        <a to="uiUxDesign" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
+        <a href="uiUxDesign" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
           UI/UX Design
         </a>
       </li>

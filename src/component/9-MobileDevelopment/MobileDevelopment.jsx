@@ -26,14 +26,14 @@ export default function MobileDevelopment() {
       </div>
       
       <div className="text-center mb-20">
-        <h2 className="text-3xl sm:text-4xl font-montserrat lg:text-5xl font-bold tracking-[4.8px] leading-tight text-[#003540] dark:text-[#B3E5F1]">
+        <h2 className="text-3xl sm:text-4xl font-montserrat lg:text-5xl font-bold  leading-tight text-[#003540] dark:text-[#B3E5F1]">
           Innovative mobile solutions to grow your business on the go.
         </h2>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-center items-center mb-20">
         {[kotlin, oracle, python, radius, node].map((img, index) => (
-         <img key={index} src={img} alt="tech" className="w-10 sm:w-20 lg:w-20  mx-auto" />
+         <img key={index} src={img} alt="tech" className="w-10 sm:w-20 lg:w-28  mx-auto" />
         ))}
       </div>
 

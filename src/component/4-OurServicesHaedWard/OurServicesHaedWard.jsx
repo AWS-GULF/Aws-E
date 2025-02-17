@@ -18,9 +18,9 @@ export default function OurServicesHaedWard() {
             The IT Industry and Software Development.
           </p>
 
-          <div className="grid gap-4 mt-8 w-full lg:w-[110%] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid lg:gap-4 mt-8 w-full lg:w-[110%] grid-cols-1 sm:grid-cols-1  lg:grid-cols-3">
             {/* Card 1 */}
-            <div className="border p-3 rounded-xl min-w-[300px] flex-1 bg-tooHover group">
+            <div className="border p-3 rounded-xl min-w-[300px] mb-4 flex-1 bg-tooHover group   ">
   <img
     src={Services}
     alt="Services"
@@ -50,7 +50,7 @@ export default function OurServicesHaedWard() {
 </div>
 
             {/* Card 2 */}
-            <div className="border p-3 rounded-xl min-w-[300px] bg-tooHover flex-1 group">
+            <div className="border p-3 rounded-xl min-w-[300px] mb-4 bg-tooHover flex-1 group">
               <img
                 src={Services}
                 alt="Services"
@@ -78,7 +78,7 @@ export default function OurServicesHaedWard() {
             </div>
 
             {/* Card 3 */}
-            <div className="border p-3 rounded-xl min-w-[300px] bg-tooHover flex-1 group">
+            <div className="border p-3 rounded-xl min-w-[300px] mb-4 bg-tooHover flex-1 group">
               <img
                 src={Services}
                 alt="Services"
@@ -106,7 +106,7 @@ export default function OurServicesHaedWard() {
             </div>
 
             {/* Card 4 */}
-            <div className="border p-3 rounded-xl min-w-[300px] bg-tooHover flex-1 group">
+            <div className="border p-3 rounded-xl min-w-[300px] mb-4 bg-tooHover flex-1 group">
               <img
                 src={Services}
                 alt="Services"
@@ -118,7 +118,7 @@ export default function OurServicesHaedWard() {
                 </h2>
                 <p className="font-mons text-[15px] lg:py-3 font-[500] text-[#666] mt-2 leading-6 dark:text-white font-montserrat group-hover:dark:text-black">
                   Sindion Technology is a professional IT solutions and services
-                  provider. We will help you to achieve your IT strategy by
+                  provider.We will help you to achieve your IT strategy by
                   providing you system integration, testing, application
                   development and management services and solutions.
                 </p>
@@ -133,7 +133,7 @@ export default function OurServicesHaedWard() {
             </div>
 
             {/* Card 5 */}
-            <div className="border p-3 rounded-xl min-w-[300px] bg-tooHover flex-1 group">
+            <div className="border p-3 rounded-xl min-w-[300px] mb-4 bg-tooHover flex-1 group">
               <img
                 src={Services}
                 alt="Services"
@@ -161,7 +161,7 @@ export default function OurServicesHaedWard() {
             </div>
 
             {/* Card 6 */}
-            <div className="border p-3 rounded-xl min-w-[300px] bg-tooHover flex-1 group">
+            <div className="border p-3 rounded-xl min-w-[300px] mb-4 bg-tooHover flex-1 group">
               <img
                 src={Services}
                 alt="Services"

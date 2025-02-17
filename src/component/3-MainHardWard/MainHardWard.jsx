@@ -59,10 +59,10 @@ export default function MainHardWard() {
          <div className="flex justify-center  sm:mt-5 md:m-auto md:flex-row mt-8 lg:gap-8 gap-3">
   {/* قسم Creativity */}
   <div className="w-full md:w-1/2">
-    <button className=" py-4 px-16 sm:mt-4 md:mt-4 lg:mt-8 font-normal text-[20px] leading-[24px] Style sm:px-[50px] md:px-[60px] lg:px-[80px] sm:py-[14px] md:py-[18px] lg:py-[24px] dark:text-white">
+    <button className=" py-4 px-8 mb-4  sm:mt-4 md:mt-4 lg:mt-8 font-normal text-[20px] leading-[24px] Style sm:px-[50px] md:px-[60px] lg:px-[80px] sm:py-[14px] md:py-[18px] lg:py-[24px] dark:text-white">
       Creativity
     </button>
-    <ul className=" text-secondary text-[15px] sm:mt-2 md:mt-3 lg:mt-4 sm:space-y-1 md:space-y-1.5 lg:space-y-2 font-montserrat text-color-fool dark:text-white">
+    <ul className=" text-secondary ms-2 text-[15px] sm:mt-2 md:mt-3 lg:mt-4 sm:space-y-1 md:space-y-1.5 lg:space-y-2 font-montserrat text-color-fool dark:text-white">
       <li>Trendsetting Designs</li>
       <li>Creative Content Creation</li>
       <li>Interactive User Experience</li>
@@ -73,10 +73,10 @@ export default function MainHardWard() {
 
   {/* قسم Technology */}
   <div className="w-full md:w-1/2">
-    <button className="sm:mt-4  py-4 px-16 md:mt-4 lg:mt-8 font-normal text-[20px] leading-[24px] Style sm:px-[50px] md:px-[60px] lg:px-[80px] sm:py-[14px] md:py-[18px] lg:py-[24px] dark:text-white">
+    <button className="sm:mt-4  py-4 px-8 mb-4 md:mt-4 lg:mt-8 font-normal text-[20px] leading-[24px] Style sm:px-[50px] md:px-[60px] lg:px-[80px] sm:py-[14px] md:py-[18px] lg:py-[24px] dark:text-white">
       Technology
     </button>
-    <ul className="text-secondary text-[15px] sm:mt-2 md:mt-3 lg:mt-4 sm:space-y-1 md:space-y-1.5 lg:space-y-2 font-montserrat text-color-fool dark:text-white">
+    <ul className="text-secondary ms-2   text-[15px] sm:mt-2 md:mt-3 lg:mt-4 sm:space-y-1 md:space-y-1.5 lg:space-y-2 font-montserrat text-color-fool dark:text-white">
       <li>UX UI Design</li>
       <li>Native & Flutter Mobile Apps Coding</li>
       <li>Ecommerce Solutions</li>

@@ -26,14 +26,14 @@ export default function uiUxDesign() {
         </div>
 
         <div className="flex justify-center items-center">
-          <h2 className="text-3xl sm:text-5xl font-mons font-bold mb-[80px]  text-center text-[#003540] tracking-[4.8px] leading-[75px] dark:text-[#B3E5F1]">
+          <h2 className="text-3xl sm:text-5xl font-mons font-bold mb-[80px]  text-center text-[#003540] tracking-[2.8px] leading-[75px] dark:text-[#B3E5F1]">
           Crafting seamless experiences that drive user satisfaction and business growth.
           </h2>
         </div>
 
 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-center items-center mb-20">
         {[kotlin, oracle, python, radius, node].map((img, index) => (
-          <img key={index} src={img} alt="tech" className="w-10 sm:w-20 lg:w-20  mx-auto" />
+          <img key={index} src={img} alt="tech" className="w-10 sm:w-20 lg:w-28  mx-auto" />
         ))}
       </div>
 
