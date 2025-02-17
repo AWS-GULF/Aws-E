@@ -42,18 +42,18 @@ export default function HeroHardWard( ) {
             Marketing consultancy, UX UI web design,{" "}
             <br className="hidden md:block" /> mobile apps & software coding,
             sponsored ads, <br className="hidden md:block" /> content creation,
-            graphic design, AI & video <br /> production.
+            graphic design, AI & video  production.
           </p>
         </div>
 
-        <div className="flex gap-3 sm:gap-5 justify-center md:justify-start  items-center">
-          <button className=" backGroundButton py-1 px-1 sm:px-6 font-bold rounded-2xl transition  dark:text-[#333]   dark:bg-[#B3E5F1]">
+        <div className="flex gap-3 mt-5 sm:gap-5 justify-center md:justify-start  items-center">
+          <button className= " text-nowrap backGroundButton py-[1px]  md:py-[6px] md:px-5 sm:px-6 font-bold rounded-2xl transition  dark:text-[#333]   dark:bg-[#B3E5F1]">
             <Modell />
           </button>
 
           <button
             onClick={handleClick}
-            className="px-6 py-6  sm:py-7 sm:px-9 rounded-2xl bg-text font-bold backgroundbutton2 dark:text-white dark:hover:text-black"
+            className="px-6 py-6  text-nowrap  sm:py-7 sm:px-9 rounded-2xl bg-text font-bold backgroundbutton2 dark:text-white dark:hover:text-black"
           >
             Marketing Services
               

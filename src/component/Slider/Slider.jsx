@@ -1,32 +1,34 @@
 import React from "react";
 import Slider from "react-slick";
-import Slider1 from "../../assets/images/Slider1.svg";
-import Slider2 from "../../assets/images/Slider2.svg";
-import Slider3 from "../../assets/images/Slider3.svg";
-import Slider4 from "../../assets/images/Slider5.svg";
-import Slider5 from "../../assets/images/Slider7.svg";
+import Slider1 from "../../assets/images/kall1.svg";
+import Slider2 from "../../assets/images/kall2.svg";
+// import Slider3 from "../../assets/images/kall3.svg";
+import Slider5 from "../../assets/images/kall5.svg";
 
 export default function MySlider() {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3, // العرض الافتراضي على الشاشات الكبيرة
+    slidesToShow: 2, // عرض 2 شرائح بحيث تكون واحدة في المنتصف
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    centerMode: true,
-    arrows: false,
+    arrows: false, 
+    centerMode: true, // ✅ تفعيل وضع الـ Center Mode
+    centerPadding: "20%", // ✅ لإظهار نصف الشرائح الجانبية
     responsive: [
       {
-        breakpoint: 1024, // للشاشات من 1024 بيكسل أو أقل
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 2, // عرض 2 slides على الشاشات المتوسطة
+          slidesToShow: 2,
+          centerPadding: "15%",
         },
       },
       {
-        breakpoint: 600, // للشاشات من 600 بيكسل أو أقل
+        breakpoint: 600,
         settings: {
-          slidesToShow: 1, // عرض 1 slide على الشاشات الصغيرة
+          slidesToShow: 1,
+          centerPadding: "10%",
         },
       },
     ],
@@ -34,28 +36,22 @@ export default function MySlider() {
 
   return (
     <div>
-      <div className="mb-[60px]">
+      <div className="mb-[60px] rounded-2xl">
         <h2 className="text-5xl text-center bg-color font-bold mt-[100px] dark:text-white">
           What Our Client Say
         </h2>
       </div>
-      <div className="mt-14">
+      <div className="px-4 rounded-2xl">
         <Slider {...settings}>
-          <div>
-            <img src={Slider1} alt="Slider1" className="w-full" />
-          </div>
-          <div>
-            <img src={Slider2} alt="Slider2" className="w-full" />
-          </div>
-          <div>
-            <img src={Slider3} alt="Slider3" className="w-full" />
-          </div>
-          <div>
-            <img src={Slider4} alt="Slider4" className="w-full" />
-          </div>
-          <div>
-            <img src={Slider5} alt="Slider5" className="w-full" />
-          </div>
+          {[Slider1, Slider2,  Slider5].map((slide, index) => (
+            <div key={index} className="w-full h-[300px] flex items-center justify-center rounded-2xl transition-transform duration-700 transform hover:rotate-6 mx-4">
+              <img 
+                src={slide} 
+                alt={`Slider ${index + 1}`} 
+                className="w-full h-full object-cover rounded-2xl transition-transform duration-700 transform hover:rotate-6"
+              />
+            </div>
+          ))}
         </Slider>
       </div>
     </div>

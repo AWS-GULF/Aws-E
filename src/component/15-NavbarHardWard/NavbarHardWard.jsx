@@ -171,7 +171,7 @@ export default function NavbarHardWard() {
             <ModellButtonNavbar/>
           </button>
        
-         
+         <hr  className="w-2 h-2" />
       </div>
    
     </Navbar>

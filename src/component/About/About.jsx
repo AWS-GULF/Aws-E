@@ -24,52 +24,48 @@ export default function About() {
   };
 
   return (
-    <section className="lg:mt-[100px] md:m-7  relative px-6  md:px-12 lg:px-20">
-    
-    <h2 className="font-montserrat text-[#19738C] font-bold text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] leading-[40px] md:leading-[50px] lg:leading-[60px] text-center max-w-6xl mx-auto dark:text-white">
-      Expressive and enduring digital experiences.
-    </h2>
+    <section className=" md:m-7 relative ">
+      <h2 className="font-montserrat text-[#19738C]  font-bold text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] leading-[40px] md:leading-[50px] lg:leading-[60px] text-center max-w-6xl mx-auto dark:text-white">
+        Expressive and enduring digital experiences.
+      </h2>
 
-   
-    <p className=" font-montserrat  text-[#333]  md:text-xl leading-[28px] md:leading-[32px] lg:leading-[36px] py-6 dark:text-white x-auto">
-      We help our clients accelerate progress, shape outcomes, and envision the future. 
-      Through collaboration with companies across industries, we build scalable brand 
-      systems and products that leverage emerging behaviors and technologies, and ultimately 
-      unlock potential. Learn more about what we can do for you.
-    </p>
+      <p className="font-montserrat text-justify text-[#333] w-[95%]   md:text-xl leading-[28px] md:leading-[32px] lg:leading-[36px] py-6 dark:text-white m-auto">
+       We help our clients accelerate progress, shape outcomes, and envision the future. 
+        Through collaboration with companies across 
+       industries, we build scalable brand systems and products that leverage emerging behaviors and technologies, and    ultimately 
+        unlock potential. Learn more about what we can do for you.
+      </p>
 
-   
-    <div className="flex flex-col lg:flex-row items-center gap-10 mt-10 max-w-6xl mx-auto">
-   
-      <div className="w-full lg:w-1/2 text-center lg:text-left">
-        <h2 className="font-montserrat font-semibold text-[24px] md:text-[28px] lg:text-[32px] leading-[32px] md:leading-[36px] dark:text-white">
-          Branding & Design
-        </h2>
-        <p className="font-montserrat text-[#333] font-normal text-lg md:text-xl leading-[28px] md:leading-[32px] py-6 dark:text-white">
-          We help our clients accelerate progress, shape outcomes, and envision the future. 
-          Through collaboration with companies across industries, we build scalable brand 
-          systems and products that leverage emerging behaviors and technologies, and ultimately 
-          unlock potential. Learn more about what we can do for you.
-        </p>
+      <div className="flex flex-col lg:flex-row items-center gap-10   max-w-6xl mx-auto lg:m-auto lg:mt-16">
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <h2 className="font-montserrat font-semibold text-[24px] md:text-[28px] lg:text-[32px] leading-[32px] md:leading-[36px] dark:text-white">
+            Branding & Design
+          </h2>
+          <p className="font-montserrat text-[#333] text-justify m-auto   px-2 text-lg md:text-xl leading-[28px] md:leading-[32px] py-6 dark:text-white">
+            We help our clients accelerate progress, shape outcomes, and envision the future. 
+            Through collaboration with companies across industries, we build scalable brand 
+            systems and products that leverage emerging behaviors and technologies, and ultimately 
+            unlock potential. Learn more about what we can do for you.
+          </p>
 
-        <button className="bg-[#5BA89C] rounded-3xl py-6 px-8 font-bold text-white dark:bg-white dark:text-teal-600">
-          Contact Us Now
-        </button>
-      </div>
+          <button className="bg-[#5BA89C] rounded-3xl py-6 px-8 font-bold text-white dark:bg-white dark:text-teal-600">
+            Contact Us Now
+          </button>
+        </div>
 
-      <div className="w-full lg:w-1/2 ">
-        <div className="w-[90%] md:w-[80%] lg:w-[100%] max-w-lg m-auto md:m-auto" >
-          <Slider {...settings}>
-            <img src={Frame1} alt="Frame1" className="w-full h-auto rounded-xl shadow-md" />
-            <img src={Frame2} alt="Frame2" className="w-full h-auto rounded-xl shadow-md" />
-            <img src={Frame3} alt="Frame3" className="w-full h-auto rounded-xl shadow-md" />
-            <img src={Frame4} alt="Frame4" className="w-full h-auto rounded-xl shadow-md" />
-            <img src={Frame5} alt="Frame5" className="w-full h-auto rounded-xl shadow-md" />
-            <img src={Frame6} alt="Frame6" className="w-full h-auto rounded-xl shadow-md" />
-          </Slider>
+        <div className="w-full lg:w-1/2 flex justify-center">
+          <div className="w-[90%] md:w-[80%] lg:w-[100%] max-w-lg">
+            <Slider {...settings}>
+              <img src={Frame1} alt="Frame1" className="w-full h-auto rounded-xl shadow-md" />
+              <img src={Frame2} alt="Frame2" className="w-full h-auto rounded-xl shadow-md" />
+              <img src={Frame3} alt="Frame3" className="w-full h-auto rounded-xl shadow-md" />
+              <img src={Frame4} alt="Frame4" className="w-full h-auto rounded-xl shadow-md" />
+              <img src={Frame5} alt="Frame5" className="w-full h-auto rounded-xl shadow-md" />
+              <img src={Frame6} alt="Frame6" className="w-full h-auto rounded-xl shadow-md" />
+            </Slider>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   );
 }

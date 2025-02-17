@@ -10,7 +10,6 @@ export default function SeeourBlog() {
     See our Blog
   </h1>
 
-  {/* بداية الفlex للشاشات الصغيرة مع ترك الصور تأخذ المساحة الكاملة */}
   <div className="flex flex-col lg:flex-row lg:space-x-4 justify-center items-center">
     <div className="w-full mb-4 lg:mb-0">
       <img src={frame8} alt="" className="w-full" />
