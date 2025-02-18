@@ -101,13 +101,8 @@ export default function ITHardware() {
               <h2 className="text-center  mb-[20px] text-primary font-mons text-[16px] sm:text-[32px] tracking-[3.2px] font-[500] dark:text-[#B3E5F1]  ">
                 IT Professional Services
               </h2>
-<<<<<<< HEAD
               <p className="text-aboutCont text-center text-[14px] sm:text-[16px] font-mons font-normal  text-[#fff] text-[#666]leading-[30px] tracking-[1.6px] mb-[60px] ">
                 Sindion Technology offers a comprehensive range of hardware
-=======
-              <p className="text-aboutCont text-center text-[14px] sm:text-[16px] font-mons font-normal leading-[30px] tracking-[1.6px] mb-[60px] ">
-                Aws Technology offers a comprehensive range of hardware
->>>>>>> 731918b1ed27afdcd26aba0e84442dd73f482f2b
                 solutions to meet diverse business needs, including:
               </p>
             </div>
@@ -165,13 +160,8 @@ export default function ITHardware() {
               <h2 className="text-center  mb-[20px] text-primary font-mons text-[16px] sm:text-[32px] tracking-[3.2px] font-[500] dark:text-[#B3E5F1] ">
                 Data Center Development{" "}
               </h2>
-<<<<<<< HEAD
               <p className="text-aboutCont text-center text-[14px] sm:text-[16px] font-mons font-normal leading-[30px] tracking-[1.6px] mb-[60px] dark:text-[#fff]">
                 Sindion Technology provides end-to-end data center development
-=======
-              <p className="text-aboutCont text-center text-[14px] sm:text-[16px] font-mons font-normal leading-[30px] tracking-[1.6px] mb-[60px]">
-                Aws Technology provides end-to-end data center development
->>>>>>> 731918b1ed27afdcd26aba0e84442dd73f482f2b
                 services, ensuring reliability and efficiency at every stage:
               </p>
             </div>
@@ -224,13 +214,8 @@ export default function ITHardware() {
               <h2 className="text-center  mb-[20px] text-primary font-mons text-[16px] sm:text-[32px] tracking-[3.2px] font-[500] dark:text-[#B3E5F1] ">
                 Network Services{" "}
               </h2>
-<<<<<<< HEAD
               <p className="text-aboutCont text-center text-[14px] sm:text-[16px] font-mons font-normal leading-[30px] tracking-[1.6px] mb-[60px] dark:text-[#fff]">
                 Sindion Technology offers customized network solutions and
-=======
-              <p className="text-aboutCont text-center text-[14px] sm:text-[16px] font-mons font-normal leading-[30px] tracking-[1.6px] mb-[60px]">
-                AWS Technology offers customized network solutions and
->>>>>>> 731918b1ed27afdcd26aba0e84442dd73f482f2b
                 professional services in network architecture, information
                 security, and unified communications:
               </p>
@@ -297,13 +282,8 @@ export default function ITHardware() {
               <h2 className="text-center  mb-[20px] text-primary font-mons text-[16px] sm:text-[32px] tracking-[3.2px] font-[500] dark:text-[#B3E5F1] ">
                 IT Professional Services{" "}
               </h2>
-<<<<<<< HEAD
               <p className="text-aboutCont text-center text-[14px] sm:text-[16px] font-mons font-normal leading-[30px] tracking-[1.6px] mb-[60px] dark:text-[#fff]">
                 Sindion Technology delivers top-tier IT professional services to
-=======
-              <p className="text-aboutCont text-center text-[14px] sm:text-[16px] font-mons font-normal leading-[30px] tracking-[1.6px] mb-[60px]">
-                AWS Technology delivers top-tier IT professional services to
->>>>>>> 731918b1ed27afdcd26aba0e84442dd73f482f2b
                 ensure seamless integration and operational excellence:
               </p>
             </div>
