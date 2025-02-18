@@ -11,7 +11,7 @@ export default function Choose() {
 
   <div className="flex flex-col mt-14 lg:flex-row justify-center items-center lg:items-start lg:justify-between gap-10 max-w-screen-xl mx-auto">
  
-    <div className="lg:ml-80 w-full lg:w-auto">
+    <div className="lg:ml-80 w-full text-center lg:w-auto md:text-center lg:text-left sm:text-center sm:text-nowrap">
       <h2 className="font-montserrat font-semibold text-2xl  text-balance leading-[36px] text-gray-800 dark:text-white">
         Our values are part of <br /> everything we create at <br /> <span className="text-end"> Instrument. </span>
       </h2>

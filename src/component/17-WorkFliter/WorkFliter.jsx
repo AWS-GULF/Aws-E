@@ -61,7 +61,7 @@ export default function WorkFilter() {
               <div className="sm:flex sm:flex-row sm:justify-center sm:items-center dark:text-white">
                 <p className="font-mons text-[14px] sm:text-[15px] font-[500] dark:text-[#fff]">{card.description}</p>
                 {card.route && (
-                  <div className="flex justify-end items-end text-[#003540] ps-6 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap dark:text-[#B3E5F1]">
+                  <div className="flex justify-end items-end text-[#003540] ps-6 underline text-primary lg:text-[16px] text-xs font-[600] tracking-wider whitespace-nowrap dark:text-[#B3E5F1]">
                     <Link to={card.route}><p>See More</p></Link>
                   </div>
                 )}

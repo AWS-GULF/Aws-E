@@ -45,7 +45,7 @@ export default function Aboutt() {
 
         <div className="flex justify-center items-center text-center">
           <h2 className="sm:text-5xl text-[20px] font-montserrat  font-bold mb-[80px] text-center sm:tracking-[4.8px] sm:leading-[75px] text-[#003540] dark:text-[#B3E5F1]">
-            AS GULF Illuminating Your Path to the Future
+            AWS GULF Illuminating Your Path to the Future
           </h2>
         </div>
 
@@ -53,8 +53,8 @@ export default function Aboutt() {
           <h2 className="text-[#003540]  font-montserrat  text-[16px] sm:text-[28px] font-bold tracking-[.64px] pb-8  dark:text-[#B3E5F1]">
             WHO WE ARE?
           </h2>
-          <p className=" dark:text-white  text-aboutCont  text-[14px] text-justify sm:text-[16px] mb-8 sm:mb-0 tracking-[1.4px]  leading-[35px]">
-            At AS GULF, we are more than just a marketing and software agency –
+          <p className=" dark:text-white  text-aboutCont  text-[14px]  sm:text-[16px] mb-8 sm:mb-0 tracking-[1.4px]  leading-[35px]">
+            At AWS GULF, we are more than just a marketing and software agency –
             we are your trusted lighthouse guiding your business toward a
             brighter, more innovative future. Established to bridge the gap
             between cutting-edge technology and impactful marketing strategies,
@@ -64,9 +64,11 @@ export default function Aboutt() {
         </div>
         <div className="flex flex-wrap justify-between sm:flex-nowrap sm:gap-4 mb-[100px]">
           <div className="flex-col ps-5 justify-evenly items-end sm:justify-center sm:items-center w-[45%] sm:w-1/3 mb-4">
-            <h3 className="sm:px-[80px] text-center  bg-[#295F70] dark:text-white py-4 sm:py-6 bg-primary rounded-[10px] text-[#fff] font-montserrat text-[14px] sm:text-[20px]">
-              OUR VISION
-            </h3>
+          <h3 className="text-center bg-[#295F70] dark:text-white text-nowrap py-4 sm:py-6 bg-primary rounded-[10px] text-[#fff] font-montserrat text-[14px] sm:text-[20px]">
+  OUR VISION
+  
+</h3>
+
             <p className="mt-[20px] ms-2 text-aboutCont dark:text-white font-montserrat text-[12px] sm:text-[16px] tracking-[1px] leading-[14px] sm:leading-[30px] line-clamp-5 overflow-hidden text-ellipsis">
               We work closely with our clients from marketing consultancy and
               strategy development to design, video production, and technology
@@ -79,7 +81,7 @@ export default function Aboutt() {
             </p>
           </div>
           <div className="flex-col ps-5 justify-evenly items-end sm:justify-center sm:items-center w-[45%] sm:w-1/3 mb-4">
-            <h3 className="sm:px-[80px] text-center  bg-[#295F70] dark:text-white py-4 sm:py-6 bg-primary rounded-[10px] text-[#fff] font-montserrat text-[14px] sm:text-[20px]">
+            <h3 className=" text-center  bg-[#295F70] dark:text-white text-nowrap  py-4 sm:py-6 bg-primary rounded-[10px] text-[#fff] font-montserrat text-[14px] sm:text-[20px]">
               OUR MESSAGE
             </h3>
             <p className="mt-[20px] ms-2 text-aboutCont dark:text-white font-montserrat text-[12px] sm:text-[16px] tracking-[1px] leading-[14px] sm:leading-[30px] line-clamp-5 overflow-hidden text-ellipsis">
@@ -92,7 +94,7 @@ export default function Aboutt() {
             </p>
           </div>
           <div className="flex-col ps-5 justify-evenly items-end sm:justify-center sm:items-center w-[40%] sm:w-1/3 mt-4 sm:mt-0">
-            <p className="sm:px-[80px] text-center bg-[#295F70] dark:text-white py-4 sm:py-6 bg-primary rounded-[10px] text-[#fff] font-montserrat text-[14px] sm:text-[20px]">
+            <p className=" text-center bg-[#295F70] dark:text-white py-4 sm:py-6 bg-primary text-nowrap rounded-[10px] text-[#fff] font-montserrat text-[14px] sm:text-[20px]">
               OUR MISSION
             </p>
             <p className="mt-[20px] ms-2 text-aboutCont dark:text-white font-montserrat text-[12px] sm:text-[16px] tracking-[1px] leading-[14px] sm:leading-[30px] line-clamp-5 overflow-hidden text-ellipsis">

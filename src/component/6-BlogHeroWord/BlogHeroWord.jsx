@@ -70,12 +70,13 @@ export default function BlogHeroWord() {
         </div>
       </div>
 
-      {/* القسم الأخير */}
+    
       <div className="mt-16 flex flex-wrap md:flex-nowrap items-center justify-around">
-        <p className="text-3xl font-bold tracking-wide text-[#333] dark:text-white font-montserrat">
-          Ready to take your business to the <br /> next level? Let’s create something <br />
-          extraordinary together!
-        </p>
+      <p className="lg:text-3xl font-bold mx-9 tracking-wide text-[#333] dark:text-white  md:text-balance text-xl text-nowrap font-montserrat sm:whitespace-nowrap">
+  Ready to take your business to the <br /> next level? Let’s create something <br />
+  extraordinary together!
+</p>
+
         <button className="  backGroundButton  sm:px-6  dark:text-[#333]  dark:bg-[#B3E5F1]  py-1 px-6  backGroundButtonn md:m-auto text-white font-bold my-12 rounded-2xl   transition">
           <Modell/>
           </button>

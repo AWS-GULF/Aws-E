@@ -46,7 +46,7 @@ export default function HeroHardWard( ) {
           </p>
         </div>
 
-        <div className="flex gap-3 mt-5 sm:gap-5 justify-center md:justify-start  items-center">
+        <div className="flex gap-3  py-4 sm:gap-5 justify-center md:justify-start  items-center">
           <button className= " text-nowrap backGroundButton py-[1px]  md:py-[6px] md:px-5 sm:px-6 font-bold rounded-2xl transition  dark:text-[#333]   dark:bg-[#B3E5F1]">
             <Modell />
           </button>

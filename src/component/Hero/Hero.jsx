@@ -52,7 +52,7 @@ export default function Hero() {
     </div>
 
     
-    <div className="w-full md:w-[50%] lg:mr-20 lg:mt-0   flex justify-center">
+    <div className="w-full md:w-[50%] lg:mr-20 mt-[-30px]    flex justify-center">
   <img
     src={GHeager}
     alt="Marketing Strategy Illustration"

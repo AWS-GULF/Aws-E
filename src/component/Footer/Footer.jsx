@@ -1,5 +1,5 @@
 import React from "react";
-import footer from "../../assets/images/Footer.svg";
+import footer from "../../assets/images/Groupp.svg";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -7,23 +7,22 @@ export default function Footer() {
     <div>
     <div className="lg:flex lg:justify-evenly  lg:items-start lg:pt-16   Footer border-t ">
         <footer className="footer flex-col justify-center items-center w-[100%] flex text-base-content  lg:flex-row lg:justify-between lg:items-start  lg:ps-12 lg:pe-12  ">
-          <div className="w-full lg:w-[40%] ">
-            <aside className=" flex lg:flex-col  justify-center items-center">
-            <div className="flex flex-col items-center text-center lg:items-start lg:text-left w-[60%] mt-4 lg:w-36 m-auto lg:ml-[90px] lg:mt-[-5px]">
-  <img 
-    src={footer} 
-    className="mx-auto w-[50%] sm:w-[150px] lg:w-[200px] xl:w-[250px] 2xl:w-[400px] max-w-none"
-  />
-  <p className="lg:text-6 mx-auto text-lg font-Arial text-primary font-semibold w-[50%] lg:w-full dark:text-[#B3E5F1]">
-    {" "}
-  </p>
-</div>
+        <div className="w-full lg:w-[40%] mt-5 ">
+            <aside className="w-full flex lg:flex-col  justify-center items-center">
+              <div className=" flex-col text-center items-center lg:justify-start  lg:items-start  w-[50%] mt-4   lg:w-36 lg:mt-[-5px]  lg:m-auto ">
+                <img src={footer} className="mx-auto w-[48%] sm:w-[150px]  lg:w-full   " />
+                <p className="lg:text-6 mx-auto  text-lg font-Arial text-primary font-semibold w-[50%]  lg:w-full dark:text-[#B3E5F1]  ">
+               
+              
+                </p>
+              </div>
 
-
-             
+              <p className="  text-[#19738C] dark:text-[#B3E5F1]  font-montserrat font-bold lg:text-4xl md:3xl lg:ms-[-30px] md:ms-[-40px] lg:tracking-widest text-center lg:ps-12  font-mons lg:mt-4 hidden lg:block">
+              Drive Results with Data-Driven Marketing
+              </p>
             </aside>
           </div>
-          <div className="w-[90%] lg:w-[60%] lg:mr-16 lg:flex justify-evenly flex items-start ms-10 lg:items-start ">
+          <div className="w-[90%] mt-4 lg:w-[60%] lg:mr-16 lg:flex justify-evenly flex items-start ms-10 lg:items-start ">
             <nav className=" lg:pe-0 mr-9">
               <h6 className=" font-mons text-[16px] lg:text-[24px] font-[500] text-[#19738C] mb-2 dark:text-[#B3E5F1]  ">
                 Services
@@ -76,7 +75,7 @@ export default function Footer() {
           </div>
         </footer>
       </div>
-      <p className="ms-[96px] me-[96px] text-center mt-10 mb-3 text-[15px] dark:text-white">
+      <p className="ms-[96px] me-[96px] text-center mt-10 mb-3 lg:text-[15px] text-xs  dark:text-white">
         {" "}
         &copy; 2024 AWS Gulf . All rights reserved.
       </p>
