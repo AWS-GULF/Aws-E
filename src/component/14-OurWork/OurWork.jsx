@@ -58,8 +58,8 @@ export default function OurWork() {
         </div>
 
         <div className="flex justify-center items-center text-[#003540] dark:text-[#B3E5F1] ">
-          <h2 className="sm:text-5xl text-[20px] font-montserrat font-bold mb-[10px] sm:mb-[20px] sm:px-[150px] text-center sm:tracking-[4.8px] leading-[75px] text-primary">
-            BUILDING SUCCESS <br /> TOGETHER
+          <h2 className="sm:text-5xl text-[20px] font-montserrat font-bold mb-[10px] sm:mb-[40px] sm:px-[150px] text-center sm:tracking-[4.8px] leading-[75px] text-primary">
+            BUILDING SUCCESS  TOGETHER
           </h2>
         </div>
 
@@ -75,22 +75,29 @@ export default function OurWork() {
 
       {/* Swiper Slider */}
       <div className="dark:text-[#B3E5F1]">
-        <Swiper
-          modules={[Grid, Pagination]}
-          spaceBetween={20}
-          slidesPerView={4}
-          grid={{ rows: 2, fill: "row", rowGap: 20 }}
-          pagination={{ clickable: true }}
-          slidesPerGroup={3}
-          loop={false}
-          className="w-full"
-        >
-          {logos.map((icon) => (
-            <SwiperSlide key={icon.alt} className="flex justify-center lg:4/12 md:6/12">
-              <img src={icon.src} alt={icon.alt} className="w-40 h-24 mb-10" />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      <Swiper
+  modules={[Grid, Pagination]}
+  spaceBetween={20}
+  slidesPerView={3} 
+  grid={{ rows: 2, fill: "row", rowGap: 20 }}
+  pagination={{ clickable: true }}
+  slidesPerGroup={3}
+  loop={false}
+  breakpoints={{
+    320: { slidesPerView: 3 ,slidesPerGroup: 2 }, 
+    480: { slidesPerView: 3, slidesPerGroup: 2 }, 
+    768: { slidesPerView: 3, slidesPerGroup: 3 }, 
+    1024: { slidesPerView: 4, slidesPerGroup: 3 }, 
+  }}
+  className="w-full"
+>
+  {logos.map((icon) => (
+    <SwiperSlide key={icon.alt} className="flex justify-center lg:4/12 md:6/12 w-full px-4 ">
+      <img src={icon.src} alt={icon.alt} className="lg:w-40 lg:h-24 mb-10 w-16 h-16" />
+    </SwiperSlide>
+  ))}
+</Swiper>
+
       </div>
 
       <div className="mt-[100px] mb-14 flex justify-center items-center">
