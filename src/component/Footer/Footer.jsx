@@ -49,7 +49,7 @@ export default function Footer() {
                 <li className="lg:mb-4 mb-2 ">+966 569851545</li>
                 <li className="lg:mb-4 mb-2">wessam@awsgulf.com</li>
                 <li className="lg:mb-4 mb-2">www.awsgulf.com</li>
-                <ul className="mt-3 items-center flex justify-start  lg:flex lg:gap-6  text-base lg:text-2xl dark:text-white">
+                <ul className="mt-3  items-center flex justify-start  lg:flex lg:gap-6  text-base lg:text-2xl dark:text-white">
                 <li>
   <Link to="https://www.facebook.com/profile.php?id=61573374172184"> <i className="fab fa-facebook w-6 h-6 cursor-pointer  text-[#19738C]"></i></Link>
   </li>
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
         </footer>
       </div>
-      <p className="ms-[96px] me-[96px] text-center mt-10 mb-3 lg:text-[15px] text-xs  dark:text-white">
+      <p className="ms-[96px] me-[96px] text-center mt-10 mb-3 lg:text-[15px] text-xs   dark:text-white">
         {" "}
         &copy; 2024 AWS Gulf . All rights reserved.
       </p>

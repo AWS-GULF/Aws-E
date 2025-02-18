@@ -28,8 +28,8 @@ export default function ITHardware() {
               Innovative IT and software solutions to bring your ideas to life
               and drive success
             </h2>
-            <p className=" sm:mt-5 text-center pb-[70px] font-normal text-[#fff] px-5 font-mons text-[15px] sm:text-[20px] tracking-[2px] leading-[35px] text-secondary">
-              <span className="text-primary font-[500] pe-1">
+            <p className=" sm:mt-5 text-center pb-[70px] font-normal  px-5 font-mons text-[15px] sm:text-[20px] tracking-[2px] leading-[35px] text-secondary">
+              <span className="font-[500] pe-1">
                 AWs Technology
               </span>
               is a professional IT solutions and services provider.We will help
