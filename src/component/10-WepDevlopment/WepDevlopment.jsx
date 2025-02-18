@@ -32,11 +32,15 @@ export default function WepDevlopment() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-center items-center mb-20">
-        {[kotlin, oracle, python, radius, node].map((img, index) => (
-          <img key={index} src={img} alt="tech" className="w-10 sm:w-20 lg:w-28 mx-auto" />
-        ))}
-      </div>
+      <div className="flex sm:justify-center overflow-scroll scrollbar sm:overflow-hidden  lg:w-[1580px] lg:h-30  sm:mb-[100px] mb-8 ">
+            <div className="flex gap-2 sm:w-full justify-center items-center lg:w-full ">
+              <img src={kotlin} className="sm:pe-[87px] lg:pe-12 lg:pt-6 lg:w-1/6 lg:h-[160px]    " alt="kotlin" />
+              <img src={oracle} className="sm:pe-[87px] lg:pe-12   lg:w-1/5 p-4  lg:h-[120px] " alt="oracle" />
+              <img src={python} className="sm:pe-[87px] lg:pe-12   lg:w-1/5 p-4  lg:h-[120px] " alt="python" />
+              <img src={radius} className="sm:pe-[87px] lg:pe-12   lg:w-1/5 p-4  lg:h-[120px] " alt="radius" />
+              <img src={node} className=" lg:w-1/5 p-4  lg:h-[120px]" alt="node" />
+            </div>
+          </div>  
 
       <div className="text-center mb-10">
         <h1 className="mb-5 text-[#003540] dark:text-[#B3E5F1] font-mons text-2xl sm:text-3xl tracking-wide font-semibold">

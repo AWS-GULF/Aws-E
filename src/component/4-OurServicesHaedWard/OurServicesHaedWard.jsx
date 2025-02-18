@@ -117,7 +117,7 @@ export default function OurServicesHaedWard() {
                   IT & Hardware
                 </h2>
                 <p className="font-mons text-[15px] lg:py-3 font-[500] text-[#666] mt-2 leading-6 dark:text-white font-montserrat group-hover:dark:text-black">
-                  Sindion Technology is a professional IT solutions and services
+                  AWS Technology is a professional IT solutions and services
                   provider.We will help you to achieve your IT strategy by
                   providing you system integration, testing, application
                   development and management services and solutions.
