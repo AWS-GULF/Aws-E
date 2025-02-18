@@ -44,9 +44,9 @@ export default function Aboutt() {
           </p>
         </div>
 
-        <div className="flex justify-center items-center text-center">
-          <h2 className="sm:text-5xl text-[20px] font-montserrat  font-bold mb-[80px] text-center sm:tracking-[4.8px] sm:leading-[75px] text-[#003540] dark:text-[#B3E5F1]">
-            AS GULF Illuminating Your Path to the Future
+        <div className="flex justify-center items-center text-center lg:w-[800px] lg:m-auto">
+          <h2 className="sm:text-[60px] text-[20px] font-montserrat   font-bold mb-[80px] text-center sm:tracking-[4.8px] sm:leading-[75px] text-[#003540] dark:text-[#B3E5F1]">
+            AWS GULF Illuminating Your Path to the Future
           </h2>
         </div>
 
