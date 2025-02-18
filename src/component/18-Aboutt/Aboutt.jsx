@@ -18,6 +18,7 @@ import ExploreOurServices10 from "../../assets/images/rog.svg";
 import ExploreOurServices13 from "../../assets/images/axis.svg";
 import Modell from "../16-Modell/Modell";
 import QualityAssurance from "../../assets/images/sr-gray.svg";
+import ModellButtonNavbar from "../ModellButtonNavbar/ModellButtonNavbar";
 
 export default function Aboutt() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -109,16 +110,19 @@ export default function Aboutt() {
 
         <div className="flex mb-[100px] gap-10">
           <div className="sm:w-[80%] w-[50%] flex-col justify-start sm:items-start items-center">
-            <p className="text-aboutCont  text-[18px] font-montserrat dark:text-white  lg:text-[32px] lg:tracking-[6.4px] font-bold leading-[24px] lg:leading-[60px] pb-[30px]">
+            <p className="text-aboutCont  text-[14px] font-montserrat dark:text-white  lg:text-[32px] lg:tracking-[6.4px] font-bold leading-[24px] lg:leading-[60px] pb-[30px]">
               A suite of services designed to help businesses thrive in the
               digital future with AS GULF.
             </p>
-            <div className=" inline-block w-[175px] md:w-fit backGroundButton text-nowrap sm:px-6 font-bold rounded-2xl transition  dark:text-[#333]   dark:bg-[#B3E5F1]">
-              <Modell />
+            <div className=" inline-block px-4 lg:hidden   py-4 md:w-fit backGroundButton text-nowrap sm:px-6 font-bold rounded-2xl transition  dark:text-[#333]   dark:bg-[#B3E5F1]">
+             <ModellButtonNavbar/>
+            </div>
+            <div className=" lg:block hidden  px-4 py-4 md:w-fit backGroundButton text-nowrap sm:px-6 font-bold rounded-2xl transition  dark:text-[#333]   dark:bg-[#B3E5F1]">
+           <Modell/>
             </div>
           </div>
 
-          <div className="sm:w-1/2 w-[40%]  items-start">
+          <div className="sm:w-1/2 w-[65%]  items-start">
             <ul className="flex-col items-start justify-start dark:text-white text-[20px] text-nowrap space-y-2 sm:space-y-4">
               {listItems.map((item, index) => (
                 <li
@@ -136,7 +140,7 @@ export default function Aboutt() {
                     alt="QualityAssurance"
                   />
                   <p
-                    className={`font-bold text-[10px] sm:text-[20px] font-montserrat  sm:ps-4 ${
+                    className={`font-bold text-[10px] sm:text-[20px] font-montserrat ps-2   sm:ps-4 ${
                       hoveredIndex === index ? "text-primary" : "text-secondary"
                     }`}
                   >
@@ -149,7 +153,7 @@ export default function Aboutt() {
         </div>
 
         <div className="lg:flex-row sm:flex flex-col justify-center items-center sm:gap-4 sm:mb-[60px]">
-          <div className="lg:w-1/2 w-full mb-4">
+          <div className="lg:w-2/3 w-full mb-4">
             <p className="text-gray-600  dark:text-white  font-montserrat    text-[16px] sm:text-[18px] mb-2 md:tracking-[1.4px] leading-[25px]    text-justify sm:leading-[35px]">
               <span className=" dark:text-[#B3E5F1] font-bold font-montserrat   text-justify  text-[20px] sm:text-[26px] t">
                 Our team
@@ -164,7 +168,7 @@ export default function Aboutt() {
               future.
             </p>
           </div>
-          <div className="lg:w-1/2 w-full mb-5 sm:mb-0 ">
+          <div className="lg:w-1/3 w-full mb-5 sm:mb-0 ">
             <img
               src={team}
               alt="team-image"
