@@ -30,7 +30,7 @@ export default function ITHardware() {
             </h2>
             <p className=" sm:mt-5 text-center pb-[70px] font-normal px-5 font-mons text-[15px] sm:text-[20px] tracking-[2px] leading-[35px] text-secondary">
               <span className="text-primary font-[500] pe-1">
-                Sindion Technology
+                AWs Technology
               </span>
               is a professional IT solutions and services provider.We will help
               you to achieve your IT strategy by providing you system
@@ -102,7 +102,7 @@ export default function ITHardware() {
                 IT Professional Services
               </h2>
               <p className="text-aboutCont text-center text-[14px] sm:text-[16px] font-mons font-normal leading-[30px] tracking-[1.6px] mb-[60px] ">
-                Sindion Technology offers a comprehensive range of hardware
+                Aws Technology offers a comprehensive range of hardware
                 solutions to meet diverse business needs, including:
               </p>
             </div>
@@ -161,7 +161,7 @@ export default function ITHardware() {
                 Data Center Development{" "}
               </h2>
               <p className="text-aboutCont text-center text-[14px] sm:text-[16px] font-mons font-normal leading-[30px] tracking-[1.6px] mb-[60px]">
-                Sindion Technology provides end-to-end data center development
+                Aws Technology provides end-to-end data center development
                 services, ensuring reliability and efficiency at every stage:
               </p>
             </div>
@@ -215,7 +215,7 @@ export default function ITHardware() {
                 Network Services{" "}
               </h2>
               <p className="text-aboutCont text-center text-[14px] sm:text-[16px] font-mons font-normal leading-[30px] tracking-[1.6px] mb-[60px]">
-                Sindion Technology offers customized network solutions and
+                AWS Technology offers customized network solutions and
                 professional services in network architecture, information
                 security, and unified communications:
               </p>
@@ -283,7 +283,7 @@ export default function ITHardware() {
                 IT Professional Services{" "}
               </h2>
               <p className="text-aboutCont text-center text-[14px] sm:text-[16px] font-mons font-normal leading-[30px] tracking-[1.6px] mb-[60px]">
-                Sindion Technology delivers top-tier IT professional services to
+                AWS Technology delivers top-tier IT professional services to
                 ensure seamless integration and operational excellence:
               </p>
             </div>
