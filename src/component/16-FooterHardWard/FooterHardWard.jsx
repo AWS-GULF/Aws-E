@@ -67,7 +67,7 @@ export default function FooterHardWard() {
                 <li className="lg:mb-4 mb-2 ">+966 569851545</li>
                 <li className="lg:mb-4 mb-2">wessam@awsgulf.com</li>
                 <li className="lg:mb-4 mb-2">www.awasgulft.com</li>
-                <ul className="mt-3 mr-3p items-center flex justify-center gap-2 lg:flex lg:gap-4   text-lg lg:text-2xl dark:text-white">
+                <ul className="mt-3 mr-6 items-center flex justify-center gap-2 lg:flex lg:gap-4   text-lg lg:text-2xl dark:text-white">
   <li>
    <Link to="https://www.facebook.com/profile.php?id=61569400731269"> <i className="fa-brands fa-facebook text-[#003540] dark:text-[#fff]"></i></Link>
   </li>
