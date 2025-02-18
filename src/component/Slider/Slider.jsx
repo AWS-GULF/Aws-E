@@ -9,26 +9,28 @@ export default function MySlider() {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 2, // عرض 2 شرائح بحيث تكون واحدة في المنتصف
+    slidesToShow: 2, 
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false, 
-    centerMode: true, // ✅ تفعيل وضع الـ Center Mode
-    centerPadding: "20%", // ✅ لإظهار نصف الشرائح الجانبية
+    centerMode: true, 
+    centerPadding: "20%", 
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          centerPadding: "15%",
+          slidesToShow: 2, 
+          centerPadding: "10%",
+          centerMode: false,
         },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          centerPadding: "10%",
+          centerPadding: "0",
+          centerMode: false,
         },
       },
     ],
@@ -43,8 +45,11 @@ export default function MySlider() {
       </div>
       <div className="px-4 rounded-2xl">
         <Slider {...settings}>
-          {[Slider1, Slider2,  Slider5].map((slide, index) => (
-            <div key={index} className="w-full h-[300px] flex items-center justify-center rounded-2xl transition-transform duration-700 transform hover:rotate-6 mx-4">
+          {[Slider1, Slider2, Slider5].map((slide, index) => (
+            <div 
+              key={index} 
+              className="w-full h-[300px] flex items-center justify-center rounded-2xl transition-transform duration-700 transform hover:rotate-1 mx-4"
+            >
               <img 
                 src={slide} 
                 alt={`Slider ${index + 1}`} 
