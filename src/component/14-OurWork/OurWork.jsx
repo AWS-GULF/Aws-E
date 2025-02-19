@@ -14,7 +14,7 @@ import ExploreOurServices11light from "../../assets/images/valueExpert.svg";
 import ExploreOurServices12 from "../../assets/images/koko 1.svg";
 import ExploreOurServices13 from "../../assets/images/axis.svg";
 import ExploreOurServices14 from "../../assets/images/logod 1.svg";
-import axisLight from "../../assets/images/axislight.png"
+import axisLight from "../../assets/images/axislight.png";
 // import valueLight from "../../assets/images/valueExpert.svg"
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -30,7 +30,6 @@ export default function OurWork() {
   const { t, i18n } = useTranslation();
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-
   // console.log(i18n.language);
 
   const logos = [
@@ -43,12 +42,17 @@ export default function OurWork() {
     { src: ExploreOurServices6, alt: "ExploreOurServices6" },
     { src: ExploreOurServices9, alt: "ExploreOurServices9" },
     { src: ExploreOurServices10, alt: "ExploreOurServices10" },
-    { src: isDarkMode?  ExploreOurServices11light:ExploreOurServices11 , alt: "ExploreOurServices11" },
+    {
+      src: isDarkMode ? ExploreOurServices11light : ExploreOurServices11,
+      alt: "ExploreOurServices11",
+    },
     { src: ExploreOurServices12, alt: "ExploreOurServices12" },
-    { src: isDarkMode?axisLight:ExploreOurServices13, alt: "ExploreOurServices13" },
+    {
+      src: isDarkMode ? axisLight : ExploreOurServices13,
+      alt: "ExploreOurServices13",
+    },
     { src: ExploreOurServices14, alt: "ExploreOurServices14" },
   ];
-  
 
   useEffect(() => {
     const checkDarkMode = () => {
@@ -68,9 +72,8 @@ export default function OurWork() {
 
     return () => observer.disconnect();
   }, []);
-  
+
   console.log(isDarkMode);
-  
 
   return (
     <div>
@@ -82,8 +85,8 @@ export default function OurWork() {
             className="dark:text-[#B3E5F1]"
           />
           <p
-            className={`ps-2 text-2xl  font-montserrat text-hover font-bold sm:text-[16px] tracking-[1.6px] ${
-              i18n.language === "ar" && "tracking-[0] sm:text-[25px] "
+            className={`ps-2 text-2xl  font-montserrat text-hover font-bold sm:text-[16px] tracking-[1.6px]  ${
+              i18n.language === "ar" && "tracking-[0px] sm:text-[25px] "
             }`}
           >
             {t("WorkPageHeading")}
@@ -93,7 +96,7 @@ export default function OurWork() {
         <div className="flex justify-center items-center text-[#003540] dark:text-[#B3E5F1] ">
           <h2
             className={`lg:text-5xl sm:text-3xl text-[20px] font-montserrat font-bold mb-[10px] sm:mb-[40px] sm:px-[150px] text-center sm:tracking-[4.8px] leading-[75px] text-primary ${
-              i18n.language === "ar" && "sm:tracking-[0]  "
+              i18n.language === "ar" && "tracking-[0px] lg:tracking-[0] "
             }`}
           >
             {t("WorkPageHeadingDesc")}{" "}
@@ -103,7 +106,7 @@ export default function OurWork() {
         <div className="flex justify-center items-center text-center px-[60px] pb-[70px] ">
           <p
             className={`${
-              i18n.language === "ar" && "tracking-[0] sm:text-[25px] "
+              i18n.language === "ar" && "tracking-[0px] sm:text-[25px] "
             }  text-secondary font-montserrat text-[15px] sm:text-[20px] font-[400] leading-[30px] tracking-[0.4px] text-[#666] dark:text-white`}
           >
             {t("since")}
@@ -148,7 +151,7 @@ export default function OurWork() {
         <img src={QualityAssurance} alt="QualityAssurance" />
         <p
           className={` ${
-            i18n.language === "ar" && "tracking-[0] sm:text-[23px] "
+            i18n.language === "ar" && "tracking-[0px] sm:text-[23px] "
           } ps-2 font-montserrat text-hover font-bold text-[16px] text-[#003540] tracking-[1.6px] dark:text-[#B3E5F1]`}
         >
           {t("whatwedid")}{" "}
@@ -156,17 +159,21 @@ export default function OurWork() {
       </div>
 
       <div className="flex justify-center items-center text-center dark:text-[#B3E5F1] text-[#003540]">
-        <h2 className={`${
-              i18n.language === "ar" && "sm:tracking-[0]  "
-            } sm:text-5xl text-[20px] font-montserrat font-bold mb-[10px] sm:mb-[20px] sm:px-[150px] text-center sm:tracking-[4.8px] leading-[75px] dark:text-white`}>
+        <h2
+          className={`${
+            i18n.language === "ar" && "tracking-[0px] lg:tracking-[0]  "
+          } sm:text-5xl text-[20px] font-montserrat font-bold mb-[10px] sm:mb-[20px] sm:px-[150px] text-center sm:tracking-[4.8px] leading-[75px] dark:text-white`}
+        >
           {t("opv")}
         </h2>
       </div>
 
       <div className="flex justify-center items-center text-center px-[60px] pb-[42px] dark:text-white text-[#666]">
-        <p className={`${
-              i18n.language === "ar" && "tracking-[0] sm:text-[25px] lg:mt-4"
-            }  text-secondary font-montserrat text-[15px] sm:text-[20px] font-[400] leading-[30px] tracking-[0.4px] text-[#666] dark:text-white`}>
+        <p
+          className={`${
+            i18n.language === "ar" && "tracking-[0px] sm:text-[25px] lg:mt-4"
+          }  text-secondary font-montserrat text-[15px] sm:text-[20px] font-[400] leading-[30px] tracking-[0.4px] text-[#666] dark:text-white`}
+        >
           {t("since")}
         </p>
       </div>
