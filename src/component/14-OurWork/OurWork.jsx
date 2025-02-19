@@ -15,7 +15,7 @@ import ExploreOurServices12 from "../../assets/images/koko 1.svg";
 import ExploreOurServices13 from "../../assets/images/axis.svg";
 import ExploreOurServices14 from "../../assets/images/logod 1.svg";
 import axisLight from "../../assets/images/axislight.png"
-import valueLight from "../../assets/images/valueExpert.svg"
+// import valueLight from "../../assets/images/valueExpert.svg"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
