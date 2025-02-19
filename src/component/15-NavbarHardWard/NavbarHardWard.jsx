@@ -9,7 +9,7 @@ import logo1 from "../../assets/images/Awslogo2.svg";
 import Careers from "../19-Careers/Careers";
 import About from "../18-Aboutt/Aboutt";
 import OurWork from "../14-OurWork/OurWork";
-export default function NavbarHardWard() {
+export default function NavbarHardWard({ toggleLanguage }) {
   const [darkMode, setDarkMode] = useState(false);
 
   // Load dark mode preference from localStorage
@@ -151,9 +151,17 @@ export default function NavbarHardWard() {
          
         </div> 
       </Navbar.Collapse>
-
+   
      
       <div className="hidden md:flex md:order-2">
+
+      <button onClick={toggleLanguage}>
+
+<i className="fa-solid fa-globe mr-10 mb-4 mt-4 md:ml-4 text-base lg:ml-1 pb-3 lg:py-5 text-[#666]  dark:text-white">
+  {" "}
+  العربية
+</i>
+</button>
       <FormControlLabel
             control={
               <Switch
@@ -168,6 +176,7 @@ export default function NavbarHardWard() {
               />
             }
           />
+          
         <button className=" bg-[#003540] dark:bg-[#B3E5F1]  rounded-2xl py-4 px-6 mt-1 mx-auto text-amber-50 sm:py-2 sm:px-4 md:py-3 md:px-5 lg:py-4 lg:px-6 lg:my-3 lg:mx-5">
             <ModellButtonNavbar/>
           </button>
