@@ -15,7 +15,7 @@ import ExploreOurServices12 from "../../assets/images/koko 1.svg";
 import ExploreOurServices13 from "../../assets/images/axis.svg";
 import ExploreOurServices14 from "../../assets/images/logod 1.svg";
 import axisLight from "../../assets/images/axislight.png";
-// import valueLight from "../../assets/images/valueExpert.svg"
+import akarkDark from "../../assets/images/akarkDark.svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -36,7 +36,10 @@ export default function OurWork() {
     { src: ExploreOurServices5, alt: "ExploreOurServices5" },
     { src: ExploreOurServices8, alt: "ExploreOurServices8" },
     { src: ExploreOurServices1, alt: "ExploreOurServices1" },
-    { src: ExploreOurServices2, alt: "ExploreOurServices2" },
+    {
+      src: isDarkMode ?ExploreOurServices2: akarkDark,
+      alt: "ExploreOurServices2",
+    },
     { src: ExploreOurServices3, alt: "ExploreOurServices3" },
     { src: ExploreOurServices4, alt: "ExploreOurServices4" },
     { src: ExploreOurServices6, alt: "ExploreOurServices6" },
