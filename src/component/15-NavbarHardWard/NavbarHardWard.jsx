@@ -155,13 +155,13 @@ export default function NavbarHardWard({ toggleLanguage }) {
      
       <div className="hidden md:flex md:order-2">
 
-      <button onClick={toggleLanguage}>
+      {/* <button onClick={toggleLanguage}>
 
 <i className="fa-solid fa-globe mr-10 mb-4 mt-4 md:ml-4 text-base lg:ml-1 pb-3 lg:py-5 text-[#666]  dark:text-white">
   {" "}
   العربية
 </i>
-</button>
+</button> */}
       <FormControlLabel
             control={
               <Switch
