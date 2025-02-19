@@ -1,14 +1,47 @@
 {
+  "WorkPageHeading": "Our Clients",
+  "WorkPageHeadingDesc": "BUILDING SUCCESS TOGETHER",
+  "since": "Since 2016, we have had the privilege of collaborating with over 600 clients across diverse industries. Here,we showcase a selection of our esteemed partners who have trusted us to deliver innovative andimpactful solutions.",
+  "whatwedid": "What We Did",
+  "opv": "OUR PORTFOLIO OUR VISION",
+  "All": "All",
+  "Web-Development": "Web Development",
+  "Mobile-Development": "Mobile Development",
+  "IT-Hardware": "IT & Hardware",
+  "UI/UX-Design": "UI/UX Design",
+  "Staff-Augmentation": "Staff Augmentation",
+  "Quality-Assurance": "Quality Assurance",
+  "clients": "clients",
+  "nfaa": "Nafaa is the first complete and integrated system of expropriation in the Arabian Gulf region.",
+  "ts": "Smart Support System (SSS) is an integrated ticketing system initially designed to serve as a maintenance tool for projects sold to partners. ",
+  "seeMore": "See More",
+
+  "case": "Case Study",
+  "TsTitle": "Triple S",
+  "missionTitle": "Mission",
+  "visionTitle": "Vision",
+  "TsDesc": "The introduction Smart Support System (SSS) is an integrated ticketing system initially designed by AWS to serve as a maintenance tool for projects sold to partners. Over time, it has evolved to cater to external companies, streamlining their internal structures. The core objective is to minimize problem resolution time, enhance client email management, and boost overall productivity. The system is built on three main interfaces, offering a comprehensive solution for efficient issue resolution.",
+  "mission": "To empower organizations with Smart Support System (SSS), a cutting-edge ticketing solution designed to revolutionize problem resolution. Our mission is to provide a seamless, efficient, and collaborative platform that enhances communication between employees, clients, and external partners. SSS aims to streamline internal structures, reduce problem resolution time, and elevate overall productivity for businesses relying on maintenance and after-sales operations.",
+  "vision": "We envision Smart Support System (SSS) as the forefront of innovative ticketing solutions, setting new standards in problem management. Our vision is to be the go-to platform for companies seeking a comprehensive, user-friendly, and customizable system. SSS aspires to foster a work environment where communication flows effortlessly, problems are swiftly addressed, and organizations achieve peak efficiency. We aim to continually evolve and adapt, ensuring SSS remains a trusted ally in enhancing operational excellence for businesses worldwide.",
+
+  "title1": "Admin Interface",
+  "title2": "Support Interface",
+  "title3": "Company Interface",
+  "title4": "Employee Interface",
+  "title5": "Smart Support Interface",
+
+  "desc1": "Exclusively designed for administrators, this interfaceprovides a comprehensive overview of all external tickets allocated to thetechnical team. Administrators can efficiently manage and assign tickets,ensuring a smooth workflow for their technical team. Additionally,administrators have the capability to add companies (clients), countries,cities, and departments, ensuring a dynamic and adaptive system.",
+  "desc2": "Specifically designed for the company's internal use,this interface empowers employees to resolve internal tickets swiftly. Iserves as a dedicated platform for addressing challenges within departmentsor across various branches, streamlining internal issue resolution processes.",
+  "desc3": "Tailored for companies utilizing the Smart Support System, this interface allows for the efficient management of organizational hierarchies. Companies can seamlessly add branches,fostering a structured and organized workflow and them employees.",
+  "desc4": "Individually designed for employees, this interfacefacilitates the submission of external tickets to STL, addressing system-related issues. Simultaneously, employees can raise internal tickets toresolve challenges encountered within their department or across differentbranches, eliminating the need for intricate communication channels.",
+  "desc5": "An exclusive platform for STL employees, this interface enables the resolution of external tickets. Oursupport team works diligently to address external issues reported bycustomers and affiliated companies, ensuring a seamless experience.",
 
 
-    
-"fgfgfgfgfg":"dgfgffgfgfg"
 
-
-
-
-
-
-
-  }
-  
+  "interfaces":"Interfaces",
+  "admin": "Admin Interface",
+  "support": "Support Interface",
+  "company": "Company Interface",
+  "employee": "Employee Interface",
+  "smart": "Smart Support Interface"
+}
