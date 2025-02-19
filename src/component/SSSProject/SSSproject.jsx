@@ -68,7 +68,7 @@ export default function SSSproject() {
               Exclusively designed for administrators, this interface, provides
               a comprehensive overview of all external tickets allocated to the
               technical team. <br />
-               Administrators can efficiently manage and assign tickets,
+              Administrators can efficiently manage and assign tickets,
               ensuring a smooth workflow for their technical team. Additionally,
               administrators have the capability to add companies (clients),
               countries, cities, and departments, ensuring a dynamic and
@@ -91,7 +91,7 @@ export default function SSSproject() {
               Specifically designed for the company's internal use, this
               interface empowers employees to resolve internal tickets swiftly.{" "}
               <br />
-               It serves as a dedicated platform for addressing challenges
+              It serves as a dedicated platform for addressing challenges
               within departments or across various branches, streamlining
               internal issue resolution processes.
             </p>
@@ -142,7 +142,7 @@ export default function SSSproject() {
             <p className="mt-3 text-[#000] text-[20px] dark:text-white ">
               Individually designed for employees, this interface facilitates
               the submission of external tickets to AWS, addressing
-              system-related issues. Simultaneously, employees can raise
+              system-related issues.Simultaneously, employees can raise
               internal tickets to resolve challenges encountered within their
               department or across different branches, eliminating the need for
               intricate communication channels.
