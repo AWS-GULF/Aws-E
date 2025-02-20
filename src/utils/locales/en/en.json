@@ -1,8 +1,140 @@
 {
 
+  
+  "Navbardropdown":"Services",
+  "Navbardropdown1":"Web Development",
+  "Navbardropdown2":"Mobile Development",
+  "Navbardropdown3":"Quality Assurance",
+  "Navbardropdown4":" UI/UX Design",
+  "Navbardropdown5":"Staff Augmentation",
+  "Navbardropdown6":"IT Hardware",
 
-    
-"fgfgfgfgfg":"dgfgffgfgfg"
+"NavbarWork":"Work",
+"NavbarAbout":"About",
+"NavbarCareers":"Careers",
+"NavbarBlog":"Blog",
+
+
+"HeroSoftWareTitle":"Your Lighthouse To Future",
+"HeroSoftWarep": "Marketing consultancy, UX UI web design,\nmobile apps & software coding,sponsored ads,content creation, graphic design, AI & video production.",
+ "HeroSoftWareButtonContact":"Contact Us Now",
+ "HeroSoftWareButtonMarkting":"Marketing Services",
+
+  "HeroSoftWareMainTitle":"Our Leading Brands \nPartnerships",
+
+
+  "HeroSoftWareMaintitle":"About AWS GULF",
+  "HeroSoftWareMainP":"AWS is a forward-thinking IT system integrator and services provider, established in 2024 with a focus on delivering cutting-edge IT hardware solutions. Recognizing the ever-evolving technological landscape and rapidly changing market needs, the company quickly expanded its portfolio to include software services. This strategic addition was not merely an enhancement but a necessity to address the dynamic requirements of modern businesses. By integrating software services, AWS GULF aims to provide comprehensive solutions that empower its clients to stay ahead in a competitive market. With a commitment to innovation and excellence, AWS GULF is dedicated to making a significant impact by meeting and exceeding customer expectations.",
+ 
+
+  "HeroSoftWareMainTechnology":"Technology",
+  "forSixUiTechnology1":" UX UI Design",
+  "forSixUiTechnology2":"Native & Flutter Mobile Apps Coding",
+  "forSixUiTechnology3":"Ecommerce Solutions ",
+  "forSixUiTechnology4":"Bespoke Software Development",
+
+  "HeroSoftWareMainCreativity":"Creativity",
+"forSixUiCreativity1":"Trendsetting Designs",
+"forSixUiCreativity2":"Creative Content Creation",
+"forSixUiCreativity3":"Interactive User Experience",
+"forSixUiCreativity4":"Strategic Branding & Graphics",
+"forSixUiCreativity5":"AI-Driven Solutions",
+"MoreAboutUs":" More About Us",
+
+
+"titleOurServices":"Our Services",
+"DescrtionOurServices":"We Have the Pleasure of Introducing Ourselves as an Independent Solutions Provider of the World's Leading Brands Related to The IT Industry and Software Development.",
+
+"QualityAssuranceH1":"Quality Assurance",
+"QualityAssurancep":" We specialize in developing custom web applications tailored to your unique needs, focusing on delivering exceptional UI/UX experiences. Leave concerns like performance optimization, accessibility, functionality, usability, and security to us, so you can focus on streamlining and enhancing your workflow",
+"QualityAssuranceSeemore":"See More",
+
+
+"MobileDevelopmentH1":"Mobile Development",
+"MobileDevelopmentp":"We create innovative, one-of-a-kind iOS and Android applications with exceptional designs and seamless user experiences. Our mobile solutions are designed to elevate your business, showcase your offerings, and captivate your audience, ensuring lasting engagement and satisfaction.",
+"MobileDevelopmentSeeMore":"See More",
+
+"Web DevelopmentH1":"Web Development",
+"Web Developmentp":"We specialize in developing custom web applications tailored to your unique needs, focusing on delivering exceptional UI/UX experiences. Leave concerns like performance optimization, accessibility, functionality, usability, and security to us, so you can focus on streamlining and enhancing your workflow",
+"Web DevelopmentSeeMore":"See More",
+
+
+"IT&HardwareH1":"IT & Hardware",
+"IT&Hardwarep":"AWS Technology is a professional IT solutions and services provider.We will help you to achieve your IT strategy by providing you system integration, testing, application development and management services and solutions.",
+"IT&HardwareSeeMore":"See More",
+
+
+"StaffAugmentationH1":"Staff Augmentation",
+"StaffAugmentationp":"Staff augmentation is a versatile solution that enables organizations to boost agility and quickly adapt to evolving business demands. This approach is widely utilized across industries to fulfill critical roles in Engineering, Product Development, and Operations.",
+"StaffAugmentationSeeMore":"See More",
+
+
+"UI/UXDesignH1":"UI/UX Design",
+"UI/UXDesignp":"We specialize in developing custom web applications tailored to your unique needs, focusing on delivering exceptional UI/UX experiences. Leave concerns like performance optimization, accessibility, functionality, usability, and security to us, so you can focus on streamlining and enhancing your workflow",
+"UI/UXDesignSeeMore":"See More",
+
+
+
+"ClirntsExplore Our":" Explore Our Services",
+
+"ClientsTitle":"Clients Across The Globe",
+"ClientsSlider1":"Recognizing the ever-evolving technological landscape and rapidly changing market needs",
+"ClientsSlider2":"AWS is a forward-thinking IT system integrator and services provider, established in 2024 with a focus on delivering cutting-edge IT hardware solutions.",
+
+"ClientsSlider3":"Hossam Nasser",
+"ClientsSlider4":"Eslam Abosalem",
+"ClientsSlider5":"CEO at HWLK",
+"ClientsSlider6":"CEO at HWLK",
+
+"Clients":"WRITE YOUR TESTIMONIAL",
+
+
+
+
+
+
+"BLOGTitle":"BLOG, UPDATES AND NEWS",
+"BLOGTitleSeeMore":"Read More",
+
+
+"BLOGSpan":"23 July 2024",
+"BLOGTitlep":"Discover how AI is revolutionizing social media marketing. This blog explores the benefits of AI-powered tools, from enhanced audience targeting and personalized user experiences to predictive analytics and automation. Learn how businesses are leveraging AI to optimize their social media strategies.",
+"BLOGTitleRead Article":"Read Article",
+
+"BLOGSpan1":"22 August 2023",
+"BLOGTitlep1":"Lights, Camera, Action: Choosing Between Video Production and Marketing to Elevate Your Brand",
+"BLOGTitleRead Article1":"Read Article",
+
+"BLOGSpan2":"22 August 2023",
+"BLOGTitlep2":"Lights, Camera, Action: Choosing Between Video Production and Marketing to Elevate Your Brand",
+"BLOGTitleRead Article2":"Read Article",
+
+
+"titleContact":"Ready to take your business to the \nnext level? Let’s create something \nextraordinary together!",
+
+
+
+
+"FooterTitleLogo":"Your Lighthouse To \nThe Future",
+
+"FooterSercies":"Services",
+"FooterSercies0":"Mobile Development",
+"FooterSercies1":"Web  Development",
+"FooterSercies2":"User-Centric Design",
+"FooterSercies3":"Data and Analytics",
+"FooterSercies4":"IT Services and IT Consultant",
+"FooterSercies5":"Software Consulting",
+
+"FooterContact":"Contact Us",
+"FooterContact0":"Seville District 6326, Riyadh, Saudi Arabia",
+"FooterContact1":"+966 569851545",
+"FooterContact2":"wessam@awsgulf.com",
+"FooterContact3":"www.awsgulft.com",
+
+"FooterTitleL":"Your Lighthouse To The Future"
+
+
+
 
 
 

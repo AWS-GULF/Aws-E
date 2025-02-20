@@ -2,8 +2,10 @@ import React, { useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { X } from "lucide-react";
 import QualityAssurance from "../../assets/images/OFFf.svg";
+import { useTranslation } from "react-i18next";
 
 export default function Modell() {
+    const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
@@ -34,7 +36,8 @@ export default function Modell() {
   return (
     <>
       <div onClick={openModal} className="cursor-pointer px-8 py-6  text-white dark:text-[#333]  rounded">
-        Contact Us Now
+      {t("HeroSoftWareButtonContact")}
+        {/* Contact Us Now */}
       </div>
 
       <Transition appear show={isOpen} as={Fragment}>

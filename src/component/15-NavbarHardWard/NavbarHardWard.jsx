@@ -9,9 +9,30 @@ import logo1 from "../../assets/images/Awslogo2.svg";
 import Careers from "../19-Careers/Careers";
 import About from "../18-Aboutt/Aboutt";
 import OurWork from "../14-OurWork/OurWork";
-export default function NavbarHardWard({ toggleLanguage }) {
+import { useTranslation } from "react-i18next";
+
+export default function NavbarHardWard({  toggleLanguage }) {
+   
+  
+  
+
   const [darkMode, setDarkMode] = useState(false);
 
+  const { i18n , t} = useTranslation();
+  const isArabic = i18n.language === "ar";
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, []);
+
+  // دالة تغيير اللغة بدون تعارض
+  const handleToggleLanguage = () => {
+    const newLanguage = i18n.language === "en" ? "ar" : "en";
+    i18n.changeLanguage(newLanguage);
+    localStorage.setItem("language", newLanguage); // حفظ اللغة الجديدة
+  };
   // Load dark mode preference from localStorage
   useEffect(() => {
     const savedMode = localStorage.getItem("darkMode");
@@ -39,7 +60,7 @@ export default function NavbarHardWard({ toggleLanguage }) {
   return (
     <Navbar fluid rounded className="bg-white  dark:bg-[#242424] px-4 py-3 bg-rd-500 shadow-md">
       {/* الجزء الأيسر: الشعار */}
-      <Navbar.Brand href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+      <Navbar.Brand href="/" className="flex items-center space-x-3 rtl:space-x-reverse ">
   
     <img
       src={darkMode ? logo1 : logo}
@@ -50,49 +71,56 @@ export default function NavbarHardWard({ toggleLanguage }) {
 
 
    
-      <div className="md:hidden">
+      <div className="md:hidden ">
         <Navbar.Toggle />
       </div>
 
     
       <Navbar.Collapse>
     
-<li className="relative group ">
-  <Link href="#" className=" text-[#666] dark:text-white relative md:mr-3 lg:mr-16">
-    Services
-    <i className="fa-solid fa-chevron-down absolute md:block md:ml-16 ml-3 lg:mt-0 md:mt-0 md:top-3  mt-3   transform -translate-y-1/2 transition-transform group-hover:rotate-180 text-[#666]"></i>
-  </Link>
+<li className="relative group  mx-5">
+<Link href="#" className="text-[#666] dark:text-white relative md:mr-3 lg:mr-20 ">
+  {t("Navbardropdown")}
+  <i className={`fa-solid fa-chevron-down absolute md:block ${isArabic ? "right-[50px]"  : "ml-3 md:ml-16"} lg:mt-0 md:mt-0 md:top-3 mt-3 transform -translate-y-1/2 transition-transform group-hover:rotate-180 text-[#666]`}></i>
+</Link>
+
   {/* Dropdown Menu */}
-  <div className="absolute opacity-0 mr-10 group-hover:opacity-100 left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-10 rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8">
+  <div className={`absolute opacity-0 mr-10 group-hover:opacity-100 left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-10 rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8 ${isArabic?"ml-40":""}`}>
     <ul className="space-y-4 p-4">
       <li>
         <a href="wepDevlopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
-          Web Development
+          {t("Navbardropdown1")}
+          {/* Web Development */}
         </a>
       </li>
       <li>
         <a href="mobileDevelopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
-          Mobile Development
+          {t("Navbardropdown2")}
+          {/* Mobile Development */}
         </a>
       </li>
       <li>
         <a href="qualityAssurance1" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
-          Quality Assurance
+        {t("Navbardropdown3")}
+          {/* Quality Assurance */}
         </a>
       </li>
       <li>
         <a href="uiUxDesign" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
-          UI/UX Design
+        {t("Navbardropdown4")}
+          {/* UI/UX Design */}
         </a>
       </li>
       <li>
         <a href="StaffAugmentation" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
-          Staff Augmentation
+        {t("Navbardropdown5")}
+          {/* Staff Augmentation */}
         </a>
       </li>
       <li>
         <a href="ITHardware" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
-          IT Hardware
+        {t("Navbardropdown6")}
+          {/* IT Hardware */}
         </a>
       </li>
     </ul>
@@ -102,36 +130,32 @@ export default function NavbarHardWard({ toggleLanguage }) {
         {/* ///////////////////////////////////////////////////////////////////////// */}
         <Navbar.Link 
   href="OurWork" 
-  className="group text-[#666] dark:text-white md:mr-3 lg:mr-16 cursor-pointer"
+  className="group text-[#666] dark:text-white md:mr-2 lg:mr-9 text-sm cursor-pointer"
 >    
-    Work
- 
+  {t("NavbarWork")}
 </Navbar.Link>
-{/* ..................................................................................... */}
-        <Navbar.Link href="About" className="dark:text-white md:mr-3 lg:mr-16  text-[#666] cursor-pointer">
-       
-                 About
-         
-        </Navbar.Link>
-        {/* ////////////////////////////////////////////////////////////////////////// */}
 
-        <Navbar.Link href="careers" className="dark:text-white md:mr-3 lg:mr-16 block text-[#666] cursor-pointer">
-              Careers
-         </Navbar.Link>
+<Navbar.Link href="About" className="dark:text-white md:mr-2 lg:mr-9 text-sm cursor-pointer">
+  {t("NavbarAbout")}
+</Navbar.Link>
 
-        {/* /////////////////////////////////////////////////////////////////////// */}
-        <Navbar.Link href="" className="dark:text-white md:mr-3 lg:mr-16  text-[#666] cursor-pointer ">
-        
-                 Blog
-     
-        </Navbar.Link>
+<Navbar.Link href="careers" className="dark:text-white md:mr-2 lg:mr-9 text-sm cursor-pointer">
+  {t("NavbarCareers")}
+</Navbar.Link>
+
+<Navbar.Link href="" className="dark:text-white md:mr-2 lg:mr-9 text-sm cursor-pointer">
+  {t("NavbarBlog")}
+</Navbar.Link>
+
+
         {/* ////////////////////////////////// */}
-   
-        <div className="block md:hidden mt-2 md:mr-3  my-5 lg:mr-16">
+ 
+        <div className="block md:hidden mt-2 md:mr-3   my-5 lg:mr-16">
+       
         <FormControlLabel
             control={
               <Switch
-                className="mx-8 lg:mx-2"
+                className={`mx-8 lg:mx-2 ${isArabic?"sm:pl-16 sm:py-3  mr-[-4px]":""}`}
                 checked={darkMode}
                 onChange={toggleDarkMode}
                 name="darkMode"
@@ -142,6 +166,12 @@ export default function NavbarHardWard({ toggleLanguage }) {
               />
             }
           />
+           <button onClick={ toggleLanguage} className={`flex flex-col py-2 ${isArabic?"sm:pl-16  mr-[-28px]":""}`}>
+      <i className={`fa-solid fa-globe  md:ml-4 text-base lg:ml-1 mr-8    text-[#666] dark:text-white${isArabic?" mr-0 ":""}`}>
+       <span className="mx-1"> {i18n.language === "ar" ? "E G"  : "العربية" }</span>
+      </i>
+    </button>
+   
           <button className=" bg-[#003540] w-full dark:bg-[#B3E5F1] rounded-2xl py-4 px-6 my-4 mx-auto text-amber-50 sm:py-2 sm:px-4 md:py-3 md:px-5 lg:py-4 lg:px-6 lg:my-3 lg:mx-5">
             <ModellButtonNavbar/>
           </button>
@@ -149,39 +179,41 @@ export default function NavbarHardWard({ toggleLanguage }) {
          
          
         </div> 
+     
       </Navbar.Collapse>
    
      
-      <div className="hidden md:flex md:order-2">
+      <div className="hidden md:flex md:order-2 lg:gap-0">
+  {/* زر تغيير اللغة */}
+  <button onClick={toggleLanguage} className="flex items-center text-[#666] dark:text-white">
+    <i className={`fa-solid fa-globe text-sm sm:text-base md:text-lg lg:text-xl ${isArabic ? "mr-0" : ""}`}></i>
+    <span className="mx-1 text-xs sm:text-sm md:text-base">{i18n.language === "ar" ? "E G" : "العربية"}</span>
+  </button>
 
-      <button onClick={toggleLanguage}>
+  {/* زر الوضع الداكن */}
+  <FormControlLabel
+    control={
+      <Switch
+        className="mx-4 sm:mx-6 md:mx-4 lg:mx-2"
+        checked={darkMode}
+        onChange={toggleDarkMode}
+        name="darkMode"
+        size="xl"
+        sx={{
+          transform: "scale(1) sm:scale(1.2) md:scale(1.4) lg:scale(1.6)",
+        }}
+      />
+    }
+  />
 
-<i className="fa-solid fa-globe mr-10 mb-4 mt-4 md:ml-4 text-base lg:ml-1 pb-3 lg:py-5 text-[#666]  dark:text-white">
-  {" "}
-  العربية
-</i>
-</button>
-      <FormControlLabel
-            control={
-              <Switch
-                className="mx-8 lg:mx-2 "
-                checked={darkMode}
-                onChange={toggleDarkMode}
-                name="darkMode"
-                size="small"
-                sx={{
-                  transform: "scale(1.6)",
-                }}
-              />
-            }
-          />
-          
-        <button className=" bg-[#003540] dark:bg-[#B3E5F1]  rounded-2xl py-4 px-6 mt-1 mx-auto text-amber-50 sm:py-2 sm:px-4 md:py-3 md:px-5 lg:py-4 lg:px-6 lg:my-3 lg:mx-5">
-            <ModellButtonNavbar/>
-          </button>
-       
-         <hr  className="w-2 h-2" />
-      </div>
+  {/* زر الدخول */}
+  <button className="bg-[#003540] dark:bg-[#B3E5F1] rounded-2xl py-2 px-4 sm:py-2 sm:px-4 md:py-3 md:px-5 lg:py-4 lg:px-6 mt-1 mx-auto text-amber-50 lg:my-4 lg:mx-5 text-xs sm:text-sm md:text-base lg:text-lg">
+    <ModellButtonNavbar />
+  </button>
+  
+  <hr className="w-2 h-2 hidden md:block" />
+</div>
+
    
     </Navbar>
     

@@ -7,7 +7,9 @@ import Modell from "../16-Modell/Modell";
 import { useTranslation } from "react-i18next";
 
 export default function HeroHardWard( ) {
-  const {t} =useTranslation()
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === "ar";
+
   const navigate = useNavigate();
   const [currentLogo, setCurrentLogo] = useState(Logo);
 
@@ -34,17 +36,29 @@ export default function HeroHardWard( ) {
   return (
     <div className="container mx-auto px-4 sm:px-12 flex flex-col md:flex-row md:justify-between md:items-center">
       <div className="md:w-1/2 w-full text-center md:text-left">
-        <div className=" md:mb-16">
-          <h1 className="bg-text font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-widest font-mons mb-6 dark:text-white">
-            Your Lighthouse <br className="hidden md:block" /> To Future
-          </h1>
-          <p className="colorP bg-p font-mons text-base font-montserrat sm:text-lg md:text-xl text-secondary tracking-[1.7px] font-light leading-relaxed dark:text-white">
-            Marketing consultancy, UX UI web design,{" "}
-            <br className="hidden md:block" /> mobile apps & software coding,
-            sponsored ads, <br className="hidden md:block" /> content creation,
-            graphic design, AI & video  production.
-          </p>
-        </div>
+      <div className="md:mb-16">
+      <h1 className={`bg-text font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl  font-mons mb-6 dark:text-white ${isArabic ?"lg:ml-[138px] lg:text-right text-nowrap  ":"tracking-widest"}`}>
+    {t("HeroSoftWareTitle")}
+    
+  </h1>
+  <div
+    className={`colorP bg-p font-mons text-base font-montserrat sm:text-lg md:text-xl text-secondary  font-light leading-relaxed dark:text-white ${
+      isArabic ? "lg:ml-[119px] lg:text-justify lg:pt-3  md:text-2xl   " : "tracking-[1.7px]"
+    }`}
+  >
+  
+    <p>
+      {t("HeroSoftWarep")
+        .split("\n")
+        .map((line, index) => (
+          <React.Fragment key={index}>
+            {line}
+            <br className="hidden md:block" />
+          </React.Fragment>
+        ))}
+    </p>
+  </div>
+</div>
 
         <div className="flex gap-3  py-4 sm:gap-5 justify-center md:justify-start  items-center">
           <button className= " text-nowrap backGroundButton py-[1px]  md:py-[6px] md:px-5 sm:px-6 font-bold rounded-2xl transition  dark:text-[#333]   dark:bg-[#B3E5F1]">
@@ -55,9 +69,10 @@ export default function HeroHardWard( ) {
             onClick={handleClick}
             className="px-6 py-6  text-nowrap  sm:py-7 sm:px-9 rounded-2xl bg-text font-bold backgroundbutton2 dark:text-white dark:hover:text-black"
           >
-            Marketing Services
+       {t("HeroSoftWareButtonMarkting")}
+            {/* Marketing Services */}
               
-            {/* {t("toggleLanguage")} */}
+     
           </button>
         </div>
 
@@ -72,13 +87,17 @@ export default function HeroHardWard( ) {
 
       </div>
 
-      <div className="  md:w-[50%]   mb-3 lg:mb-32  flex justify-center md:mb-52 md:ml-24  lg:mr-20 lg:mt-10">
-        <img
-          src={currentLogo}
-          alt="Marketing Strategy Illustration"
-          className="w-[250px] sm:w-[300px] md:w-[346px] h-auto object-contain  "
-        />
-      </div>
+      <div
+  className={`md:w-[50%] mb-3 lg:mb-32 flex justify-center md:mb-52 md:ml-24 lg:mr-20 lg:mt-10 
+    ${isArabic ? "ml-auto pr-10 lg:pr-20 m-auto md:mt-0 lg:mt-9" : ""}`}
+>
+  <img
+    src={currentLogo}
+    alt="Marketing Strategy Illustration"
+    className="w-[250px] sm:w-[300px] md:w-[346px] h-auto object-contain"
+  />
+</div>
+
     </div>
   );
 }
