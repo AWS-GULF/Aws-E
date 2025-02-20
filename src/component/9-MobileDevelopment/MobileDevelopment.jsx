@@ -194,7 +194,9 @@ export default function MobileDevelopment() {
                 {t("nfaa")}
               </p>
               <div
-                className={`flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${i18n.language==='en'&&"tracking-wider"} whitespace-nowrap  ${
+                className={`flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${
+                  i18n.language === "en" && "tracking-wider"
+                } whitespace-nowrap  ${
                   i18n.language === "ar" && " font-cairo text-[20px]"
                 }`}
               >
@@ -232,7 +234,9 @@ export default function MobileDevelopment() {
                 {t("nfaa")}
               </p>
               <div
-                className={`flex justify-end items-end mt-14 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${i18n.language==='en'&&"tracking-wider"} whitespace-nowrap  ${
+                className={`flex justify-end items-end mt-14 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${
+                  i18n.language === "en" && "tracking-wider"
+                } whitespace-nowrap  ${
                   i18n.language === "ar" && " font-cairo text-[20px] "
                 }`}
               >
@@ -270,7 +274,9 @@ export default function MobileDevelopment() {
                 {t("ts")}
               </p>
               <div
-                className={`flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${i18n.language==='en'&&"tracking-wider"} whitespace-nowrap  ${
+                className={`flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${
+                  i18n.language === "en" && "tracking-wider"
+                } whitespace-nowrap  ${
                   i18n.language === "ar" && " font-cairo text-[20px]"
                 }`}
               >
