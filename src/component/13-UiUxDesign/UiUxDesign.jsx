@@ -10,161 +10,283 @@ import node from "../../assets/images/node.svg";
 import oracle from "../../assets/images/oracle.svg";
 import radius from "../../assets/images/radius.svg";
 import python from "../../assets/images/python5.svg";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function uiUxDesign() {
+  const { t, i18n } = useTranslation();
   return (
     <div>
       <div className="px-4 sm:px-12">
-        <div className="mt-16 mb-14 flex justify-center items-center text-[#295F70] text-xl ">
-          <span>
-            <img src={QualityAssurance} alt="QualityAssurance" className=" " />
-          </span>
-          <p className="text-[#295F70] text-lg ps-2 font-mons text-hover font-bold text-[16px] tracking-[1.6px] dark:text-[#B3E5F1]">
-            Services
+        <div className="mt-16 sm:mb-14 mb-6 flex justify-center items-center text-xl ">
+          <img src={QualityAssurance} alt="" className="w-8 h-8" />
+          <p
+            className={` ps-2 font-montserrat font-bold text-lg tracking-wide text-[#295F70] dark:text-[#B3E5F1]  ${
+              i18n.language === "ar" && "font-cairo text-[33px]"
+            } `}
+          >
+            {t("services")}
           </p>
         </div>
 
         <div className="flex justify-center items-center">
-          <h2 className="text-3xl sm:text-5xl font-mons font-bold mb-[80px]  text-center text-[#003540] tracking-[2.8px] leading-[75px] dark:text-[#B3E5F1]">
-          Crafting seamless experiences that drive user satisfaction and business growth.
+          <h2
+            className={`text-sm sm:text-3xl font-mons font-bold sm:mb-[80px] mb-[50px] text-center ${
+              i18n.language === "ar" && "font-cairo "
+            } text-[#003540]  leading-[75px] dark:text-[#B3E5F1] ${
+              i18n.language === "en" && "tracking-[2.8px]"
+            } `}
+          >
+            {t("uiUxHeader")}{" "}
           </h2>
         </div>
 
-<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-center items-center mb-20">
-        {[kotlin, oracle, python, radius, node].map((img, index) => (
-          <img key={index} src={img} alt="tech" className="w-10 sm:w-20 lg:w-28  mx-auto" />
-        ))}
-      </div>
+        <div className="flex sm:justify-center overflow-scroll lg:overflow-hidden scrollbar sm:overflow-hidden  lg:w-[1400px]  lg:h-30  sm:mb-[100px] mb-16 ">
+          <div className="flex gap-2 sm:w-full justify-center items-center lg:w-full lg:ms-20 ">
+            <img
+              src={kotlin}
+              className="sm:pe-[87px] lg:pe-12 lg:pt-6 lg:w-1/6 lg:h-[160px]    "
+              alt="kotlin"
+            />
+            <img
+              src={oracle}
+              className="sm:pe-[87px] lg:pe-12   lg:w-1/5 p-4  lg:h-[120px] "
+              alt="oracle"
+            />
+            <img
+              src={python}
+              className="sm:pe-[87px] lg:pe-12   lg:w-1/5 p-4  lg:h-[120px] "
+              alt="python"
+            />
+            <img
+              src={radius}
+              className="sm:pe-[87px] lg:pe-12   lg:w-1/5 p-4  lg:h-[120px] "
+              alt="radius"
+            />
+            <img
+              src={node}
+              className=" lg:w-1/5 p-4  lg:h-[120px]"
+              alt="node"
+            />
+          </div>
+        </div>
 
         <div className="px-4 sm:px-[121px] flex-col justify-center text-[#003540] items-center dark:text-white">
-          <h1 className="text-center text-2xl sm:text-3xl text-[#295F70]  mb-[20px] text-primary font-mons text-[32px] tracking-[3.2px] font-[500] dark:text-[#B3E5F1]">
-            UI/UX Design
+          <h1
+            className={`text-center text-2xl sm:text-3xl text-[#295F70]  mb-[20px] text-primary font-mons text-[32px] font-[500] dark:text-[#B3E5F1] ${
+              i18n.language === "ar" && "font-cairo "
+            } ${i18n.language === "en" && "tracking-[3.2px] "} `}
+          >
+            {t("uiuxTitle")}{" "}
           </h1>
-          <p className="text-aboutCont text-xl text-left font-mons font-normal leading-[30px] tracking-[1.6px] mb-[60px] dark:text-white">
-            Every interaction within our products is a result of meticulous
-            planning and design. From the coding of elements and functions to
-            the visual aesthetics, we excel at delivering captivating user
-            experiences. Whether for mobile or web, your end users will find the
-            experience both seamless and engaging.
+          <p
+            className={`text-aboutCont text-xl text-center  lg:text-center  font-mons font-normal leading-[30px]  mb-[60px] dark:text-white ${
+              i18n.language === "en" && "tracking-[1.6px] "
+            } ${i18n.language === "ar" && "font-cairo "}`}
+          >
+            {t("uiuxDesc")}
           </p>
         </div>
 
         {/* Accurate Deliveries */}
-        <div className="flex flex-col sm:flex-row justify-center items-center px-4 sm:px-[121px] mb-16 gap-8">
-          <div className="sm:w-3/4 pt-14 flex-col justify-center items-center ps-1">
-            <h4 className="font-mons text-[20px] font-[600] text-lg text-[#000] tracking-[2px] mb-4 dark:text-[#B3E5F1]">
-              Market Research
+        <div className="flex flex-col lg:flex-row justify-center items-center px-4 lg:px-[121px] mb-16 gap-8">
+          <div className="lg:w-3/4 pt-14 flex-col justify-center items-center ps-1">
+            <h4
+              className={`font-mons text-[20px] sm:text-[32px] lg:text-[24px] font-[600] text-lg text-[#000] ${
+                i18n.language === "en" && "tracking-[2px] "
+              } ${
+                i18n.language === "ar" && "font-cairo text-center lg:text-start"
+              }  mb-4 dark:text-[#B3E5F1]`}
+            >
+              {t("mr")}
             </h4>
-            <p className="font-mons text-[16px] font-normal text-[400] tracking-[1.6px] leading-[30px] dark:text-white">
-              With the expertise of our seasoned development team, we conduct
-              comprehensive market research to analyze current trends,
-              conditions, and user preferences. This ensures the creation of a
-              digital product that not only meets market demands but also
-              retains users and remains relevant for years to come
+            <p
+              className={`font-mons text-[16px] sm:text-[24px] lg:text-[20px] sm:pt-4 font-normal text-[400] ${
+                i18n.language === "en" && "tracking-[1.6px] "
+              } ${
+                i18n.language === "ar" && "font-cairo text-center lg:text-start"
+              }   leading-[30px] dark:text-white`}
+            >
+              {t("mrdesc")}
             </p>
           </div>
-          <div className="sm:w-1/4">
+          <div className="lg:w-1/4 sm:w-3/4">
             <img src={QualityAssurance2} className="w-full" alt="" />
           </div>
         </div>
 
         {/* Quality Control */}
-        <div className="flex flex-col sm:flex-row justify-center items-center px-4 sm:px-[121px] mb-16 gap-8">
-          <div className="sm:w-1/4">
-            <img src={QualityAssurance3} className=" rounded-r-full" alt="" />
+        <div className="flex flex-col lg:flex-row justify-center items-center px-4 lg:px-[121px] mb-16 gap-8">
+          <div className="lg:w-1/4  sm:w-3/4">
+            <img
+              src={QualityAssurance3}
+              className=" rounded-r-full w-full"
+              alt=""
+            />
           </div>
-          <div className="sm:w-3/4 pt-14 flex-col justify-center items-center ps-1">
-            <h4 className="font-mons text-[20px] font-[600] tracking-[2px] mb-4 dark:text-[#B3E5F1]">
-              Brand Identity & Custom Branding
+          <div className="lg:w-3/4 pt-14 flex-col justify-center items-center ps-1">
+            <h4
+              className={`font-mons text-[20px] sm:text-[32px]  lg:text-[24px] font-[600] text-lg text-[#000] ${
+                i18n.language === "en" && "tracking-[2px] "
+              } ${
+                i18n.language === "ar" && "font-cairo text-center lg:text-start"
+              }  mb-4 dark:text-[#B3E5F1]`}
+            >
+              {t("BicB")}
             </h4>
-            <p className="font-mons text-lg text-[#000] text-[16px] font-normal text-[400] tracking-[1.6px] leading-[30px] dark:text-white">
-              Establish a unique visual identity by customizing every aspect of
-              your product to reflect your brand. Gain full control over
-              elements such as color palettes, shapes, fonts, styles, buttons,
-              and overall design direction. Think of your digital product as a
-              bespoke masterpiece—crafted to your exact specifications, with
-              limitless possibilities to showcase your brand's essence.
+            <p
+              className={`font-mons text-[16px] sm:text-[24px] sm:pt-4 font-normal lg:text-[20px] text-[400] ${
+                i18n.language === "en" && "tracking-[1.6px] "
+              } ${
+                i18n.language === "ar" && "font-cairo text-center lg:text-start"
+              }   leading-[30px] dark:text-white`}
+            >
+              {t("BicBDesc")}
             </p>
           </div>
         </div>
 
         {/* Case Studies Section */}
-        <div className="px-4 sm:px-[121px] flex-col justify-center items-center mb-10">
-          <h1 className="text-center mb-[20px] text-primary text-[#295F70] text-2xl sm:text-3xl font-mons text-[32px] tracking-[3.2px] font-[500] dark:text-[#B3E5F1]">
-            Case Studies
+        <div
+          className={`text-center mb-10 mt-40 ${
+            i18n.language === "ar" && "mt-0"
+          }  `}
+        >
+          <h1
+            className={`font-montserrat text-2xl mb-7 sm:text-3xl tracking-wide font-semibold text-[#003540] dark:text-[#B3E5F1] ${
+              i18n.language === "ar" && "font-cairo"
+            }`}
+          >
+            {t("cases")}
           </h1>
-          <p className="text-aboutCont text-center font-mons font-normal text-xl text-[#666] leading-[30px] tracking-[1.6px] mb-[60px] dark:text-white">
-            We stick to tried and true digital marketing strategies that we know
-            will have the highest impact on your bottom line. Forget the fluff
-            and empty promises of other companies, we offer services that are
-            more likely to be profitable and sustainable. Check out our suite of
-            digital marketing services designed to help accelerate your funnel.
+          <p
+            className={`text-lg leading-relaxed text-[#666] dark:text-white font-montserrat ${
+              i18n.language === "ar" && "font-cairo"
+            }`}
+          >
+            {t("casesDesc")}
           </p>
         </div>
 
-       
-
-        <div className="cards mb-[100px] flex flex-wrap rounded-lg justify-center gap-4">
+        <div className="cards mb-[100px] flex flex-wrap justify-center gap-4">
           {/* Card 1 */}
-          <div className="card bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4">
+          <div className="card bg-base-100 w-full sm:w-96 border-1 rounded-lg border border-stroke p-4">
             <figure>
-              <img className="w-full h-[382px]" src={QualityAssurance5} alt="QualityAssurance5" />
+              <img
+                className="w-full h-[382px]"
+                src={QualityAssurance5}
+                alt="QualityAssurance5"
+              />
             </figure>
             <div>
-              <h2 className="text-[17px] text-[#003540] font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
-                Clients
+              <h2
+                className={`text-[17px] text-[#003540] font-montserrat font-[600] ${
+                  i18n.language === "ar" && "font-cairo"
+                } ${
+                  i18n.language === "en" && "tracking-[1.6px]"
+                }  mb-2 dark:text-[#B3E5F1]`}
+              >
+                {t("clients")}
               </h2>
               <div className="flex justify-center items-center">
-                <p className="font-mons text-[16px]s text-[#666] dark:text-white">
-                  Nafaa is the first complete and integrated system of
-                  expropriation in the Arabian Gulf region.
+                <p
+                  className={` font-montserrat text-[16px] text-[#666] dark:text-white  ${
+                    i18n.language === "ar" && " font-cairo"
+                  } `}
+                >
+                  {t("nfaa")}
                 </p>
-                <div className="flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap">
-                  <p>See More</p>
+                <div
+                  className={`flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${
+                    i18n.language === "en" && "tracking-wider"
+                  } whitespace-nowrap  ${
+                    i18n.language === "ar" && " font-cairo text-[20px]"
+                  }`}
+                >
+                  <p>{t("seeMore")}</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Card 2 */}
-          <div className="card bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4">
+          <div className="card bg-base-100 rounded-lg w-full sm:w-96 border-1 border border-stroke p-4">
             <figure>
-              <img className="w-full h-[382px]" src={QualityAssurance6} alt="QualityAssurance6" />
+              <img
+                className="w-full h-[382px]"
+                src={QualityAssurance6}
+                alt="QualityAssurance6"
+              />
             </figure>
             <div>
-              <h2 className="text-[17px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
-                Clients
+              <h2
+                className={`text-[17px] text-[#003540] font-montserrat font-[600] ${
+                  i18n.language === "ar" && "font-cairo"
+                } ${
+                  i18n.language === "en" && "tracking-[1.6px]"
+                }  mb-2 dark:text-[#B3E5F1]`}
+              >
+                {t("clients")}
               </h2>
               <div className="flex justify-center items-center">
-                <p className="font-mons text-[16px] text-[#666] dark:text-white">
-                  Nafaa is the first complete and integrated system of
-                  expropriation in the Arabian Gulf region.
+                <p
+                  className={` font-montserrat text-[16px] text-[#666] dark:text-white  ${
+                    i18n.language === "ar" && " font-cairo"
+                  } `}
+                >
+                  {t("nfaa")}
                 </p>
-                <div className="flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap">
-                  <p>See More</p>
+                <div
+                  className={`flex justify-end items-end mt-14 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${
+                    i18n.language === "en" && "tracking-wider"
+                  } whitespace-nowrap  ${
+                    i18n.language === "ar" && " font-cairo text-[20px] "
+                  }`}
+                >
+                  <p>{t("seeMore")}</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Card 3 */}
-          <div className="card bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4">
+          <div className="card rounded-lg bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4">
             <figure>
-              <img className="w-full h-[382px] rounded-xl" src={QualityAssurance7} alt="QualityAssurance7" />
+              <img
+                className="w-full h-[382px]"
+                src={QualityAssurance7}
+                alt="QualityAssurance7"
+              />
             </figure>
             <div>
-              <h2 className="text-[17px] text-primary font-mons font-[600] tracking-[1.6px] mb-2 dark:text-[#B3E5F1]">
-                Clients
+              <h2
+                className={`text-[17px] text-[#003540] font-montserrat font-[600] ${
+                  i18n.language === "ar" && "font-cairo"
+                } ${
+                  i18n.language === "en" && "tracking-[1.6px]"
+                }  mb-2 dark:text-[#B3E5F1]`}
+              >
+                {t("clients")}
               </h2>
               <div className="flex justify-center items-center">
-                <p className="font-mons text-[16px] text-[#666] dark:text-white">
-                  Nafaa is the first complete and integrated system of
-                  expropriation in the Arabian Gulf region.
+                <p
+                  className={` font-montserrat text-[16px] text-[#666] dark:text-white  ${
+                    i18n.language === "ar" && " font-cairo"
+                  }      `}
+                >
+                  {t("ts")}
                 </p>
-                <div className="flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap">
-                 <Link to="/SSSproject"> <p>See More</p></Link>
-                 
+                <div
+                  className={`flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${
+                    i18n.language === "en" && "tracking-wider"
+                  } whitespace-nowrap  ${
+                    i18n.language === "ar" && " font-cairo text-[20px]"
+                  }`}
+                >
+                  <Link to="/SSSproject">
+                    {" "}
+                    <p>{t("seeMore")}</p>
+                  </Link>
                 </div>
               </div>
             </div>
