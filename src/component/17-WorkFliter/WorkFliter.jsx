@@ -105,7 +105,7 @@ export default function WorkFilter() {
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
-            className={`px-2 py-3 sm:px-4 sm:py-2 mb-4 rounded-lg font-bold transition-all border  
+            className={`px-2 py-3 sm:px-4 sm:py-2 mb-4 rounded-lg font-bold transition-all border  ${i18n.language==='ar'&&"font-cairo "}
               ${
                 selectedCategory === category
                   ? "border-primary text-[#003540] dark:text-white"
@@ -122,7 +122,7 @@ export default function WorkFilter() {
           <div
             key={card.id}
             className={`card py-2 w-[45%] sm:w-[30%] bg-base-900 rounded-3xl md:h-[600px] lg:h-[530px] border p-4 ${
-              i18n.language === "ar" && "text-end"
+              i18n.language === "ar" && "text-end font-cairo"
             }`}
           >
             <figure>
@@ -136,15 +136,15 @@ export default function WorkFilter() {
             </figure>
             <div className="flex-col items-start justify-start rounded-3xl">
               <h2
-                className={`text-[12px] sm:text-[16px] text-primary font-mons dark:text-[#B3E5F1] font-[600] sm:tracking-[1.6px] mb-2 ${
-                  i18n.language === "ar" && "sm:text-start mt-1 text-center"
+                className={`text-[12px] sm:text-[16px] text-primary font-mons dark:text-[#B3E5F1] font-[600] ${i18n.language==="en"&&"sm:tracking-[1.6px]"} mb-2 ${
+                  i18n.language === "ar" && "sm:text-end lg:text-start mt-1 text-center "
                 }`}
               >
                 {card.title}
               </h2>
               <div
                 className={`sm:flex lg:flex-row sm:justify-center sm:items-center dark:text-white ${
-                  i18n.language === "ar" && "flex-row-reverse sm:text-start text-center"
+                  i18n.language === "ar" && "flex-row-reverse sm:text-end lg:text-start text-center"
                 }`}
               >
                 <p className="font-mons text-[14px] sm:text-[15px] font-[500] dark:text-[#fff]">
@@ -154,8 +154,8 @@ export default function WorkFilter() {
               {card.route && (
                 <div
                   className={`${
-                    i18n.language === "ar" && "p"
-                  } flex justify-end items-end text-[#003540] ps-6 underline text-primary lg:text-[16px] text-xs font-[600] tracking-wider whitespace-nowrap dark:text-[#B3E5F1]`}
+                    i18n.language === "ar" && "flex-row-reverse"
+                  } flex justify-end md:justify-end lg:justify-start items-end text-[#003540] ps-6 underline text-primary lg:text-[16px] text-xs font-[600] tracking-wider whitespace-nowrap dark:text-[#B3E5F1]`}
                 >
                   <Link to={card.route}>
                     <p

@@ -37,7 +37,7 @@ export default function OurWork() {
     { src: ExploreOurServices8, alt: "ExploreOurServices8" },
     { src: ExploreOurServices1, alt: "ExploreOurServices1" },
     {
-      src: isDarkMode ?ExploreOurServices2: akarkDark,
+      src: isDarkMode ? ExploreOurServices2 : akarkDark,
       alt: "ExploreOurServices2",
     },
     { src: ExploreOurServices3, alt: "ExploreOurServices3" },
@@ -81,16 +81,16 @@ export default function OurWork() {
   return (
     <div>
       <div className="sm:ms-12 sm:me-12">
-        <div className="mt-4 sm:mt-16 mb-8 sm:mb-14 flex justify-center dark:text-[#B3E5F1] items-center text-[#003540] text-lg ">
+        <div className={`${i18n.language==="ar"&&"flex-row-reverse gap-2"} mt-4 sm:mt-16 mb-8 sm:mb-14 flex justify-center dark:text-[#B3E5F1] items-center  text-[#003540] text-lg `}>
           <img
             src={QualityAssurance}
             alt="QualityAssurance"
-            className="dark:text-[#B3E5F1]"
+            className={` ${i18n.language==="ar"&&"w-8"} dark:text-[#B3E5F1]`}
           />
           <p
-            className={`ps-2 text-2xl  font-montserrat text-hover font-bold sm:text-[16px] tracking-[1.6px]  ${
-              i18n.language === "ar" && "tracking-[0px] sm:text-[25px] "
-            }`}
+            className={`ps-2 text-2xl  font-montserrat text-hover font-bold sm:text-[16px] ${
+              i18n.language === "en" && "tracking-[1.6px]"
+            }  ${i18n.language === "ar" && " sm:text-[25px] font-cairo"}`}
           >
             {t("WorkPageHeading")}
           </p>
@@ -98,8 +98,8 @@ export default function OurWork() {
 
         <div className="flex justify-center items-center text-[#003540] dark:text-[#B3E5F1] ">
           <h2
-            className={`lg:text-5xl sm:text-3xl text-[20px] font-montserrat font-bold mb-[10px] sm:mb-[40px] sm:px-[150px] text-center sm:tracking-[4.8px] leading-[75px] text-primary ${
-              i18n.language === "ar" && "tracking-[0px] lg:tracking-[0] "
+            className={`lg:text-5xl sm:text-3xl text-[20px] ${i18n.language==='en'&&"font-montserrat sm:tracking-[4.8px]"} font-bold mb-[10px] sm:mb-[40px] sm:px-[150px] text-center  leading-[75px] text-primary ${
+              i18n.language === "ar" && "tracking-[0px] lg:tracking-[0] font-cairo "
             }`}
           >
             {t("WorkPageHeadingDesc")}{" "}
@@ -109,7 +109,7 @@ export default function OurWork() {
         <div className="flex justify-center items-center text-center px-[60px] pb-[70px] ">
           <p
             className={`${
-              i18n.language === "ar" && "tracking-[0px] sm:text-[25px] "
+              i18n.language === "ar" && "tracking-[0px] sm:text-[25px] font-cairo "
             }  text-secondary font-montserrat text-[15px] sm:text-[20px] font-[400] leading-[30px] tracking-[0.4px] text-[#666] dark:text-white`}
           >
             {t("since")}
@@ -150,12 +150,14 @@ export default function OurWork() {
         </Swiper>
       </div>
 
-      <div className="mt-[100px] mb-14 flex justify-center items-center">
-        <img src={QualityAssurance} alt="QualityAssurance" />
+      <div className={`${i18n.language==="ar" && "flex-row-reverse gap-2"} mt-[100px] mb-14 flex justify-center items-center`}>
+        <img src={QualityAssurance} alt="QualityAssurance"  className={`${i18n.language==="ar"&&"w-8"}`}/>
         <p
           className={` ${
-            i18n.language === "ar" && "tracking-[0px] sm:text-[23px] "
-          } ps-2 font-montserrat text-hover font-bold text-[16px] text-[#003540] tracking-[1.6px] dark:text-[#B3E5F1]`}
+            i18n.language === "ar" &&  "  font-cairo tracking-[0px] sm:text-[23px] "
+          } ps-2 font-montserrat text-hover font-bold text-[16px] text-[#003540]  ${
+            i18n.language === "en" && "tracking-[1.6px]"
+          }dark:text-[#B3E5F1]`}
         >
           {t("whatwedid")}{" "}
         </p>
@@ -164,8 +166,8 @@ export default function OurWork() {
       <div className="flex justify-center items-center text-center dark:text-[#B3E5F1] text-[#003540]">
         <h2
           className={`${
-            i18n.language === "ar" && "tracking-[0px] lg:tracking-[0]  "
-          } sm:text-5xl text-[20px] font-montserrat font-bold mb-[10px] sm:mb-[20px] sm:px-[150px] text-center sm:tracking-[4.8px] leading-[75px] dark:text-white`}
+            i18n.language === "ar" && "tracking-[0px] lg:tracking-[0] font-cairo  "
+          } sm:text-5xl text-[20px] font-montserrat ${i18n.language==='en'&&"sm:tracking-[4.8px] "} font-bold mb-[10px] sm:mb-[20px] sm:px-[150px] text-center  leading-[75px] dark:text-white`}
         >
           {t("opv")}
         </h2>
@@ -174,7 +176,7 @@ export default function OurWork() {
       <div className="flex justify-center items-center text-center px-[60px] pb-[42px] dark:text-white text-[#666]">
         <p
           className={`${
-            i18n.language === "ar" && "tracking-[0px] sm:text-[25px] lg:mt-4"
+            i18n.language === "ar" && "tracking-[0px] sm:text-[25px] lg:mt-4 font-cairo"
           }  text-secondary font-montserrat text-[15px] sm:text-[20px] font-[400] leading-[30px] tracking-[0.4px] text-[#666] dark:text-white`}
         >
           {t("since")}
