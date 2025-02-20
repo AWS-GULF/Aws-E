@@ -37,7 +37,7 @@ export default function MobileDevelopment() {
 
       <div className="text-center mb-20">
         <h2
-          className={`text-3xl sm:text-4xl font-montserrat lg:text-5xl font-bold   leading-tight text-[#003540] dark:text-[#B3E5F1]  ${
+          className={`text-lg sm:text-2xl font-montserrat lg:text-4xl font-bold   leading-tight text-[#003540] dark:text-[#B3E5F1]  ${
             i18n.language === "ar" && "font-cairo"
           }`}
         >
@@ -144,7 +144,11 @@ export default function MobileDevelopment() {
         </div>
       ))}
 
-      <div className={`text-center mb-10 mt-40  `}>
+      <div
+        className={`text-center mb-10 mt-40 ${
+          i18n.language === "ar" && "mt-0"
+        }  `}
+      >
         <h1
           className={`font-montserrat text-2xl mb-7 sm:text-3xl tracking-wide font-semibold text-[#003540] dark:text-[#B3E5F1] ${
             i18n.language === "ar" && "font-cairo"
@@ -189,7 +193,11 @@ export default function MobileDevelopment() {
               >
                 {t("nfaa")}
               </p>
-              <div className="flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap">
+              <div
+                className={`flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${i18n.language==='en'&&"tracking-wider"} whitespace-nowrap  ${
+                  i18n.language === "ar" && " font-cairo text-[20px]"
+                }`}
+              >
                 <p>{t("seeMore")}</p>
               </div>
             </div>
@@ -223,7 +231,11 @@ export default function MobileDevelopment() {
               >
                 {t("nfaa")}
               </p>
-              <div className="flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap">
+              <div
+                className={`flex justify-end items-end mt-14 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${i18n.language==='en'&&"tracking-wider"} whitespace-nowrap  ${
+                  i18n.language === "ar" && " font-cairo text-[20px] "
+                }`}
+              >
                 <p>{t("seeMore")}</p>
               </div>
             </div>
@@ -258,8 +270,8 @@ export default function MobileDevelopment() {
                 {t("ts")}
               </p>
               <div
-                className={`flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap  ${
-                  i18n.language === "ar" && " font-cairo"
+                className={`flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${i18n.language==='en'&&"tracking-wider"} whitespace-nowrap  ${
+                  i18n.language === "ar" && " font-cairo text-[20px]"
                 }`}
               >
                 <Link to="/SSSproject">
