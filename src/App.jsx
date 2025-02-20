@@ -107,50 +107,6 @@ const router = createBrowserRouter([
 
 
 
-  const router = createBrowserRouter([
-    {
-      path: "",
-      element: <LayoutHardWord toggleLanguage={toggleLanguage} />,
-      children: [
-        { index: true, element: <HomeHardWard /> },
-        { path: "aboutHardWord", element: <AboutHardWord i18n={i18n} t={t} /> },
-        { path: "mainHardWard", element: <MainHardWard /> },
-        { path: "ourServicesHaedWard", element: <OurServicesHaedWard /> },
-        { path: "clientsAcross", element: <ClientsAcross /> },
-        { path: "blogHeroWord", element: <BlogHeroWord /> },
-        { path: "qualityAssurance1", element: <QualityAssurance1 /> },
-        { path: "mobileDevelopment", element: <MobileDevelopment /> },
-        { path: "wepDevlopment", element: <WepDevlopment /> },
-        { path: "homeHardWard", element: <HomeHardWard /> },
-        { path: "StaffAugmentation", element: <StaffAugmentation /> },
-        { path: "iTHardware", element: <ITHardware /> },
-        { path: "uiUxDesign", element: <UiUxDesign /> },
-        { path: "modell", element: <Modell /> },
-        { path: "ourWork", element: <OurWork i18n={i18n} t={t} /> },
-        { path: "workFliter", element: <WorkFliter /> },
-        { path: "about", element: <Aboutt /> },
-        { path: "careers", element: <Careers /> },
-        { path: "/SSSproject", element: <SSSproject /> },
-        { path: "/careers/:id", element: <JopDetetails /> },
-        { path: "ModellButtonNavbar", element: <ModellButtonNavbar /> },
-        {
-          path: "markting",
-          element: <Layout toggleLanguage={toggleLanguage} />,
-          children: [
-            { index: true, element: <Home /> },
-            { path: "hero", element: <Hero /> },
-            { path: "about", element: <About /> },
-            { path: "Mainn", element: <Mainn /> },
-            { path: "seeourBlog", element: <SeeourBlog /> },
-            { path: "choose", element: <Choose /> },
-            { path: "slider", element: <Slider /> },
-            { path: "MaspertsProject", element: <MaspertsProject /> },
-            { path: "*", element: <NotFound /> },
-          ],
-        },
-      ],
-    },
-  ]);
 
   // useEffect(() => {
   //   const favicon = document.getElementById("favicon");
