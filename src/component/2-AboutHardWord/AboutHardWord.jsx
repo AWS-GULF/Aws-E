@@ -6,17 +6,21 @@ import kaspersky from "../../assets/images/kaspersky 1.svg"
 import cisco from "../../assets/images/cisco 1.svg"
 import peplink from "../../assets/images/peplink 1.svg"
 import dell from "../../assets/images/dell 1.svg"
-
+import { useTranslation } from "react-i18next";
 export default function AboutHardWord() {
+  
+ 
+    const { t, i18n } = useTranslation();
+    const isArabic = i18n.language === "ar";
   const settings = {
     dots: false,
-    infinite: true, // استمرار اللوب
+    infinite: true, 
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0, // تشغيل بلا توقف
-    speed: 4000, // سرعة الحركة المستمرة
-    cssEase: "linear", // حركة سلسة بلا توقف
+    autoplaySpeed: 0, 
+    speed: 4000, 
+    cssEase: "linear", 
     centerMode: true,
     arrows: false,
     responsive: [
@@ -43,8 +47,17 @@ export default function AboutHardWord() {
   <hr  className='my-5 lg:mt-0'/>
   <div className="flex flex-col md:m-auto md:justify-center lg:flex-row justify-center text-center colorText shadow-lg ">
     {/* العنوان العلوي */}
-    <div className="not-italic mt-5  font-bold leading-normal tracking-[5.76px] lg:w-6/12 colorText md:w-1/2 lg:text-4xl text-2xl text-nowrap  text-[#333] dark:text-white mx-auto">
-      Our Leading Brands <br /> Partnerships
+    <div className={`not-italic mt-5  font-bold leading-normal lg:w-6/12 colorText md:w-1/2 lg:text-4xl text-2xl text-nowrap  text-[#333] dark:text-white mx-auto ${isArabic ?" lg:mt-10 md:mt-1 md:px-5 sm:px-2 font-cairo" :" tracking-[5.76px]"}`}>
+
+    <p className={`text-center text-3xl font-bold ${isArabic?"font-cairo":""}`}>
+  {t("HeroSoftWareMainTitle").split("\n").map((line, index) => (
+    <span key={index}>
+      {line}
+      <br />
+    </span>
+  ))}
+</p>
+      {/* Our Leading Brands <br /> Partnerships */}
     </div>
 
     <div className="max-w-5xl lg:w-6/12 justify-center  py-2 mx-auto">

@@ -5,6 +5,7 @@ import OutWork3 from "../../assets/images/Out Work3.svg";
 import { useNavigate } from "react-router-dom";
 
 export default function Mainn() {
+
   const navigate = useNavigate();
   return (
     <>
