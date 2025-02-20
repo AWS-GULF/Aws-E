@@ -1,5 +1,20 @@
 {
-
+  "WorkPageHeading": "Our Clients",
+  "WorkPageHeadingDesc": "BUILDING SUCCESS TOGETHER",
+  "since": "Since 2016, we have had the privilege of collaborating with over 600 clients across diverse industries. Here,we showcase a selection of our esteemed partners who have trusted us to deliver innovative andimpactful solutions.",
+  "whatwedid": "What We Did",
+  "opv": "OUR PORTFOLIO OUR VISION",
+  "All": "All",
+  "Web-Development": "Web Development",
+  "Mobile-Development": "Mobile Development",
+  "IT-Hardware": "IT & Hardware",
+  "UI/UX-Design": "UI/UX Design",
+  "Staff-Augmentation": "Staff Augmentation",
+  "Quality-Assurance": "Quality Assurance",
+  "clients": "clients",
+  "nfaa": "Nafaa is the first complete and integrated system of expropriation in the Arabian Gulf region.",
+  "ts": "Smart Support System (SSS) is an integrated ticketing system initially designed to serve as a maintenance tool for projects sold to partners. ",
+  "seeMore": "See More",
   
   "Navbardropdown":"Services",
   "Navbardropdown1":"Web Development",
@@ -131,16 +146,68 @@
 "FooterContact2":"wessam@awsgulf.com",
 "FooterContact3":"www.awsgulft.com",
 
-"FooterTitleL":"Your Lighthouse To The Future"
+"FooterTitleL":"Your Lighthouse To The Future",
 
 
 
+  "case": "Case Study",
+  "TsTitle": "Triple S",
+  "missionTitle": "Mission",
+  "visionTitle": "Vision",
+  "TsDesc": "The introduction Smart Support System (SSS) is an integrated ticketing system initially designed by AWS to serve as a maintenance tool for projects sold to partners. Over time, it has evolved to cater to external companies, streamlining their internal structures. The core objective is to minimize problem resolution time, enhance client email management, and boost overall productivity. The system is built on three main interfaces, offering a comprehensive solution for efficient issue resolution.",
+  "mission": "To empower organizations with Smart Support System (SSS), a cutting-edge ticketing solution designed to revolutionize problem resolution. Our mission is to provide a seamless, efficient, and collaborative platform that enhances communication between employees, clients, and external partners. SSS aims to streamline internal structures, reduce problem resolution time, and elevate overall productivity for businesses relying on maintenance and after-sales operations.",
+  "vision": "We envision Smart Support System (SSS) as the forefront of innovative ticketing solutions, setting new standards in problem management. Our vision is to be the go-to platform for companies seeking a comprehensive, user-friendly, and customizable system. SSS aspires to foster a work environment where communication flows effortlessly, problems are swiftly addressed, and organizations achieve peak efficiency. We aim to continually evolve and adapt, ensuring SSS remains a trusted ally in enhancing operational excellence for businesses worldwide.",
 
+  "title1": "Admin Interface",
+  "title2": "Support Interface",
+  "title3": "Company Interface",
+  "title4": "Employee Interface",
+  "title5": "Smart Support Interface",
 
+  "desc1": "Exclusively designed for administrators, this interfaceprovides a comprehensive overview of all external tickets allocated to thetechnical team. Administrators can efficiently manage and assign tickets,ensuring a smooth workflow for their technical team. Additionally,administrators have the capability to add companies (clients), countries,cities, and departments, ensuring a dynamic and adaptive system.",
+  "desc2": "Specifically designed for the company's internal use,this interface empowers employees to resolve internal tickets swiftly. Iserves as a dedicated platform for addressing challenges within departmentsor across various branches, streamlining internal issue resolution processes.",
+  "desc3": "Tailored for companies utilizing the Smart Support System, this interface allows for the efficient management of organizational hierarchies. Companies can seamlessly add branches,fostering a structured and organized workflow and them employees.",
+  "desc4": "Individually designed for employees, this interfacefacilitates the submission of external tickets to STL, addressing system-related issues. Simultaneously, employees can raise internal tickets toresolve challenges encountered within their department or across differentbranches, eliminating the need for intricate communication channels.",
+  "desc5": "An exclusive platform for STL employees, this interface enables the resolution of external tickets. Oursupport team works diligently to address external issues reported bycustomers and affiliated companies, ensuring a seamless experience.",
 
+  "interfaces": "Interfaces",
+  "admin": "Admin Interface",
+  "support": "Support Interface",
+  "company": "Company Interface",
+  "employee": "Employee Interface",
+  "smart": "Smart Support Interface",
 
+  "services": "Services",
+  "mobileDesc": "Innovative mobile solutions to grow your business on the go.",
+  "md": "Mobile Development",
+  "mdDesc": "We create innovative, one-of-a-kind iOS and Android applications with exceptional designs and seamless user experiences. Our mobile solutions are designed to elevate your business, showcase your offerings, and captivate your audience, ensuring lasting engagement and satisfaction.",
+  "ux": "UX Design",
+  "uxDesc": "Our approach to native app development is rooted in a human-centered philosophy, inspired by the timeless principles of minimalism. By prioritizing elegance, simplicity, and the elimination of unnecessary elements, we craft apps that keep users engaged and delighted",
+  "speed": "Speed",
+  "speedDesc": "Speed is critical to delivering a seamless user experience. We ensure your app loads quickly, responds efficiently, and operates flawlessly by integrating the latest speed optimization technologies, making every interaction smooth and satisfying.",
+  "secur": "Security",
+  "securDesc": "Your data and your users' sensitive information are our top priorities. We implement robust security measures to safeguard your product, protect user identities, and maintain the highest level of data integrity and trust.",
+  "cases": "Case Studies",
+  "casesDesc": "We stick to tried and true digital marketing strategies that we know will have the highest impact on your bottom line. Forget the fluff and empty promises of other companies, we offer services that are more likely to be profitable and sustainable. Check out our suite of digital marketing services designed to help accelerate your funnel.",
+  "web": "Innovative web development solutions to empower your business, enhance your online presence, and drive success.",
+  "webDev": "Web Development",
+  "webDesc": "We specialize in developing custom web applications tailored to your unique needs, focusing on delivering exceptional UI/UX experiences. Leave concerns like performance optimization, accessibility, functionality, usability, and security to us, so you can focus on streamlining and enhancing your workflow.",
+  "cdp": "Consultation and Discovery Phase",
+  "cdpDesc": "Transforming your idea or product into reality can be challenging. We simplify this process by leveraging industry standards for web architecture and development. Our expert team will guide you in identifying the most effective strategies to achieve your goals seamlessly.",
+  "bicb": "Brand Identity & Custom Branding",
+  "bicbDesc": "Design a fully customized, multi-functional dashboard that reflects your brand identity. Our solutions are crafted to enhance user engagement and ensure effortless navigation for your organization’s leaders and administrators.",
+  "sso": "Identity Management and SSO",
+  "ssoDesc": "Empower your users with secure and intuitive access to your platform. Whether you provide full control over their interactions or enable self-service dashboards, features like social logins and single sign-on (SSO) can enhance their experience and simplify onboarding.",
+  "seo": "Search Engine Optimization (SEO)",
+  "seoDesc": "Ensure your platform is built with optimization best practices to drive organic growth and expand your audience reach exponentially.",
+  "quality-assurance": "We ensure flawless performance and reliability for your software",
+  "qa": "Quality Assurance",
+  "qaDesc": "We believe in fostering a strong, collaborative partnership with our clients. Ensuring the quality, functionality, and reliability of the products we deliver is a responsibility we take seriously. Beyond meeting expectations, we proactively identify and resolve potential risks and challenges, striving to exceed contractual commitments with excellence.",
+  "ad": "Accurate Deliveries",
+  "adDesc": "Our development team is committed to providing realistic and precise timelines for project milestones. This approach ensures timely delivery without ever compromising the quality of the final product.",
+  "qc": "Quality Control",
+  "qcDesc": "While a completely bug-free environment is unattainable, we have developed highly effective testing and diagnostic strategies. These cover both functional and non-functional aspects of your product, ensuring a smooth development process and minimizing friction for end users",
+  "am": "Account Management",
+  "amDesc": "For enterprise clients, we assign a dedicated professional from our pro-services team to manage your account exclusively throughout the entire development and delivery process. This ensures personalized support and seamless communication at every stage",
 
-
-
-  }
-  
+}
