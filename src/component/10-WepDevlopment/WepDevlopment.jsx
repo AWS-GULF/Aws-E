@@ -151,124 +151,130 @@ export default function WepDevlopment() {
         </p>
       </div>
 
-      <div className="cards mb-[100px] flex flex-wrap justify-center gap-4">
-        {/* Card 1 */}
-        <div className="card bg-base-100 w-full sm:w-96 border-1 rounded-lg border border-stroke p-4">
-          <figure>
-            <img
-              className="w-full h-[382px]"
-              src={QualityAssurance5}
-              alt="QualityAssurance5"
-            />
-          </figure>
-          <div>
-            <h2
-              className={`text-[17px] text-[#003540] font-montserrat font-[600] ${
-                i18n.language === "ar" && "font-cairo"
-              } ${
-                i18n.language === "en" && "tracking-[1.6px]"
-              }  mb-2 dark:text-[#B3E5F1]`}
-            >
-              {t("clients")}
-            </h2>
-            <div className="flex justify-center items-center">
-              <p
-                className={` font-montserrat text-[16px] text-[#666] dark:text-white  ${
-                  i18n.language === "ar" && " font-cairo"
-                } `}
-              >
-                {t("nfaa")}
-              </p>
-              <div
-                className={`flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap  ${
-                  i18n.language === "ar" && " font-cairo"
-                }`}
-              >
-                <p>{t("seeMore")}</p>
+     <div className="cards mb-[100px] flex flex-wrap justify-center gap-4">
+            {/* Card 1 */}
+            <div className="card bg-base-100 w-full sm:w-96 border-1 rounded-lg border border-stroke p-4">
+              <figure>
+                <img
+                  className="w-full h-[382px]"
+                  src={QualityAssurance5}
+                  alt="QualityAssurance5"
+                />
+              </figure>
+              <div>
+                <h2
+                  className={`text-[17px] text-[#003540] font-montserrat font-[600] ${
+                    i18n.language === "ar" && "font-cairo"
+                  } ${
+                    i18n.language === "en" && "tracking-[1.6px]"
+                  }  mb-2 dark:text-[#B3E5F1]`}
+                >
+                  {t("clients")}
+                </h2>
+                <div className="flex justify-center items-center">
+                  <p
+                    className={` font-montserrat text-[16px] text-[#666] dark:text-white  ${
+                      i18n.language === "ar" && " font-cairo"
+                    } `}
+                  >
+                    {t("nfaa")}
+                  </p>
+                  <div
+                    className={`flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${
+                      i18n.language === "en" && "tracking-wider"
+                    } whitespace-nowrap  ${
+                      i18n.language === "ar" && " font-cairo text-[20px]"
+                    }`}
+                  >
+                    <p>{t("seeMore")}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            {/* Card 2 */}
+            <div className="card bg-base-100 rounded-lg w-full sm:w-96 border-1 border border-stroke p-4">
+              <figure>
+                <img
+                  className="w-full h-[382px]"
+                  src={QualityAssurance6}
+                  alt="QualityAssurance6"
+                />
+              </figure>
+              <div>
+                <h2
+                  className={`text-[17px] text-[#003540] font-montserrat font-[600] ${
+                    i18n.language === "ar" && "font-cairo"
+                  } ${
+                    i18n.language === "en" && "tracking-[1.6px]"
+                  }  mb-2 dark:text-[#B3E5F1]`}
+                >
+                  {t("clients")}
+                </h2>
+                <div className="flex justify-center items-center">
+                  <p
+                    className={` font-montserrat text-[16px] text-[#666] dark:text-white  ${
+                      i18n.language === "ar" && " font-cairo"
+                    } `}
+                  >
+                    {t("nfaa")}
+                  </p>
+                  <div
+                    className={`flex justify-end items-end mt-14 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${
+                      i18n.language === "en" && "tracking-wider"
+                    } whitespace-nowrap  ${
+                      i18n.language === "ar" && " font-cairo text-[20px] "
+                    }`}
+                  >
+                    <p>{t("seeMore")}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            {/* Card 3 */}
+            <div className="card rounded-lg bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4">
+              <figure>
+                <img
+                  className="w-full h-[382px]"
+                  src={QualityAssurance7}
+                  alt="QualityAssurance7"
+                />
+              </figure>
+              <div>
+                <h2
+                  className={`text-[17px] text-[#003540] font-montserrat font-[600] ${
+                    i18n.language === "ar" && "font-cairo"
+                  } ${
+                    i18n.language === "en" && "tracking-[1.6px]"
+                  }  mb-2 dark:text-[#B3E5F1]`}
+                >
+                  {t("clients")}
+                </h2>
+                <div className="flex justify-center items-center">
+                  <p
+                    className={` font-montserrat text-[16px] text-[#666] dark:text-white  ${
+                      i18n.language === "ar" && " font-cairo"
+                    }      `}
+                  >
+                    {t("ts")}
+                  </p>
+                  <div
+                    className={`flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] ${
+                      i18n.language === "en" && "tracking-wider"
+                    } whitespace-nowrap  ${
+                      i18n.language === "ar" && " font-cairo text-[20px]"
+                    }`}
+                  >
+                    <Link to="/SSSproject">
+                      {" "}
+                      <p>{t("seeMore")}</p>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Card 2 */}
-        <div className="card bg-base-100 rounded-lg w-full sm:w-96 border-1 border border-stroke p-4">
-          <figure>
-            <img
-              className="w-full h-[382px]"
-              src={QualityAssurance6}
-              alt="QualityAssurance6"
-            />
-          </figure>
-          <div>
-            <h2
-              className={`text-[17px] text-[#003540] font-montserrat font-[600] ${
-                i18n.language === "ar" && "font-cairo"
-              } ${
-                i18n.language === "en" && "tracking-[1.6px]"
-              }  mb-2 dark:text-[#B3E5F1]`}
-            >
-              {t("clients")}
-            </h2>
-            <div className="flex justify-center items-center">
-              <p
-                className={` font-montserrat text-[16px] text-[#666] dark:text-white  ${
-                  i18n.language === "ar" && " font-cairo"
-                } `}
-              >
-                {t("nfaa")}
-              </p>
-              <div
-                className={`flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap  ${
-                  i18n.language === "ar" && " font-cairo"
-                }`}
-              >
-                <p>{t("seeMore")}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Card 3 */}
-        <div className="card rounded-lg bg-base-100 w-full sm:w-96 border-1 border border-stroke p-4">
-          <figure>
-            <img
-              className="w-full h-[382px]"
-              src={QualityAssurance7}
-              alt="QualityAssurance7"
-            />
-          </figure>
-          <div>
-            <h2
-              className={`text-[17px] text-[#003540] font-montserrat font-[600] ${
-                i18n.language === "ar" && "font-cairo"
-              } ${
-                i18n.language === "en" && "tracking-[1.6px]"
-              }  mb-2 dark:text-[#B3E5F1]`}
-            >
-              {t("clients")}
-            </h2>
-            <div className="flex justify-center items-center">
-              <p
-                className={` font-montserrat text-[16px] text-[#666] dark:text-white  ${
-                  i18n.language === "ar" && " font-cairo"
-                }      `}
-              >
-                {t("ts")}
-              </p>
-              <div
-                className={`flex justify-end items-end mt-12 dark:text-[#B3E5F1] text-[#003540] ps-6 decoration-1 underline text-primary text-[16px] font-[600] tracking-wider whitespace-nowrap  ${
-                  i18n.language === "ar" && " font-cairo"
-                }`}
-              >
-                <Link to="/SSSproject">
-                  {" "}
-                  <p>{t("seeMore")}</p>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
