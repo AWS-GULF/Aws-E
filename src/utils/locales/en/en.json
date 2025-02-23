@@ -12,7 +12,12 @@
   "Staff-Augmentation": "Staff Augmentation",
   "Quality-Assurance": "Quality Assurance",
   "clients": "clients",
+  "axis": "This project aims to provide a digital platform for purchasing server services, with comprehensive management of products and orders. Through this, Axis Supply seeks to enhance its digital presence and offer innovative server solutions to its clients with ease.",
   "nfaa": "Nafaa is the first complete and integrated system of expropriation in the Arabian Gulf region.",
+  "hwlk": "This project aims to provide a digital platform for purchasing server services, with comprehensive management of products and orders. Through this, Axis Supply seeks to enhance its digital presence and offer innovative server solutions to its clients with ease.",
+  "akark": "This project aims to provide a digital platform for purchasing server services, with comprehensive management of products and orders. Through this, Axis Supply seeks to enhance its digital presence and offer innovative server solutions to its clients with ease.",
+  "value": "This project aims to provide a digital platform for purchasing server services, with comprehensive management of products and orders. Through this, Axis Supply seeks to enhance its digital presence and offer innovative server solutions to its clients with ease.",
+  "vibe": "This project aims to provide a digital platform for purchasing server services, with comprehensive management of products and orders. Through this, Axis Supply seeks to enhance its digital presence and offer innovative server solutions to its clients with ease.",
   "ts": "Smart Support System (SSS) is an integrated ticketing system initially designed to serve as a maintenance tool for projects sold to partners. ",
   "seeMore": "See More",
 
@@ -326,10 +331,6 @@
   "Dcf3Desc": "Executing the development process with precision to ensure optimal functionality",
   "Dcf4": "Commissioning and Testing",
   "Dcf4Desc": "Conducting rigorous testing and commissioning to guarantee performance, scalability, and compliance",
-  
-  
-  
-  
 
   "NetworkDesc": "AWS Technology offers customized network solutions and professional services in network architecture, information security, and unified communications",
   "Netf1": "Network Infrastructure Designing and Implementation",
@@ -342,7 +343,7 @@
   "Netf4Desc": "Implementing video telephony solutions to enhance remote communication and collaboration",
   "Netf5": " Wireless Network Solutions",
   "Netf5Desc": "Providing secure and reliable wireless network solutions to support mobility and flexibility in your operations",
-  
+
   "proDesc": "AWS Technology delivers top-tier IT professional services to ensure seamless integration and operational excellence",
   "proF1": "Commissioning and Testing for Fiber Optics",
   "proF1Desc": "Comprehensive services for fiber optics, including laying, termination, and splicing to ensure optimal performance",
@@ -352,7 +353,7 @@
   "proF3Desc": "Providing installation and configuration services for all certified hardware, backed by Service Level Agreements (SLA) for guaranteed suppor",
   "proF4": " Installation and Configuration of Surveillance Equipment",
   "proF4Desc": "Delivering end-to-end installation and configuration services for advanced surveillance systems to ensure secure environments",
-  
+
   "": "",
   "": "",
   "": "",

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import QualityAssurance from "../../assets/images/OFFf.svg";
 import ExploreOurServices1 from "../../assets/images/ExploreOurServices1.svg";
 import ExploreOurServices2 from "../../assets/images/ExploreOurServices2.svg";
+import ExploreOurServices2Light from "../../assets/images/akarkLight.jpg";
 import ExploreOurServices3 from "../../assets/images/ExploreOurServices3.svg";
 // import ExploreOurServices4 from "../../assets/images/ExploreOurServices4.svg";
 // import ExploreOurServices5 from "../../assets/images/ExploreOurServices5.svg";
@@ -16,6 +17,7 @@ import ExploreOurServices13 from "../../assets/images/axis.svg";
 // import ExploreOurServices14 from "../../assets/images/logod 1.svg"
 import axisLight from "../../assets/images/axislight.png";
 import akarkDark from "../../assets/images/akarkDark.svg";
+
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -37,7 +39,7 @@ export default function OurWork() {
     { src: ExploreOurServices8, alt: "ExploreOurServices8" },
     { src: ExploreOurServices1, alt: "ExploreOurServices1" },
     {
-      src: isDarkMode ? ExploreOurServices2 : akarkDark,
+      src: isDarkMode ? ExploreOurServices2Light : ExploreOurServices2,
       alt: "ExploreOurServices2",
     },
     { src: ExploreOurServices3, alt: "ExploreOurServices3" },
@@ -141,7 +143,7 @@ export default function OurWork() {
             320: { slidesPerView: 3, slidesPerGroup: 2 },
             480: { slidesPerView: 3, slidesPerGroup: 2 },
             768: { slidesPerView: 4, slidesPerGroup: 3 },
-            1024: { slidesPerView: 4, slidesPerGroup: 2 },
+            1024: { slidesPerView: 3, slidesPerGroup: 2 },
           }}
           className="w-full"
         >
