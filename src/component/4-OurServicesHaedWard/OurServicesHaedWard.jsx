@@ -22,7 +22,7 @@ export default function OurServicesHaedWard() {
               <div className="grid gap-4 mt-8 lg:w-[110%] grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {/* Card 1 */}
                 <div className="border p-3 rounded-xl min-w-[300px] mb-4 flex-1 bg-tooHover group flex flex-col">
-  <img src={Services} alt="Services" className="w-full h-auto object-cover" />
+  <img src={Services} alt="Services" className="w-full h-auto object-cover rounded-2xl" />
   <div className="flex flex-col justify-between h-full">
     <h2 className={`text-[#003540] font-montserrat pt-4 text-base font-[600] font-mons dark:text-[#B3E5F1] group-hover:dark:text-black ${isArabic ? "font-cairo" : "tracking-[1.6px]"}`}>
       {t("QualityAssuranceH1")}
@@ -32,7 +32,7 @@ export default function OurServicesHaedWard() {
     </p>
     <div className="card-actions justify-start mt-auto bg-text">
       <Link to="QualityAssurance1">
-        <button className={`dark:text-[#B3E5F1] group-hover:dark:text-black ${isArabic ? "font-cairo sm:tracking-[0] text-base lg:tracking-[0]" : ""}`}>
+        <button className={`dark:text-[#B3E5F1]   underline group-hover:dark:text-black ${isArabic ? "font-cairo sm:tracking-[0] text-base lg:tracking-[0]" : ""}`}>
           {t("QualityAssuranceSeemore")}
         </button>
       </Link>
@@ -42,7 +42,7 @@ export default function OurServicesHaedWard() {
 
                 {/* Card 2 */}
                 <div className="border p-3 rounded-xl min-w-[300px] mb-4 flex-1 bg-tooHover group flex flex-col">
-  <img src={Services} alt="Services" className="w-full h-auto object-cover" />
+  <img src={Services} alt="Services" className="w-full h-auto object-cover rounded-2xl" />
   <div className="flex flex-col justify-between h-full">
     <h2 className={`text-[#003540] font-montserrat pt-4 text-base font-[600] font-mons dark:text-[#B3E5F1] group-hover:dark:text-black ${isArabic ? "font-cairo" : "tracking-[1.6px]"}`}>
     {t("MobileDevelopmentH1")}
@@ -52,7 +52,7 @@ export default function OurServicesHaedWard() {
     </p>
     <div className="card-actions justify-start mt-auto bg-text">
       <Link to="QualityAssurance1">
-        <button className={`dark:text-[#B3E5F1] group-hover:dark:text-black ${isArabic ? "font-cairo sm:tracking-[0] text-base lg:tracking-[0]" : ""}`}>
+        <button className={`dark:text-[#B3E5F1]  underline group-hover:dark:text-black ${isArabic ? "font-cairo sm:tracking-[0] text-base lg:tracking-[0]" : ""}`}>
         {t("MobileDevelopmentSeeMore")}
         </button>
       </Link>
@@ -62,7 +62,7 @@ export default function OurServicesHaedWard() {
       
                 {/* Card 3 */}
                 <div className="border p-3 rounded-xl min-w-[300px] mb-4 bg-tooHover flex-1 group">
-                  <img src={Services} alt="Services" className="w-full h-auto object-cover" />
+                  <img src={Services} alt="Services" className="w-full h-auto object-cover rounded-2xl" />
                   <div>
                     <h2 className={`text-[#003540] font-montserrat pt-4 text-base font-[600] font-mons dark:text-[#B3E5F1] group-hover:dark:text-black ${isArabic ? "font-cairo" : "tracking-[1.6px]"}`}>
                       {t("Web DevelopmentH1")}
@@ -72,7 +72,7 @@ export default function OurServicesHaedWard() {
                     </p>
                     <div className="card-actions justify-start mt-11 bg-text">
                       <Link to="wepDevlopment">
-                        <button className={`dark:text-[#B3E5F1] group-hover:dark:text-black ${isArabic ? "font-cairo sm:tracking-[0] text-base lg:tracking-[0]" : ""}`}>
+                        <button className={`dark:text-[#B3E5F1]  underline group-hover:dark:text-black ${isArabic ? "font-cairo sm:tracking-[0] text-base lg:tracking-[0]" : ""}`}>
                           {t("Web DevelopmentSeeMore")}
                         </button>
                       </Link>
@@ -82,7 +82,7 @@ export default function OurServicesHaedWard() {
       
                 {/* Card 4 */}
                 <div className="border p-3 rounded-xl min-w-[300px] mb-4 bg-tooHover flex-1 group">
-                  <img src={Services} alt="Services" className="w-full h-auto object-cover" />
+                  <img src={Services} alt="Services" className="w-full h-auto object-cover rounded-2xl" />
                   <div>
                     <h2 className={`text-[#003540] font-montserrat pt-4 text-base font-[600] font-mons dark:text-[#B3E5F1] group-hover:dark:text-black ${isArabic ? "font-cairo" : "tracking-[1.6px]"}`}>
                       {t("IT&HardwareH1")}
@@ -92,7 +92,7 @@ export default function OurServicesHaedWard() {
                     </p>
                     <div className="card-actions justify-start mt-11 bg-text">
                       <Link to="iTHardware">
-                        <button className={`dark:text-[#B3E5F1] group-hover:dark:text-black ${isArabic ? "font-cairo sm:tracking-[0] text-base lg:tracking-[0]" : ""}`}>
+                        <button className={`dark:text-[#B3E5F1]  underline group-hover:dark:text-black ${isArabic ? "font-cairo sm:tracking-[0] text-base lg:tracking-[0]" : ""}`}>
                           {t("IT&HardwareSeeMore")}
                         </button>
                       </Link>
@@ -102,7 +102,7 @@ export default function OurServicesHaedWard() {
               
                 {/* Card 5 */}
                 <div className="border p-3 rounded-xl min-w-[300px] mb-4 flex-1 bg-tooHover group flex flex-col">
-  <img src={Services} alt="Services" className="w-full h-auto object-cover" />
+  <img src={Services} alt="Services" className="w-full h-auto object-cover rounded-2xl" />
   <div className="flex flex-col justify-between h-full">
     <h2 className={`text-[#003540] font-montserrat pt-4 text-base font-[600] font-mons dark:text-[#B3E5F1] group-hover:dark:text-black ${isArabic ? "font-cairo" : "tracking-[1.6px]"}`}>
     {t("StaffAugmentationH1")}
@@ -112,7 +112,7 @@ export default function OurServicesHaedWard() {
     </p>
     <div className="card-actions justify-start mt-auto bg-text">
       <Link to="QualityAssurance1">
-        <button className={`dark:text-[#B3E5F1] group-hover:dark:text-black ${isArabic ? "font-cairo sm:tracking-[0] text-base lg:tracking-[0]" : ""}`}>
+        <button className={`dark:text-[#B3E5F1]  underline group-hover:dark:text-black ${isArabic ? "font-cairo sm:tracking-[0] text-base lg:tracking-[0]" : ""}`}>
         {t("StaffAugmentationSeeMore")}
         </button>
       </Link>
@@ -124,7 +124,7 @@ export default function OurServicesHaedWard() {
                
                 {/* Card 6 */}
                 <div className="border p-3 rounded-xl min-w-[300px] mb-4 flex-1 bg-tooHover group flex flex-col">
-  <img src={Services} alt="Services" className="w-full h-auto object-cover" />
+  <img src={Services} alt="Services" className="w-full h-auto object-cover  rounded-2xl" />
   <div className="flex flex-col justify-between h-full">
     <h2 className={`text-[#003540] font-montserrat pt-4 text-base font-[600] font-mons dark:text-[#B3E5F1] group-hover:dark:text-black ${isArabic ? "font-cairo" : "tracking-[1.6px]"}`}>
     {t("UI/UXDesignH1")}
@@ -134,7 +134,7 @@ export default function OurServicesHaedWard() {
     </p>
     <div className="card-actions justify-start mt-auto bg-text">
       <Link to="QualityAssurance1">
-        <button className={`dark:text-[#B3E5F1] group-hover:dark:text-black ${isArabic ? "font-cairo sm:tracking-[0] text-base lg:tracking-[0]" : ""}`}>
+        <button className={`dark:text-[#B3E5F1]  underline group-hover:dark:text-black ${isArabic ? "font-cairo sm:tracking-[0] text-base lg:tracking-[0]" : ""}`}>
         {t("UI/UXDesignSeeMore")}
         </button>
       </Link>

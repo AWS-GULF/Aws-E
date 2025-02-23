@@ -124,7 +124,7 @@ export default function Aboutt() {
 
         <div className="flex mb-[100px] gap-10">
           <div className="sm:w-[80%] w-[50%] flex-col justify-start sm:items-start items-center">
-            <p className={`text-aboutCont  text-[16px]  font-montserrat dark:text-white  lg:text-[32px]  font-bold leading-[24px] lg:leading-[60px] pb-[30px] ${isArabic?" font-cairo ":"lg:tracking-[6.4px] "}`}>
+            <p className={`text-aboutCont  text-[14px]  font-montserrat dark:text-white  lg:text-[32px]  font-bold leading-[24px] lg:leading-[60px] pb-[30px] ${isArabic?" font-cairo ":"lg:tracking-[6.4px] "}`}>
               {t("AboutUs A suite of services")}
               {/* A suite of services designed to help businesses thrive in the
               digital future with AS GULF. */}

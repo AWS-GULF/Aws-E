@@ -81,7 +81,7 @@ export default function NavbarHardWard({  toggleLanguage }) {
 <li className="relative group  sm:mx-11  mx-3 ">
 <Link href="#" className="text-[#666] dark:text-white relative   md:mx-[-6px]  ">
   {t("Navbardropdown")}
-  <i className={`fa-solid fa-chevron-down absolute md:block ${isArabic ? "right-[50px]"  : "ml-3 md:ml-16"} lg:mt-0 md:mt-0 md:top-3 mt-3 transform -translate-y-1/2 transition-transform group-hover:rotate-180 text-[#666]`}></i>
+  <i className={`fa-solid fa-chevron-down absolute md:block ${isArabic ? "right-[50px]"  : "ml-3 md:ml-16"} lg:mt-0 md:mt-0 mx-2 md:top-3 mt-3 transform -translate-y-1/2 transition-transform group-hover:rotate-180 text-[#666]`}></i>
 </Link>
 
   {/* Dropdown Menu */}

@@ -138,7 +138,7 @@ export default function Modell() {
 
                       <div className="mt-4 flex justify-center ">
                         <button type="submit" className="  text-white  ">
-                        Contact Us Now
+                     {t("ModelTitle2")}
                         </button>
                       </div>
                     </form>

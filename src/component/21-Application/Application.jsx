@@ -1,10 +1,12 @@
 import React from 'react'
 import { useRef, useState } from "react";
 import elect  from "../../assets/images/mdi_thunder.svg"
+import { useTranslation } from 'react-i18next';
 export default function JobApplicationForm() {
     const [resume, setResume] = useState(null);
     const fileInputRef = useRef(null);
-  
+    const { t, i18n } = useTranslation();
+    const isArabic = i18n.language === "ar";
     const handleResumeUpload = (event) => {
       if (event.target.files.length > 0) {
         setResume(event.target.files[0].name);
@@ -20,10 +22,13 @@ export default function JobApplicationForm() {
           <span className='text-[#B3E5F1] '>
             <img src={elect} alt="" />
           </span>{" "}
-          Autofill application
+          {t("Autofillapplication1")}
+          {/* Autofill application */}
         </h2>
         <p className="text-sm text-gray-600 dark:text-[#fff]">
-          Save time by importing your resume in one of the <br /> following formats:
+        {t("Autofillapplication")}
+{/*        
+          Save time by importing your resume in one of the <br /> following formats: */}
           <span className="font-medium">
             {" "}
             .pdf, .doc, .docx, .odt, or .rtf.
@@ -43,21 +48,33 @@ export default function JobApplicationForm() {
     
    <button  onClick={() => fileInputRef.current.click()} className="mt-3 whitespace-nowrap dark:bg-[#B3E5F1] dark:text-[black]  bg-[#003540] text-[white] me-14  px-8 py-6 rounded-lg"
             >
-             <span className='text-sm    whitespace-nowrap '> Import resume from </span> 
+             <span className='text-sm    whitespace-nowrap '>
+              {t("Importresumefrom")}
+               {/* Import resume from */}
+                </span> 
             </button>
     </div>
         {resume && (
-          <p className="mt-2 text-sm text-[#003540]">Selected: {resume}</p>
+          <p className="mt-2 text-sm text-[#003540]">
+            {t("Selected")}
+            
+          
+             {resume}</p>
         )}
       </div>
 
-      <h3 className="font-bold text-lg mb-3 text-[#666] dark:text-[#B3E5F1]">Personal information</h3>
+      <h3 className="font-bold text-lg mb-3 text-[#666] dark:text-[#B3E5F1]">
+        {t("Personalinformation")}
+        {/* Personal information */}
+        </h3>
 
       <form className="space-y-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-[#666] ">
           <div>
             <label className="block text-sm font-medium text-[#666]">
-              <span className="text-red-500">*</span>First name
+              <span className="text-red-500">*</span>
+              {t("First name")}
+              {/* First name */}
             </label>
             <input
               type="text"
@@ -67,7 +84,10 @@ export default function JobApplicationForm() {
           </div>
           <div>
             <label className="block text-sm font-medium text-[#666]">
-            <span className="text-red-500">*</span>Last name
+            <span className="text-red-500">*</span>
+            {t("Last name")}
+            
+            {/* Last name */}
             </label>
             <input
               type="text"
@@ -79,7 +99,9 @@ export default function JobApplicationForm() {
 
         <div>
           <label className="block text-sm font-medium text-[#666]">
-          <span className=" text-[#666] ">*</span>EMAIL
+          <span className=" text-[#666] ">*</span>
+          {t("EMAIL")}
+          {/* EMAIL */}
           </label>
           <input
             type="email"
@@ -90,7 +112,8 @@ export default function JobApplicationForm() {
 
         <div>
           <label className="block text-sm font-medium text-[#666]">
-            NOTES
+            {t("NOTES")}
+            {/* NOTES */}
           </label>
           <textarea className="mt-1 block w-full border rounded-md p-2 h-24"></textarea>
         </div>
@@ -99,10 +122,14 @@ export default function JobApplicationForm() {
           type="submit"
           className="w-full bg-[#003540] text-white py-2 rounded-lg dark:bg-[#B3E5F1] dark:text-[black] "
         >
-          Submit Application
+          {t("SubmitApplication")}
+          {/* Submit Application */}
         </button>
       </form>
     </div>
     </div>
   )
 }
+
+
+

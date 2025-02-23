@@ -38,7 +38,7 @@ export default function ModellButtonNavbar() {
     return (
       <>
         <div onClick={openModal} className="cursor-pointer    dark:text-[#333]  rounded ">
-          Contact Us 
+         {t("ModelTitle2")}
         </div>
   
         <Transition appear show={isOpen} as={Fragment}>
@@ -138,7 +138,7 @@ export default function ModellButtonNavbar() {
                         <div className="mt-4 flex justify-center ">
                           <button type="submit" className="  text-white    ">
                             {t("ModelTitle2")}
-                          Contact Us 
+                          {/* Contact Us  */}
                           </button>
                         </div>
                       </form>

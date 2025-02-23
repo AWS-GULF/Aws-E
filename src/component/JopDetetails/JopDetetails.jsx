@@ -7,13 +7,14 @@ import { useTranslation } from 'react-i18next';
 export default function JopDetetails() {
    const { t, i18n } = useTranslation();
       const isArabic = i18n.language === "ar";
+      
     const jobDescriptions = {
       
         1:t("titleDescription1"),
       
         2: t("Buildandmaintain2"),
       
-        3: t("Buildandmaintain2"),
+        3: t("Buildandmaintain3"),
       };
       
       const jobs = [
@@ -33,40 +34,122 @@ export default function JopDetetails() {
       const jobResponsibilities = {
         1: [
           t("keytitle1"),
+          t("keytitle2"),
+          t("keytitle3"),
+          t("keytitle4"),
+          t("keytitle5"),
+          t("keytitle6"),
+          t("keytitle8"),
+          t("keytitle9"),
+         
         ],
         2: [
           t("keytitle1"),
+          t("keytitle2"),
+          t("keytitle3"),
+          t("keytitle4"),
+          t("keytitle5"),
+          t("keytitle6"),
+          t("keytitle8"),
+          t("keytitle9"),
         ],
         3: [
           t("keytitle1"),
-        
+          t("keytitle2"),
+          t("keytitle3"),
+          t("keytitle4"),
+          t("keytitle5"),
+          t("keytitle6"),
+          t("keytitle8"),
+          t("keytitle9"),
         ],
       };
       
       const jobRequirements = {
         1: [
+  
      t("Requirementstitle1"),
+     t("Requirementstitle2"),
+     t("Requirementstitle3"),
+     t("Requirementstitle4"),
+     t("Requirementstitle5"),
+     t("Requirementstitle6"),
+     t("Requirementstitle7"),
+     t("Requirementstitle8"),
+     t("Requirementstitle9"),
+     t("Requirementstitle1"),
+     t("Requirementstitle1"),
+     
+   
         ],
         2: [
-     t("Requirementstitle1"),
+          t("Requirementstitle1"),
+          t("Requirementstitle2"),
+          t("Requirementstitle3"),
+          t("Requirementstitle4"),
+          t("Requirementstitle5"),
+          t("Requirementstitle6"),
+          t("Requirementstitle7"),
+          t("Requirementstitle8"),
+          t("Requirementstitle9"),
+          t("Requirementstitle1"),
+          t("Requirementstitle1"),
         ],
         3: [
-     t("Requirementstitle1"),
+          t("Requirementstitle1"),
+          t("Requirementstitle2"),
+          t("Requirementstitle3"),
+          t("Requirementstitle4"),
+          t("Requirementstitle5"),
+          t("Requirementstitle6"),
+          t("Requirementstitle7"),
+          t("Requirementstitle8"),
+          t("Requirementstitle9"),
+          t("Requirementstitle1"),
+          t("Requirementstitle1"),
         ],
       };
       const jobBenefits = {
         1: [
         
-        t("Benefits1"),
+          t("Benefits1").split("\n").map((line, index) => (
+            <span key={index}>
+              {line}
+              <br />
+            </span>
+          )),
+          t("Benefits2"),
+          t("Benefits3"),
+          t("Benefits4"),
+          t("Benefits5"),
         ],
+      
         2: [
-        t("Benefits1"),
+          t("Benefits1").split("\n").map((line, index) => (
+            <span key={index}>
+              {line}
+              <br />
+            </span>
+          )),
+          t("Benefits2"),
+          t("Benefits3"),
+          t("Benefits4"),
+          t("Benefits5"),
         ],
         3: [
-        t("Benefits1"),
+          t("Benefits1").split("\n").map((line, index) => (
+            <span key={index}>
+              {line}
+              <br />
+            </span>
+          )),
+          t("Benefits2"),
+          t("Benefits3"),
+          t("Benefits4"),
+          t("Benefits5"),
         ],
       };
-      
+ 
       const { id } = useParams();
       const description = jobDescriptions[id] || "Job not found.";
       const responsibilities = jobResponsibilities[id] || [];
@@ -75,7 +158,7 @@ export default function JopDetetails() {
     
       const [activeTab, setActiveTab] = useState("overview");
       console.log(id);
-      
+     
   return (
     <div>
     <div className=" flex-col justify-center items-center  ">
@@ -147,16 +230,21 @@ export default function JopDetetails() {
               {t("KeyResponsibilities")}
               {/* Key Responsibilities */}
             </h3>
-            <ul className="list-disc pl-5 dark:text-[#B3E5F1] ">
-              {responsibilities.map((responsibility, index) => (
-                <li
-                  className={`sm:text-lg font-[500]  sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat  ${isArabic?"font-cairo":" sm:tracking-[2px] "}  `}
-                  key={index}
-                >
-                  {responsibility}
-                </li>
-              ))}
-            </ul>
+         
+       
+
+<ul className=" pl-5 dark:text-[#B3E5F1] list-disc">
+  {responsibilities.map((responsibility, index) => (
+    <li
+      className={`sm:text-lg font-[500] sm:leading-9 text-aboutCont dark:text-[#fff] font-montserrat ${isArabic ? "font-cairo" : "sm:tracking-[2px]"}`}
+      key={index}
+    >
+      {responsibility}
+    </li>
+  ))}
+</ul>
+
+
 
             <h3 className="text-2xl font-bold mt-4 pb-6 dark:text-[#B3E5F1]  ">
               {t("Requirementstitle")}
@@ -176,7 +264,7 @@ export default function JopDetetails() {
               </h3>
             <ul className="list-disc pl-5  ">
               {Benefits.map((benefit, index) => (
-                <li className={`sm:text-lg font-[500] sm:tracking-[2px] sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat ${isArabic?"font-cairo":" sm:tracking-[2px] "} `} key={index}>
+                <li className={`sm:text-lg font-[500]  sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat ${isArabic?"font-cairo":" sm:tracking-[2px] "} `} key={index}>
                   {benefit}
                 </li>
               ))}

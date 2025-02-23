@@ -56,26 +56,22 @@ export default function Careers() {
           {/* Join US  */}
           </h1>
       </div>
-
       <div className="flex justify-center items-center text-center">
-        <p className={`text-5xl text-center font-bold  mb-2 leading-[75px] font-mons  text-[#003540] dark:text-[white] ${isArabic?"font-cairo":"tracking-[4.8px] "}`}>
-          {" "}
-        
-          {t("Titlecareerst")
-                     .split("\n")
-                      .map((line, index) => (
-                      <React.Fragment key={index}>
-                      {line}
-                     <br />
-                      </React.Fragment>
-                          ))}
-          {/* Join the team where <br />
-          innovation meets excellence. */}
-        </p>
-      </div>
+  <p className={`text-2xl  sm:text-3xl md:text-4xl lg:text-5xl text-center font-bold mb-3 leading-tight sm:leading-snug md:leading-[75px] font-mons text-[#003540] dark:text-[white] max-w-[90%] sm:max-w-[80%] md:max-w-[60%] ${isArabic ? "font-cairo px-3" : "tracking-[4.8px]"}`}>
+    {t("Titlecareerst")
+      .split("\n")
+      .map((line, index) => (
+        <React.Fragment key={index}>
+          {line}
+          <br />
+        </React.Fragment>
+      ))}
+  </p>
+</div>
+
 
       <div className=" mb-[42px]  ">
-        <p className={`text-aboutCont text-center    font-normal leading-[35px]  font-mons text-[20px] text-[#666]  dark:text-[#fff] ${isArabic?"font-cairo text-center lg:px-32 px-3":"tracking-[1.4px] "}`}>
+        <p className={`text-aboutCont text-center    font-normal leading-[35px]   text-[20px] text-[#666]  dark:text-[#fff] ${isArabic?"font-cairo text-center lg:px-32 mt-2 px-3":"tracking-[1.4px] "}`}>
         {t("TitlecareersDscription")
                      .split("\n")
                       .map((line, index) => (
@@ -100,22 +96,22 @@ export default function Careers() {
 {/*  */}
 
 
-<div className=" text-[#000] mt-24 w-[95%]  font-mons font-normal leading-[35px] tracking-[1.4px] mb-[100px] flex-col justify-center m-auto items-center">
-      <h2 className={`text-[28px] text-[#295F70] font-mons text-center font-bold  pb-8 dark:text-[#B3E5F1] ${isArabic?"font-cairo":"tracking-[.64px]"}`}>
+<div className={` text-[#000] mt-24 w-[95%]  font-mons font-normal leading-[35px]  mb-[100px] flex-col justify-center m-auto items-center ${isArabic?"font-cairo":"tracking-[1.4px]"}" `}>
+      <h2 className={`text-[28px] text-[#295F70] font-mons text-center font-bold  pb-8 dark:text-[#B3E5F1] ${isArabic?"font-cairo ":"tracking-[.64px]"}`}>
         {t("Current Openingscareers")}
         {/* Current Openings */}
       </h2>
 
-      {jobs.length === 0 && <p className="text-[#000] sm:p-6 p-0 bg-[#EAF5F6] rounded-[10px]  font-mons font-semibold leading-[35px] tracking-[1.4px]">- Sorry, There are no open vacancies currently.</p>}
+      {jobs.length === 0 && <p className={`text-[#000] sm:p-6 p-0  bg-[#EAF5F6] rounded-[10px]  font-mons font-semibold leading-[35px] ${isArabic?"font-cairo":""}`}>- Sorry, There are no open vacancies currently.</p>}
 
       <ul className={`flex-col justify-center items-center sm:justify-start w-full   space-y-6  text-center sm:text-start ${isArabic?"font-cairo":" "}`}>
         {jobs.map((job) => (
           <li key={job.id} className="sm:p-6 p-0   sm:w-full  bg-[#EAF5F6] rounded-[10px]">
-          <Link className={`text-[#003540] underline font-bold text-2xl  ${isArabic?"font-cairo":"tracking-[1.69px]  "}`}to={`/careers/${job.id}`}>
+          <Link className={`text-[#003540] underline font-bold text-2xl  ${isArabic?"font-cairo":"tracking-[1.69px]  "}`}to={`/careers/${job.id}` }>
               {job.title}
             </Link>
 
-            <div className="text-[#000] font-mons font-normal sm:leading-[35px] sm:tracking-[1.4px] dark:text-[#666]">
+            <div className={`text-[#000] font-mons font-normal sm:leading-[35px]  dark:text-[#666] ${isArabic?"font-cairo":" sm:tracking-[1.4px]"}`}>
               {" "}
               <p>{job.department}</p>
               <p>{job.creation}</p>
@@ -127,7 +123,7 @@ export default function Careers() {
 
 {/*  */}
 <div className="what-makes">
-        <h2 className={`text-[28px] font-mons text-center text-[#295F70] font-bold pb-8 text-primary dark:text-[#fff] ${isArabic?"font-cairo":"tracking-[.64px] "} `}>
+        <h2 className={`text-[28px] font-mons text-center text-[#295F70] font-bold pb-8 text-primary dark:text-[#fff] ${isArabic?" px-3 font-cairo":"tracking-[.64px] "} `}>
           {t("makesAwsTitle")}
           {/* What makes AWS GULF a great place to work */}
         </h2>
@@ -137,7 +133,7 @@ export default function Careers() {
         <ul className="flex flex-wrap sm:gap-4 justify-center gap-3 ">
           <li className="w-[40%] sm:w-[30%] flex-col ">
             <img src={QualityAssurance3} className="w-8 h-8 mb-6 dark:text-[#B3E5F1]" alt="QualityAssurance3 " />
-            <h5 className={`text-aboutCont font-mons text-lg sm:text-2xl font-bold  dark:text-[#B3E5F1] ${isArabic?"font-cairo":"tracking-[.48px] "}`}>
+            <h5 className={`text-aboutCont font-mons  text-lg sm:text-2xl font-bold  dark:text-[#B3E5F1] ${isArabic?"font-cairo ":"tracking-[.48px] "}`}>
               {t("GrowthandCareerTitle")}
 
               {/* Growth and Career Path */}
@@ -158,12 +154,12 @@ export default function Careers() {
           </li>
           <li className="w-[40%] sm:w-[30%] flex-col ">
             <img src={QualityAssurance4} className="w-8 h-8 mb-6" alt="QualityAssurance4" />
-            <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px]  dark:text-[#B3E5F1]">
+            <h5 className={`text-aboutCont font-mons  text-lg sm:text-2xl font-bold   dark:text-[#B3E5F1]${isArabic?"font-cairo text-nowrap":"tracking-[.48px] "}`}>
               {t("GrowthandCareerTitle1")}
 
               {/* Compensation */}
             </h5>
-            <p className={`text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly  mt-3 ${isArabic?"font-cairo":"tracking-[.48px] "}`}>
+            <p className={`text-secondary  font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly  mt-3 ${isArabic?"font-cairo":"tracking-[.48px] "}`}>
             
             {t("GrowthandCareerDescrption1")
                      .split("\n")
@@ -179,7 +175,7 @@ export default function Careers() {
           </li>
           <li className="w-[40%] sm:w-[30%] flex-col ">
             <img src={QualityAssurance5} className="w-8 h-8 mb-6" alt="QualityAssurance5" />
-            <h5 className={`text-aboutCont font-mons text-lg sm:text-2xl font-bold dark:text-[#B3E5F1] ${isArabic?"font-cairo":"tracking-[.48px] "}`}>
+            <h5 className={`text-aboutCont font-mons text-lg  sm:text-2xl font-bold dark:text-[#B3E5F1] ${isArabic?"font-cairo text-nowrap ":"tracking-[.48px] "}`}>
               {t("GrowthandCareerTitle2")}
               {/* Gaining experience */}
             </h5>
@@ -199,7 +195,7 @@ export default function Careers() {
           </li>
           <li className="w-[40%] sm:w-[30%] flex-col ">
             <img src={QualityAssurance6} className="w-8 h-8 mb-6" alt="QualityAssurance6" />
-            <h5 className={`text-aboutCont font-mons text-lg sm:text-2xl font-bold  dark:text-[#B3E5F1] justify-evenly ${isArabic?"font-cairo":"tracking-[.48px]  "}`}>
+            <h5 className={`text-aboutCont font-mons text-lg sm:text-2xl font-bold  dark:text-[#B3E5F1] justify-evenly ${isArabic?"font-cairo text-nowrap":"tracking-[.48px]  "}`}>
             
             {t("GrowthandCareerTitle3")
                      .split("\n")
@@ -248,7 +244,7 @@ export default function Careers() {
           </li>
           <li className="w-[40%] sm:w-[30%] flex-col rounded-lg ">
             <img src={QualityAssurance8} className="w-8 h-8 mb-6" alt="QualityAssurance8" />
-            <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]  justify-evenly">
+            <h5 className="text-aboutCont font-mons  text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]  justify-evenly">
               {t("GrowthandCareerTitle5")}
               {/* Diverse projects */}
             </h5>
