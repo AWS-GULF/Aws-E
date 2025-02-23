@@ -12,7 +12,12 @@
   "Staff-Augmentation": "Staff Augmentation",
   "Quality-Assurance": "Quality Assurance",
   "clients": "clients",
+  "axis": "This project aims to provide a digital platform for purchasing server services, with comprehensive management of products and orders. Through this, Axis Supply seeks to enhance its digital presence and offer innovative server solutions to its clients with ease.",
   "nfaa": "Nafaa is the first complete and integrated system of expropriation in the Arabian Gulf region.",
+  "hwlk": "This project aims to provide a digital platform for purchasing server services, with comprehensive management of products and orders. Through this, Axis Supply seeks to enhance its digital presence and offer innovative server solutions to its clients with ease.",
+  "akark": "This project aims to provide a digital platform for purchasing server services, with comprehensive management of products and orders. Through this, Axis Supply seeks to enhance its digital presence and offer innovative server solutions to its clients with ease.",
+  "value": "This project aims to provide a digital platform for purchasing server services, with comprehensive management of products and orders. Through this, Axis Supply seeks to enhance its digital presence and offer innovative server solutions to its clients with ease.",
+  "vibe": "This project aims to provide a digital platform for purchasing server services, with comprehensive management of products and orders. Through this, Axis Supply seeks to enhance its digital presence and offer innovative server solutions to its clients with ease.",
   "ts": "Smart Support System (SSS) is an integrated ticketing system initially designed to serve as a maintenance tool for projects sold to partners. ",
   "seeMore": "See More",
 
@@ -189,90 +194,74 @@
 
   "amDesc": "For enterprise clients, we assign a dedicated professional from our pro-services team to manage your account exclusively throughout the entire development and delivery process. This ensures personalized support and seamless communication at every stage",
 
+  "AboutUstitle": "About US",
+  "AboutUs": "AMS GULF Illuminating Your Path to the Future",
+  "Abouttitle1": "AMS GULF Illuminating Your Path to the Future",
+  "AboutUs1": "At AWS GULF, we are more than just a marketing and software agency – we are your trusted lighthouse guiding your business toward a brighter, more innovative future. Established to bridge the gap between cutting-edge technology and impactful marketing strategies, we specialize in delivering tailored solutions that empower businesses to thrive in today’s fast-paced digital landscape.",
+  "AboutUs OUR VISION": "OUR VISION",
+  "AboutUsDesc1": "We work closely with our clients from marketing consultancy and strategy development to design, video production, and technology implementation. Whether creating digital projects, social media content, or custom websites and apps, our goal is to exceed expectations.",
+  "AboutUs OURMESSAGE": "OUR MESSAGE",
+  "AboutUsDesc2": "We provide tailored solutions that align perfectly with your business needs. We are dedicated to sharing our expertise with our clients, and we take pride in collaborating across various industries to develop strategies that deliver impactful results. Our focus is on",
+  "OUR MISSIONOURVISION": "OUR VISION",
+  "AboutUsDesc3": "With a strong foundation in understanding how businesses grow online through various platforms such as websites, social media, mobile applications, and more, we offer a marketing methodology that brings an interactive communication experience across different channels. By staying at the forefront of technological",
 
+  "AboutUs A suite of services": "A suite of services designed to help businesses thrive in the digital future with AS GULF.",
 
+  "AboutUS Software Consultant": "Software Consultant",
+  "AboutUS Software UI/ UX": "UI/ UX development",
+  "AboutUS Software E-commerce": "E-commerce Develpment",
+  "AboutUS Software Application": "Mobile Application Development",
+  "AboutUS Software Real-State": "Real-State Smart Solution",
 
-
-
-  "AboutUstitle":"About US",
-  "AboutUs":"AMS GULF Illuminating Your Path to the Future",
-  "Abouttitle1":"AMS GULF Illuminating Your Path to the Future",
-  "AboutUs1":"At AWS GULF, we are more than just a marketing and software agency – we are your trusted lighthouse guiding your business toward a brighter, more innovative future. Established to bridge the gap between cutting-edge technology and impactful marketing strategies, we specialize in delivering tailored solutions that empower businesses to thrive in today’s fast-paced digital landscape.",
-  "AboutUs OUR VISION":"OUR VISION",
-  "AboutUsDesc1":"We work closely with our clients from marketing consultancy and strategy development to design, video production, and technology implementation. Whether creating digital projects, social media content, or custom websites and apps, our goal is to exceed expectations.",
-  "AboutUs OURMESSAGE":"OUR MESSAGE",
-  "AboutUsDesc2":"We provide tailored solutions that align perfectly with your business needs. We are dedicated to sharing our expertise with our clients, and we take pride in collaborating across various industries to develop strategies that deliver impactful results. Our focus is on",
-  "OUR MISSIONOURVISION":"OUR VISION",
-  "AboutUsDesc3":"With a strong foundation in understanding how businesses grow online through various platforms such as websites, social media, mobile applications, and more, we offer a marketing methodology that brings an interactive communication experience across different channels. By staying at the forefront of technological",
-  
- 
-
-
-
-
-
-  "AboutUs A suite of services":"A suite of services designed to help businesses thrive in the digital future with AS GULF.",
-
-  "AboutUS Software Consultant":"Software Consultant",
-  "AboutUS Software UI/ UX":"UI/ UX development",
-  "AboutUS Software E-commerce":"E-commerce Develpment",
-  "AboutUS Software Application":"Mobile Application Development",
-  "AboutUS Software Real-State":"Real-State Smart Solution",
-  
-  
   "our_team": "Our team ",
-  "AboutUsTitle3":"Our team of passionate experts combines creativity, technical expertise, and a deep understanding of market dynamics to craft experiences that resonate with your audience and drive measurable results. Whether it’s developing bespoke software, designing user-centric interfaces, or executing data-driven marketing campaigns, we are dedicated to turning your vision into reality. With AS GULF, you don’t just stay ahead of the curve – you set the pace for the future.",
+  "AboutUsTitle3": "Our team of passionate experts combines creativity, technical expertise, and a deep understanding of market dynamics to craft experiences that resonate with your audience and drive measurable results. Whether it’s developing bespoke software, designing user-centric interfaces, or executing data-driven marketing campaigns, we are dedicated to turning your vision into reality. With AS GULF, you don’t just stay ahead of the curve – you set the pace for the future.",
+
+
+  "AboutUsTitle4": "Meet the Visionaries Behind AS GULF",
+  "AboutUsName1": "Mostafa Karam",
+  "AboutUsName2": "CMO",
+  "AboutUsName3": "Mahmoud Mohamed",
+  "AboutUsNamr4": "CTO",
+  "AboutUsName5": "Ahmed Mohamed",
+  "AboutUsName6": "CEO",
+
+  "AboutFooter": "Our Leading Brands Partnerships",
+
+
+  "ModelTitle": "Contact Us Now",
+  "ModelTitle2": "Contact Us ",
+  "ModelTitle1": "Let's Get Growing.",
+
+  "Titlecareers": "Join Us",
+  "Titlecareerst": "Join the team where \ninnovation meets excellence.",
+  "TitlecareersDscription": "Our teams consist of exceptional product managers, designers, web and mobile developers, and quality engineers, \ndedicated to delivering projects on time while upholding the highest development standards.",
+  "Current Openingscareers": "Current Openings",
+  "Current Openingscareerstitle": "Multimedia Marketing Project Manager",
+  "Current OpeningscareersDescrption": "Department: Digital Marketing",
+  "Current Openingscareersdate": "Creation date: 2024-11-14",
+  "Current OpeningscareersSory": "- Sorry, There are no open vacancies currently.",
+
+  "makesAwsTitle": "What makes AMS GULF a great place to work",
+
+  "GrowthandCareerTitle": "Growth and Career Path",
+  "GrowthandCareerDescrption": "AMS carefully selects the Top 2% of tech talents \nand offers them whatever is needed for them to \ngrow.",
+
+  "GrowthandCareerTitle1": "Compensation",
+  "GrowthandCareerDescrption1": "AMS carefully selects the Top 2% of tech talents and offers them whatever is needed for them to grow.",
+
+  "GrowthandCareerTitle2": "Gaining experience",
+  "GrowthandCareerDescrption2": "Dealing with teammates of different expertise will help you gain more experience. Also you will be learning and introduced to the latest technologies.",
+
+  "GrowthandCareerTitle3": "Culture and Work \nEnvironment",
+  "GrowthandCareerDescrption3": "Looking for positive workplace culture? That’s \nAMS team where you can find all the support. \nWe do go through hard times and workloads, \nbut when we decide to take a break and have \nfun Nothing Can Stop Us!",
+
+  "GrowthandCareerTitle4": "Learning budget",
+  "GrowthandCareerDescrption4": "AMS invests a lot in its team’s training and \ncontinuous learning process, so each and \neveryone in the team gets well prepared to any \nchallenges they face in any project.",
+
+  "GrowthandCareerTitle5": "Diverse projects",
+  "GrowthandCareerDescrption5": "At AMS, you will gain a lot of experience thanks \nto the variety of projects in different fields and \nsectors you will be working on.",
+
   
-  
-  "AboutUsTitle4":"Meet the Visionaries Behind AS GULF",
-  "AboutUsName1":"Mostafa Karam",
-  "AboutUsName2":"CMO",
-  "AboutUsName3":"Mahmoud Mohamed",
-  "AboutUsNamr4":"CTO",
-  "AboutUsName5":"Ahmed Mohamed",
-  "AboutUsName6":"CEO",
-  
-  "AboutFooter":"Our Leading Brands Partnerships",
-  
-  
-
-"ModelTitle":"Contact Us Now",
-"ModelTitle2":"Contact Us ",
-"ModelTitle1":"Let's Get Growing.",
-         
-
-"Titlecareers":"Join Us",
-"Titlecareerst":"Join the team where \ninnovation meets excellence.",
-"TitlecareersDscription":"Our teams consist of exceptional product managers, designers, web and mobile developers, and quality engineers, \ndedicated to delivering projects on time while upholding the highest development standards.",
-"Current Openingscareers":"Current Openings",
-"Current Openingscareerstitle":"Multimedia Marketing Project Manager",
-"Current OpeningscareersDescrption":"Department: Digital Marketing",
-"Current Openingscareersdate":"Creation date: 2024-11-14",
-"Current OpeningscareersSory":"- Sorry, There are no open vacancies currently.",
-
-
-"makesAwsTitle":"What makes AMS GULF a great place to work",
-
-"GrowthandCareerTitle":"Growth and Career Path",
-"GrowthandCareerDescrption":"AMS carefully selects the Top 2% of tech talents \nand offers them whatever is needed for them to \ngrow.",
-
-"GrowthandCareerTitle1":"Compensation",
-"GrowthandCareerDescrption1":"AMS carefully selects the Top 2% of tech talents and offers them whatever is needed for them to grow.",
-
-"GrowthandCareerTitle2":"Gaining experience",
-"GrowthandCareerDescrption2":"Dealing with teammates of different expertise will help you gain more experience. Also you will be learning and introduced to the latest technologies.",
-
-
-"GrowthandCareerTitle3":"Culture and Work \nEnvironment",
-"GrowthandCareerDescrption3":"Looking for positive workplace culture? That’s \nAMS team where you can find all the support. \nWe do go through hard times and workloads, \nbut when we decide to take a break and have \nfun Nothing Can Stop Us!",
-
-
-"GrowthandCareerTitle4":"Learning budget",
-"GrowthandCareerDescrption4":"AMS invests a lot in its team’s training and \ncontinuous learning process, so each and \neveryone in the team gets well prepared to any \nchallenges they face in any project.",
-
-
-"GrowthandCareerTitle5":"Diverse projects",
-"GrowthandCareerDescrption5":"At AMS, you will gain a lot of experience thanks \nto the variety of projects in different fields and \nsectors you will be working on.",
 
 
 "titleDescription":"Description",
@@ -358,7 +347,10 @@
 "Description":" Description",
 "KeyResponsibilities":"Key Responsibilities",
 
-"Remote":"Remote",
+
+
+  "Remote": "Remote",
+
 
   "uiUxHeader": "Crafting seamless experiences that drive user satisfaction and business growth.",
   "uiuxTitle": "UI/UX Design",
@@ -382,13 +374,57 @@
   "onboardDesc": "Our seamless onboard process ensures your employees join your team and get up to speed quickly employers and employees enjoy fully self-serve onboarding and management tools",
   "invoice": "Invoice & pay",
   "invoiceDesc": "Handle payroll, tax, benefits, and compliance for your globally distributed team here, with no hidden fees",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
+  "ItHeader": "Innovative IT and software solutions to bring your ideas to life and drive success",
+
+  "itDesc": "is a professional IT solutions and services provider.We will help you to achieve your IT strategy by providing you system integration, testing, application development and management services and solutions.",
+  "aws-name": "AWs Technology",
+  "ITandHard": "IT Hardware & Software Solutions",
+  "DataCenter": "Data Center Development",
+  "Network": "Network Services",
+  "ProServices": "IT Professional Services",
+
+  "ITDesc": "AWS Technology offers a comprehensive range of hardware solutions to meet diverse business needs, including",
+  "Itf1": "IT Hardware Products",
+  "Itf1Desc": "Providing high-quality IT hardware products to ensure optimal performance and reliability for your infrastructure",
+  "Itf2": " IT Hardware Architecture Designing Consultation Services",
+  "Itf2Desc": "Providing high-quality IT hardware products to ensure optimal performance and reliability for your infrastructure.",
+  "Itf3": " Network Equipment",
+  "Itf3Desc": "Providing high-quality IT hardware products to ensure optimal performance and reliability for your infrastructure",
+  "Itf4": "Surveillance Equipment",
+  "Itf4Desc": "Providing high-quality IT hardware products to ensure optimal performance and reliability for your infrastructure",
+
+  "DcDesc": "AWS Technology provides end-to-end data center development services, ensuring reliability and efficiency at every stage",
+  "Dcf1": "Planning and Designing",
+  "Dcf1Desc": "Crafting detailed plans and designs to meet your business requirements and up-time standards",
+  "Dcf2": "IT Hardware Equipment and Configuration",
+  "Dcf2Desc": "Delivering and configuring top-tier hardware for seamless integration into your data center",
+  "Dcf3": " Implementation",
+  "Dcf3Desc": "Executing the development process with precision to ensure optimal functionality",
+  "Dcf4": "Commissioning and Testing",
+  "Dcf4Desc": "Conducting rigorous testing and commissioning to guarantee performance, scalability, and compliance",
+
+  "NetworkDesc": "AWS Technology offers customized network solutions and professional services in network architecture, information security, and unified communications",
+  "Netf1": "Network Infrastructure Designing and Implementation",
+  "Netf1Desc": "Designing and implementing robust network infrastructures tailored to your business needs",
+  "Netf2": "Directory Services Configuration",
+  "Netf2Desc": "Configuring directory services to ensure seamless management and access control across your network",
+  "Netf3": "E-mail and Print Servers Configuration",
+  "Netf3Desc": "Setting up and optimizing email and print servers for efficient communication and document management",
+  "Netf4": "Video Telephony",
+  "Netf4Desc": "Implementing video telephony solutions to enhance remote communication and collaboration",
+  "Netf5": " Wireless Network Solutions",
+  "Netf5Desc": "Providing secure and reliable wireless network solutions to support mobility and flexibility in your operations",
+
+  "proDesc": "AWS Technology delivers top-tier IT professional services to ensure seamless integration and operational excellence",
+  "proF1": "Commissioning and Testing for Fiber Optics",
+  "proF1Desc": "Comprehensive services for fiber optics, including laying, termination, and splicing to ensure optimal performance",
+  "proF2": "Passive Components Installation for Fiber Optics",
+  "proF2Desc": "Expert installation of passive components to enhance the efficiency and reliability of fiber optic networks",
+  "proF3": " Installation and Configuration Services for Certified Hardware with SLA Agreement",
+  "proF3Desc": "Providing installation and configuration services for all certified hardware, backed by Service Level Agreements (SLA) for guaranteed suppor",
+  "proF4": " Installation and Configuration of Surveillance Equipment",
+  "proF4Desc": "Delivering end-to-end installation and configuration services for advanced surveillance systems to ensure secure environments",
+
   "": "",
   "": "",
   "": "",
