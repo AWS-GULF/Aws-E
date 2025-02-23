@@ -41,35 +41,33 @@ export default function uiUxDesign() {
           </h2>
         </div>
 
-        <div className="flex sm:justify-center overflow-scroll lg:overflow-hidden scrollbar sm:overflow-hidden  lg:w-[1400px]  lg:h-30  sm:mb-[100px] mb-16 ">
-          <div className="flex gap-2 sm:w-full justify-center items-center lg:w-full lg:ms-20 ">
-            <img
-              src={kotlin}
-              className="sm:pe-[87px] lg:pe-12 lg:pt-6 lg:w-1/6 lg:h-[160px]    "
-              alt="kotlin"
-            />
-            <img
-              src={oracle}
-              className="sm:pe-[87px] lg:pe-12   lg:w-1/5 p-4  lg:h-[120px] "
-              alt="oracle"
-            />
-            <img
-              src={python}
-              className="sm:pe-[87px] lg:pe-12   lg:w-1/5 p-4  lg:h-[120px] "
-              alt="python"
-            />
-            <img
-              src={radius}
-              className="sm:pe-[87px] lg:pe-12   lg:w-1/5 p-4  lg:h-[120px] "
-              alt="radius"
-            />
-            <img
-              src={node}
-              className=" lg:w-1/5 p-4  lg:h-[120px]"
-              alt="node"
-            />
-          </div>
-        </div>
+      
+            <div className="flex sm:justify-center overflow-scroll lg:overflow-hidden scrollbar sm:overflow-hidden  lg:w-fit lg:ps-10  lg:h-30  sm:mb-[100px] mb-8 ">
+              <div className="flex gap-2 sm:w-full justify-center items-center lg:w-full  ">
+                <img
+                  src={kotlin}
+                  className="sm:pe-[87px] lg:pe-12 lg:pt-6 lg:w-1/6 lg:h-[160px]    "
+                  alt="kotlin"
+                />
+                <img
+                  src={oracle}
+                  className="sm:pe-[87px] lg:pe-12   lg:w-1/5 p-4  lg:h-[120px] "
+                  alt="oracle"
+                />
+                <img
+                  src={python}
+                  className="sm:pe-[87px] lg:pe-12   lg:w-1/5 p-4  lg:h-[120px] "
+                  alt="python"
+                />
+                <img
+                  src={radius}
+                  className="sm:pe-[87px] lg:pe-12   lg:w-1/5 p-4  lg:h-[120px] "
+                  alt="radius"
+                />
+                <img src={node} className=" lg:w-1/5 p-4  lg:h-[120px]" alt="node" />
+              </div>
+            </div>
+      
 
         <div className="px-4 sm:px-[121px] flex-col justify-center text-[#003540] items-center dark:text-white">
           <h1

@@ -45,7 +45,7 @@ export default function MobileDevelopment() {
         </h2>
       </div>
 
-      <div className="flex sm:justify-center overflow-scroll lg:overflow-hidden scrollbar sm:overflow-hidden  lg:w-[1400px]  lg:h-30  sm:mb-[100px] mb-8 ">
+      <div className="flex sm:justify-center overflow-scroll lg:overflow-hidden scrollbar sm:overflow-hidden  lg:w-fit lg:ps-20  lg:h-30  sm:mb-[100px] mb-8 ">
         <div className="flex gap-2 sm:w-full justify-center items-center lg:w-full ">
           <img
             src={kotlin}
