@@ -21,17 +21,17 @@ export default function NavbarHardWard({  toggleLanguage }) {
   const { i18n , t} = useTranslation();
   const isArabic = i18n.language === "ar";
   useEffect(() => {
-    const savedLanguage = localStorage.getItem("language");
-    if (savedLanguage) {
-      i18n.changeLanguage(savedLanguage);
+    const savedLanguage = localStorage.getItem("language") || "en"; // استخدم اللغة المحفوظة أو الافتراضية
+    if (i18n.language !== savedLanguage) {
+   
     }
-  }, []);
-
+  }, [i18n]); 
+  
   // دالة تغيير اللغة بدون تعارض
   const handleToggleLanguage = () => {
     const newLanguage = i18n.language === "en" ? "ar" : "en";
     i18n.changeLanguage(newLanguage);
-    localStorage.setItem("language", newLanguage); // حفظ اللغة الجديدة
+    localStorage.setItem("language", newLanguage); 
   };
   // Load dark mode preference from localStorage
   useEffect(() => {
@@ -59,7 +59,7 @@ export default function NavbarHardWard({  toggleLanguage }) {
   };
   return (
     <Navbar fluid rounded className="bg-white  dark:bg-[#242424] px-4 py-3 bg-rd-500 shadow-md">
-      {/* الجزء الأيسر: الشعار */}
+     
       <Navbar.Brand href="/" className="flex items-center space-x-3 rtl:space-x-reverse ">
   
     <img
@@ -78,14 +78,14 @@ export default function NavbarHardWard({  toggleLanguage }) {
     
       <Navbar.Collapse>
     
-<li className="relative group  mx-5">
-<Link href="#" className="text-[#666] dark:text-white relative md:mr-3 lg:mr-20 ">
+<li className="relative group  sm:mx-11  mx-3 ">
+<Link href="#" className="text-[#666] dark:text-white relative   md:mx-[-6px]  ">
   {t("Navbardropdown")}
   <i className={`fa-solid fa-chevron-down absolute md:block ${isArabic ? "right-[50px]"  : "ml-3 md:ml-16"} lg:mt-0 md:mt-0 md:top-3 mt-3 transform -translate-y-1/2 transition-transform group-hover:rotate-180 text-[#666]`}></i>
 </Link>
 
   {/* Dropdown Menu */}
-  <div className={`absolute opacity-0 mr-10 group-hover:opacity-100 left-0 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 z-10 rounded-lg shadow-md ml-16 lg:ml-0 mt-4 lg:mt-8 ${isArabic?"ml-40":""}`}>
+  <div className={`absolute opacity-0  mr-10 ml-10 lg:ml-0 z-50 group-hover:opacity-100 transition-opacity duration-500 ease-in-out group-hover:block bg-white border border-gray-100 rounded-lg shadow-md  mt-4   ${isArabic?"  sm:mr-[-30px] top-6 ":""}`}>
     <ul className="space-y-4 p-4">
       <li>
         <a href="wepDevlopment" className="text-[#666] hover:text-[#5BA89C] inline-block whitespace-nowrap">
@@ -148,10 +148,13 @@ export default function NavbarHardWard({  toggleLanguage }) {
 </Navbar.Link>
 
 
-        {/* ////////////////////////////////// */}
+        {/* mobile */}
  
-        <div className="block md:hidden mt-2 md:mr-3   my-5 lg:mr-16">
-       
+        <div className="block md:hidden mt-2 md:mr-5   md:my-[-20px] lg:mr-16">
+        <button onClick={toggleLanguage} className="flex items-center text-[#666] dark:text-white">
+    <i className={`fa-solid fa-globe text-sm sm:text-base md:text-lg lg:text-xl ${isArabic ? "mr-3 my-2" : ""}`}></i>
+    <span className="mx-1 text-base  sm:text-sm md:text-base">{i18n.language === "ar" ? "E G" : "العربية"}</span>
+  </button>
         <FormControlLabel
             control={
               <Switch
@@ -166,12 +169,10 @@ export default function NavbarHardWard({  toggleLanguage }) {
               />
             }
           />
-           <button onClick={ toggleLanguage} className={`flex flex-col py-2 ${isArabic?"sm:pl-16  mr-[-28px]":""}`}>
-      <i className={`fa-solid fa-globe  md:ml-4 text-base lg:ml-1 mr-8    text-[#666] dark:text-white${isArabic?" mr-0 ":""}`}>
-       <span className="mx-1"> {i18n.language === "ar" ? "E G"  : "العربية" }</span>
-      </i>
-    </button>
    
+
+      {/* زر وضع الظلام */}
+    
           <button className=" bg-[#003540] w-full dark:bg-[#B3E5F1] rounded-2xl py-4 px-6 my-4 mx-auto text-amber-50 sm:py-2 sm:px-4 md:py-3 md:px-5 lg:py-4 lg:px-6 lg:my-3 lg:mx-5">
             <ModellButtonNavbar/>
           </button>

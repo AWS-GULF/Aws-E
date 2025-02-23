@@ -78,7 +78,7 @@ export default function BlogHeroWord() {
       </div>
 
       <div className="mt-16 flex flex-wrap md:flex-nowrap items-center justify-around">
-        <p className="lg:text-3xl font-bold mx-9 tracking-wide text-[#333] dark:text-white md:text-balance text-xl text-nowrap font-montserrat sm:whitespace-nowrap">
+        <p className={`lg:text-3xl font-bold mx-9 tracking-wide text-[#333] dark:text-white md:text-balance text-[14px]  text-nowrap font-montserrat sm:whitespace-nowrap  ${isArabic?" m-auto":""}`}>
           {t("titleContact")
             .split("\n")
             .map((line, index) => (

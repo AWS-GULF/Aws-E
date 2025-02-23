@@ -17,31 +17,32 @@ import QualityAssurance6 from "../../assets/images/y4.svg";
 import QualityAssurance7 from "../../assets/images/y5.svg";
 import QualityAssurance8 from "../../assets/images/y6.svg";
 import { Link } from "react-router-dom";
-export default function Careers() {
+import { useTranslation } from "react-i18next";
 
+export default function Careers() {
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === "ar";
     
-const jobs = [
+  const jobs = [
     {
       id: 1,
-      title: "Multimedia Marketing Project Manager",
-      department: "Department: Digital Marketing",
-      creation: "Creation date: 2024-11-14",
-      Description: ""
+      title: t("Current Openingscareerstitle"),
+      department: t("Current OpeningscareersDescrption"),
+      creation: t("Current Openingscareersdate"),
+      description: ""
     },
     {
       id: 2,
-      title: "Multimedia Marketing Project Manager",
-      department: "Department: Digital Marketing",
-      creation: "Creation date: 2024-11-14",
+      title: t("Current Openingscareerstitle"),
+      department: t("Current OpeningscareersDescrption"),
+      creation: t("Current Openingscareersdate"),
     },
     {
       id: 3,
-      title: "Multimedia Marketing Project Manager",
-      department: "Department: Digital Marketing",
-      creation: "Creation date: 2024-11-14",
-    },
-  
-  
+      title: t("Current Openingscareerstitle"),
+      department: t("Current OpeningscareersDescrption"),
+      creation: t("Current Openingscareersdate"),
+    }
   ];
   
 
@@ -49,23 +50,44 @@ const jobs = [
     <div>
       <div className=" flex justify-center m-auto my-14 gap-1 text-xl ">
         <img src={QualityAssurance1} alt="QualityAssurance1" />
-        <h1 className="  text-[#003540] font-bold dark:text-[#B3E5F1] ">Join US </h1>
+        <h1 className="  text-[#003540] font-bold dark:text-[#B3E5F1] ">
+          
+        {t("Titlecareers")}
+          {/* Join US  */}
+          </h1>
       </div>
 
       <div className="flex justify-center items-center text-center">
-        <p className="text-5xl text-center font-bold tracking-[4.8px]  mb-2 leading-[75px] font-mons  text-[#003540] dark:text-[white]">
+        <p className={`text-5xl text-center font-bold  mb-2 leading-[75px] font-mons  text-[#003540] dark:text-[white] ${isArabic?"font-cairo":"tracking-[4.8px] "}`}>
           {" "}
-          Join the team where <br />
-          innovation meets excellence.
+        
+          {t("Titlecareerst")
+                     .split("\n")
+                      .map((line, index) => (
+                      <React.Fragment key={index}>
+                      {line}
+                     <br />
+                      </React.Fragment>
+                          ))}
+          {/* Join the team where <br />
+          innovation meets excellence. */}
         </p>
       </div>
 
       <div className=" mb-[42px]  ">
-        <p className=" text-aboutCont text-center   tracking-[1.4px] font-normal leading-[35px]  font-mons text-[20px] text-[#666]  dark:text-[#fff] ">
-          Our teams consist of exceptional product managers, designers, web and
+        <p className={`text-aboutCont text-center    font-normal leading-[35px]  font-mons text-[20px] text-[#666]  dark:text-[#fff] ${isArabic?"font-cairo text-center lg:px-32 px-3":"tracking-[1.4px] "}`}>
+        {t("TitlecareersDscription")
+                     .split("\n")
+                      .map((line, index) => (
+                      <React.Fragment key={index}>
+                      {line}
+                     <br />
+                      </React.Fragment>
+                          ))}
+          {/* Our teams consist of exceptional product managers, designers, web and
           mobile developers, and quality engineers , <br /> dedicated to
           delivering projects on time while upholding the highest development
-          standards.
+          standards. */}
         </p>
       </div>
 
@@ -79,16 +101,17 @@ const jobs = [
 
 
 <div className=" text-[#000] mt-24 w-[95%]  font-mons font-normal leading-[35px] tracking-[1.4px] mb-[100px] flex-col justify-center m-auto items-center">
-      <h2 className="text-[28px] text-[#295F70] font-mons text-center font-bold tracking-[.64px] pb-8 dark:text-[#B3E5F1]">
-        Current Openings
+      <h2 className={`text-[28px] text-[#295F70] font-mons text-center font-bold  pb-8 dark:text-[#B3E5F1] ${isArabic?"font-cairo":"tracking-[.64px]"}`}>
+        {t("Current Openingscareers")}
+        {/* Current Openings */}
       </h2>
 
       {jobs.length === 0 && <p className="text-[#000] sm:p-6 p-0 bg-[#EAF5F6] rounded-[10px]  font-mons font-semibold leading-[35px] tracking-[1.4px]">- Sorry, There are no open vacancies currently.</p>}
 
-      <ul className="flex-col justify-center items-center sm:justify-start w-full   space-y-6  text-center sm:text-start ">
+      <ul className={`flex-col justify-center items-center sm:justify-start w-full   space-y-6  text-center sm:text-start ${isArabic?"font-cairo":" "}`}>
         {jobs.map((job) => (
           <li key={job.id} className="sm:p-6 p-0   sm:w-full  bg-[#EAF5F6] rounded-[10px]">
-          <Link className="text-[#003540] underline font-bold text-2xl  tracking-[1.69px]" to={`/careers/${job.id}`}>
+          <Link className={`text-[#003540] underline font-bold text-2xl  ${isArabic?"font-cairo":"tracking-[1.69px]  "}`}to={`/careers/${job.id}`}>
               {job.title}
             </Link>
 
@@ -104,8 +127,9 @@ const jobs = [
 
 {/*  */}
 <div className="what-makes">
-        <h2 className="text-[28px] font-mons text-center text-[#295F70] font-bold tracking-[.64px] pb-8 text-primary dark:text-[#fff]">
-          What makes AWS GULF a great place to work
+        <h2 className={`text-[28px] font-mons text-center text-[#295F70] font-bold pb-8 text-primary dark:text-[#fff] ${isArabic?"font-cairo":"tracking-[.64px] "} `}>
+          {t("makesAwsTitle")}
+          {/* What makes AWS GULF a great place to work */}
         </h2>
       </div>
 
@@ -113,66 +137,132 @@ const jobs = [
         <ul className="flex flex-wrap sm:gap-4 justify-center gap-3 ">
           <li className="w-[40%] sm:w-[30%] flex-col ">
             <img src={QualityAssurance3} className="w-8 h-8 mb-6 dark:text-[#B3E5F1]" alt="QualityAssurance3 " />
-            <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]">
-              Growth and Career Path
+            <h5 className={`text-aboutCont font-mons text-lg sm:text-2xl font-bold  dark:text-[#B3E5F1] ${isArabic?"font-cairo":"tracking-[.48px] "}`}>
+              {t("GrowthandCareerTitle")}
+
+              {/* Growth and Career Path */}
             </h5>
-            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly">
-              AWS carefully selects the Top 2% of tech talents <br /> and offers them
-              whatever is needed for them to <br /> grow.
+            <p className={`text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly  mt-3 ${isArabic?"font-cairo":"tracking-[.48px] "}`}>
+            
+              {t("GrowthandCareerDescrption")
+                     .split("\n")
+                      .map((line, index) => (
+                      <React.Fragment key={index}>
+                      {line}
+                     <br />
+                      </React.Fragment>
+                          ))}
+              {/* AWS carefully selects the Top 2% of tech talents <br /> and offers them
+              whatever is needed for them to <br /> grow. */}
             </p>
           </li>
           <li className="w-[40%] sm:w-[30%] flex-col ">
             <img src={QualityAssurance4} className="w-8 h-8 mb-6" alt="QualityAssurance4" />
             <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px]  dark:text-[#B3E5F1]">
-              Compensation
+              {t("GrowthandCareerTitle1")}
+
+              {/* Compensation */}
             </h5>
-            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly">
-              AWS carefully selects the Top 2% of tech talents <br /> and offers them
-              whatever is needed for them to <br /> grow.
+            <p className={`text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly  mt-3 ${isArabic?"font-cairo":"tracking-[.48px] "}`}>
+            
+            {t("GrowthandCareerDescrption1")
+                     .split("\n")
+                      .map((line, index) => (
+                      <React.Fragment key={index}>
+                      {line}
+                     <br />
+                      </React.Fragment>
+                          ))}
+              {/* AWS carefully selects the Top 2% of tech talents <br /> and offers them
+              whatever is needed for them to <br /> grow. */}
             </p>
           </li>
           <li className="w-[40%] sm:w-[30%] flex-col ">
             <img src={QualityAssurance5} className="w-8 h-8 mb-6" alt="QualityAssurance5" />
-            <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]">
-              Gaining experience
+            <h5 className={`text-aboutCont font-mons text-lg sm:text-2xl font-bold dark:text-[#B3E5F1] ${isArabic?"font-cairo":"tracking-[.48px] "}`}>
+              {t("GrowthandCareerTitle2")}
+              {/* Gaining experience */}
             </h5>
-            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly">
-              Dealing with teammates of different expertise <br /> will help you gain
+            <p className={`text-secondary font-normal text-[16px] dark:text-[#fff] justify-evenly  mt-3 ${isArabic?"font-cairo":"tracking-[.32px]  "}`}>
+            {t("GrowthandCareerDescrption2")
+                     .split("\n")
+                      .map((line, index) => (
+                      <React.Fragment key={index}>
+                      {line}
+                     <br />
+                      </React.Fragment>
+                          ))}
+              {/* Dealing with teammates of different expertise <br /> will help you gain
               more experience. Also you will <br /> be learning and introduced to the
-              latest <br />technologies.
+              latest <br />technologies. */}
             </p>
           </li>
           <li className="w-[40%] sm:w-[30%] flex-col ">
             <img src={QualityAssurance6} className="w-8 h-8 mb-6" alt="QualityAssurance6" />
-            <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1] justify-evenly">
-              Culture and Work <br /> Environment
+            <h5 className={`text-aboutCont font-mons text-lg sm:text-2xl font-bold  dark:text-[#B3E5F1] justify-evenly ${isArabic?"font-cairo":"tracking-[.48px]  "}`}>
+            
+            {t("GrowthandCareerTitle3")
+                     .split("\n")
+                      .map((line, index) => (
+                      <React.Fragment key={index}>
+                      {line}
+                     <br />
+                      </React.Fragment>
+                          ))}
+              {/* Culture and Work <br /> Environment */}
             </h5>
-            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly">
-              Looking for positive workplace culture? That’s <br /> AMS team where you
+            <p className={`text-secondary font-normal text-[16px]  dark:text-[#fff] justify-evenly  mt-3 ${isArabic?"font-cairo":"tracking-[.32px]  "}`}>
+            {t("GrowthandCareerDescrption3")
+                     .split("\n")
+                      .map((line, index) => (
+                      <React.Fragment key={index}>
+                      {line}
+                     <br />
+                      </React.Fragment>
+                          ))}
+              {/* Looking for positive workplace culture? That’s <br /> AMS team where you
               can find all the support. <br /> We do go through hard times and
               workloads, <br /> but when we decide to take a break and have <br /> fun Nothing
-              Can Stop Us!
+              Can Stop Us! */}
             </p>
           </li>
           <li className="w-[40%] sm:w-[30%] flex-col  ">
             <img src={QualityAssurance7} className="w-8 h-8 mb-6" alt=" QualityAssurance7" />
             <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1] justify-evenly">
-              Learning budget
+              {t("GrowthandCareerTitle4")}
+              {/* Learning budget */}
             </h5>
-            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly">
-              AMS invests a lot in its team’s training and <br /> continuous learning
+            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly  mt-3">
+            {t("GrowthandCareerDescrption4")
+                     .split("\n")
+                      .map((line, index) => (
+                      <React.Fragment key={index}>
+                      {line}
+                     <br />
+                      </React.Fragment>
+                          ))}
+              {/* AMS invests a lot in its team’s training and <br /> continuous learning
               process, so each and <br /> everyone in the team gets well prepared to
-              any <br /> challenges they face in any project.
+              any <br /> challenges they face in any project. */}
             </p>
           </li>
           <li className="w-[40%] sm:w-[30%] flex-col rounded-lg ">
             <img src={QualityAssurance8} className="w-8 h-8 mb-6" alt="QualityAssurance8" />
             <h5 className="text-aboutCont font-mons text-lg sm:text-2xl font-bold tracking-[.48px] dark:text-[#B3E5F1]  justify-evenly">
-              Diverse projects
+              {t("GrowthandCareerTitle5")}
+              {/* Diverse projects */}
             </h5>
-            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly">
-              At AMS, you will gain a lot of experience thanks <br /> to the variety of
-              projects in different fields and <br /> sectors you will be working on.
+            <p className="text-secondary font-normal text-[16px] tracking-[.32px] dark:text-[#fff] justify-evenly mt-3">
+            {t("GrowthandCareerDescrption5")
+                     .split("\n")
+                      .map((line, index) => (
+                      <React.Fragment key={index}>
+                      {line}
+                     <br />
+                      </React.Fragment>
+                          ))}
+              {/* At AMS, you will gain a lot of experience thanks <br /> to the variety of
+              projects in different fields and <br /> sectors you will be working on. */}
             </p>
           </li>
         </ul>

@@ -47,7 +47,7 @@ export default function AboutHardWord() {
   <hr  className='my-5 lg:mt-0'/>
   <div className="flex flex-col md:m-auto md:justify-center lg:flex-row justify-center text-center colorText shadow-lg ">
     {/* العنوان العلوي */}
-    <div className={`not-italic mt-5  font-bold leading-normal lg:w-6/12 colorText md:w-1/2 lg:text-4xl text-2xl text-nowrap  text-[#333] dark:text-white mx-auto ${isArabic ?" lg:mt-10 md:mt-1 md:px-5 sm:px-2 font-cairo" :" tracking-[5.76px]"}`}>
+    <div className={`not-italic mt-5  font-bold leading-normal lg:w-6/12 colorText md:w-1/2  text-nowrap  text-[#333] dark:text-white mx-auto ${isArabic ?" lg:mt-10 md:mt-1 md:px-5 sm:px-2 font-cairo" :" tracking-[5.76px]"}`}>
 
     <p className={`text-center text-3xl font-bold ${isArabic?"font-cairo":""}`}>
   {t("HeroSoftWareMainTitle").split("\n").map((line, index) => (

@@ -1,6 +1,10 @@
+import { useTranslation } from "react-i18next";
 import GHeager from "../../assets/images/Component 126.svg";
 import { useNavigate } from "react-router-dom";
 export default function Hero() {
+   const { t, i18n } = useTranslation();
+      
+            const isArabic = i18n.language === "ar";
   const navigate = useNavigate();
 
   const handleClick = () => {

@@ -2,7 +2,11 @@ import React, { useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { X } from "lucide-react";
 import QualityAssurance from "../../assets/images/OFFf.svg";
+import { useTranslation } from "react-i18next";
 export default function ModellButtonNavbar() {
+   const { t, i18n } = useTranslation();
+    
+          const isArabic = i18n.language === "ar";
     const [isOpen, setIsOpen] = useState(false);
     const [formData, setFormData] = useState({
       fullName: "",
@@ -38,7 +42,7 @@ export default function ModellButtonNavbar() {
         </div>
   
         <Transition appear show={isOpen} as={Fragment}>
-          <Dialog as="div" className="relative z-10" onClose={closeModal}>
+          <Dialog as="div" className="relative z-50" onClose={closeModal}>
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -69,11 +73,11 @@ export default function ModellButtonNavbar() {
                     <div className="flex sm:justify-start justify-center sm:items-center">
                       <img src={QualityAssurance} alt="Quality Assurance" />
                       <p className="ps-2 font-mons text-hover font-bold text-[#666] text-[16px] tracking-[1.6px] ">
-                        Contact Us Now
+                      {t("ModelTitle")}
                       </p>
                     </div>
                     <p className="font-mons sm:text-start pt-[10px] text-[25px] text-center sm:text-[40px] text-[#003540] font-bold text-primary">
-                      Let's Get Growing.
+                    {t("ModelTitle1")}
                     </p>
   
                     <div className="mt-6">
@@ -133,6 +137,7 @@ export default function ModellButtonNavbar() {
   
                         <div className="mt-4 flex justify-center ">
                           <button type="submit" className="  text-white    ">
+                            {t("ModelTitle2")}
                           Contact Us 
                           </button>
                         </div>

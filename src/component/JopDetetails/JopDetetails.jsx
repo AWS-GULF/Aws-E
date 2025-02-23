@@ -3,46 +3,17 @@ import { useState } from "react";
 import logo from "../../assets/images/logooo.svg";
 import { Link, useParams } from "react-router";
 import Application from "../21-Application/Application"
+import { useTranslation } from 'react-i18next';
 export default function JopDetetails() {
+   const { t, i18n } = useTranslation();
+      const isArabic = i18n.language === "ar";
     const jobDescriptions = {
-        1: `We are looking for a Multimedia Marketing Project Manager who will manage client relationships while executing the content service. This role requires a strong marketing and sales operations mindset, project management skills, and proficiency in using AI, video editing, and SEO tools like SEMrush and Google Analytics. Additionally, the candidate must have expertise in creating logical HubSpot workflows and funnels to drive marketing and sales alignment.
       
-      Key Responsibilities:
+        1:t("titleDescription1"),
       
-      Client Relationship Management: Build and maintain long-term client relationships, acting as the primary point of contact and delivering exceptional support.
-      Project Management: Lead and manage the delivery of our product, coordinating across teams and ensuring project timelines and deliverables are met.
-      AI-Powered Content Creation: Utilize AI tools (e.g., ChatGPT, Canva) to automate and streamline the content creation process for blogs, social media posts, and email campaigns.
-      Video Editing: Create high-quality content using video editing tools like Descript and Riverside.fm from client meetings, interviews, and webinars.
-      Sales and Marketing Operations: Implement and manage HubSpot workflows and funnels to align marketing and sales operations, ensuring a cohesive and productive strategy for clients.
-      SEO Optimization: Use tools like SEMrush and Google Analytics to monitor, optimize, and report on SEO performance, ensuring clients' digital strategies are data-driven and result-oriented.
-      Campaign Optimization: Analyze performance data from marketing campaigns and sales activities, providing actionable insights to improve client outcomes.
-      Client Training & Support: Provide ongoing support and training for clients on AI, SEO tools, and HubSpot features, ensuring they maximize their marketing and sales efforts.`,
+        2: t("Buildandmaintain2"),
       
-        2: `Build and maintain server-side applications and databases We are looking for a Multimedia Marketing Project Manager who will manage client relationships while executing the content service. This role requires a strong marketing and sales operations mindset, project management skills, and proficiency in using AI, video editing, and SEO tools like SEMrush and Google Analytics. Additionally, the candidate must have expertise in creating logical HubSpot workflows and funnels to drive marketing and sales alignment.
-      
-      Key Responsibilities:
-      
-      Client Relationship Management: Build and maintain long-term client relationships, acting as the primary point of contact and delivering exceptional support.
-      Project Management: Lead and manage the delivery of our product, coordinating across teams and ensuring project timelines and deliverables are met.
-      AI-Powered Content Creation: Utilize AI tools (e.g., ChatGPT, Canva) to automate and streamline the content creation process for blogs, social media posts, and email campaigns.
-      Video Editing: Create high-quality content using video editing tools like Descript and Riverside.fm from client meetings, interviews, and webinars.
-      Sales and Marketing Operations: Implement and manage HubSpot workflows and funnels to align marketing and sales operations, ensuring a cohesive and productive strategy for clients.
-      SEO Optimization: Use tools like SEMrush and Google Analytics to monitor, optimize, and report on SEO performance, ensuring clients' digital strategies are data-driven and result-oriented.
-      Campaign Optimization: Analyze performance data from marketing campaigns and sales activities, providing actionable insights to improve client outcomes.
-      Client Training & Support: Provide ongoing support and training for clients on AI, SEO tools, and HubSpot features, ensuring they maximize their marketing and sales efforts..`,
-      
-        3: `Work on both frontend and backend development We are looking for a Multimedia Marketing Project Manager who will manage client relationships while executing the content service. This role requires a strong marketing and sales operations mindset, project management skills, and proficiency in using AI, video editing, and SEO tools like SEMrush and Google Analytics. Additionally, the candidate must have expertise in creating logical HubSpot workflows and funnels to drive marketing and sales alignment.
-      
-      Key Responsibilities:
-      
-      Client Relationship Management: Build and maintain long-term client relationships, acting as the primary point of contact and delivering exceptional support.
-      Project Management: Lead and manage the delivery of our product, coordinating across teams and ensuring project timelines and deliverables are met.
-      AI-Powered Content Creation: Utilize AI tools (e.g., ChatGPT, Canva) to automate and streamline the content creation process for blogs, social media posts, and email campaigns.
-      Video Editing: Create high-quality content using video editing tools like Descript and Riverside.fm from client meetings, interviews, and webinars.
-      Sales and Marketing Operations: Implement and manage HubSpot workflows and funnels to align marketing and sales operations, ensuring a cohesive and productive strategy for clients.
-      SEO Optimization: Use tools like SEMrush and Google Analytics to monitor, optimize, and report on SEO performance, ensuring clients' digital strategies are data-driven and result-oriented.
-      Campaign Optimization: Analyze performance data from marketing campaigns and sales activities, providing actionable insights to improve client outcomes.
-      Client Training & Support: Provide ongoing support and training for clients on AI, SEO tools, and HubSpot features, ensuring they maximize their marketing and sales efforts..`,
+        3: t("Buildandmaintain2"),
       };
       
       const jobs = [
@@ -61,99 +32,38 @@ export default function JopDetetails() {
       ];
       const jobResponsibilities = {
         1: [
-          `Client Relationship Management: Build and maintain long-term client relationships, acting as the primary point of contact and delivering exceptional support.`,
-          "Experience with state management libraries like Redux.",
-          `Project Management: Lead and manage the delivery of our product, coordinating across teams and ensuring project timelines and deliverables are met.`,
-          `AI-Powered Content Creation: Utilize AI tools (e.g., ChatGPT, Canva) to automate and streamline the content creation process for blogs, social media posts, and email campaigns.`,
-          `Video Editing: Create high-quality content using video editing tools like Descript and Riverside.fm from client meetings, interviews, and webinars.`,
-          `Sales and Marketing Operations: Implement and manage HubSpot workflows and funnels to align marketing and sales operations, ensuring a cohesive and productive strategy for clients.`,
-          `SEO Optimization: Use tools like SEMrush and Google Analytics to monitor, optimize, and report on SEO performance, ensuring clients' digital strategies are data-driven and result-oriented.`,
-          `Campaign Optimization: Analyze performance data from marketing campaigns and sales activities, providing actionable insights to improve client outcomes.`,
-          `Client Training & Support: Provide ongoing support and training for clients on AI, SEO tools, and HubSpot features, ensuring they maximize their marketing and sales efforts.`,
+          t("keytitle1"),
         ],
         2: [
-          `Client Relationship Management: Build and maintain long-term client relationships, acting as the primary point of contact and delivering exceptional support.`,
-          "Experience with state management libraries like Redux.",
-          `Project Management: Lead and manage the delivery of our product, coordinating across teams and ensuring project timelines and deliverables are met.`,
-          `AI-Powered Content Creation: Utilize AI tools (e.g., ChatGPT, Canva) to automate and streamline the content creation process for blogs, social media posts, and email campaigns.`,
-          `Video Editing: Create high-quality content using video editing tools like Descript and Riverside.fm from client meetings, interviews, and webinars.`,
-          `Sales and Marketing Operations: Implement and manage HubSpot workflows and funnels to align marketing and sales operations, ensuring a cohesive and productive strategy for clients.`,
-          `SEO Optimization: Use tools like SEMrush and Google Analytics to monitor, optimize, and report on SEO performance, ensuring clients' digital strategies are data-driven and result-oriented.`,
-          `Campaign Optimization: Analyze performance data from marketing campaigns and sales activities, providing actionable insights to improve client outcomes.`,
-          `Client Training & Support: Provide ongoing support and training for clients on AI, SEO tools, and HubSpot features, ensuring they maximize their marketing and sales efforts.`,
+          t("keytitle1"),
         ],
         3: [
-          `Client Relationship Management: Build and maintain long-term client relationships, acting as the primary point of contact and delivering exceptional support.`,
-          "Experience with state management libraries like Redux.",
-          `Project Management: Lead and manage the delivery of our product, coordinating across teams and ensuring project timelines and deliverables are met.`,
-          `AI-Powered Content Creation: Utilize AI tools (e.g., ChatGPT, Canva) to automate and streamline the content creation process for blogs, social media posts, and email campaigns.`,
-          `Video Editing: Create high-quality content using video editing tools like Descript and Riverside.fm from client meetings, interviews, and webinars.`,
-          `Sales and Marketing Operations: Implement and manage HubSpot workflows and funnels to align marketing and sales operations, ensuring a cohesive and productive strategy for clients.`,
-          `SEO Optimization: Use tools like SEMrush and Google Analytics to monitor, optimize, and report on SEO performance, ensuring clients' digital strategies are data-driven and result-oriented.`,
-          `Campaign Optimization: Analyze performance data from marketing campaigns and sales activities, providing actionable insights to improve client outcomes.`,
-          `Client Training & Support: Provide ongoing support and training for clients on AI, SEO tools, and HubSpot features, ensuring they maximize their marketing and sales efforts.`,
+          t("keytitle1"),
+        
         ],
       };
       
       const jobRequirements = {
         1: [
-          `Client Relationship Management: Build and maintain long-term client relationships, acting as the primary point of contact and delivering exceptional support.`,
-          "Experience with state management libraries like Redux.",
-          `Project Management: Lead and manage the delivery of our product, coordinating across teams and ensuring project timelines and deliverables are met.`,
-          `AI-Powered Content Creation: Utilize AI tools (e.g., ChatGPT, Canva) to automate and streamline the content creation process for blogs, social media posts, and email campaigns.`,
-          `Video Editing: Create high-quality content using video editing tools like Descript and Riverside.fm from client meetings, interviews, and webinars.`,
-          `Sales and Marketing Operations: Implement and manage HubSpot workflows and funnels to align marketing and sales operations, ensuring a cohesive and productive strategy for clients.`,
-          `SEO Optimization: Use tools like SEMrush and Google Analytics to monitor, optimize, and report on SEO performance, ensuring clients' digital strategies are data-driven and result-oriented.`,
-          `Campaign Optimization: Analyze performance data from marketing campaigns and sales activities, providing actionable insights to improve client outcomes.`,
-          `Client Training & Support: Provide ongoing support and training for clients on AI, SEO tools, and HubSpot features, ensuring they maximize their marketing and sales efforts.`,
+     t("Requirementstitle1"),
         ],
         2: [
-          `Client Relationship Management: Build and maintain long-term client relationships, acting as the primary point of contact and delivering exceptional support.`,
-          "Experience with state management libraries like Redux.",
-          `Project Management: Lead and manage the delivery of our product, coordinating across teams and ensuring project timelines and deliverables are met.`,
-          `AI-Powered Content Creation: Utilize AI tools (e.g., ChatGPT, Canva) to automate and streamline the content creation process for blogs, social media posts, and email campaigns.`,
-          `Video Editing: Create high-quality content using video editing tools like Descript and Riverside.fm from client meetings, interviews, and webinars.`,
-          `Sales and Marketing Operations: Implement and manage HubSpot workflows and funnels to align marketing and sales operations, ensuring a cohesive and productive strategy for clients.`,
-          `SEO Optimization: Use tools like SEMrush and Google Analytics to monitor, optimize, and report on SEO performance, ensuring clients' digital strategies are data-driven and result-oriented.`,
-          `Campaign Optimization: Analyze performance data from marketing campaigns and sales activities, providing actionable insights to improve client outcomes.`,
-          `Client Training & Support: Provide ongoing support and training for clients on AI, SEO tools, and HubSpot features, ensuring they maximize their marketing and sales efforts.`,
+     t("Requirementstitle1"),
         ],
         3: [
-          `Client Relationship Management: Build and maintain long-term client relationships, acting as the primary point of contact and delivering exceptional support.`,
-          "Experience with state management libraries like Redux.",
-          `Project Management: Lead and manage the delivery of our product, coordinating across teams and ensuring project timelines and deliverables are met.`,
-          `AI-Powered Content Creation: Utilize AI tools (e.g., ChatGPT, Canva) to automate and streamline the content creation process for blogs, social media posts, and email campaigns.`,
-          `Video Editing: Create high-quality content using video editing tools like Descript and Riverside.fm from client meetings, interviews, and webinars.`,
-          `Sales and Marketing Operations: Implement and manage HubSpot workflows and funnels to align marketing and sales operations, ensuring a cohesive and productive strategy for clients.`,
-          `SEO Optimization: Use tools like SEMrush and Google Analytics to monitor, optimize, and report on SEO performance, ensuring clients' digital strategies are data-driven and result-oriented.`,
-          `Campaign Optimization: Analyze performance data from marketing campaigns and sales activities, providing actionable insights to improve client outcomes.`,
-          `Client Training & Support: Provide ongoing support and training for clients on AI, SEO tools, and HubSpot features, ensuring they maximize their marketing and sales efforts.`,
+     t("Requirementstitle1"),
         ],
       };
       const jobBenefits = {
         1: [
-          `OneIMS is a global inbound digital marketing agency with offices in sunny Southwest Florida and regional offices throughout the world. Our team is dedicated to helping our clients achieve their sales and marketing goals using the most up-to-date and innovative strategies and technologies available. We believe we are one of the best in the industry and are looking for candidates who are just as passionate about marketing as we are.At OneIMS you will enjoy a great working environment, plenty of perks, nurturing leadership team, and caring co-workers. Come work with us if you believe you can make our team even better!`,
-      
-          `Competitive hourly wage`,
-          `Training and certification program reimbursements`,
-          `100% remote`,
-          `Paid Time Off`,
+        
+        t("Benefits1"),
         ],
         2: [
-          `OneIMS is a global inbound digital marketing agency with offices in sunny Southwest Florida and regional offices throughout the world. Our team is dedicated to helping our clients achieve their sales and marketing goals using the most up-to-date and innovative strategies and technologies available. We believe we are one of the best in the industry and are looking for candidates who are just as passionate about marketing as we are.At OneIMS you will enjoy a great working environment, plenty of perks, nurturing leadership team, and caring co-workers. Come work with us if you believe you can make our team even better!`,
-      
-          `Competitive hourly wage`,
-          `Training and certification program reimbursements`,
-          `100% remote`,
-          `Paid Time Off`,
+        t("Benefits1"),
         ],
         3: [
-          `OneIMS is a global inbound digital marketing agency with offices in sunny Southwest Florida and regional offices throughout the world. Our team is dedicated to helping our clients achieve their sales and marketing goals using the most up-to-date and innovative strategies and technologies available. We believe we are one of the best in the industry and are looking for candidates who are just as passionate about marketing as we are.At OneIMS you will enjoy a great working environment, plenty of perks, nurturing leadership team, and caring co-workers. Come work with us if you believe you can make our team even better!`,
-      
-          `Competitive hourly wage`,
-          `Training and certification program reimbursements`,
-          `100% remote`,
-          `Paid Time Off`,
+        t("Benefits1"),
         ],
       };
       
@@ -174,17 +84,23 @@ export default function JopDetetails() {
           <Link to={"/"}>
             <img src={logo} className="w-full " alt="Logo" />
             <p className="text-[20px] text-[#666]  font-montserrat   font-semibold">
-              Gulf
+              {t("Gulf")}
+              {/* Gulf */}
             </p>
           </Link>
         </div>
         <div className="text-center py-4">
-          <p className="font-montserrat text-primary text-[#003540]  dark:text-[#B3E5F1] font-bold tracking-[1.7px] text-[24px]">
-            Multimedia Marketing Project Manager
+          <p className={`font-montserrat text-primary text-[#003540]  dark:text-[#B3E5F1] font-bold text-[24px] ${isArabic?"font-cairo":"tracking-[1.7px] "}`}>
+            {t("Multimedia Marketing Project Manager")}
+            {/* Multimedia Marketing Project Manager */}
           </p>
-          <p className="gobLocation text-secondary font-montserrat text-[16px] tracking-[.5px] font-[500] ">
-            <span className="text-aboutCont font-bold dark:text-[#fff]">Remote</span> <span className='text-[#666] dark:text-[#fff] '>- Digital
-            Marketing - Full time</span> 
+          <p className={`gobLocation text-secondary font-montserrat text-[16px]  font-[500]  ${isArabic?"font-cairo":"tracking-[.5px] "}`}>
+            <span className="text-aboutCont font-bold dark:text-[#fff]">  {t("Remote")} 
+               {/* Remote */}
+               </span> <span className='text-[#666] font-cairo dark:text-[#fff] '>
+              {t("MarketingFulltime")}
+              {/* - Digital Marketing - Full time */}
+              </span> 
           </p>
         </div>
 
@@ -197,7 +113,8 @@ export default function JopDetetails() {
         : "bg-white text-aboutCont "
     }`}
   >
-    Overview
+    {t("Overview")}
+    {/* Overview */}
   </button>
   <button
     onClick={() => setActiveTab("application")}
@@ -207,7 +124,8 @@ export default function JopDetetails() {
         : "bg-white text-aboutCont "
     }`}
   >
-    Application
+    {t("Application")}
+    {/* Application */}
   </button>
 </div>
 
@@ -216,21 +134,23 @@ export default function JopDetetails() {
       <div className="p-4  flex justify-center items-center">
         {activeTab === "overview" && (
           <div className="flex-col sm:justify-center sm:items-center sm:w-3/4 w-full dark:text-[#fff]  ">
-            <h3 className="text-2xl font-bold tracking-[1.2px] pb-6  dark:text-[#B3E5F1] ">
+            <h3 className={`text-2xl font-bold  pb-6  dark:text-[#B3E5F1]  ${isArabic?"font-cairo":"tracking-[1.2px] "}`}>
               {" "}
-              Description
+              {t("Description")}
+              {/* Description */}
             </h3>
-            <p className="sm:text-lg font-[500] sm:tracking-[2px] sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat">
+            <p className={`sm:text-lg font-[500] sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat ${isArabic?"font-cairo":" sm:tracking-[2px] "}`}>
               {description}
             </p>
 
-            <h3 className="text-2xl  font-bold leading-9 tracking-[2px] dark:text-[#fff]    py-6">
-              Key Responsibilities
+            <h3 className={`text-2xl  font-bold leading-9 dark:text-[#fff]    py-6 ${isArabic?"font-cairo":" tracking-[2px]"}`}>
+              {t("KeyResponsibilities")}
+              {/* Key Responsibilities */}
             </h3>
             <ul className="list-disc pl-5 dark:text-[#B3E5F1] ">
               {responsibilities.map((responsibility, index) => (
                 <li
-                  className="sm:text-lg font-[500] sm:tracking-[2px] sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat   "
+                  className={`sm:text-lg font-[500]  sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat  ${isArabic?"font-cairo":" sm:tracking-[2px] "}  `}
                   key={index}
                 >
                   {responsibility}
@@ -238,18 +158,25 @@ export default function JopDetetails() {
               ))}
             </ul>
 
-            <h3 className="text-2xl font-bold mt-4 pb-6 dark:text-[#B3E5F1]  ">Requirements</h3>
+            <h3 className="text-2xl font-bold mt-4 pb-6 dark:text-[#B3E5F1]  ">
+              {t("Requirementstitle")}
+              {/* Requirements */}
+              </h3>
             <ul className="list-disc pl-5  dark:text-[#B3E5F1] ">
               {requirements.map((requirement, index) => (
-                <li className="sm:text-lg font-[500] sm:tracking-[2px] sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat " key={index}>{requirement}</li>
+                <li className={`sm:text-lg font-[500]  sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat ${isArabic?"font-cairo":" sm:tracking-[2px] "}  `} key={index}>{requirement}</li>
               ))}
 
               {/* //////////////////////////////// */}
             </ul>
-            <h3 className="text-2xl font-bold mt-4 pb-6   dark:text-[#B3E5F1]  ">Benefits</h3>
+            <h3 className="text-2xl font-bold mt-4 pb-6   dark:text-[#B3E5F1]  ">
+              {t("Benefits")}
+              
+              {/* Benefits */}
+              </h3>
             <ul className="list-disc pl-5  ">
               {Benefits.map((benefit, index) => (
-                <li className="sm:text-lg font-[500] sm:tracking-[2px] sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat " key={index}>
+                <li className={`sm:text-lg font-[500] sm:tracking-[2px] sm:leading-9 text-aboutCont dark:text-[#fff]    font-montserrat ${isArabic?"font-cairo":" sm:tracking-[2px] "} `} key={index}>
                   {benefit}
                 </li>
               ))}

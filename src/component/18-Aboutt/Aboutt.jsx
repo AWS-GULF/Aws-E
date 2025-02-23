@@ -19,17 +19,19 @@ import ExploreOurServices13 from "../../assets/images/axis.svg";
 import Modell from "../16-Modell/Modell";
 import QualityAssurance from "../../assets/images/sr-gray.svg";
 import ModellButtonNavbar from "../ModellButtonNavbar/ModellButtonNavbar";
-
+import { useTranslation } from "react-i18next";
 export default function Aboutt() {
+   const { t, i18n } = useTranslation();
+    const isArabic = i18n.language === "ar";
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const listItems = [
-    "Software Consultant",
-    "UI/ UX development",
-    "E-commerce Develpment",
-    "Mobile Application Development",
-    "Real-State Smart Solution",
+    t("AboutUS Software Consultant"),
+    t("AboutUS Software UI/ UX"),
+    t("AboutUS Software E-commerce"),
+    t("AboutUS Software Application"),
+    t("AboutUS Software Real-State"),
   ];
-
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -39,82 +41,93 @@ export default function Aboutt() {
       <div className="sm:ms-12 sm:me-12">
         <div className="mt-4 sm:mt-16 mb-8 sm:mb-14 flex justify-center items-center text-xl ">
           <img src={QualityAssurance1} alt="QualityAssurance" />
-          <p className="ps-2 font-montserrat  text-hover font-bold text-[16px] tracking-[1.6px]  text-base text-[#003540] dark:text-[#B3E5F1]">
-            About US
+          <p className={`ps-2 font-montserrat  text-hover font-bold text-[16px]  text-base text-[#003540] dark:text-[#B3E5F1] ${isArabic?" font-cairo text-lg":"tracking-[1.6px] "}`}>
+            {t("AboutUstitle")}
+            {/* About US */}
           </p>
         </div>
 
         <div className="flex justify-center items-center text-center">
-          <h2 className="sm:text-[60px] text-[20px] font-montserrat lg:w-[800px]   font-bold mb-[80px] text-center sm:tracking-[4.8px] sm:leading-[75px] text-[#003540] dark:text-[#B3E5F1]">
-            AWS GULF Illuminating Your Path to the Future
+          <h2 className={`sm:text-[60px] text-[22px] font-montserrat lg:w-[800px]   font-bold mb-[80px] text-center  sm:leading-[75px] text-[#003540] dark:text-[#B3E5F1] ${isArabic?" font-cairo ":"tracking-[1.6px] "}`}>
+            {t("AboutUs")}
+            {/* AWS GULF Illuminating Your Path to the Future */}
           </h2>
         </div>
 
         <div className="mb-12">
-          <h2 className="text-[#003540]  font-montserrat  text-[16px] sm:text-[28px] font-bold tracking-[.64px] pb-8  dark:text-[#B3E5F1]">
-            WHO WE ARE?
+          <h2 className={`text-[#003540]  font-montserrat  text-[16px] sm:text-[28px] font-bold lg:text-right text-center  pb-8  dark:text-[#B3E5F1] ${isArabic?" font-cairo ":"tracking-[.64px]"}`}>
+            {t("Abouttitle1")}
+            {/* WHO WE ARE? */}
           </h2>
-          <p className=" dark:text-white  text-aboutCont  text-[14px]  sm:text-[16px] mb-8 sm:mb-0 tracking-[1.4px]  leading-[35px]">
-            At AWS GULF, we are more than just a marketing and software agency –
+          <p className={` dark:text-white  text-aboutCont  text-[16px]  lg:text-right text-center sm:text-[17px] mb-8 sm:mb-0   leading-[35px] ${isArabic?" font-cairo ":"tracking-[1.4px]"}`}>
+            {t("AboutUs1")}
+            {/* At AWS GULF, we are more than just a marketing and software agency –
             we are your trusted lighthouse guiding your business toward a
             brighter, more innovative future. Established to bridge the gap
             between cutting-edge technology and impactful marketing strategies,
             we specialize in delivering tailored solutions that empower
-            businesses to thrive in today’s fast-paced digital landscape.
+            businesses to thrive in today’s fast-paced digital landscape. */}
           </p>
         </div>
         <div className="flex flex-wrap justify-between sm:flex-nowrap sm:gap-4 mb-[100px]">
           <div className="flex-col ps-5 justify-evenly items-end sm:justify-center sm:items-center w-[45%] sm:w-1/3 mb-4">
-          <h3 className="text-center bg-[#295F70] dark:text-white text-nowrap py-4 sm:py-6 bg-primary rounded-[10px] text-[#fff] font-montserrat text-[14px] sm:text-[20px]">
-  OUR VISION
+          <h3 className={`text-center bg-[#295F70] dark:text-white text-nowrap py-4 sm:py-6  rounded-[10px] text-[#fff] font-montserrat text-[16px] sm:text-[20px] ${isArabic?" font-cairo ":""}`}>
+            {t("AboutUs OUR VISION")}
+  {/* OUR VISION */}
   
 </h3>
 
-            <p className="mt-[20px] ms-2 text-aboutCont dark:text-white font-montserrat text-[12px] sm:text-[16px] tracking-[1px] leading-[14px] sm:leading-[30px] line-clamp-5 overflow-hidden text-ellipsis">
-              We work closely with our clients from marketing consultancy and
+            <p className={`mt-[20px] ms-2 text-aboutCont dark:text-white font-montserrat text-[14px] sm:text-[16px] leading-[14px] sm:leading-[30px] line-clamp-6 overflow-hidden text-ellipsis${isArabic?" font-cairo  ":"tracking-[1px] "}`}>
+              {t("AboutUsDesc1")}
+              {/* We work closely with our clients from marketing consultancy and
               strategy development to design, video production, and technology
               implementation. Whether creating digital projects, social media
               content, or custom websites and apps, our goal is to exceed
               expectations. Our integrated approach aligns each project with
               client objectives, leveraging our expertise in SEO, UX/UI, and
               innovative technologies, ensuring our team addresses specific
-              needs for successful outcomes.
+              needs for successful outcomes. */}
             </p>
           </div>
           <div className="flex-col ps-5 justify-evenly items-end sm:justify-center sm:items-center w-[45%] sm:w-1/3 mb-4">
-            <h3 className=" text-center  bg-[#295F70] dark:text-white text-nowrap  py-4 sm:py-6 bg-primary rounded-[10px] text-[#fff] font-montserrat text-[14px] sm:text-[20px]">
-              OUR MESSAGE
+            <h3 className={`text-center  bg-[#295F70] dark:text-white text-nowrap  py-4 sm:py-6 bg-primary rounded-[10px] text-[#fff] font-montserrat text-[16px] sm:text-[20px] ${isArabic?" font-cairo ":" "}`}>
+              {t("AboutUs OURMESSAGE")}
+              {/* OUR MESSAGE */}
             </h3>
-            <p className="mt-[20px] ms-2 text-aboutCont dark:text-white font-montserrat text-[12px] sm:text-[16px] tracking-[1px] leading-[14px] sm:leading-[30px] line-clamp-5 overflow-hidden text-ellipsis">
-              We provide tailored solutions that align perfectly with your
+            <p className={`mt-[20px] ms-2 text-aboutCont dark:text-white font-montserrat text-[14px] sm:text-[16px]  leading-[14px] sm:leading-[30px] line-clamp-6 overflow-hidden text-ellipsis ${isArabic?" font-cairo ":" tracking-[1px]"}`}>
+              {t("AboutUsDesc2")}
+              {/* We provide tailored solutions that align perfectly with your
               business needs. We are dedicated to sharing our expertise with our
               clients, and we take pride in collaborating across various
               industries to develop strategies that deliver impactful results.
               Our focus is on equipping our clients with the right resources to
-              complement their technology, ensuring their success and growth.
+              complement their technology, ensuring their success and growth. */}
             </p>
           </div>
           <div className="flex-col ps-5 justify-evenly items-end sm:justify-center sm:items-center w-[40%] sm:w-1/3 mt-4 sm:mt-0">
-            <p className=" text-center bg-[#295F70] dark:text-white py-4 sm:py-6 bg-primary text-nowrap rounded-[10px] text-[#fff] font-montserrat text-[14px] sm:text-[20px]">
-              OUR MISSION
+            <p className={` text-center bg-[#295F70] dark:text-white py-4 sm:py-6 bg-primary text-nowrap rounded-[10px] text-[#fff] font-montserrat text-[16px] sm:text-[20px]${isArabic?" font-cairo ":" "}`}>
+              {t("OUR MISSIONOURVISION")}
+              {/* OUR MISSION */}
             </p>
-            <p className="mt-[20px] ms-2 text-aboutCont dark:text-white font-montserrat text-[12px] sm:text-[16px] tracking-[1px] leading-[14px] sm:leading-[30px] line-clamp-5 overflow-hidden text-ellipsis">
-              With a strong foundation in understanding how businesses grow
+            <p className={`mt-[20px] ms-2 text-aboutCont dark:text-white font-montserrat text-[14px] sm:text-[16px] tracking-[1px] leading-[14px] sm:leading-[30px] line-clamp-7 text-ellipsis line-clamp-6 overflow-hidden  ${isArabic?" font-cairo ":" "}`}>
+              {t("AboutUsDesc3")}
+              {/* With a strong foundation in understanding how businesses grow
               online through various platforms such as websites, social media,
               mobile applications, and more, we offer a marketing methodology
               that brings an interactive communication experience across
               different channels. By staying at the forefront of technological
               advancements, especially in AI, we ensure a cutting-edge approach
-              that maximizes return on investment for our business clients.
+              that maximizes return on investment for our business clients. */}
             </p>
           </div>
         </div>
 
         <div className="flex mb-[100px] gap-10">
           <div className="sm:w-[80%] w-[50%] flex-col justify-start sm:items-start items-center">
-            <p className="text-aboutCont  text-[14px] font-montserrat dark:text-white  lg:text-[32px] lg:tracking-[6.4px] font-bold leading-[24px] lg:leading-[60px] pb-[30px]">
-              A suite of services designed to help businesses thrive in the
-              digital future with AS GULF.
+            <p className={`text-aboutCont  text-[16px]  font-montserrat dark:text-white  lg:text-[32px]  font-bold leading-[24px] lg:leading-[60px] pb-[30px] ${isArabic?" font-cairo ":"lg:tracking-[6.4px] "}`}>
+              {t("AboutUs A suite of services")}
+              {/* A suite of services designed to help businesses thrive in the
+              digital future with AS GULF. */}
             </p>
             <div className=" inline-block px-4 lg:hidden   py-4 md:w-fit backGroundButton text-nowrap sm:px-6 font-bold rounded-2xl transition  dark:text-[#333]   dark:bg-[#B3E5F1]">
              <ModellButtonNavbar/>
@@ -142,7 +155,7 @@ export default function Aboutt() {
                     alt="QualityAssurance"
                   />
                   <p
-                    className={`font-bold text-[10px] sm:text-[20px] font-montserrat ps-2   sm:ps-4 ${
+                    className={`font-bold text-[12px] sm:text-[20px] font-montserrat ps-2   sm:ps-4 ${
                       hoveredIndex === index ? "text-primary" : "text-secondary"
                     }`}
                   >
@@ -156,18 +169,22 @@ export default function Aboutt() {
 
         <div className="lg:flex-row sm:flex flex-col justify-center items-center sm:gap-4 sm:mb-[60px]">
           <div className="lg:w-2/3 w-full mb-4">
-            <p className="text-gray-600  dark:text-white  font-montserrat    text-[16px] sm:text-[18px] mb-2 md:tracking-[1.4px] leading-[25px]    text-justify sm:leading-[35px]">
-              <span className=" dark:text-[#B3E5F1] font-bold font-montserrat   text-justify  text-[20px] sm:text-[26px] t">
-                Our team
+            <p className={`text-gray-600  dark:text-white  font-montserrat    text-[16px] sm:text-[18px] mb-2  leading-[25px]    text-justify sm:leading-[35px]${isArabic?"font-cairo text-right":"md:tracking-[1.4px]"}`}>
+            <span className=" dark:text-[#B3E5F1] font-bold font-montserrat   text-justify  text-[20px] sm:text-[26px] t">
+                {t("our_team")}
+              
+                {/* Our team */}
               </span>{" "}
-              of passionate experts combines creativity, technical expertise,
+            {t("AboutUsTitle3")}
+             
+              {/* of passionate experts combines creativity, technical expertise,
               and a deep understanding of market dynamics to craft experiences
               that resonate with your audience and drive measurable results.
               Whether it’s developing bespoke software, designing user-centric
               interfaces, or executing data-driven marketing campaigns, we are
               dedicated to turning your vision into reality. With AS GULF, you
               don’t just stay ahead of the curve – you set the pace for the
-              future.
+              future. */}
             </p>
           </div>
           <div className="lg:w-1/3 w-full mb-5 sm:mb-0 ">
@@ -179,8 +196,9 @@ export default function Aboutt() {
           </div>
         </div>
 
-        <p className="font-montserrat  text-[28px] font-bold tracking-[.64px] dark:text-[#B3E5F1]  mb-8">
-          Meet the Visionaries Behind AS GULF
+        <p className={`font-montserrat  text-[28px] font-bold  dark:text-[#B3E5F1]  mb-8 ${isArabic?"font-cairo":"tracking-[.64px]"}`}>
+          {t("AboutUsTitle4")}
+          {/* Meet the Visionaries Behind AS GULF */}
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-[100px] rounded-xl">
@@ -193,10 +211,14 @@ export default function Aboutt() {
               />
             </figure>
             <div className="text-center mt-4">
-              <h2 className="dark:text-white  font-montserrat   font-[600] tracking-[1.6]">
-                Mostafa Karam
+              <h2 className={`dark:text-white  font-montserrat   font-[600] ${isArabic?"font-cairo":"tracking-[1.6px]"}`}>
+                {t("AboutUsName1")}
+                {/* Mostafa Karam */}
               </h2>
-              <p className="dark:text-white ">CMO</p>
+              <p className={`dark:text-white ${isArabic?"font-cairo":""}`}>
+                {t("AboutUsName2")}
+                {/* CMO */}
+                </p>
             </div>
           </div>
 
@@ -209,10 +231,14 @@ export default function Aboutt() {
               />
             </figure>
             <div className="text-center mt-4">
-              <h2 className="tdark:text-white dark:text-white  font-montserrat  font-[600] tracking-[1.6]">
-                Mahmoud Mohamed
+              <h2 className={`tdark:text-white dark:text-white  font-montserrat  font-[600] ${isArabic?"font-cairo":"tracking-[1.6px]"} `}>
+              {t("AboutUsName3")}
+                {/* Mahmoud Mohamed */}
               </h2>
-              <p className="dark:text-white ">CTO</p>
+              <p className={`dark:text-white ${isArabic?"font-cairo":""}`}>
+              {t("AboutUsNamr4")}
+                {/* CTO */}
+                </p>
             </div>
           </div>
 
@@ -225,17 +251,22 @@ export default function Aboutt() {
               />
             </figure>
             <div className="text-center mt-4">
-              <h2 className="tdark:text-white dark:text-white  font-montserrat  font-[600] tracking-[1.6]">
-                Ahmed Mohamed
+              <h2 className={`tdark:text-white dark:text-white  font-montserrat  font-[600]  ${isArabic?"font-cairo":"tracking-[1.6px]"}`}>
+                {t("AboutUsName5")}
+                {/* Ahmed Mohamed */}
               </h2>
-              <p className="dark:text-white ">CEO</p>
+              <p className={`dark:text-white ${isArabic?"font-cairo":""}`}>
+              {t("AboutUsName6")}
+                {/* CEO */}
+                </p>
             </div>
           </div>
         </div>
 
         <div className="flex justify-center items-center">
-          <h3 className="font-montserrat  dark:text-[#B3E5F1]   text-[20px] sm:text-[32px] font-bold sm:tracking-[5.12px]">
-            Our Leading Brands Partnerships
+          <h3 className={`font-montserrat  dark:text-[#B3E5F1]   text-[20px] sm:text-[32px] font-bold${isArabic?"font-cairo":" sm:tracking-[5.12px] "}`}>
+            {t("AboutFooter")}
+            {/* Our Leading Brands Partnerships */}
           </h3>
         </div>
 
